@@ -1,158 +1,158 @@
 # The Copilot Chronicle
 
-## What This Is
+## Qué es
 
-A daily newspaper-styled AI news brief built for Microsoft Copilot Cowork. Every morning it scans the latest external AI industry news across Microsoft Copilot, Anthropic, Google, and OpenAI, plus your internal Microsoft field updates pulled via Microsoft Graph signals from email, Teams, and Viva Engage.
+Un resumen diario de noticias de IA con formato de periódico, creado para Microsoft Copilot Cowork. Cada mañana revisa las últimas noticias externas del sector de la IA sobre Microsoft Copilot, Anthropic, Google y OpenAI, además de las novedades internas de tu organización, que obtiene a través de las señales de Microsoft Graph del correo, Teams y Viva Engage.
 
-The output is a formatted HTML newspaper emailed directly to you, sized for a 5-minute coffee read.
+El resultado es un periódico en HTML con formato que te llega directamente por correo, pensado para leerlo en 5 minutos con el café.
 
 > [!TIP]
-> Before running, swap in your own email address, role, internal search terms, newsletters, digests, and community channels.
+> Antes de ejecutarlo, sustituye tu dirección de correo, tu puesto, los términos de búsqueda internos, los boletines, los resúmenes y los canales de comunidad por los tuyos.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
 ---
 name: daily-news
-description: Generates "The Copilot Chronicle" — a daily newspaper-styled HTML morning brief covering external AI industry news (Microsoft Copilot, Anthropic/Claude, Google/Gemini, OpenAI/ChatGPT, broader AI industry) plus internal field updates pulled via Microsoft Graph signals from email, Teams, and Viva Engage. Output is an HTML email with masthead, two-column body, dateline, lead story with drop cap, three section banners, ticker, and footer — emailed directly to you. Every story is hyperlinked to its source.
+description: Genera "The Copilot Chronicle", un resumen matutino diario en HTML con formato de periódico que cubre noticias externas del sector de la IA (Microsoft Copilot, Anthropic/Claude, Google/Gemini, OpenAI/ChatGPT y el sector de la IA en general) y novedades internas obtenidas a través de las señales de Microsoft Graph del correo, Teams y Viva Engage. El resultado es un correo HTML con cabecera, cuerpo a dos columnas, línea de fecha, noticia principal con letra capital, tres bandas de sección, teletipo y pie de página, enviado directamente a ti. Cada noticia enlaza a su fuente.
 
 ---
 
-## When to Use
+## Cuándo usarlo
 
-Trigger when you ask Copilot to:
+Actívalo cuando le pidas a Copilot:
 
-- "Run my daily news"
-- "Generate my morning news"
-- "Send my daily news brief"
-- "Build today's Copilot Chronicle"
-- "Run the Chronicle"
-- "Give me my AI news for today"
-
----
-
-## When NOT to Use
-
-- Ad-hoc news searches → use web search directly
-- Daily summaries of your schedule and inbox → use your daily briefing prompt
-- Stakeholder or leadership communications → use a stakeholder comms prompt
-- Account-specific field briefings → use your daily field readout prompt
+- "Ejecuta mis noticias diarias"
+- "Genera mis noticias de la mañana"
+- "Envíame mi resumen diario de noticias"
+- "Crea el Copilot Chronicle de hoy"
+- "Ejecuta el Chronicle"
+- "Dame mis noticias de IA de hoy"
 
 ---
 
-## Workflow
+## Cuándo NO usarlo
 
-### Step 1: Resolve Today's Date
-
-Set the edition date to your local timezone. Use the following filename and subject format:
-
-- **Filename:** `output/the-copilot-chronicle-YYYY-MM-DD.html`
-- **Subject:** `The Copilot Chronicle — [Weekday], [Month] [DD], [YYYY]`
+- Búsquedas de noticias puntuales → usa directamente la búsqueda web
+- Resúmenes diarios de tu agenda y tu bandeja de entrada → usa tu prompt de resumen diario
+- Comunicaciones con partes interesadas o con la dirección → usa un prompt de comunicaciones con partes interesadas
+- Informes de cuentas concretas → usa tu prompt de informe diario para dirección
 
 ---
 
-### Step 2: Gather Coverage (Run in Parallel)
+## Flujo de trabajo
 
-**External Sources (web search — last 24 to 48 hours):**
+### Paso 1: determina la fecha de hoy
 
-- Microsoft Copilot and Microsoft 365 Copilot news
-- Anthropic and Claude news
-- Google Gemini news
-- OpenAI and ChatGPT news
-- AI industry and enterprise news
+Establece la fecha de la edición en tu zona horaria local. Usa este formato de nombre de archivo y de asunto:
 
-**Internal Sources (Microsoft Graph signals via Outlook and Teams):**
+- **Nombre de archivo:** `output/the-copilot-chronicle-AAAA-MM-DD.html`
+- **Asunto:** `The Copilot Chronicle — [día de la semana], [DD] de [mes] de [AAAA]`
+
+---
+
+### Paso 2: reúne la información (en paralelo)
+
+**Fuentes externas (búsqueda web, últimas 24 a 48 horas):**
+
+- Noticias de Microsoft Copilot y Microsoft 365 Copilot
+- Noticias de Anthropic y Claude
+- Noticias de Google Gemini
+- Noticias de OpenAI y ChatGPT
+- Noticias del sector de la IA y del ámbito empresarial
+
+**Fuentes internas (señales de Microsoft Graph a través de Outlook y Teams):**
 
 > [!IMPORTANT]
-> Replace the placeholders below with your own internal newsletters, digests, community channels, and team updates. Copilot will use Microsoft Graph to pull from your Outlook email and Teams activity based on what you list here.
+> Sustituye los marcadores siguientes por tus propios boletines internos, resúmenes, canales de comunidad y novedades del equipo. Copilot usará Microsoft Graph para extraer información de tu correo de Outlook y de tu actividad en Teams según lo que indiques aquí.
 
-- `{Add your internal newsletter or field advisory name here}`
-- `{Add your team digest or weekly huddle name here}`
-- `{Add your internal community or Viva Engage channel here}`
-- `{Add any product update emails or leadership comms you want included}`
-- `{Add any event or training communications relevant to your role}`
+- `{Añade aquí el nombre de tu boletín interno o de tus avisos para el equipo comercial}`
+- `{Añade aquí el nombre del resumen de tu equipo o de la reunión semanal}`
+- `{Añade aquí tu comunidad interna o tu canal de Viva Engage}`
+- `{Añade los correos de novedades de producto o las comunicaciones de la dirección que quieras incluir}`
+- `{Añade las comunicaciones de eventos o formación relevantes para tu puesto}`
 
-Capture the Outlook `webLink` for every internal item so headlines link directly back to the source.
+Guarda el `webLink` de Outlook de cada elemento interno para que los titulares enlacen directamente a la fuente.
 
 ---
 
-### Step 3: Select Stories
+### Paso 3: selecciona las noticias
 
-| Section | What to Include |
+| Sección | Qué incluir |
 |---|---|
-| **Lead Story** | The single biggest Copilot or AI industry story from the last 24 hours. Include a kicker, headline, deck, drop-cap body, and one pull quote from a primary source. |
-| **The AI Industry Beat** | 4 to 6 stories across Anthropic, Google, OpenAI, Microsoft, and broader industry. Two-column layout. |
-| **From the Field Desk** | 3 to 8 internal items from Outlook and Teams relevant to your role. Hyperlink to source where available. |
-| **The Copilot Tape** | 2 to 4 short hits covering pricing, certifications, governance, admin, or release updates. |
-| **Ticker** | 6 to 10 short headlines across all categories. |
+| **Noticia principal** | La noticia más importante de Copilot o del sector de la IA de las últimas 24 horas. Incluye antetítulo, titular, entradilla, cuerpo con letra capital y una cita destacada de una fuente primaria. |
+| **Actualidad del sector de la IA** | De 4 a 6 noticias sobre Anthropic, Google, OpenAI, Microsoft y el sector en general. Diseño a dos columnas. |
+| **Desde la redacción interna** | De 3 a 8 elementos internos de Outlook y Teams relevantes para tu puesto. Enlaza a la fuente cuando esté disponible. |
+| **Breves de Copilot** | De 2 a 4 notas breves sobre precios, certificaciones, gobernanza, administración o novedades de versiones. |
+| **Teletipo** | De 6 a 10 titulares breves de todas las categorías. |
 
-If a section has no fresh content, shrink or omit it. Never fabricate stories.
-
----
-
-### Step 4: Generate the HTML
-
-Style anchors for the newspaper layout:
-
-- **Background:** `#f5efe1` | **Paper:** `#fbf6e9` | **Ink:** `#1a1a1a` | **Accent:** `#a02a2a`
-- **Fonts:** Georgia / Old Standard TT serif
-- **Masthead:** "The Copilot Chronicle" with tagline *Veritas · Productivitas · Intelligentia*
-- **Dateline:** Weekday, full date, role/team context, "Price: One Cup of Coffee"
-- **Lead story:** Kicker, linked h2 headline, italic deck, drop-cap first paragraph, pull quote with left red rule
-- **Section banners:** Black bar, cream text, letter-spaced
-- **Body layout:** Two-column via `column-count: 2`
-- **Footer:** Double-rule top, all source publications hyperlinked
-- **Link hover:** Red `#a02a2a` underline
+Si una sección no tiene contenido nuevo, redúcela u omítela. Nunca te inventes noticias.
 
 ---
 
-### Step 5: Hyperlinks (Required)
+### Paso 4: genera el HTML
 
-- **External stories:** Hyperlink the headline, byline, and a "Read more →" tail link
-- **Internal Field Desk items:** Hyperlink to the Outlook `webLink`
-- **Teams items:** Hyperlink to the chat, channel, or meeting URL
-- **Footer:** All source publications listed and hyperlinked
-- Never fabricate a link. If no URL is available, render plain text.
+Referencias de estilo para el diseño de periódico:
 
----
-
-### Step 6: Save and Send
-
-1. Write the file to `output/the-copilot-chronicle-YYYY-MM-DD.html`
-2. Verify the file exists
-3. Send via email:
-   - **To:** `{your email address here}`
-   - **Subject:** `The Copilot Chronicle — [Weekday], [Month] [DD], [YYYY]`
-   - **Body:** The saved HTML file
-   - **Content type:** HTML
+- **Fondo:** `#f5efe1` | **Papel:** `#fbf6e9` | **Tinta:** `#1a1a1a` | **Acento:** `#a02a2a`
+- **Tipografías:** Georgia / Old Standard TT con serifa
+- **Cabecera:** "The Copilot Chronicle" con el lema *Veritas · Productivitas · Intelligentia*
+- **Línea de fecha:** día de la semana, fecha completa, contexto de puesto o equipo, "Precio: un café"
+- **Noticia principal:** antetítulo, titular h2 enlazado, entradilla en cursiva, primer párrafo con letra capital y cita destacada con una línea roja a la izquierda
+- **Bandas de sección:** barra negra, texto crema, con espaciado entre letras
+- **Diseño del cuerpo:** dos columnas mediante `column-count: 2`
+- **Pie de página:** doble línea superior, todas las publicaciones de origen enlazadas
+- **Enlaces al pasar el ratón:** subrayado rojo `#a02a2a`
 
 ---
 
-### Step 7: Confirm
+### Paso 5: enlaces (obligatorio)
 
-Reply with the edition date, story count by section, and confirmation that it has been emailed. Do not paste the HTML back into chat.
-
----
-
-## Style Rules
-
-- Every story must trace to a real source. Never fabricate news, names, numbers, or quotes.
-- Crisp, slightly witty voice. Headlines can be punchy but never silly.
-- Keep blurbs to 2 to 4 sentences. Lead story gets 3 short paragraphs plus a pull quote.
-- If a section has nothing fresh, omit it rather than pad it.
+- **Noticias externas:** enlaza el titular, la firma y un enlace final "Leer más →"
+- **Elementos internos de la redacción:** enlaza al `webLink` de Outlook
+- **Elementos de Teams:** enlaza a la URL del chat, del canal o de la reunión
+- **Pie de página:** enumera y enlaza todas las publicaciones de origen
+- Nunca te inventes un enlace. Si no hay URL disponible, muestra texto sin enlace.
 
 ---
 
-## Guardrails
+### Paso 6: guarda y envía
 
-- Do not send the email until the HTML file exists in `output/`
-- Do not invent Outlook `webLink` values. Only link items returned from real Graph queries.
-- Do not include performance evaluations of named individuals.
-- Do not include personal or health data scraped from emails.
+1. Escribe el archivo en `output/the-copilot-chronicle-AAAA-MM-DD.html`
+2. Comprueba que el archivo existe
+3. Envíalo por correo:
+   - **Para:** `{escribe aquí tu dirección de correo}`
+   - **Asunto:** `The Copilot Chronicle — [día de la semana], [DD] de [mes] de [AAAA]`
+   - **Cuerpo:** el archivo HTML guardado
+   - **Tipo de contenido:** HTML
+
+---
+
+### Paso 7: confirma
+
+Responde con la fecha de la edición, el número de noticias por sección y la confirmación de que se ha enviado por correo. No pegues el HTML en el chat.
+
+---
+
+## Normas de estilo
+
+- Cada noticia debe proceder de una fuente real. Nunca te inventes noticias, nombres, cifras ni citas.
+- Voz nítida y con un punto de ingenio. Los titulares pueden ser llamativos, pero nunca ridículos.
+- Limita los textos breves a entre 2 y 4 frases. La noticia principal tiene 3 párrafos cortos y una cita destacada.
+- Si una sección no tiene nada nuevo, omítela en lugar de rellenarla.
+
+---
+
+## Salvaguardas
+
+- No envíes el correo hasta que el archivo HTML exista en `output/`
+- No te inventes valores de `webLink` de Outlook. Enlaza solo elementos devueltos por consultas reales a Graph.
+- No incluyas evaluaciones de desempeño de personas con nombre.
+- No incluyas datos personales ni de salud extraídos de correos.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

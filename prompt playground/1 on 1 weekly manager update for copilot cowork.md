@@ -1,314 +1,314 @@
-# Manager 1:1 Weekly Update
+# Actualización semanal para la reunión 1:1 con tu responsable
 
-## What This Is
+## Qué es
 
-A structured Copilot Cowork prompt that reviews your past week across meetings, emails, Teams chats, tasks, and customer activity to build a field impact readout for manager 1:1s. It analyzes where you directly contributed to healthcare accounts, where you supported account teams internally, and where adoption, licensing clarity, governance, or executive alignment may be at risk.
+Un prompt estructurado de Copilot Cowork que revisa tu última semana de reuniones, correos, chats de Teams, tareas y actividad con clientes para elaborar un informe de impacto para las reuniones 1:1 con tu responsable. Analiza dónde has contribuido directamente en cuentas del sector sanitario, dónde has apoyado internamente a equipos de cuenta y dónde puede haber riesgo en la adopción, la claridad de las licencias, la gobernanza o la alineación con la dirección.
 
-Each run automatically generates and emails a leadership-ready executive summary, along with a PowerPoint and HTML briefing that highlights portfolio impact, customer commitments, pending follow-ups, risks to Copilot adoption, and decisions that may require leadership support.
+Cada ejecución genera y envía por correo automáticamente un resumen ejecutivo listo para la dirección, junto con una presentación de PowerPoint y otra en HTML que destacan el impacto en la cartera, los compromisos con clientes, los seguimientos pendientes, los riesgos para la adopción de Copilot y las decisiones que pueden requerir apoyo de la dirección.
 
 > [!TIP]
-> Edit the customer list, folder path, recipient list, and weekly schedule before you turn it on. This works best when it reflects your actual account model and manager cadence.
+> Antes de activarlo, edita la lista de clientes, la ruta de la carpeta, la lista de destinatarios y la programación semanal. Funciona mejor cuando refleja tu modelo real de cuentas y el ritmo de reuniones con tu responsable.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-**Manager 1:1 Weekly Field Impact Readout**
+**Informe semanal de impacto para la reunión 1:1 con mi responsable**
 
-You are supporting preparation for my weekly 1:1 with my manager.
+Me estás ayudando a preparar mi reunión 1:1 semanal con mi responsable.
 
-Review the past 7 days across:
+Revisa los últimos 7 días de:
 
-- Outlook Calendar
-- Emails
-- Microsoft Teams chats
-- To Do / Planner tasks
-- Account-related communications
-- Customer workshops
-- Copilot / Agent strategy sessions
-- Executive briefings
-- Internal account support activity
-
----
-
-## Primary Focus
-
-Identify and summarize:
-
-1. Work I directly delivered for my assigned healthcare accounts
-2. Impact I created by supporting:
-   - Other Microsoft specialists
-   - Account Executives
-   - CSMs
-   - Architects
-   - Copilot Specialists
-   - Field teammates
-   - Their customer engagements or accounts
-3. Strategic influence or unblockers I contributed to:
-   - Adoption
-   - Licensing clarity
-   - Governance alignment
-   - Use case development
-   - Executive alignment
-   - AI / Copilot rollout readiness
-
-**Do NOT include:**
-
-- Meetings where I did not actively contribute
-- Generic email win wires not tied to my involvement
-- Passive attendance without impact
+- Calendario de Outlook
+- Correos
+- Chats de Microsoft Teams
+- Tareas de To Do / Planner
+- Comunicaciones relacionadas con cuentas
+- Talleres con clientes
+- Sesiones de estrategia sobre Copilot y agentes
+- Sesiones informativas para directivos
+- Actividad de apoyo interno a cuentas
 
 ---
 
-## Section 1: Portfolio Activity Summary
+## Enfoque principal
 
-Focus on customer-facing activity tied to healthcare accounts including:
+Identifica y resume:
 
-> [customer names here]
+1. El trabajo que he entregado directamente para las cuentas del sector sanitario que tengo asignadas
+2. El impacto que he generado apoyando a:
+   - Otros especialistas de Microsoft
+   - Ejecutivos de cuentas
+   - CSM
+   - Arquitectos
+   - Especialistas de Copilot
+   - Compañeros del equipo comercial
+   - Sus proyectos o cuentas con clientes
+3. La influencia estratégica o los desbloqueos a los que he contribuido en:
+   - Adopción
+   - Claridad sobre licencias
+   - Alineación de la gobernanza
+   - Desarrollo de casos de uso
+   - Alineación con la dirección
+   - Preparación para el despliegue de la IA / Copilot
 
-Also identify any new accounts appearing in communications.
+**NO incluyas:**
 
-For each account where activity occurred, summarize:
-
-- Work delivered
-- Outcomes influenced
-- Executive engagement supported
-- Copilot or Agent adoption activity
-- Licensing or governance discussions
-- Workshops or briefings led
-- Risks surfaced or mitigated
-
----
-
-## Section 2: External Customer Commitments
-
-List anything I committed to delivering externally:
-
-- Follow-up material
-- Demo scheduling
-- Technical validation
-- Architecture support
-- Copilot or Agent workshops
-- Executive briefings
-
-Include:
-
-- Customer name
-- Contact
-- Commitment made
-- What is at stake if missed
+- Reuniones en las que no contribuí activamente
+- Correos genéricos de celebración de éxitos (win wires) no relacionados con mi participación
+- Asistencia pasiva sin impacto
 
 ---
 
-## Section 3: Internal Support Impact
+## Sección 1: Resumen de la actividad en la cartera
 
-Identify actions where I supported:
+Céntrate en la actividad de cara al cliente relacionada con cuentas del sector sanitario, incluidas:
 
-- Other Microsoft sellers
-- Specialists
-- Architects
-- CSMs
-- Account Teams
+> [nombres de los clientes aquí]
 
-Include:
+Identifica también las cuentas nuevas que aparezcan en las comunicaciones.
 
-- Account impacted
-- Who I supported
-- Nature of contribution
-- Resulting outcome or unblocker created
+Para cada cuenta con actividad, resume:
 
----
-
-## Section 4: Pending Responses
-
-Highlight:
-
-- Customer emails awaiting response
-- Internal questions tied to customer work
-- Teams messages requiring follow-up
-
-Call out anything that may affect:
-
-- Deal progression
-- Adoption momentum
-- Executive alignment
-- Workshop readiness
-- Licensing clarity
+- Trabajo entregado
+- Resultados en los que se ha influido
+- Relación con directivos apoyada
+- Actividad de adopción de Copilot o de agentes
+- Conversaciones sobre licencias o gobernanza
+- Talleres o sesiones informativas dirigidos
+- Riesgos detectados o mitigados
 
 ---
 
-## Section 5: Risks or Blockers
+## Sección 2: Compromisos con clientes externos
 
-Identify anything that could:
+Enumera todo lo que me he comprometido a entregar externamente:
 
-- Delay delivery
-- Stall Copilot adoption
-- Create licensing confusion
-- Impact Copilot rollout
-- Damage customer relationship momentum
+- Material de seguimiento
+- Programación de demostraciones
+- Validación técnica
+- Apoyo de arquitectura
+- Talleres de Copilot o de agentes
+- Sesiones informativas para directivos
 
-Note where information is missing.
+Incluye:
 
----
-
-## Section 6: Copilot Adoption Risk Signals
-
-Across assigned healthcare tenants, flag:
-
-- Declining Copilot Chat usage
-- Departments below 20% Copilot activation
-- Licenses assigned with no usage
-- Active Chat but stagnant Premium usage
-- Rollouts stalled after pilot phase
-
-For each flagged account, summarize in 5 bullets:
-
-- **Account Name**
-- **Risk Level** (Low / Medium / High)
-- **Likely Adoption Blocker**
-- **Growth Risk**
-- **Recommended Intervention**
-
-Also indicate where I should:
-
-- Provide executive support
-- Coach account team
-- Coach Copilot specialist
-- Engage security or compliance stakeholders
+- Nombre del cliente
+- Contacto
+- Compromiso adquirido
+- Qué está en juego si no se cumple
 
 ---
 
-## Manager 1:1 Executive Output
+## Sección 3: Impacto del apoyo interno
 
-### Impact
+Identifica las acciones en las que he apoyado a:
 
-Summarize:
+- Otros comerciales de Microsoft
+- Especialistas
+- Arquitectos
+- CSM
+- Equipos de cuenta
 
-- Customer outcomes influenced
-- Adoption momentum created
-- Governance or licensing clarity enabled
-- Executive alignment driven
-- Internal field support delivered
+Incluye:
 
-### Challenges
-
-Summarize:
-
-- Adoption friction
-- Policy or governance blockers
-- Workflow misalignment
-- Executive sponsorship gaps
-- Tool access or connector limitations
-- Licensing confusion
-- Resource constraints
-
-### Decisions Required
-
-Call out:
-
-- Accounts needing escalation
-- Where leadership support is required
-- Where intervention could unblock adoption
-- Where coaching or technical engagement is needed
-- Where Premium growth risk exists
-
-### Plans for Next Week
-
-Outline:
-
-- Primary customer engagements
-- Strategic workshops
-- Adoption support activity
-- Internal coordination required
-- Deadlines requiring leadership awareness
+- Cuenta afectada
+- A quién he apoyado
+- Tipo de contribución
+- Resultado obtenido o bloqueo eliminado
 
 ---
 
-## Deliverables to Generate
+## Sección 4: Respuestas pendientes
 
-### A. Executive Summary
+Destaca:
 
-Concise 1-page leadership summary of:
+- Correos de clientes pendientes de respuesta
+- Preguntas internas relacionadas con el trabajo con clientes
+- Mensajes de Teams que requieren seguimiento
 
-- Portfolio impact
-- Internal support contributions
-- Adoption challenges
-- Growth risks
-- Decisions requiring leadership input
-- Top priorities for next week
+Señala todo lo que pueda afectar a:
 
-### B. PowerPoint Presentation
-
-**Title:** Weekly Field Impact Briefing
-
-Include slides for:
-
-- Portfolio Impact Summary
-- External Customer Commitments
-- Internal Support Contributions
-- Pending Responses
-- Risks or Blockers
-- Copilot Adoption Risk Signals
-- Impact
-- Challenges
-- Decisions Required
-- Next Week Priorities
-
-**Save to:** `Documents > Cowork > Manager 1:1 Briefings`
-
-### C. HTML Executive Review Presentation
-
-Mirror PowerPoint content for browser-based review.
-
-**Save in same folder.**
+- El avance de las ventas
+- El impulso de la adopción
+- La alineación con la dirección
+- La preparación de talleres
+- La claridad sobre licencias
 
 ---
 
-## Scheduling Requirement
+## Sección 5: Riesgos o bloqueos
 
-Run this analysis automatically:
+Identifica todo lo que pueda:
 
-- **Every Tuesday at 1:00 PM Central Time**
+- Retrasar la entrega
+- Frenar la adopción de Copilot
+- Generar confusión sobre licencias
+- Afectar al despliegue de Copilot
+- Dañar el impulso de la relación con el cliente
 
-Each weekly run should:
-
-- Re-evaluate customer impact across assigned healthcare accounts
-- Capture internal support contributions across peer-led engagements
-- Identify adoption blockers or delivery risks
-- Surface Copilot Premium growth risks
-- Highlight:
-  - Portfolio-level impact
-  - Cross-account influence
-  - Executive alignment activity
-  - Governance or licensing friction
-  - Required leadership intervention
-
-Then generate:
-
-- Updated Executive Summary
-- Updated PowerPoint Presentation
-- Updated HTML Executive Review Presentation
-
-**Saved under:** `Documents > Cowork > Manager 1:1 Briefings`
+Indica dónde falta información.
 
 ---
 
-## Final Step: Email Delivery
+## Sección 6: Señales de riesgo en la adopción de Copilot
 
-After generating all outputs, send an email with:
+En los inquilinos (tenants) del sector sanitario asignados, señala:
 
-**Subject:** Weekly Manager 1:1 Field Impact Readout
+- Descenso del uso de Copilot Chat
+- Departamentos con menos del 20 % de activación de Copilot
+- Licencias asignadas sin uso
+- Uso activo del chat pero uso estancado de Premium
+- Despliegues estancados después de la fase piloto
 
-**To:**
-- `[Your email here]`
-- `[Manager email here]`
+Para cada cuenta señalada, resume en 5 viñetas:
 
-**Body:**
-- Include the Executive Summary
-- Include a note that the full PowerPoint and HTML briefing have been created and saved under `Documents > Cowork > Manager 1:1 Briefings`
+- **Nombre de la cuenta**
+- **Nivel de riesgo** (bajo / medio / alto)
+- **Bloqueo probable de la adopción**
+- **Riesgo para el crecimiento**
+- **Intervención recomendada**
+
+Indica también dónde debería:
+
+- Aportar apoyo a nivel directivo
+- Orientar al equipo de cuenta
+- Orientar al especialista de Copilot
+- Implicar a las partes interesadas de seguridad o cumplimiento normativo
+
+---
+
+## Resultado ejecutivo para la reunión 1:1
+
+### Impacto
+
+Resume:
+
+- Resultados de clientes en los que se ha influido
+- Impulso de adopción generado
+- Claridad sobre gobernanza o licencias conseguida
+- Alineación con la dirección impulsada
+- Apoyo interno prestado al equipo comercial
+
+### Retos
+
+Resume:
+
+- Fricciones en la adopción
+- Bloqueos de políticas o de gobernanza
+- Desajustes en los flujos de trabajo
+- Carencias de patrocinio por parte de la dirección
+- Limitaciones de acceso a herramientas o conectores
+- Confusión sobre licencias
+- Limitaciones de recursos
+
+### Decisiones necesarias
+
+Señala:
+
+- Cuentas que hay que escalar
+- Dónde se necesita apoyo de la dirección
+- Dónde una intervención podría desbloquear la adopción
+- Dónde se necesita orientación o implicación técnica
+- Dónde existe riesgo para el crecimiento de Premium
+
+### Planes para la próxima semana
+
+Describe:
+
+- Principales proyectos con clientes
+- Talleres estratégicos
+- Actividad de apoyo a la adopción
+- Coordinación interna necesaria
+- Plazos que la dirección debe conocer
+
+---
+
+## Resultados que generar
+
+### A. Resumen ejecutivo
+
+Resumen conciso de una página para la dirección sobre:
+
+- Impacto en la cartera
+- Contribuciones de apoyo interno
+- Retos de adopción
+- Riesgos para el crecimiento
+- Decisiones que requieren la opinión de la dirección
+- Prioridades principales para la próxima semana
+
+### B. Presentación de PowerPoint
+
+**Título:** Informe semanal de impacto
+
+Incluye diapositivas de:
+
+- Resumen del impacto en la cartera
+- Compromisos con clientes externos
+- Contribuciones de apoyo interno
+- Respuestas pendientes
+- Riesgos o bloqueos
+- Señales de riesgo en la adopción de Copilot
+- Impacto
+- Retos
+- Decisiones necesarias
+- Prioridades de la próxima semana
+
+**Guardar en:** `Documentos > Cowork > Informes 1:1 con mi responsable`
+
+### C. Presentación HTML para revisión ejecutiva
+
+Reproduce el contenido del PowerPoint para revisarlo en el navegador.
+
+**Guárdala en la misma carpeta.**
+
+---
+
+## Programación
+
+Ejecuta este análisis automáticamente:
+
+- **Todos los martes a las 13:00, hora de [tu zona horaria]**
+
+Cada ejecución semanal debe:
+
+- Reevaluar el impacto en los clientes de las cuentas del sector sanitario asignadas
+- Recoger las contribuciones de apoyo interno en proyectos liderados por compañeros
+- Identificar bloqueos de adopción o riesgos de entrega
+- Mostrar los riesgos para el crecimiento de Copilot Premium
+- Destacar:
+  - El impacto a nivel de cartera
+  - La influencia entre cuentas
+  - La actividad de alineación con la dirección
+  - Las fricciones de gobernanza o licencias
+  - Las intervenciones necesarias de la dirección
+
+Después genera:
+
+- El resumen ejecutivo actualizado
+- La presentación de PowerPoint actualizada
+- La presentación HTML para revisión ejecutiva actualizada
+
+**Guardado en:** `Documentos > Cowork > Informes 1:1 con mi responsable`
+
+---
+
+## Paso final: envío por correo
+
+Después de generar todos los resultados, envía un correo con:
+
+**Asunto:** Informe semanal de impacto para la reunión 1:1 con mi responsable
+
+**Para:**
+- `[Tu correo aquí]`
+- `[Correo de tu responsable aquí]`
+
+**Cuerpo:**
+- Incluye el resumen ejecutivo
+- Incluye una nota indicando que la presentación completa de PowerPoint y la versión HTML se han creado y guardado en `Documentos > Cowork > Informes 1:1 con mi responsable`
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
