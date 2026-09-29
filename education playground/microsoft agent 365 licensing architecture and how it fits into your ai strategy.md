@@ -1,305 +1,305 @@
-# Microsoft Agent 365: Licensing, Architecture, and How It Fits Into Your AI Strategy
+# Microsoft Agent 365: licencias, arquitectura y cómo encaja en tu estrategia de IA
 
-> **About this document:** This is a technical reference built entirely from public Microsoft documentation. Every claim links to a public source. It covers what Agent 365 is, how licensing works, and how it relates to Copilot Studio, Copilot Chat, and Foundry — including the mixed-licensing questions that come up most often.
-
----
-
-## Executive Summary
-
-**Microsoft Agent 365 is not an agent builder and it is not the runtime for agents.** It is Microsoft's **control plane for AI agents**: the product IT and security teams use to **observe, govern, and secure** agents across the organization, from the **Microsoft 365 admin center** and adjacent security/admin surfaces.
-
-Microsoft builds and runs agents through **Microsoft Copilot Studio**, **Microsoft 365 declarative/custom agents**, and **Microsoft Foundry Agent Service**. Agent 365 is the layer that manages the **agent estate** across those systems.
-
-**The key licensing point:** Microsoft's licensing FAQ says **Agent 365 is licensed per user, not per agent**, whether you buy it standalone or as part of **Microsoft 365 E7**. **Agents do not require their own Agent 365 licenses.** Official pricing: **$15/user/month** standalone, **$99/user/month** for Microsoft 365 E7.
-
-**The short version:** Agent 365 is **organization-wide as a management surface**, but **user-scoped as a license**. It is a tenant-wide control plane with a per-user commercial model, not a per-agent "premium mode" that changes the agent itself.
-
-**Sources:** [microsoft.com/en-us/microsoft-agent-365](https://www.microsoft.com/en-us/microsoft-agent-365), [learn.microsoft.com/en-us/microsoft-agent-365/overview](https://learn.microsoft.com/en-us/microsoft-agent-365/overview), [microsoft.com/licensing/faqs/122](https://www.microsoft.com/licensing/faqs/122)
-
+> **Sobre este documento:** es una referencia técnica elaborada íntegramente a partir de documentación pública de Microsoft. Cada afirmación enlaza a una fuente pública (la mayoría en inglés). Explica qué es Agent 365, cómo funcionan sus licencias y cómo se relaciona con Copilot Studio, Copilot Chat y Foundry, incluidas las preguntas sobre licencias mixtas que surgen con más frecuencia.
 
 ---
 
-## 1. What Microsoft Agent 365 Is
+## Resumen ejecutivo
 
-### The Three-Plane Mental Model
+**Microsoft Agent 365 no es una herramienta para crear agentes ni el entorno en el que se ejecutan.** Es el **plano de control de Microsoft para agentes de IA**: el producto que usan los equipos de TI y de seguridad para **observar, gobernar y proteger** los agentes de toda la organización, desde el **centro de administración de Microsoft 365** y las consolas de seguridad y administración relacionadas.
 
-| Plane | What it is | Products |
+Microsoft crea y ejecuta agentes mediante **Microsoft Copilot Studio**, los **agentes declarativos o personalizados de Microsoft 365** y **Microsoft Foundry Agent Service**. Agent 365 es la capa que gestiona el **conjunto de agentes** de todos esos sistemas.
+
+**La clave de las licencias:** las preguntas frecuentes sobre licencias de Microsoft indican que **Agent 365 se licencia por usuario, no por agente**, tanto si se compra por separado como dentro de **Microsoft 365 E7**. **Los agentes no necesitan su propia licencia de Agent 365.** Precio oficial: **15 $/usuario/mes** por separado, **99 $/usuario/mes** con Microsoft 365 E7.
+
+**En resumen:** Agent 365 abarca **toda la organización como consola de gestión**, pero se **asigna por usuario como licencia**. Es un plano de control para todo el inquilino con un modelo comercial por usuario, no un "modo premium" por agente que cambie el propio agente.
+
+**Fuentes:** [microsoft.com/en-us/microsoft-agent-365](https://www.microsoft.com/en-us/microsoft-agent-365), [learn.microsoft.com/en-us/microsoft-agent-365/overview](https://learn.microsoft.com/en-us/microsoft-agent-365/overview), [microsoft.com/licensing/faqs/122](https://www.microsoft.com/licensing/faqs/122)
+
+
+---
+
+## 1. Qué es Microsoft Agent 365
+
+### El modelo mental de los tres planos
+
+| Plano | Qué es | Productos |
 |---|---|---|
-| **Build** | Where agents are authored | Microsoft 365 declarative/custom agents, Microsoft Copilot Studio, Microsoft Foundry Agent Service |
-| **Runtime** | Where agents execute | Microsoft 365 channels (Copilot Chat, Teams, Outlook, SharePoint), Foundry Agent Service runtime |
-| **Control** | Where IT/security governs the agent estate | Microsoft Agent 365, Copilot Control System (CCS) |
+| **Creación** | Donde se crean los agentes | Agentes declarativos o personalizados de Microsoft 365, Microsoft Copilot Studio, Microsoft Foundry Agent Service |
+| **Ejecución** | Donde se ejecutan los agentes | Canales de Microsoft 365 (Copilot Chat, Teams, Outlook, SharePoint), entorno de ejecución de Foundry Agent Service |
+| **Control** | Donde TI y seguridad gobiernan el conjunto de agentes | Microsoft Agent 365, Copilot Control System (CCS) |
 
-### Product-by-Product Relationship to Agent 365
+### Relación de cada producto con Agent 365
 
-| Product / Framework | What it is | How Agent 365 relates |
+| Producto o marco | Qué es | Cómo se relaciona Agent 365 |
 |---|---|---|
-| **Microsoft 365 agents** | Agents that extend Copilot in Microsoft 365 | Agent 365 is the control plane to observe/govern/secure them as part of the org's agent estate |
-| **Microsoft Copilot Studio** | Low-code/full experience to build agents | Agent 365 does not replace Copilot Studio billing/runtime; it governs the agents after they exist in the environment |
-| **Microsoft 365 Copilot Chat** | End-user chat surface with agents | Agent 365 is not the Copilot Chat runtime meter; it is the governance/security/observability plane around agents and their use |
-| **Microsoft Foundry Agent Service** | Fully managed agent platform on Azure/Microsoft Foundry | Agent 365 provides centralized governance/identity/security for the fleet, including agents built outside Microsoft 365-native tooling |
-| **Other / third-party / non-Microsoft frameworks** | External or custom frameworks | Agent 365 can manage agents regardless of where they are built or acquired; the Agent 365 SDK explicitly supports any agent SDK or platform |
+| **Agentes de Microsoft 365** | Agentes que amplían Copilot en Microsoft 365 | Agent 365 es el plano de control para observarlos, gobernarlos y protegerlos como parte del conjunto de agentes de la organización |
+| **Microsoft Copilot Studio** | Experiencia de bajo código o completa para crear agentes | Agent 365 no sustituye la facturación ni la ejecución de Copilot Studio; gobierna los agentes una vez que existen en el entorno |
+| **Microsoft 365 Copilot Chat** | Interfaz de chat para el usuario final con agentes | Agent 365 no es el medidor de ejecución de Copilot Chat; es el plano de gobernanza, seguridad y observabilidad en torno a los agentes y su uso |
+| **Microsoft Foundry Agent Service** | Plataforma de agentes totalmente gestionada en Azure / Microsoft Foundry | Agent 365 aporta gobernanza, identidad y seguridad centralizadas para todo el conjunto, incluidos los agentes creados fuera de las herramientas propias de Microsoft 365 |
+| **Otros marcos, de terceros o no de Microsoft** | Marcos externos o personalizados | Agent 365 puede gestionar agentes independientemente de dónde se hayan creado o adquirido; el SDK de Agent 365 admite expresamente cualquier SDK o plataforma de agentes |
 
-### CCS vs. Agent 365
+### CCS frente a Agent 365
 
-These two are frequently confused:
+Se confunden con frecuencia:
 
-**Copilot Control System (CCS)** is the **governance framework** for Microsoft 365 Copilot and agents. It spans security and governance, management controls, and measurement/reporting for Microsoft 365 Copilot, Copilot Chat, Microsoft 365 prebuilt agents, and Copilot Studio agents published to Microsoft 365 channels.
+**Copilot Control System (CCS)** es el **marco de gobernanza** de Microsoft 365 Copilot y los agentes. Abarca la seguridad y la gobernanza, los controles de gestión y la medición y los informes de Microsoft 365 Copilot, Copilot Chat, los agentes precompilados de Microsoft 365 y los agentes de Copilot Studio publicados en canales de Microsoft 365.
 
-**Microsoft Agent 365** is the **product and control plane for AI agents**: a SKU with centralized registry, lifecycle, security, and role-specific oversight for the agent estate across the organization.
+**Microsoft Agent 365** es el **producto y plano de control para agentes de IA**: una SKU con registro centralizado, ciclo de vida, seguridad y supervisión específica por rol para el conjunto de agentes de toda la organización.
 
-The practical distinction: CCS is Microsoft's overall governance framework for Copilot and Microsoft 365 agent experiences; Agent 365 is the specific control-plane product for governing the agent fleet.
-
----
-
-## 2. Architecture, Identity, Lifecycle, Data Access, and Logging
-
-### 2.1 Agent Lifecycle and Registry
-
-Agent 365 gives admins a **single, centralized registry** of all agents in the organization, with unified visibility into **adoption, activity, and health**. Governance runs through the **Agent 365 registry in the Microsoft 365 admin center**, **Microsoft Entra**, and **Microsoft Purview**.
-
-CCS management-controls documentation covers lifecycle management including visibility into the **status, governance, and lifecycle of agents and connectors**, with management from **initial deployment through retirement**, plus approval workflows, sharing/coauthoring rules, and DLP-based publishing restrictions.
-
-The agent inventory/lifecycle record is becoming first-class: who owns/sponsors it, where it was built, what policies apply, and whether it is still approved to run. That is a meaningful shift from the earlier model where governance was an afterthought.
-
-### 2.2 Identity and Execution Context
-
-Microsoft Entra Agent ID is the technical foundation for agent identity. An **agent identity is a special service principal in Microsoft Entra ID**. It is created from an **agent identity blueprint**, can have a **sponsor** for human accountability, and can optionally be paired with an **agent's user account** when the agent needs a full Entra user account for authentication to systems that require it.
-
-Two fundamental execution patterns:
-
-1. **User-delegated / on-behalf-of (OBO):** Interactive agents called with a user token acquire user tokens on behalf of the agent identity
-2. **Agent-own / autonomous:** Autonomous agents acquire app tokens on behalf of the agent identity
-
-The Agent 365 SDK can give agents **Entra-backed Agent Identity**, their own user resources such as **mailbox**, auditable telemetry via **OpenTelemetry**, and access to governed **MCP servers** for Microsoft 365 workloads under admin control.
-
-### 2.3 Authorization Boundaries and Least Privilege
-
-Microsoft introduced agent identities because normal app registrations or user accounts are not well-suited for AI agents. Microsoft explicitly blocks agents from many **high-privilege roles or permissions** to preserve **least privilege**.
-
-The architecture is built around a **constrained identity model** for agents, with special handling because AI agents can act autonomously and at scale.
-
-### 2.4 Data Access and Tools
-
-For **Microsoft 365-bound agents**, data access is governed through standard Microsoft 365 / Purview / SharePoint controls. Organizations can use **Microsoft Purview** and **SharePoint Advanced Management** to identify oversharing, restrict access, apply labels, and control data exposure for Copilot and agents.
-
-For **Foundry agents**, the Foundry runtime supports tools with managed authentication, including **service managed credentials** and **On-Behalf-Of (OBO)** authentication. Foundry can publish/share through Microsoft Teams, Microsoft 365 Copilot, and the **Entra Agent Registry**.
-
-**Agent 365-enabled** agents can invoke governed Work IQ MCP servers to access Microsoft 365 workloads through the Agent 365 tooling gateway. Supported workloads include Outlook Mail, Outlook Calendar, SharePoint, OneDrive, Teams, Word, and more. IT admins manage which servers are active and what permissions apply directly from the Microsoft 365 admin center. Access through these servers is user-scoped, auditable, and gated behind the Microsoft 365 Copilot license.
- 
-
-### 2.5 Logging, Observability, and Security Telemetry
-
-The observability story spans the control plane and the runtime:
-
-- **Agent 365:** centralized registry, adoption/activity/health, role-specific oversight for AI admins, security leaders, and business leaders
-- **Agent 365 SDK:** OpenTelemetry, audited/traceable interactions, inference events, and tool usage
-- **Foundry Agent Service:** end-to-end tracing, metrics, and Application Insights integration
-- **Microsoft Security Blog (GA announcement):** Agent 365 is built around end-to-end observability because "you can't govern what you can't see"
-
-Security and compliance coverage:
-
-- **Purview** for information protection, DLP, and risk safeguards
-- **Defender** for threat detection and real-time protection
-- **Entra** for risk-based access control for users and agents acting on their behalf
+La diferencia práctica: CCS es el marco general de gobernanza de Microsoft para Copilot y las experiencias de agentes de Microsoft 365; Agent 365 es el producto concreto de plano de control para gobernar el conjunto de agentes.
 
 ---
 
-## 3. Licensing Model: Per-User, Tenant-Wide, and Runtime Consumption
+## 2. Arquitectura, identidad, ciclo de vida, acceso a datos y registros
 
-### The Key Distinction
+### 2.1 Ciclo de vida y registro de agentes
 
-Agent 365 licensing is **not** the same as Copilot Studio runtime consumption and **not** the same as Microsoft 365 Copilot user licensing. There are three separate commercial layers:
+Agent 365 ofrece a los administradores un **registro único y centralizado** de todos los agentes de la organización, con una visión unificada de su **adopción, actividad y estado**. La gobernanza se realiza a través del **registro de Agent 365 en el centro de administración de Microsoft 365**, **Microsoft Entra** y **Microsoft Purview**.
 
-1. **Microsoft Agent 365**: per-user control-plane license; agents do not need their own licenses; official pricing is **$15/user/month**; no consumption-based cost for Agent 365 yet
-2. **Microsoft 365 Copilot**: per-user productivity/agent usage license for Microsoft 365 experiences; some agent usage in Microsoft 365 channels is included/zero-rated
-3. **Copilot Studio / Copilot Chat metering**: PAYG / prepaid / Copilot Credits for certain agent scenarios, especially for Copilot Chat users and for agents that access tenant data or use more advanced orchestration/actions
+La documentación de los controles de gestión de CCS cubre la gestión del ciclo de vida, incluida la visibilidad del **estado, la gobernanza y el ciclo de vida de agentes y conectores**, con gestión **desde el despliegue inicial hasta la retirada**, además de flujos de aprobación, reglas de uso compartido y coautoría, y restricciones de publicación basadas en DLP.
 
-### What Microsoft Officially Documents
+El inventario y el registro del ciclo de vida de los agentes están pasando a primer plano: quién es su propietario o patrocinador, dónde se creó, qué directivas se le aplican y si sigue aprobado para ejecutarse. Es un cambio importante respecto al modelo anterior, en el que la gobernanza llegaba a posteriori.
 
-- Agent 365 is licensed **per user**, not per agent
-- **Agents do not require their own Agent 365 licenses**
-- Agent 365 can be bought standalone or through **Microsoft 365 E7**
-- Microsoft 365 Copilot-licensed users get agent use in Microsoft 365 channels, and certain interactions are **zero-rated** in Copilot Chat / Teams / SharePoint
-- Copilot Chat users can use some agents at **no additional cost**, but agents that access **shared tenant data** are **metered** and require billing setup via Microsoft 365 admin center or Power Platform admin center
+### 2.2 Identidad y contexto de ejecución
 
-### Why This Matters
+Microsoft Entra Agent ID es la base técnica de la identidad de los agentes. Una **identidad de agente es una entidad de servicio especial de Microsoft Entra ID**. Se crea a partir de un **modelo (blueprint) de identidad de agente**, puede tener un **patrocinador** que asuma la responsabilidad humana y, opcionalmente, puede ir asociada a una **cuenta de usuario del agente** cuando este necesita una cuenta de usuario de Entra completa para autenticarse en sistemas que lo exigen.
 
-A common misconception is treating Agent 365 as an all-or-nothing tenant switch that changes agent behavior for everyone. That is not what Microsoft documents. The distinction is:
+Dos patrones de ejecución fundamentales:
 
-- **Agent 365** = control plane / governance / security / observability layer
-- **Microsoft 365 Copilot / Copilot Chat / Copilot Studio** = user experience + build/runtime + consumption/licensing mechanics
+1. **Delegado por el usuario / en nombre de (OBO):** los agentes interactivos invocados con un token de usuario obtienen tokens de usuario en nombre de la identidad del agente
+2. **Propio del agente / autónomo:** los agentes autónomos obtienen tokens de aplicación en nombre de la identidad del agente
+
+El SDK de Agent 365 puede dar a los agentes una **identidad de agente respaldada por Entra**, sus propios recursos de usuario, como un **buzón**, telemetría auditable mediante **OpenTelemetry** y acceso a **servidores MCP** gobernados para cargas de trabajo de Microsoft 365, bajo el control de los administradores.
+
+### 2.3 Límites de autorización y privilegio mínimo
+
+Microsoft introdujo las identidades de agente porque los registros de aplicaciones normales o las cuentas de usuario no se adaptan bien a los agentes de IA. Microsoft impide expresamente que los agentes tengan muchos **roles o permisos con privilegios elevados** para preservar el **privilegio mínimo**.
+
+La arquitectura se basa en un **modelo de identidad restringido** para los agentes, con un tratamiento especial porque los agentes de IA pueden actuar de forma autónoma y a gran escala.
+
+### 2.4 Acceso a datos y herramientas
+
+En los **agentes vinculados a Microsoft 365**, el acceso a los datos se gobierna mediante los controles estándar de Microsoft 365, Purview y SharePoint. Las organizaciones pueden usar **Microsoft Purview** y **SharePoint Advanced Management** para detectar el uso compartido excesivo, restringir el acceso, aplicar etiquetas y controlar la exposición de datos a Copilot y a los agentes.
+
+En los **agentes de Foundry**, el entorno de ejecución de Foundry admite herramientas con autenticación gestionada, como las **credenciales gestionadas por el servicio** y la autenticación **en nombre de (OBO)**. Foundry puede publicar y compartir a través de Microsoft Teams, Microsoft 365 Copilot y el **registro de agentes de Entra**.
+
+Los agentes **habilitados para Agent 365** pueden invocar servidores MCP de Work IQ gobernados para acceder a cargas de trabajo de Microsoft 365 a través de la puerta de enlace de herramientas de Agent 365. Entre las cargas de trabajo admitidas están el correo y el calendario de Outlook, SharePoint, OneDrive, Teams, Word y otras. Los administradores de TI gestionan qué servidores están activos y qué permisos se aplican directamente desde el centro de administración de Microsoft 365. El acceso a través de estos servidores está limitado al usuario, es auditable y requiere la licencia de Microsoft 365 Copilot.
+
+
+### 2.5 Registros, observabilidad y telemetría de seguridad
+
+La observabilidad abarca el plano de control y el entorno de ejecución:
+
+- **Agent 365:** registro centralizado, adopción, actividad y estado, y supervisión específica por rol para administradores de IA, responsables de seguridad y responsables de negocio
+- **SDK de Agent 365:** OpenTelemetry, interacciones auditadas y trazables, eventos de inferencia y uso de herramientas
+- **Foundry Agent Service:** trazabilidad de extremo a extremo, métricas e integración con Application Insights
+- **Blog de seguridad de Microsoft (anuncio de disponibilidad general):** Agent 365 se basa en la observabilidad de extremo a extremo, porque no se puede gobernar lo que no se ve
+
+Cobertura de seguridad y cumplimiento normativo:
+
+- **Purview** para la protección de la información, DLP y las salvaguardas frente a riesgos
+- **Defender** para la detección de amenazas y la protección en tiempo real
+- **Entra** para el control de acceso basado en riesgos de los usuarios y de los agentes que actúan en su nombre
 
 ---
 
-## 4. Mixed Licensing: One Shared Agent, Some Users Licensed, Some Not
+## 3. Modelo de licencias: por usuario, en todo el inquilino y consumo en ejecución
 
-### The Agent Does Not Become a Different Agent
+### La distinción clave
 
-Microsoft describes Agent 365 as a **control plane** and states that **agents do not require their own licenses**. There is no Microsoft documentation saying that assigning Agent 365 to some users transforms the existing agent into a different "premium" artifact or removes access from users who otherwise have access through the underlying channel/product path.
+Las licencias de Agent 365 **no** son lo mismo que el consumo en ejecución de Copilot Studio ni lo mismo que las licencias de usuario de Microsoft 365 Copilot. Hay tres capas comerciales distintas:
 
-**The agent itself is unchanged.** What changes is the **control-plane coverage and management posture** around that agent, not the agent object itself.
+1. **Microsoft Agent 365**: licencia de plano de control por usuario; los agentes no necesitan su propia licencia; precio oficial de **15 $/usuario/mes**; de momento Agent 365 no tiene costes por consumo
+2. **Microsoft 365 Copilot**: licencia por usuario para la productividad y el uso de agentes en las experiencias de Microsoft 365; parte del uso de agentes en los canales de Microsoft 365 está incluido o tiene coste cero
+3. **Medición de Copilot Studio / Copilot Chat**: pago por uso, prepago o créditos de Copilot para determinados escenarios de agentes, sobre todo para usuarios de Copilot Chat y para agentes que acceden a datos del inquilino o usan orquestación o acciones más avanzadas
 
-### The User's Ability to Use the Agent Still Depends on the Underlying Path
+### Lo que Microsoft documenta oficialmente
 
-- For **Microsoft 365 Copilot licensed users**, agent use comes with that license, and certain usage is zero-rated in Microsoft 365 channels
-- For **Copilot Chat** users, some agents (instructions + public websites only) are no-additional-cost, but agents that access tenant data are metered and require billing setup
+- Agent 365 se licencia **por usuario**, no por agente
+- **Los agentes no necesitan su propia licencia de Agent 365**
+- Agent 365 se puede comprar por separado o mediante **Microsoft 365 E7**
+- Los usuarios con licencia de Microsoft 365 Copilot pueden usar agentes en los canales de Microsoft 365, y determinadas interacciones tienen **coste cero** en Copilot Chat, Teams y SharePoint
+- Los usuarios de Copilot Chat pueden usar algunos agentes **sin coste adicional**, pero los agentes que acceden a **datos compartidos del inquilino** se **miden** y requieren configurar la facturación en el centro de administración de Microsoft 365 o en el de Power Platform
 
-Agent 365 is not the gate that determines whether a user can invoke a shared agent. That depends on Copilot / Copilot Chat / Teams / SharePoint / Copilot Studio access and metering rules.
+### Por qué importa
 
-### Agent 365 Entitlement is Per-User
+Un error habitual es tratar Agent 365 como un interruptor de todo o nada para el inquilino que cambia el comportamiento de los agentes para todos. No es lo que documenta Microsoft. La distinción es:
 
-Microsoft's licensing FAQ says Agent 365 is **per user**, not per agent, and is tied to the user associated with the agent use case.
-
-One shared agent can continue to be shared. Agent 365 entitlement attaches to the users and scenarios you license. Agent 365 is not a per-agent runtime license that forces every end user of a shared agent into the paid entitlement.
+- **Agent 365** = capa de plano de control, gobernanza, seguridad y observabilidad
+- **Microsoft 365 Copilot / Copilot Chat / Copilot Studio** = experiencia de usuario + creación y ejecución + mecánica de consumo y licencias
 
 ---
 
-## 5. What Actually Happens With a Shared Agent When Only Some Users Are Licensed
+## 4. Licencias mixtas: un agente compartido, algunos usuarios con licencia y otros sin ella
 
-One of the most common licensing questions once Agent 365 enters the picture: if your organization has a shared agent used by 1,000 people but only 100 are licensed for Agent 365, what actually happens to the other 900?
+### El agente no se convierte en otro agente
 
-This is the question that comes up most in the field, and the honest answer is: Microsoft’s public documentation covers most of it, but not all of it.
+Microsoft describe Agent 365 como un **plano de control** y afirma que **los agentes no necesitan su propia licencia**. No hay documentación de Microsoft que diga que asignar Agent 365 a algunos usuarios transforme el agente existente en un elemento "premium" distinto o retire el acceso a usuarios que ya lo tienen por la vía del canal o producto subyacente.
 
-Here's what we know for certain.
+**El propio agente no cambia.** Lo que cambia es la **cobertura del plano de control y el nivel de gestión** en torno a ese agente, no el objeto del agente en sí.
 
-**The agent itself does not change.** Agent 365 is the control plane around the agent, not the agent itself. Assigning Agent 365 licenses to some users does not turn the shared agent into a different "premium" version for those people.
+### La posibilidad de que un usuario use el agente sigue dependiendo de la vía subyacente
 
-**Whether a user can actually use the agent has nothing to do with Agent 365.** That depends on their underlying license path — Microsoft 365 Copilot, Copilot Chat, Teams, SharePoint — and how the agent is built. If the agent only uses public web data, some Copilot Chat users can access it at no extra cost. If it accesses tenant data, it's metered and requires billing setup regardless of Agent 365.
+- Para los **usuarios con licencia de Microsoft 365 Copilot**, el uso de agentes viene con esa licencia, y parte del uso tiene coste cero en los canales de Microsoft 365
+- Para los usuarios de **Copilot Chat**, algunos agentes (solo instrucciones + sitios web públicos) no tienen coste adicional, pero los que acceden a datos del inquilino se miden y requieren configurar la facturación
 
-**Agent 365 entitlement is per user.** Licensed users are within that commercial scope. Unlicensed users are not. But that does not mean unlicensed users lose access to the agent — it means they are outside the Agent 365 governance and observability entitlement.
+Agent 365 no es la puerta que determina si un usuario puede invocar un agente compartido. Eso depende de las reglas de acceso y medición de Copilot, Copilot Chat, Teams, SharePoint y Copilot Studio.
 
-**Security and governance controls like Entra, Purview, and Defender apply at the tenant and agent level, not just to licensed users.** Those protections are not gated behind individual Agent 365 licenses.
+### El derecho de uso de Agent 365 es por usuario
+
+Las preguntas frecuentes sobre licencias de Microsoft indican que Agent 365 es **por usuario**, no por agente, y está vinculado al usuario asociado al caso de uso del agente.
+
+Un agente compartido puede seguir compartiéndose. El derecho de uso de Agent 365 se asocia a los usuarios y escenarios que licencies. Agent 365 no es una licencia de ejecución por agente que obligue a todos los usuarios finales de un agente compartido a tener el derecho de pago.
+
+---
+
+## 5. Qué ocurre realmente con un agente compartido cuando solo algunos usuarios tienen licencia
+
+Una de las preguntas sobre licencias más frecuentes cuando entra en juego Agent 365: si tu organización tiene un agente compartido que usan 1.000 personas pero solo 100 tienen licencia de Agent 365, ¿qué ocurre realmente con las otras 900?
+
+Es la pregunta que más surge en el trabajo con clientes, y la respuesta sincera es que la documentación pública de Microsoft cubre la mayor parte, pero no todo.
+
+Esto es lo que se sabe con certeza.
+
+**El propio agente no cambia.** Agent 365 es el plano de control en torno al agente, no el agente en sí. Asignar licencias de Agent 365 a algunos usuarios no convierte el agente compartido en una versión "premium" distinta para esas personas.
+
+**Que un usuario pueda usar realmente el agente no tiene nada que ver con Agent 365.** Depende de su vía de licencia subyacente (Microsoft 365 Copilot, Copilot Chat, Teams, SharePoint) y de cómo esté creado el agente. Si el agente solo usa datos de la web pública, algunos usuarios de Copilot Chat pueden acceder a él sin coste adicional. Si accede a datos del inquilino, se mide y requiere configurar la facturación, con independencia de Agent 365.
+
+**El derecho de uso de Agent 365 es por usuario.** Los usuarios con licencia están dentro de ese ámbito comercial. Los que no la tienen, no. Pero eso no significa que los usuarios sin licencia pierdan el acceso al agente, sino que quedan fuera del derecho de gobernanza y observabilidad de Agent 365.
+
+**Los controles de seguridad y gobernanza como Entra, Purview y Defender se aplican a nivel de inquilino y de agente, no solo a los usuarios con licencia.** Esas protecciones no dependen de las licencias individuales de Agent 365.
 
 > [!NOTE]
-> **Where documentation still has a gap:** Microsoft has not yet published a clear answer to what Agent 365 telemetry and observability looks like when a shared agent is used by a mix of licensed and unlicensed users. The org-wide control plane story is well documented. The exact visibility partitioning for mixed-user scenarios is not. That is a documentation gap, not necessarily a product gap.
+> **Dónde sigue habiendo una laguna en la documentación:** Microsoft todavía no ha publicado una respuesta clara sobre cómo son la telemetría y la observabilidad de Agent 365 cuando un agente compartido lo usan a la vez usuarios con y sin licencia. El plano de control para toda la organización está bien documentado. La división exacta de la visibilidad en escenarios con usuarios mixtos, no. Es una laguna de la documentación, no necesariamente del producto.
 ---
 
-## 6. Table 2: Tenant-Level Features vs. User-Level Licensed Features
+## 6. Tabla 2: funciones a nivel de inquilino frente a funciones con licencia por usuario
 
-| Scope | Feature / Capability | What Microsoft Officially Documents |
+| Ámbito | Función o capacidad | Lo que Microsoft documenta oficialmente |
 |---|---|---|
-| **Tenant / org-wide / agent-estate** | Centralized registry of agents, with adoption/activity/health visibility | Admins can view all agents in a centralized registry, with role-specific oversight for different leaders/admins. |
-| **Tenant / org-wide / agent-estate** | Lifecycle management (status, governance, deployment, retirement) | CCS management controls covers lifecycle from deployment to retirement, including approval workflows, sharing/coauthoring controls, and DLP publishing restrictions. |
-| **Tenant / org-wide / agent-estate** | Security and governance controls for Copilot and agents | CCS security-and-governance docs describe data security, AI security, and compliance/privacy controls using Microsoft 365 admin center, SharePoint Advanced Management, Purview, and Defender. |
-| **Tenant / org-wide / runtime/billing config** | PAYG / metering setup for Copilot Chat or Copilot Studio | Admins can set up pay-as-you-go / prepaid / Azure billing for Copilot Chat and Copilot Studio consumption scenarios. |
-| **Per user** | Agent 365 license assignment | Official licensing FAQ says Agent 365 is per user, not per agent. |
-| **Per user** | Microsoft 365 Copilot included/zero-rated usage for certain agent interactions | Microsoft 365 Copilot licensed users get zero-rated usage for classic answers, generative answers, and Graph tenant grounding in Microsoft 365 channels. |
-| **Per user** | Copilot Chat access path to no-cost or metered agents | Some agents are no-additional-cost and others are metered for Copilot Chat users, depending on data access/capabilities. |
-| **Per user / user-associated scenario** | Agent identity association / delegated context / sponsor-owner model | Official licensing FAQ ties Agent 365 to the user associated with agent usage; Entra Agent ID docs describe sponsor accountability and user-delegated vs. autonomous token flows. |
+| **Inquilino / toda la organización / conjunto de agentes** | Registro centralizado de agentes, con visibilidad de adopción, actividad y estado | Los administradores pueden ver todos los agentes en un registro centralizado, con supervisión específica por rol para distintos responsables y administradores. |
+| **Inquilino / toda la organización / conjunto de agentes** | Gestión del ciclo de vida (estado, gobernanza, despliegue, retirada) | Los controles de gestión de CCS cubren el ciclo de vida desde el despliegue hasta la retirada, incluidos los flujos de aprobación, los controles de uso compartido y coautoría, y las restricciones de publicación con DLP. |
+| **Inquilino / toda la organización / conjunto de agentes** | Controles de seguridad y gobernanza para Copilot y los agentes | La documentación de seguridad y gobernanza de CCS describe los controles de seguridad de los datos, seguridad de la IA, cumplimiento normativo y privacidad mediante el centro de administración de Microsoft 365, SharePoint Advanced Management, Purview y Defender. |
+| **Inquilino / toda la organización / configuración de ejecución y facturación** | Configuración del pago por uso y la medición de Copilot Chat o Copilot Studio | Los administradores pueden configurar la facturación por uso, de prepago o de Azure para los escenarios de consumo de Copilot Chat y Copilot Studio. |
+| **Por usuario** | Asignación de licencias de Agent 365 | Las preguntas frecuentes oficiales sobre licencias indican que Agent 365 es por usuario, no por agente. |
+| **Por usuario** | Uso incluido o con coste cero de Microsoft 365 Copilot en determinadas interacciones con agentes | Los usuarios con licencia de Microsoft 365 Copilot tienen coste cero en las respuestas clásicas, las respuestas generativas y la fundamentación con datos del inquilino mediante Graph en los canales de Microsoft 365. |
+| **Por usuario** | Vía de acceso de Copilot Chat a agentes sin coste o medidos | Algunos agentes no tienen coste adicional y otros se miden para los usuarios de Copilot Chat, según el acceso a datos y sus capacidades. |
+| **Por usuario / escenario asociado al usuario** | Asociación de la identidad del agente / contexto delegado / modelo de patrocinador y propietario | Las preguntas frecuentes oficiales sobre licencias vinculan Agent 365 al usuario asociado al uso del agente; la documentación de Entra Agent ID describe la responsabilidad del patrocinador y los flujos de tokens delegados por el usuario frente a los autónomos. |
 
 ---
 
-## 7. What Changes — and What Doesn't — When You Add Agent 365
+## 7. Qué cambia, y qué no, cuando añades Agent 365
 
-### What Changes
+### Qué cambia
 
-**1. Your organization gets a centralized control plane.**
+**1. Tu organización obtiene un plano de control centralizado.**
 
-You get the Agent 365 registry with unified inventory, lifecycle, role-specific oversight, and integration with Entra/Purview/Defender controls for the managed agent environment.
+Obtienes el registro de Agent 365 con un inventario unificado, ciclo de vida, supervisión específica por rol e integración con los controles de Entra, Purview y Defender para el entorno de agentes gestionados.
 
-**2. Licensed users are within Agent 365 commercial entitlement.**
+**2. Los usuarios con licencia quedan dentro del derecho comercial de Agent 365.**
 
-Because Agent 365 is per-user, the users you license are the ones whose agent scenarios are clearly within that entitlement model.
+Como Agent 365 es por usuario, los usuarios a los que asignas la licencia son aquellos cuyos escenarios de agentes quedan claramente dentro de ese modelo de derecho de uso.
 
-**3. Security and governance posture becomes more explicit around agents.**
+**3. La postura de seguridad y gobernanza en torno a los agentes se hace más explícita.**
 
-Agent identity, least privilege boundaries, DLP/information protection, and threat detection/protection are all documented for managed agents and agents acting on behalf of users.
+La identidad de los agentes, los límites de privilegio mínimo, la DLP y la protección de la información, y la detección y protección frente a amenazas están documentadas para los agentes gestionados y para los agentes que actúan en nombre de usuarios.
 
-### What Does Not Change
+### Qué no cambia
 
-**1. The agent is still built and run where it was built and run.**
+**1. El agente se sigue creando y ejecutando donde se creaba y ejecutaba.**
 
-If it is a Copilot Studio agent, Copilot Studio remains the builder/runtime/billing engine. If it is a Foundry agent, Foundry remains the runtime. Agent 365 does not replace those services.
+Si es un agente de Copilot Studio, Copilot Studio sigue siendo el motor de creación, ejecución y facturación. Si es un agente de Foundry, Foundry sigue siendo el entorno de ejecución. Agent 365 no sustituye esos servicios.
 
-**2. The agent does not need its own Agent 365 license.**
+**2. El agente no necesita su propia licencia de Agent 365.**
 
-Microsoft's official licensing FAQ explicitly states agents do not require their own licenses.
+Las preguntas frecuentes oficiales sobre licencias de Microsoft indican expresamente que los agentes no necesitan su propia licencia.
 
-**3. Runtime consumption mechanics remain in place.**
+**3. La mecánica de consumo en ejecución se mantiene.**
 
-Copilot Studio still uses Copilot Credits / PAYG / prepaid models for the relevant scenarios, and Copilot Chat metered agent scenarios still require billing configuration where applicable.
+Copilot Studio sigue usando créditos de Copilot, pago por uso o prepago en los escenarios correspondientes, y los escenarios de agentes medidos de Copilot Chat siguen requiriendo la configuración de facturación cuando proceda.
 
-**4. Base data access rules do not become looser.**
+**4. Las reglas básicas de acceso a los datos no se relajan.**
 
-Access remains bounded by Entra, Purview, and least-privilege controls. Agent 365 does not let agents or users bypass those controls.
-
----
-
-## 8. Governance, Security, Observability, and Where Documentation Has Gaps
-
-### What Microsoft Clearly Documents
-
-- Centralized registry and role-specific oversight in Agent 365
-- Identity and lifecycle control via Entra Agent ID and sponsorship/blueprints
-- Purview DLP, information protection, and oversharing controls for Copilot and agents
-- Defender threat detection / real-time protection / "shadow AI" expansion in preview announcements
-
-### Where Documentation Has Not Yet Caught Up
-
-Microsoft has not published an article that explicitly addresses this scenario: "If one shared agent is used by 500 people and only 100 of them have Agent 365, what does the Agent 365 portal show?"
-
-That exact telemetry partitioning is not yet covered in public documentation. The org-wide control-plane story is well documented; the end-user entitlement partitioning for mixed shared-agent scenarios is not.
-
-### How to Read the Current State
-
-**Enforcement and visibility are not the same thing.** Microsoft documents many controls as platform/tenant/agent-estate controls (identity, DLP, access control, lifecycle, threat protection), while licensing is per-user. That means:
-
-- **Enforcement / guardrails** = often agent/tenant/platform scoped
-- **Commercial entitlement** = per-user
-- **Observability scope in mixed shared-agent scenarios** = not yet explicitly documented
+El acceso sigue limitado por Entra, Purview y los controles de privilegio mínimo. Agent 365 no permite que agentes ni usuarios eludan esos controles.
 
 ---
 
-## 9. What's GA vs. What's Still Expanding
+## 8. Gobernanza, seguridad, observabilidad y dónde tiene lagunas la documentación
 
-### Generally Available (as of May 1, 2026)
+### Lo que Microsoft documenta con claridad
 
-- **Microsoft Agent 365 GA date:** May 1, 2026, commercial, per-user basis
-- **Official pricing:** $15/user/month standalone, or included in Microsoft 365 E7
-- **Core positioning:** observe, govern, and secure agents across the organization
+- Registro centralizado y supervisión específica por rol en Agent 365
+- Control de la identidad y del ciclo de vida mediante Entra Agent ID y el patrocinio o los modelos (blueprints)
+- DLP de Purview, protección de la información y controles del uso compartido excesivo para Copilot y los agentes
+- Detección de amenazas y protección en tiempo real de Defender, y ampliación a la "IA en la sombra" (shadow AI) en los anuncios de versiones preliminares
 
-### In Preview / Expanding
+### Dónde la documentación todavía no está al día
 
-- Observability/governance/security for agents operating **independently with their own credentials and permissions**
-- Discovery of agents and **shadow AI** using Defender and Intune for local/cloud agents
-- **Windows 365 for Agents** and expanded SaaS ecosystem coverage
+Microsoft no ha publicado ningún artículo que aborde expresamente este escenario: "Si un agente compartido lo usan 500 personas y solo 100 tienen Agent 365, ¿qué muestra el portal de Agent 365?".
 
-The identity architecture for autonomous/own-access agents is already visible in Entra Agent ID documentation, but the full commercial/control-plane story for independently credentialed agents is still evolving. That is the honest way to describe the current state.
+Esa división exacta de la telemetría todavía no está cubierta en la documentación pública. El plano de control para toda la organización está bien documentado; la división del derecho de uso de los usuarios finales en escenarios de agentes compartidos mixtos, no.
 
----
+### Cómo interpretar la situación actual
 
-## 10. Key Explanations
+**Aplicar controles y tener visibilidad no son lo mismo.** Microsoft documenta muchos controles como controles de plataforma, inquilino o conjunto de agentes (identidad, DLP, control de acceso, ciclo de vida, protección frente a amenazas), mientras que las licencias son por usuario. Eso significa que:
 
-### 30-Second Executive Summary
-
-**Microsoft Agent 365 is Microsoft's control plane for AI agents.** It is the layer IT and security use to see, govern, and secure agents across the company. It is **not** the tool that builds agents and it is **not** the runtime meter. Those remain in products like Microsoft 365 agents, Copilot Studio, and Foundry. Commercially, Agent 365 is **licensed per user, not per agent.**
-
-### For IT Directors and Architects
-
-Think in **three planes**: **build**, **run**, and **govern**. You build agents in Copilot Studio or Foundry (or Microsoft 365 agent tooling), they run in Microsoft 365 channels or Foundry runtime, and **Agent 365** is the cross-estate governance/security/observability plane over that fleet. The management plane is centralized, but the **license is assigned per user**, not to the agent object itself.
-
-### On the Mixed-Licensing Question
-
-Agent 365 is **not** an all-or-nothing per-agent "premium switch." It is a **tenant-wide management/control plane** with a **per-user licensing model**. A shared agent can still be shared by users with and without Agent 365 licenses. What Microsoft has not yet spelled out clearly is the exact telemetry/visibility partitioning for one shared agent used by both licensed and unlicensed users — and it is worth being direct about that gap rather than guessing.
+- **Aplicación de controles y salvaguardas** = a menudo con ámbito de agente, inquilino o plataforma
+- **Derecho comercial** = por usuario
+- **Ámbito de la observabilidad en escenarios de agentes compartidos mixtos** = todavía sin documentar expresamente
 
 ---
 
-## 11. Summary: One Shared Agent, Mixed User Population
+## 9. Qué está disponible de forma general y qué sigue ampliándose
 
-### What We Know
+### Disponible de forma general (a 1 de mayo de 2026)
 
-- **The agent itself does not change.** Agent 365 is documented as the control plane, not the runtime identity of the agent artifact.
-- **Licensed users** are clearly within Agent 365's commercial entitlement model.
-- **Unlicensed users** may still be able to use the shared agent if their underlying Copilot/Copilot Chat/channel rights and metering path allow it. Agent 365 is not the runtime gate for that shared agent.
-- **The open question** is how Microsoft scopes premium telemetry/observability for mixed-user usage of that same shared agent. Public documentation does not yet provide an explicit matrix for that case.
+- **Fecha de disponibilidad general de Microsoft Agent 365:** 1 de mayo de 2026, comercial, por usuario
+- **Precio oficial:** 15 $/usuario/mes por separado, o incluido en Microsoft 365 E7
+- **Posicionamiento principal:** observar, gobernar y proteger los agentes de toda la organización
 
-### The Bottom Line
+### En versión preliminar o en ampliación
 
-**Agent 365 is tenant-wide as a management/control plane, but user-based as a license.** It is not a per-agent premium switch, and Microsoft has not yet publicly documented the exact observability partitioning for mixed licensed/unlicensed usage of a shared agent.
+- Observabilidad, gobernanza y seguridad para agentes que funcionan **de forma independiente con sus propias credenciales y permisos**
+- Detección de agentes y de **IA en la sombra** mediante Defender e Intune para agentes locales y en la nube
+- **Windows 365 for Agents** y una cobertura ampliada del ecosistema SaaS
+
+La arquitectura de identidad para agentes autónomos o con acceso propio ya se ve en la documentación de Entra Agent ID, pero el planteamiento comercial y de plano de control completo para los agentes con credenciales propias sigue evolucionando. Esa es la forma honesta de describir la situación actual.
 
 ---
 
-## Key Sources
+## 10. Explicaciones clave
+
+### Resumen ejecutivo en 30 segundos
+
+**Microsoft Agent 365 es el plano de control de Microsoft para agentes de IA.** Es la capa que usan TI y seguridad para ver, gobernar y proteger los agentes de toda la empresa. **No** es la herramienta con la que se crean los agentes y **no** es el medidor de su ejecución. Esas funciones siguen en productos como los agentes de Microsoft 365, Copilot Studio y Foundry. Comercialmente, Agent 365 **se licencia por usuario, no por agente.**
+
+### Para directores de TI y arquitectos
+
+Piensa en **tres planos**: **crear**, **ejecutar** y **gobernar**. Los agentes se crean en Copilot Studio o Foundry (o con las herramientas de agentes de Microsoft 365), se ejecutan en los canales de Microsoft 365 o en el entorno de ejecución de Foundry, y **Agent 365** es el plano de gobernanza, seguridad y observabilidad que abarca todo ese conjunto. El plano de gestión está centralizado, pero la **licencia se asigna por usuario**, no al objeto del agente.
+
+### Sobre la cuestión de las licencias mixtas
+
+Agent 365 **no** es un "interruptor premium" de todo o nada por agente. Es un **plano de gestión y control para todo el inquilino** con un **modelo de licencias por usuario**. Un agente compartido puede seguir compartiéndose entre usuarios con y sin licencia de Agent 365. Lo que Microsoft todavía no ha explicado con claridad es la división exacta de la telemetría y la visibilidad cuando un mismo agente compartido lo usan usuarios con y sin licencia, y conviene reconocer esa laguna con franqueza en lugar de hacer suposiciones.
+
+---
+
+## 11. Resumen: un agente compartido y una población de usuarios mixta
+
+### Lo que se sabe
+
+- **El propio agente no cambia.** Agent 365 está documentado como el plano de control, no como la identidad de ejecución del agente.
+- **Los usuarios con licencia** quedan claramente dentro del modelo de derecho comercial de Agent 365.
+- **Los usuarios sin licencia** pueden seguir usando el agente compartido si sus derechos de Copilot, Copilot Chat o del canal y su vía de medición lo permiten. Agent 365 no es la puerta de ejecución de ese agente compartido.
+- **La pregunta abierta** es cómo delimita Microsoft la telemetría y la observabilidad premium cuando ese mismo agente compartido lo usan usuarios mixtos. La documentación pública todavía no ofrece una matriz explícita para ese caso.
+
+### La conclusión
+
+**Agent 365 abarca todo el inquilino como plano de gestión y control, pero se asigna por usuario como licencia.** No es un interruptor premium por agente, y Microsoft todavía no ha documentado públicamente la división exacta de la observabilidad cuando un agente compartido lo usan usuarios con y sin licencia.
+
+---
+
+## Fuentes principales
 
 - [microsoft.com/en-us/microsoft-agent-365](https://www.microsoft.com/en-us/microsoft-agent-365)
 - [learn.microsoft.com/en-us/microsoft-agent-365/overview](https://learn.microsoft.com/en-us/microsoft-agent-365/overview)
@@ -315,4 +315,4 @@ Agent 365 is **not** an all-or-nothing per-agent "premium switch." It is a **ten
 
 ---
 
-[Back to the Education Playground](../README.md#education-playground)
+[Volver a Education Playground](../README.md#education-playground)
