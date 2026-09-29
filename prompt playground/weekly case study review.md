@@ -1,22 +1,22 @@
-# Weekly Case Study Review
+# Revisión semanal como caso de estudio
 
-## What This Is
+## Qué es
 
-A reflection prompt that turns your week into a short business case study. Copilot looks for what worked, what did not, and what to do next.
+Un prompt de reflexión que convierte tu semana en un breve caso de estudio empresarial. Copilot busca qué ha funcionado, qué no y qué hacer a continuación.
 
-Run it at the end of the week when you want a clearer readout before planning the next one. The third-person framing helps make the analysis feel more objective.
+Ejecútalo al final de la semana, cuando quieras un balance más claro antes de planificar la siguiente. Redactarlo en tercera persona ayuda a que el análisis resulte más objetivo.
 
 > [!TIP]
-> Run it after Copilot has access to the week's relevant meetings, notes, email, or chat context. Add your own metrics if you want the analysis to be more specific.
+> Ejecútalo cuando Copilot tenga acceso al contexto relevante de la semana: reuniones, notas, correo o chats. Añade tus propias métricas si quieres un análisis más concreto.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Review my week like it's a case study: What's working? What's not? Use Markdown to create a structured and visually appealing analysis. Include sections for successes, challenges, and recommendations. Highlight key points with bullet points, bold text, and italicized highlights to enhance readability and impact. Include any relevant data or metrics to support the analysis and provide actionable insights for improvement. Use third person when referencing me.
+Revisa mi semana como si fuera un caso de estudio: ¿Qué está funcionando? ¿Qué no? Usa Markdown para crear un análisis estructurado y visualmente atractivo. Incluye secciones de éxitos, retos y recomendaciones. Destaca los puntos clave con viñetas, negrita y cursiva para mejorar la legibilidad y el impacto. Incluye los datos o métricas relevantes que respalden el análisis y aporta ideas prácticas para mejorar. Refiérete a mí en tercera persona.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

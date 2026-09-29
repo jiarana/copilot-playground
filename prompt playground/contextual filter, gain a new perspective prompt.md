@@ -1,22 +1,22 @@
-# Contextual Filter
+# Filtro contextual
 
-## What This Is
+## Qué es
 
-A role-based reading prompt for long documents. Copilot reads through a specific lens and only pulls out the action items and deadlines that matter to that role.
+Un prompt de lectura según el puesto para documentos largos. Copilot lee desde una perspectiva concreta y solo extrae las tareas pendientes y los plazos que importan a ese puesto.
 
-Use it when a document has too much detail and you need the part that applies to your job.
+Úsalo cuando un documento tenga demasiado detalle y necesites solo la parte que afecta a tu trabajo.
 
 > [!TIP]
-> Replace `[CISO]` with the role you want Copilot to use, such as CFO, VP of Sales, IT Admin, or Account Executive.
+> Sustituye `[CISO]` por el puesto que quieras que adopte Copilot, como director financiero (CFO), vicepresidente de ventas, administrador de TI o ejecutivo de cuentas.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Read this document from the perspective of a [CISO]. Only pull out the action items and deadlines that impact my role. Ignore everything else.
+Lee este documento desde la perspectiva de un [CISO]. Extrae solo las tareas pendientes y los plazos que afectan a mi puesto. Ignora todo lo demás.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

@@ -1,53 +1,53 @@
-# Copywriting Precision and Tone
+# Precisión y tono en la redacción
 
-## What This Is
+## Qué es
 
-A senior editing prompt for improving an excerpt without losing the original voice. It focuses on clarity, tone, flow, grammar, and readability.
+Un prompt de corrección de nivel profesional para mejorar un fragmento sin perder la voz original. Se centra en la claridad, el tono, la fluidez, la gramática y la legibilidad.
 
-Use it when a draft is close, but still needs a sharper copyedit before you send, publish, or share it.
+Úsalo cuando un borrador esté casi listo pero todavía necesite una corrección más fina antes de enviarlo, publicarlo o compartirlo.
 
 > [!TIP]
-> Replace `[end state]` with the type of writing you want reviewed, such as executive email, product copy, technical documentation, or LinkedIn post.
+> Sustituye `[tipo de texto]` por el tipo de escrito que quieres revisar, como un correo a dirección, textos de producto, documentación técnica o una publicación de LinkedIn.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Act as a senior copywriter with over 20 years of experience writing **[end state]**.
+Actúa como un redactor sénior con más de 20 años de experiencia escribiendo **[tipo de texto]**.
 
-I want you to improve my writing. I will share an excerpt, and your task is to proofread it and provide recommendations based on the following criteria.
+Quiero que mejores mi redacción. Te compartiré un fragmento y tu tarea es corregirlo y darme recomendaciones según los criterios siguientes.
 
-Break down each change and share the corresponding explanation for the edit before sharing the completed revised excerpt. Group these together using headers for easy readability.
-
-
-## Editing Criteria
-
-- Trim excess words so each sentence serves a clear purpose  
-- Improve clarity so the reader can easily digest the message  
-- Correct all spelling and grammatical errors  
-- Use active voice throughout  
-- Use shorter synonyms where possible  
-- Break up long sentences  
-- Keep paragraphs brief  
-- Use effective transitions  
-- Preserve as much of the original tone and style as possible  
-- Do not add filler content  
-- Use an informal yet professional tone  
-  - Contractions and casual phrasing are welcome while maintaining credibility  
+Desglosa cada cambio y explica el motivo de cada corrección antes de compartir el fragmento revisado completo. Agrúpalos con encabezados para que se lean fácilmente.
 
 
-## Output Format
+## Criterios de corrección
 
-After applying the above, provide:
+- Elimina las palabras sobrantes para que cada frase tenga un propósito claro
+- Mejora la claridad para que el lector entienda el mensaje con facilidad
+- Corrige todos los errores ortográficos y gramaticales
+- Usa la voz activa en todo el texto
+- Usa sinónimos más cortos cuando sea posible
+- Divide las frases largas
+- Mantén los párrafos breves
+- Usa transiciones eficaces
+- Conserva todo lo posible el tono y el estilo originales
+- No añadas contenido de relleno
+- Usa un tono informal pero profesional
+  - Se admiten expresiones coloquiales siempre que se mantenga la credibilidad
 
-### Edits & Explanations
-List each change made and explain why it was made.
 
-### Revised Excerpt
-Provide the improved version of the text.
+## Formato del resultado
+
+Después de aplicar lo anterior, proporciona:
+
+### Correcciones y explicaciones
+Enumera cada cambio realizado y explica por qué se hizo.
+
+### Fragmento revisado
+Proporciona la versión mejorada del texto.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

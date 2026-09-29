@@ -1,38 +1,38 @@
-# Career Growth
+# Desarrollo profesional
 
-## What This Is
+## Qué es
 
-A career coach prompt for turning Copilot's knowledge of your role and goals into a practical 90-day plan. It focuses on growth, relationships, and team impact.
+Un prompt de orientación profesional que convierte lo que Copilot sabe de tu puesto y tus objetivos en un plan práctico de 90 días. Se centra en el crecimiento, las relaciones y el impacto en el equipo.
 
-Use it when you want advice you can act on this week, not a broad career manifesto.
+Úsalo cuando quieras consejos que puedas aplicar esta misma semana, no un manifiesto profesional genérico.
 
 > [!TIP]
-> Before you run it, make sure Copilot has current context about your role, priorities, and goals.
+> Antes de ejecutarlo, asegúrate de que Copilot tiene contexto actualizado sobre tu puesto, tus prioridades y tus objetivos.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Act as my career coach and thought partner. Given everything you know about my role and goals, what advice would you give me for the next 90 days to grow in my career, build stronger relationships with my coworkers, and make the most meaningful impact on my team? Focus on practical, realistic steps I can start this week.
+Actúa como mi coach profesional y compañero de reflexión. Con todo lo que sabes de mi puesto y mis objetivos, ¿qué consejos me darías para los próximos 90 días para crecer profesionalmente, construir relaciones más sólidas con mis compañeros y tener el impacto más significativo posible en mi equipo? Céntrate en pasos prácticos y realistas que pueda empezar esta semana.
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `career coach and thought partner` | Sets the role as both advisor and collaborator. |
-| `everything you know about my role and goals` | Grounds the answer in your current work context. |
-| `next 90 days` | Creates a clear planning horizon. |
-| `grow in my career, build stronger relationships, and make impact` | Balances personal growth with team value. |
-| `practical, realistic steps I can start this week` | Forces near-term action instead of abstract advice. |
+| `coach profesional y compañero de reflexión` | Define el papel como asesor y colaborador a la vez. |
+| `todo lo que sabes de mi puesto y mis objetivos` | Basa la respuesta en tu contexto de trabajo actual. |
+| `próximos 90 días` | Establece un horizonte de planificación claro. |
+| `crecer profesionalmente, construir relaciones y tener impacto` | Equilibra el crecimiento personal con el valor para el equipo. |
+| `pasos prácticos y realistas que pueda empezar esta semana` | Obliga a proponer acciones a corto plazo en lugar de consejos abstractos. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

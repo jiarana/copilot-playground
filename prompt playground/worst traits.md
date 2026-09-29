@@ -1,38 +1,38 @@
-# Worst Traits
+# Mis peores rasgos
 
-## What This Is
+## Qué es
 
-A constructive self-feedback prompt. Copilot looks across what it knows about your background, work style, content, and collaboration patterns, then identifies three traits that could hold you back.
+Un prompt de autoevaluación constructiva. Copilot revisa lo que sabe de tu trayectoria, tu forma de trabajar, tu contenido y tus patrones de colaboración, e identifica tres rasgos que podrían frenarte.
 
-Use it when you want a clear, practical mirror without vague encouragement.
+Úsalo cuando quieras un espejo claro y práctico, sin ánimos vagos.
 
 > [!TIP]
-> Run this in a chat where Copilot has access to enough work context to ground the feedback in real patterns.
+> Ejecútalo en un chat en el que Copilot tenga suficiente contexto de tu trabajo como para basar los comentarios en patrones reales.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Based on my background and everything you know about me, what are three traits that could hold me back professionally, in content creation, and collaboration? Keep it constructive. Use a consultant-style breakdown with categories, bullet points, and actionable advice. Match my tone: direct, helpful, and casual. Avoid fluff.
+Según mi trayectoria y todo lo que sabes de mí, ¿cuáles son tres rasgos que podrían frenarme en lo profesional, en la creación de contenido y en la colaboración? Que sea constructivo. Usa un desglose de estilo consultor, con categorías, viñetas y consejos prácticos. Adapta el tono al mío: directo, útil y cercano. Evita el relleno.
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `Based on my background and everything you know about me` | Grounds the response in your actual context instead of generic advice. |
-| `three traits` | Keeps the feedback focused enough to use. |
-| `professionally, in content creation, and collaboration` | Spreads the analysis across the areas where blind spots usually show up. |
-| `Keep it constructive` | Asks for honesty without turning the answer into a takedown. |
-| `consultant-style breakdown` | Pushes for structure, categories, and practical recommendations. |
+| `Según mi trayectoria y todo lo que sabes de mí` | Basa la respuesta en tu contexto real en lugar de en consejos genéricos. |
+| `tres rasgos` | Mantiene los comentarios lo bastante concretos como para poder usarlos. |
+| `en lo profesional, en la creación de contenido y en la colaboración` | Reparte el análisis entre las áreas en las que suelen aparecer los puntos ciegos. |
+| `Que sea constructivo` | Pide sinceridad sin que la respuesta se convierta en un ataque. |
+| `desglose de estilo consultor` | Impulsa una respuesta estructurada, con categorías y recomendaciones prácticas. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

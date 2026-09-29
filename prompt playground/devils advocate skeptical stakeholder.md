@@ -1,22 +1,22 @@
-# Devil's Advocate
+# Abogado del diablo
 
-## What This Is
+## Qué es
 
-A pressure-test prompt for proposals, pitches, plans, or deck summaries. Copilot acts like a skeptical stakeholder and identifies the three clearest reasons the idea might fail.
+Un prompt para poner a prueba propuestas, presentaciones comerciales, planes o resúmenes de presentaciones. Copilot actúa como una parte interesada escéptica e identifica los tres motivos más claros por los que la idea podría fracasar.
 
-Use it before you share a recommendation, ask for approval, or walk into a meeting where objections are likely.
+Úsalo antes de compartir una recomendación, pedir una aprobación o entrar en una reunión en la que es probable que surjan objeciones.
 
 > [!TIP]
-> Paste the proposal or a short summary after the prompt. Include the audience and decision you want if that context matters.
+> Pega la propuesta o un resumen breve después del prompt. Si ese contexto es relevante, incluye la audiencia y la decisión que buscas.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Act as a skeptical stakeholder. Give me three specific reasons why this proposal might fail and how to fix them.
+Actúa como una parte interesada escéptica. Dame tres motivos concretos por los que esta propuesta podría fracasar y cómo solucionarlos.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

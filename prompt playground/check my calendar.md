@@ -1,42 +1,40 @@
-# Check My Calendar
+# Revisa mi calendario
 
-## What This Is
+## Qué es
 
-A scheduling prompt that asks Copilot to find open meeting slots across the next 10 business days. It filters out the messy parts of a calendar, adds buffer time, and returns plain text you can paste to someone outside your organization.
+Un prompt de planificación que pide a Copilot que encuentre huecos libres para reuniones en los próximos 10 días laborables. Descarta las partes problemáticas del calendario, añade margen entre reuniones y devuelve texto sin formato que puedes pegar para alguien de fuera de tu organización.
 
-Use it when you need to offer availability without manually scanning your calendar.
+Úsalo cuando necesites ofrecer tu disponibilidad sin revisar el calendario a mano.
 
 > [!TIP]
-> Adjust the meeting length, business hours, and time zone before you paste it if your schedule needs different constraints.
+> Si tu agenda tiene otras restricciones, ajusta la duración de la reunión, el horario laboral y la zona horaria antes de pegarlo.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Check my calendar and list 6–8 open 30–45 minute slots over the next 10 business days, between 9 AM and 4 PM in my time zone. Exclude travel, focus time, lunch, and holds. Leave 15 minutes buffer before/after other meetings. Return in plain text I can paste to an external contact, with this format:
+Revisa mi calendario y enumera de 6 a 8 huecos libres de 30 a 45 minutos en los próximos 10 días laborables, entre las 9:00 y las 16:00 en mi zona horaria. Excluye desplazamientos, tiempo de concentración, la comida y los bloqueos reservados. Deja 15 minutos de margen antes y después de otras reuniones. Devuélvelo en texto sin formato que pueda pegar para un contacto externo, con este formato:
 
-- Tue Nov 18, 10:30–11:00 AM CT
-- Wed Nov 19, 1:00–1:45 PM CT
-- Thu Nov 20, 9:15–10:00 AM CT
+- Mar 18 nov, 10:30–11:00 CET
+- Mié 19 nov, 13:00–13:45 CET
+- Jue 20 nov, 9:15–10:00 CET
 
-Add a closing line: "If none of these work, share a few windows and I’ll send an invite."
+Añade una frase de cierre: "Si ninguno de estos horarios te viene bien, indícame algunas franjas y te envío una convocatoria."
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `slot count and meeting length` | Gives enough options without flooding the recipient. |
-| `next 10 business days` | Keeps the search window useful and near term. |
-| `between 9 AM and 4 PM` | Avoids early, late, and awkward times. |
-| `Exclude travel, focus time, lunch, and holds` | Protects calendar blocks that should not become meeting slots. |
-| `plain text I can paste` | Makes the output ready for email or chat. |
+| `número de huecos y duración de la reunión` | Ofrece suficientes opciones sin saturar al destinatario. |
+| `próximos 10 días laborables` | Mantiene el periodo de búsqueda útil y cercano. |
+| `entre las 9:00 y las 16:00` | Evita horas demasiado tempranas, tardías o incómodas. |
+| `Excluye desplazamientos, tiempo de concentración, la comida y los bloqueos reservados` | Protege los bloques del calendario que no deben convertirse en huecos para reuniones. |
+| `texto sin formato que pueda pegar` | Deja el resultado listo para un correo o un chat. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
-
-
+[Volver a Prompt Playground](../README.md#prompt-playground)

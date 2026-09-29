@@ -1,32 +1,32 @@
-# Leadership Style and Voice Distiller
+# Destilador de estilo de liderazgo y voz
 
-## What This Is
+## Qué es
 
-A self-analysis prompt that reviews a year of your emails, Teams meetings, documents, and Teams chats. Copilot uses that history to create a leadership style document based on how you actually communicate.
+Un prompt de autoanálisis que revisa un año de tus correos, reuniones de Teams, documentos y chats de Teams. Copilot usa ese historial para crear un documento sobre tu estilo de liderazgo basado en cómo te comunicas realmente.
 
-Use it when you want a stronger personal voice profile, a clearer view of your strengths, or a practical set of leadership growth goals.
+Úsalo cuando quieras un perfil más sólido de tu voz personal, una visión más clara de tus fortalezas o un conjunto práctico de objetivos de crecimiento como líder.
 
 > [!TIP]
-> Run this where Copilot can access your work history. The result depends on the quality and coverage of the messages, meetings, and documents it can see.
+> Ejecútalo donde Copilot pueda acceder a tu historial de trabajo. El resultado depende de la calidad y la cobertura de los mensajes, reuniones y documentos que pueda ver.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Look at the emails, Teams meetings, documents, and Teams chats that I've sent in the last year. Use these messages to distill a leadership style document that I can use to inform Copilot of my personal voice and style based on the above analysis.
+Revisa los correos, reuniones de Teams, documentos y chats de Teams que he enviado en el último año. Usa estos mensajes para destilar un documento sobre mi estilo de liderazgo que pueda usar para indicarle a Copilot mi voz y mi estilo personales, basado en el análisis anterior.
 
-Give me a breakdown of my top 5 strengths in a table with the following format:
+Dame un desglose de mis 5 principales fortalezas en una tabla con este formato:
 
-| Strength | Description | How It Helps Me In My Role | How It Could Be Misunderstood | 2 Ways I Can Build This Strength |
+| Fortaleza | Descripción | Cómo me ayuda en mi puesto | Cómo podría malinterpretarse | 2 formas de reforzar esta fortaleza |
 
-In another table give me a breakdown of 3 areas for improvement in the following format:
+En otra tabla, dame un desglose de 3 áreas de mejora con este formato:
 
-| Improvement Area | Description | How It Impacts My Role | How It Could Be Misunderstood | 3 Ways I Can Improve |
+| Área de mejora | Descripción | Cómo afecta a mi puesto | Cómo podría malinterpretarse | 3 formas de mejorar |
 
-I would also like 3 OKRs based on the above analysis that I could reach in the next 6-9 months.
+También quiero 3 OKR basados en el análisis anterior que pueda alcanzar en los próximos 6-9 meses.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

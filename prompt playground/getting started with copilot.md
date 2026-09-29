@@ -1,34 +1,34 @@
-# Getting Started with Copilot
+# Primeros pasos con Copilot
 
-## What This Is
+## Qué es
 
-A coaching prompt for executives who are new to Copilot. It asks Copilot to teach you step by step, focus on useful work impact, and ask questions along the way.
+Un prompt de acompañamiento para directivos que empiezan con Copilot. Pide a Copilot que te enseñe paso a paso, que se centre en lo que tiene impacto útil en tu trabajo y que te haga preguntas por el camino.
 
-Use it when you want a guided learning session instead of a list of features.
+Úsalo cuando quieras una sesión de aprendizaje guiada en lugar de una lista de funciones.
 
 > [!TIP]
-> Answer Copilot's coaching questions with your real role, meetings, documents, and recurring work. The session gets better when it can connect training to your actual day.
+> Responde a las preguntas de Copilot con tu puesto, tus reuniones, tus documentos y tu trabajo habitual reales. La sesión mejora cuando puede relacionar la formación con tu día a día.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Hey Copilot, I’m a newbie in the Copilot world. I’m an executive and I don’t know where to start with Copilot. As a coach specialized on training executives to get the most value of Copilot, teach me step by step on what I should focus on to make me comfortable and to help me have impact. Feel free to ask me questions along this coaching session so it can have a good impact on my work and on my learning curve.
+Hola, Copilot. Soy nuevo en el mundo de Copilot. Soy directivo y no sé por dónde empezar con Copilot. Como coach especializado en formar a directivos para sacar el máximo partido a Copilot, enséñame paso a paso en qué debo centrarme para sentirme cómodo y conseguir impacto. Hazme todas las preguntas que necesites durante esta sesión para que tenga un buen efecto en mi trabajo y en mi curva de aprendizaje.
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `I’m a newbie` | Tells Copilot to start with the basics. |
-| `I’m an executive` | Frames examples around executive work instead of general productivity. |
-| `coach specialized on training executives` | Sets the response style as guided coaching. |
-| `teach me step by step` | Creates a learning path rather than a one-time answer. |
-| `ask me questions` | Lets Copilot personalize the coaching session as it goes. |
+| `Soy nuevo` | Indica a Copilot que empiece por lo básico. |
+| `Soy directivo` | Enfoca los ejemplos en el trabajo de dirección en lugar de en la productividad general. |
+| `coach especializado en formar a directivos` | Establece un estilo de respuesta de acompañamiento guiado. |
+| `enséñame paso a paso` | Crea un itinerario de aprendizaje en lugar de una respuesta puntual. |
+| `Hazme todas las preguntas que necesites` | Permite a Copilot personalizar la sesión sobre la marcha. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

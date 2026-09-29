@@ -1,38 +1,37 @@
-# Start My Day
+# Empieza mi día
 
-## What This Is
+## Qué es
 
-A fast morning scan of the prior workday. Copilot summarizes your email, calls out action items, and suggests follow-ups in a table you can work from.
+Un repaso matutino rápido de la jornada laboral anterior. Copilot resume tu correo, destaca las tareas pendientes y sugiere seguimientos en una tabla con la que puedes trabajar.
 
-Use it when you want to start the day with the open loops that matter most.
+Úsalo cuando quieras empezar el día con los asuntos abiertos que más importan.
 
 > [!TIP]
-> Run this after your mailbox has synced for the morning so Copilot can see the latest replies before it summarizes yesterday.
+> Ejecútalo cuando tu buzón ya se haya sincronizado por la mañana, para que Copilot vea las últimas respuestas antes de resumir el día anterior.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Summarize my emails from the prior workday. List Action Items in a dedicated column. suggest follow-ups if possible in a dedicated column. The table should have following columns: @mentioned | Topic | Summarization | Action Item | Follow-Up. If I have been directly Mentioned, Insert "Yes" in The @Mentioned Column.
+Resume mis correos de la jornada laboral anterior. Enumera las tareas pendientes en una columna propia. Sugiere seguimientos, si es posible, en una columna propia. La tabla debe tener estas columnas: @mencionado | Tema | Resumen | Tarea pendiente | Seguimiento. Si se me ha mencionado directamente, escribe "Sí" en la columna @mencionado.
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `prior workday` | Keeps the scan focused on what changed while you were last working. |
-| `Action Items in a dedicated column` | Separates things you need to do from general summaries. |
-| `suggest follow-ups` | Turns the summary into next steps you can send or schedule. |
-| `@mentioned` | Helps you spot messages where someone directly pulled you in. |
+| `jornada laboral anterior` | Centra el repaso en lo que ha cambiado desde la última vez que trabajaste. |
+| `tareas pendientes en una columna propia` | Separa lo que tienes que hacer de los resúmenes generales. |
+| `Sugiere seguimientos` | Convierte el resumen en siguientes pasos que puedes enviar o programar. |
+| `@mencionado` | Te ayuda a detectar los mensajes en los que alguien te ha implicado directamente. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
-
+[Volver a Prompt Playground](../README.md#prompt-playground)

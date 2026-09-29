@@ -1,78 +1,78 @@
-# 10 Starter Chat Prompts
+# 10 prompts de chat para empezar
 
-## What This Is
+## Qué es
 
-A starter set of prompts for Microsoft Copilot Chat. Each one gives Copilot a clear job, context, and output shape.
+Un conjunto inicial de prompts para Microsoft Copilot Chat. Cada uno le da a Copilot una tarea, un contexto y una forma de resultado claros.
 
-Use these when you need a fast summary, comparison, rewrite, agenda, FAQ, table, communication plan, or image idea. Replace the bracketed placeholders with your own topic, role, audience, or goal.
+Úsalos cuando necesites rápidamente un resumen, una comparación, una reescritura, un orden del día, unas preguntas frecuentes, una tabla, un plan de comunicación o una idea para una imagen. Sustituye los marcadores entre corchetes por tu tema, puesto, audiencia u objetivo.
 
 > [!TIP]
-> Replace anything in `[brackets]` before you run the prompt. Specific context usually produces a better answer.
+> Sustituye todo lo que esté `[entre corchetes]` antes de ejecutar el prompt. Un contexto concreto suele dar mejores respuestas.
 
 ---
 
 ## Prompts
 
-### Topic Summary
+### Resumen de un tema
 
 ```
-Give me a 5-bullet summary of the latest information on `[topic]` and what matters most for `[my role]`.
+Dame un resumen en 5 viñetas de la información más reciente sobre `[tema]` y de lo que más importa para `[mi puesto]`.
 ```
 
-### Options Comparison
+### Comparación de opciones
 
 ```
-Compare `[option A]` vs `[option B]` for `[goal]`. Include pros, cons, risks, and a recommendation.
+Compara `[opción A]` y `[opción B]` para `[objetivo]`. Incluye ventajas, inconvenientes, riesgos y una recomendación.
 ```
 
-### Document Summary
+### Resumen de un documento
 
 ```
-Summarize this document. Then give me key takeaways, open questions, and next steps.
+Resume este documento. Después dame las conclusiones clave, las preguntas abiertas y los siguientes pasos.
 ```
 
-### Audience Rewrite
+### Reescritura para una audiencia
 
 ```
-Rewrite this for `[audience]`. Make it clearer, shorter, and more direct.
+Reescribe esto para `[audiencia]`. Hazlo más claro, más breve y más directo.
 ```
 
-### Notes to Email
+### De notas a correo
 
 ```
-Turn these notes into a professional email with a clear call to action.
+Convierte estas notas en un correo profesional con una llamada a la acción clara.
 ```
 
-### Meeting Agenda
+### Orden del día de una reunión
 
 ```
-Create a 30-minute meeting agenda for `[topic]` with objective, discussion points, and decisions.
+Crea un orden del día para una reunión de 30 minutos sobre `[tema]` con objetivo, puntos de debate y decisiones.
 ```
 
-### FAQ Builder
+### Generador de preguntas frecuentes
 
 ```
-Create a 10-question FAQ from this content for `[audience]`. Keep answers simple and practical.
+Crea unas preguntas frecuentes de 10 preguntas a partir de este contenido para `[audiencia]`. Que las respuestas sean sencillas y prácticas.
 ```
 
-### Comparison Table
+### Tabla comparativa
 
 ```
-Build a table comparing `[topic/options]` with benefits, risks, effort, and use cases.
+Crea una tabla que compare `[tema/opciones]` con ventajas, riesgos, esfuerzo y casos de uso.
 ```
 
-### Communication Plan
+### Plan de comunicación
 
 ```
-Create a simple communication plan for `[initiative]` with audience, message, channel, and timing.
+Crea un plan de comunicación sencillo para `[iniciativa]` con audiencia, mensaje, canal y calendario.
 ```
 
-### Visual Ideas
+### Ideas visuales
 
 ```
-Generate 3 visual ideas for `[topic]`, then create one image in a clean professional style.
+Genera 3 ideas visuales para `[tema]` y después crea una imagen con un estilo profesional y limpio.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

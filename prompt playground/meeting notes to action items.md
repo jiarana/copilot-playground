@@ -1,22 +1,22 @@
-# Meeting Notes to Action Table
+# De notas de reunión a tabla de acciones
 
-## What This Is
+## Qué es
 
-A structured output prompt that turns raw meeting notes into a clean action table. Paste your notes after the prompt, and Copilot returns owners, priorities, blockers, and a one-sentence executive summary.
+Un prompt de resultado estructurado que convierte notas de reunión sin procesar en una tabla de acciones ordenada. Pega tus notas después del prompt y Copilot te devuelve responsables, prioridades, bloqueos y un resumen ejecutivo de una frase.
 
-Use it when your notes are useful but messy, and you need a follow-up that is easy to scan or forward.
+Úsalo cuando tus notas sean útiles pero desordenadas y necesites un seguimiento fácil de leer o de reenviar.
 
 > [!TIP]
-> Paste the full meeting notes directly after the prompt. Include speaker names if you have them so owner assignments are easier to infer.
+> Pega las notas completas de la reunión justo después del prompt. Si tienes los nombres de quién habló, inclúyelos para que sea más fácil deducir los responsables.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Turn the following notes from my meeting into a Markdown table. Include columns for Action Items, Owner, Priority from 1 to 5, and Potential Blocker. After the table, write a one-sentence Executive Summary for a busy stakeholder.
+Convierte las siguientes notas de mi reunión en una tabla en Markdown. Incluye columnas para Tareas pendientes, Responsable, Prioridad del 1 al 5 y Posible bloqueo. Después de la tabla, escribe un Resumen ejecutivo de una frase para una parte interesada con poco tiempo.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
