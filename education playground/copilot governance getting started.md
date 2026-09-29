@@ -1,161 +1,164 @@
-# Getting Started with Copilot Governance
+# Primeros pasos con la gobernanza de Copilot
 
-![Webinar main](assets/copilot%20webinar/webinar%20main.png)
-This is a hands-on governance series that I built with a few of my SEs. It gives you a practical framework for deploying Microsoft 365 Copilot responsibly at scale.
+![Webinar principal](assets/copilot%20webinar/webinar%20main.png)
+Esta es una serie práctica sobre gobernanza que el autor creó junto con varios ingenieros de soluciones (SE) de su equipo. Ofrece un marco práctico para desplegar Microsoft 365 Copilot de forma responsable y a gran escala.
 
-The content walks through end-to-end controls in the M365 Admin Center, Copilot Studio, Power Platform, Microsoft Purview, and SharePoint Advanced Management. It focuses on agent governance, data protection, oversharing mitigation, cost management, and the operational guardrails IT teams actually use.
+El contenido recorre de principio a fin los controles del centro de administración de M365, Copilot Studio, Power Platform, Microsoft Purview y SharePoint Advanced Management. Se centra en la gobernanza de agentes, la protección de datos, la mitigación del uso compartido excesivo, la gestión de costes y las salvaguardas operativas que usan de verdad los equipos de TI.
 
-It’s based on real customer questions and real deployments, not theory.
+Se basa en preguntas reales de clientes y en despliegues reales, no en teoría.
 
-**Commit: 4 hours**
+**Dedicación: 4 horas**
 
----
-
-- **Session 1: Copilot and Agent Governance Foundations in the M365 Admin Center**  
-  Deployment approach, the Copilot Control System, access and billing controls, and how to highlight or restrict agents.  
-  [Read the session recap](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar-copilot-governance-session-1-deployment-copilot-control-system-and-agent/4461801)
-
-- **Session 2: Copilot Studio + Power Platform Governance**  
-  Managed Environments, environment routing, DLP strategy, connector risk controls, and cost management for agents.  
-  [Read the session recap](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-2-mastering-copilot-governance-with-copilot-studio--power-platf/4463239)
-
-- **Session 3: Purview for M365 + Agents**  
-  Sensitivity labels, DLP, insider risk, audit/eDiscovery, and how labeling and oversharing shape what Copilot can surface.  
-  [Read the session recap](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-3-mastering-copilot-governance-purview-for-microsoft-365--agent/4464860)
-
-- **Session 4: SharePoint Advanced Management (SAM) for Content Signals**  
-  Oversharing baselines, lifecycle cleanup, access reviews, RAC/RCD, and making Copilot “see” the right content.  
-  [Read the session recap](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/mastering-copilot-content-governance-with-sharepoint-advance-management---sessio/4467427)
+> [!NOTE]
+> Las grabaciones y los resúmenes de las sesiones están en inglés.
 
 ---
 
-## Session 1: The Admin‑Center Foundations
+- **Sesión 1: fundamentos de la gobernanza de Copilot y de agentes en el centro de administración de M365**
+  Enfoque del despliegue, el Copilot Control System, los controles de acceso y facturación, y cómo destacar o restringir agentes.
+  [Leer el resumen de la sesión](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar-copilot-governance-session-1-deployment-copilot-control-system-and-agent/4461801)
 
-### Outcomes to aim for
+- **Sesión 2: gobernanza de Copilot Studio + Power Platform**
+  Entornos administrados, enrutamiento de entornos, estrategia de DLP, controles de riesgo de los conectores y gestión de costes de los agentes.
+  [Leer el resumen de la sesión](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-2-mastering-copilot-governance-with-copilot-studio--power-platf/4463239)
 
-1. **Phased rollout plan** with ownership and change management from day one.  
-2. **Copilot Control System** set for who can build, which agents are pinned, and how billing is scoped.  
-3. **Guardrails** for web search, external connectors, and business dictionaries.  
+- **Sesión 3: Purview para M365 + agentes**
+  Etiquetas de confidencialidad, DLP, riesgo interno, auditoría y eDiscovery, y cómo el etiquetado y el uso compartido excesivo determinan lo que Copilot puede mostrar.
+  [Leer el resumen de la sesión](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-3-mastering-copilot-governance-purview-for-microsoft-365--agent/4464860)
 
-### Checklist
-
-- Scope agent creation to security groups. Pin key agents. Track ownerless agents.  
-- Align pay‑as‑you‑go by department or group, and limit high‑risk third‑party connectors.  
-- Plan Graph Connectors (e.g., ServiceNow) with governance in mind.  
-
-**Resources**
-
-- [Watch the recording](https://www.youtube.com/watch?v=Ie7ADxONHtw)  
-- [Blog reference](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar-copilot-governance-session-1-deployment-copilot-control-system-and-agent/4461801)  
+- **Sesión 4: SharePoint Advanced Management (SAM) para las señales de contenido**
+  Referencias de uso compartido excesivo, limpieza del ciclo de vida, revisiones de acceso, RAC/RCD y cómo hacer que Copilot "vea" el contenido adecuado.
+  [Leer el resumen de la sesión](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/mastering-copilot-content-governance-with-sharepoint-advance-management---sessio/4467427)
 
 ---
 
-## Session 2: Copilot Studio + Power Platform Governance
+## Sesión 1: los fundamentos del centro de administración
 
-### Core decisions
+### Resultados que buscar
 
-- **Managed Environments** on, always. That unlocks advanced policy, monitoring, and routing.  
-- **Environment strategy** with dev/UAT/prod and dedicated agent environments, plus **environment routing** to stop sprawl.  
-- **DLP tiers** (tenant baseline + layered per environment), role‑based access, risky‑connector notifications.  
-- **Cost model**: prepaid message packs vs PAYG, allocations by tenant/environment/agent. Use the estimator before you scale.
+1. **Un plan de despliegue por fases** con responsables y gestión del cambio desde el primer día.
+2. **El Copilot Control System** configurado: quién puede crear agentes, qué agentes se anclan y cómo se delimita la facturación.
+3. **Salvaguardas** para la búsqueda web, los conectores externos y los diccionarios de negocio.
 
-### Top tips
+### Lista de comprobación
 
-- Refresh DLP as new connectors and features land.  
-- Use **Copilot Studio Authors** to onboard makers cleanly.  
-- Wire up **App Insights** for deeper diagnostics.  
+- Limita la creación de agentes a grupos de seguridad. Ancla los agentes clave. Haz seguimiento de los agentes sin propietario.
+- Organiza el pago por uso por departamento o grupo, y limita los conectores de terceros de alto riesgo.
+- Planifica los conectores de Graph (p. ej., ServiceNow) teniendo en cuenta la gobernanza.
 
-**Resources**
+**Recursos**
 
-- [Watch the recording](https://www.youtube.com/watch?v=KSkJqHnO_TE)  
-- [Blog reference](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-2-mastering-copilot-governance-with-copilot-studio--power-platf/4463239)  
-
----
-
-## Session 3: Purview for Information Protection, Audit, and Risk
-
-### How protection maps to Copilot
-
-- **Sensitivity labels**: Copilot respects access controls. Blended outputs inherit the **highest** sensitivity from sources.  
-- **DLP & Insider Risk**: Block processing for specific labels or projects, monitor exfiltration, and apply adaptive protection.  
-- **Audit & eDiscovery**: Track Copilot interactions and include them in investigations.  
-
-### Operating model
-
-- Start new policies in **audit‑only** to tune before enforcement.  
-- Build **custom label templates** with the business, not just IT.  
-- Clarify **E3 vs E5** expectations: advanced DSPM/auto‑label in E5, more manual effort in E3.  
-
-**Resources**
-
-- [Watch the recording](https://www.youtube.com/watch?v=7dgDo5cKeYY)  
-- [Blog reference](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-3-mastering-copilot-governance-purview-for-microsoft-365--agent/4464860)  
+- [Ver la grabación](https://www.youtube.com/watch?v=Ie7ADxONHtw)
+- [Artículo de referencia](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar-copilot-governance-session-1-deployment-copilot-control-system-and-agent/4461801)
 
 ---
 
-## Session 4: SharePoint Advanced Management (SAM) for Better Signals
+## Sesión 2: gobernanza de Copilot Studio + Power Platform
 
-### Goal
+### Decisiones clave
 
-Tighten sharing, clean up stale sites, and reduce broad access so Copilot sees the right content.
+- **Entornos administrados** activados, siempre. Eso habilita las directivas avanzadas, la supervisión y el enrutamiento.
+- **Estrategia de entornos** con desarrollo, pruebas de aceptación (UAT) y producción, y entornos dedicados a agentes, además de **enrutamiento de entornos** para evitar la proliferación.
+- **Niveles de DLP** (una base para todo el inquilino más capas por entorno), acceso basado en roles y avisos sobre conectores de riesgo.
+- **Modelo de costes**: paquetes de mensajes de prepago frente a pago por uso, con asignaciones por inquilino, entorno o agente. Usa el estimador antes de escalar.
 
-### 5 moves that matter
+### Consejos principales
 
-1. **Review sharing defaults** and remove “Everyone except external users” when appropriate. Require owner approval where possible.  
-2. **Lifecycle cleanup** with Inactive Site Policy. Archive or delete to cut risk and noise. Archived sites are cheaper and invisible to Copilot.  
-3. **Oversharing Baseline (DAG)** across all sites, not just recent activity. Export, sort by sensitivity and reach, then remediate.  
-4. **Delegate access reviews** to site owners. Track progress in admin.  
-5. **Short‑term controls**:  
-   - **RAC** to lock a site to approved groups  
-   - **RCD** to hide a site from Copilot and cross‑site search without breaking permissions  
+- Actualiza las directivas de DLP a medida que llegan nuevos conectores y funciones.
+- Usa **Copilot Studio Authors** para incorporar a los creadores de forma ordenada.
+- Conecta **Application Insights** para obtener diagnósticos más detallados.
 
-### Bonus
+**Recursos**
 
-Enforce **Site Ownership Policy** and consider **Blocked Download** on sensitive containers. Combine SAM with Purview labels for better reporting.
-
-**Resources**
-
-- [Watch the recording](https://www.youtube.com/watch?v=VxTXvDeIGvk)  
-- [Blog reference](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/mastering-copilot-content-governance-with-sharepoint-advance-management---sessio/4467427)  
+- [Ver la grabación](https://www.youtube.com/watch?v=KSkJqHnO_TE)
+- [Artículo de referencia](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-2-mastering-copilot-governance-with-copilot-studio--power-platf/4463239)
 
 ---
 
-## Put It All Together: The Governance Stack
+## Sesión 3: Purview para la protección de la información, la auditoría y el riesgo
 
-| Layer                   | What you decide                                                     | Tools you use                                                    |
+### Cómo se aplica la protección a Copilot
+
+- **Etiquetas de confidencialidad**: Copilot respeta los controles de acceso. Los resultados que combinan varias fuentes heredan la confidencialidad **más alta** de ellas.
+- **DLP y riesgo interno**: bloquea el procesamiento de determinadas etiquetas o proyectos, supervisa la exfiltración y aplica la protección adaptativa.
+- **Auditoría y eDiscovery**: registra las interacciones con Copilot e inclúyelas en las investigaciones.
+
+### Modelo de funcionamiento
+
+- Empieza las directivas nuevas en modo de **solo auditoría** para ajustarlas antes de aplicarlas.
+- Crea **plantillas de etiquetas personalizadas** junto con el negocio, no solo con TI.
+- Aclara las expectativas entre **E3 y E5**: DSPM avanzado y etiquetado automático en E5, más trabajo manual en E3.
+
+**Recursos**
+
+- [Ver la grabación](https://www.youtube.com/watch?v=7dgDo5cKeYY)
+- [Artículo de referencia](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/webinar--session-3-mastering-copilot-governance-purview-for-microsoft-365--agent/4464860)
+
+---
+
+## Sesión 4: SharePoint Advanced Management (SAM) para obtener mejores señales
+
+### Objetivo
+
+Restringir el uso compartido, limpiar los sitios obsoletos y reducir los accesos amplios para que Copilot vea el contenido adecuado.
+
+### 5 acciones que importan
+
+1. **Revisa la configuración predeterminada de uso compartido** y elimina "Todos excepto los usuarios externos" cuando proceda. Exige la aprobación del propietario siempre que sea posible.
+2. **Limpieza del ciclo de vida** con la directiva de sitios inactivos. Archiva o elimina para reducir riesgo y ruido. Los sitios archivados son más baratos y Copilot no los ve.
+3. **Referencia de uso compartido excesivo (DAG)** en todos los sitios, no solo en los de actividad reciente. Exporta, ordena por confidencialidad y alcance, y después corrige.
+4. **Delega las revisiones de acceso** en los propietarios de los sitios. Haz seguimiento del avance desde la administración.
+5. **Controles a corto plazo**:
+   - **RAC** para restringir un sitio a los grupos aprobados
+   - **RCD** para ocultar un sitio a Copilot y a la búsqueda entre sitios sin romper los permisos
+
+### Extra
+
+Aplica la **directiva de propiedad de sitios** y plantéate **bloquear la descarga** en los contenedores sensibles. Combina SAM con las etiquetas de Purview para obtener mejores informes.
+
+**Recursos**
+
+- [Ver la grabación](https://www.youtube.com/watch?v=VxTXvDeIGvk)
+- [Artículo de referencia](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/mastering-copilot-content-governance-with-sharepoint-advance-management---sessio/4467427)
+
+---
+
+## Todo junto: la estructura de gobernanza
+
+| Capa                    | Qué decides                                                         | Herramientas que usas                                            |
 |-------------------------|---------------------------------------------------------------------|------------------------------------------------------------------|
-| **Access & Controls**   | Who can build agents, which agents are pinned, how you bill and monitor | M365 Admin Center, Copilot Control System                    |
-| **Agent Platform**      | Environments, routing, DLP tiers, connector governance, cost model  | Copilot Studio, Power Platform governance (Managed Environments, DLP, routing) |
-| **Information Protection** | Labels, DLP, insider risk, audit/eDiscovery                    | Purview IP, DLP, Insider Risk, Audit, eDiscovery               |
-| **Content Signals**     | Sharing defaults, lifecycle, access reviews, RAC/RCD               | SharePoint Advanced Management (SAM)                           |
+| **Acceso y controles**  | Quién puede crear agentes, qué agentes se anclan, cómo facturas y supervisas | Centro de administración de M365, Copilot Control System   |
+| **Plataforma de agentes** | Entornos, enrutamiento, niveles de DLP, gobernanza de conectores, modelo de costes | Copilot Studio, gobernanza de Power Platform (entornos administrados, DLP, enrutamiento) |
+| **Protección de la información** | Etiquetas, DLP, riesgo interno, auditoría y eDiscovery     | Purview Information Protection, DLP, Insider Risk, Audit, eDiscovery |
+| **Señales de contenido** | Configuración de uso compartido, ciclo de vida, revisiones de acceso, RAC/RCD | SharePoint Advanced Management (SAM)                     |
 
 ---
 
-## Quick Start for Execs
+## Inicio rápido para directivos
 
-- **Week 1–2**: Approve the **environment strategy** and **Managed Environments**. Turn on routing. Set baseline DLP.  
-- **Week 3–4**: Run **DAG oversharing** and **inactive site** reports, kick off access reviews, apply RAC/RCD on hot spots.  
-- **Weeks 5–6**: Align labels and DLP with business terms, enable audit‑only rules, then enforce. Wire up reporting for execs.  
-- **Ongoing**: Pin approved agents, monitor ownerless agents, and review consumption and connector usage monthly.  
-
----
-
-## Resources
-
-- [Copilot Governance: A Practical Guide From Our 4-Part Webinar Series](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/copilot-governance-a-practical-guide-from-our-4%E2%80%91part-webinar-series/4469033), the written summary of all four sessions in one place  
-- [Copilot Success Kit](https://adoption.microsoft.com/en-us/copilot/success-kit/)  
-- [Implementation Guide](https://aka.ms/Copilot/ImplementationSummaryGuide)  
-- [Technical Readiness Guide](https://aka.ms/Copilot/TechnicalReadinessGuide)  
-- [User Enablement Guide](https://aka.ms/Copilot/UserEnablementGuide)  
+- **Semanas 1-2**: aprueba la **estrategia de entornos** y los **entornos administrados**. Activa el enrutamiento. Define la base de DLP.
+- **Semanas 3-4**: ejecuta los informes de **uso compartido excesivo (DAG)** y de **sitios inactivos**, pon en marcha las revisiones de acceso y aplica RAC/RCD en los puntos críticos.
+- **Semanas 5-6**: alinea las etiquetas y la DLP con los términos del negocio, activa las reglas en modo de solo auditoría y después aplícalas. Configura los informes para la dirección.
+- **De forma continua**: ancla los agentes aprobados, supervisa los agentes sin propietario y revisa cada mes el consumo y el uso de conectores.
 
 ---
 
-## YouTube Video Playlist
+## Recursos
 
-[View all our sessions in a playlist](https://www.youtube.com/playlist?list=PLdkhFJc5w6-F-J9Os8IzyGy969USAMSIx)
-
-![Copilot governance](assets/copilot%20webinar/copilot%20governance.png)
+- [Copilot Governance: A Practical Guide From Our 4-Part Webinar Series](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/copilot-governance-a-practical-guide-from-our-4%E2%80%91part-webinar-series/4469033), el resumen escrito de las cuatro sesiones en un solo lugar (en inglés)
+- [Copilot Success Kit](https://adoption.microsoft.com/es-es/copilot/success-kit/)
+- [Guía de implementación](https://aka.ms/Copilot/ImplementationSummaryGuide)
+- [Guía de preparación técnica](https://aka.ms/Copilot/TechnicalReadinessGuide)
+- [Guía de capacitación de usuarios](https://aka.ms/Copilot/UserEnablementGuide)
 
 ---
 
-[Back to the Education Playground](../README.md#education-playground)
+## Lista de reproducción de YouTube
+
+[Ver todas las sesiones en una lista de reproducción](https://www.youtube.com/playlist?list=PLdkhFJc5w6-F-J9Os8IzyGy969USAMSIx)
+
+![Gobernanza de Copilot](assets/copilot%20webinar/copilot%20governance.png)
+
+---
+
+[Volver a Education Playground](../README.md#education-playground)

@@ -1,63 +1,66 @@
-# Copilot Licensing and Deployment: Who Gets What
+# Licencias y despliegue de Copilot: quién recibe qué
 
-![Copilot licensing and deployment: two tiers, one usage layer, and a plan that does not overwhelm your team](assets/copilot%20licensing%20and%20deployment/banner.png)
+![Licencias y despliegue de Copilot: dos niveles, una capa de uso y un plan que no desborda a tu equipo](assets/copilot%20licensing%20and%20deployment/banner.png)
 
-The question I get more than any other: how do we actually roll Copilot out without overwhelming the team, and who gets what. This is an interactive guide that answers it. It maps the right Copilot to each role, makes the spend predictable, and lays out a rollout that earns adoption instead of flooding people with tools nobody asked for. Healthcare-forward, general enough for any knowledge-worker organization, and every claim is checked against Microsoft's own documentation.
+La pregunta que más recibe el autor: cómo desplegar Copilot de verdad sin desbordar al equipo, y quién recibe qué. Esta guía interactiva la responde. Asigna el Copilot adecuado a cada puesto, hace que el gasto sea predecible y plantea un despliegue que se gana la adopción en lugar de inundar a la gente con herramientas que nadie ha pedido. Tiene un enfoque sanitario, pero es lo bastante general para cualquier organización de trabajadores del conocimiento, y cada afirmación está contrastada con la documentación de Microsoft.
 
 > [!TIP]
-> Open the interactive guide below. It has a role explorer (Director, Manager, Analyst, Knowledge worker, Engineer, Frontline, Security), light and dark mode, and a section jump-nav so a leader can read three sections and an IT admin can read the deep deployment mechanics without either one drowning.
+> Abre la guía interactiva que encontrarás más abajo. Tiene un explorador por puesto (director, responsable, analista, trabajador del conocimiento, ingeniero, primera línea, seguridad), modo claro y oscuro, y un menú para saltar entre secciones, de modo que un directivo pueda leer tres secciones y un administrador de TI pueda leer los detalles técnicos del despliegue sin que ninguno de los dos se ahogue.
+
+> [!NOTE]
+> La guía interactiva, la presentación y la hoja de referencia están de momento en inglés; los enlaces llevan a las versiones publicadas por el autor original.
 
 ---
 
-## Get the guide
+## Descarga la guía
 
-| Deliverable | What it is | Open or download |
+| Material | Qué es | Abrir o descargar |
 |---|---|---|
-| **Interactive guide** | The full reference: role explorer, executive lens, IT deployment playbook, consumption, agents, governance, and compliance. | [Open in browser](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/) · [Download HTML](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/index.html) |
-| **Exec deck** | A 16-slide, board-ready leadership readout that mirrors the guide: the model, who-gets-what by role, the people and platform sides of governance, the executive approach, the IT playbook, consumption, agents, compliance, and the rollout. | [View slides](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fheyitsgoad%2Fcopilot-playground%2Fmain%2Feducation%2520playground%2Fassets%2Fcopilot%2520licensing%2520and%2520deployment%2FCopilot-Licensing-Exec-Deck.pptx) · [Download PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-Exec-Deck.pdf) |
-| **One-page cheat sheet** | The whole thing on one landscape page: the model, the role matrix, the budget fact, the compliance guardrails, and the next steps. Print-and-pin. | [Open in browser](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-One-Pager.html) · [Download PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-One-Pager.pdf) |
+| **Guía interactiva** | La referencia completa: explorador por puesto, visión para la dirección, manual de despliegue para TI, consumo, agentes, gobernanza y cumplimiento normativo. | [Abrir en el navegador](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/) · [Descargar HTML](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/index.html) |
+| **Presentación para dirección** | Un informe para la dirección de 16 diapositivas, listo para el consejo, que refleja la guía: el modelo, quién recibe qué según el puesto, las facetas de personas y de plataforma de la gobernanza, el enfoque para la dirección, el manual de TI, el consumo, los agentes, el cumplimiento normativo y el despliegue. | [Ver diapositivas](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fheyitsgoad%2Fcopilot-playground%2Fmain%2Feducation%2520playground%2Fassets%2Fcopilot%2520licensing%2520and%2520deployment%2FCopilot-Licensing-Exec-Deck.pptx) · [Descargar PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-Exec-Deck.pdf) |
+| **Hoja de referencia de una página** | Todo en una sola página apaisada: el modelo, la matriz de puestos, el dato clave del presupuesto, las salvaguardas de cumplimiento y los siguientes pasos. Para imprimir y tener a mano. | [Abrir en el navegador](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-One-Pager.html) · [Descargar PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/copilot%20licensing%20and%20deployment/Copilot-Licensing-One-Pager.pdf) |
 
 > [!TIP]
-> **View slides** opens the deck in Microsoft's PowerPoint viewer in your browser, with a Download button right in the toolbar. The PDF links download so you can print or attach them. Tip: Ctrl-click (Cmd-click on Mac) any link to open it in a new tab.
+> **Ver diapositivas** abre la presentación en el visor de PowerPoint de Microsoft en tu navegador, con un botón de descarga en la barra de herramientas. Los enlaces a PDF descargan el archivo para que puedas imprimirlo o adjuntarlo. Consejo: pulsa Ctrl y haz clic (Cmd y clic en Mac) en cualquier enlace para abrirlo en una pestaña nueva.
 
 ---
 
-## What You Will Learn
+## Qué aprenderás
 
-- Where AI governance starts, and why it is step zero, not step eight
-- The two licenses that actually matter, and why there is no "Copilot Premium" to buy
-- Who gets a paid seat and who starts on free Chat, broken down by role level
-- What comes with a seat versus what costs extra, for Directors, managers, analysts, and engineers
-- How Cowork and agents are billed, and the one fact that drives your whole budget
-- Who is allowed to build agents versus who is allowed to use them, and where Agent 365 fits
-- The governance stack: your AI committee, champions, SharePoint Advanced Management, RCD, and Purview
-- The healthcare and compliance guardrails, including three dated items to handle this month
-- A phased rollout that builds the habit in waves instead of a big-bang launch
-
----
-
-## The Whole Thing in Six Lines
-
-1. There are two licenses that matter: **Copilot Chat** (free, already in your Microsoft 365) and **Microsoft 365 Copilot** (the paid seat). "Premium" is not a product you buy, it is an in-app label for the paid seat.
-2. Give free Chat to everyone eligible. Buy paid seats for the roles where the work is heavy: leaders, managers, analysts.
-3. **Cowork** and **agents** are usage-billed layers on top of a paid seat, not per-person licenses. Turn them on deliberately and cap the spend.
-4. Paid seats make most agent use free. Free-Chat users pay per interaction. That one fact drives the budget.
-5. Let a governed set of people build agents. Let everyone use the ones you approve.
-6. Roll out in waves and let the data pull the next one. A small paid pilot beats a big-bang launch every time.
+- Dónde empieza la gobernanza de la IA y por qué es el paso cero, no el paso ocho
+- Las dos licencias que de verdad importan y por qué no existe un "Copilot Premium" que comprar
+- Quién recibe una licencia de pago y quién empieza con el chat gratuito, según el nivel del puesto
+- Qué incluye una licencia y qué cuesta aparte, para directores, responsables, analistas e ingenieros
+- Cómo se facturan Cowork y los agentes, y el dato que condiciona todo tu presupuesto
+- Quién puede crear agentes y quién puede usarlos, y dónde encaja Agent 365
+- La estructura de gobernanza: tu comité de IA, los promotores internos (champions), SharePoint Advanced Management, RCD y Purview
+- Las salvaguardas sanitarias y de cumplimiento normativo, incluidos tres asuntos con fecha que hay que resolver este mes
+- Un despliegue por fases que crea el hábito por oleadas en lugar de un lanzamiento de golpe
 
 ---
 
-## Who This Is For
+## Todo en seis líneas
 
-- **Executives** deciding where to spend and how to sponsor a rollout that sticks
-- **IT and admin teams** who need the licensing mechanics, group assignment, and governance
-- **Anyone in a regulated or healthcare setting** who has to protect sensitive data while scaling AI
+1. Hay dos licencias que importan: **Copilot Chat** (gratuito, ya incluido en tu Microsoft 365) y **Microsoft 365 Copilot** (la licencia de pago). "Premium" no es un producto que se compre, es una etiqueta que aparece en la aplicación para la licencia de pago.
+2. Da el chat gratuito a todas las personas que cumplan los requisitos. Compra licencias de pago para los puestos con más carga de trabajo: directivos, responsables, analistas.
+3. **Cowork** y los **agentes** son capas que se facturan por uso sobre una licencia de pago, no licencias por persona. Actívalos de forma deliberada y limita el gasto.
+4. Las licencias de pago hacen que la mayor parte del uso de agentes sea gratuita. Los usuarios del chat gratuito pagan por interacción. Ese dato es el que condiciona el presupuesto.
+5. Deja que un grupo controlado de personas cree agentes. Deja que todo el mundo use los que apruebes.
+6. Despliega por oleadas y deja que los datos marquen la siguiente. Un piloto de pago pequeño siempre es mejor que un lanzamiento de golpe.
+
+---
+
+## Para quién es
+
+- **Directivos** que deciden dónde invertir y cómo patrocinar un despliegue que perdure
+- **Equipos de TI y administración** que necesitan conocer el funcionamiento de las licencias, la asignación por grupos y la gobernanza
+- **Cualquiera en un entorno regulado o sanitario** que tenga que proteger datos sensibles mientras extiende el uso de la IA
 
 ---
 
 > [!NOTE]
-> The guide does not hard-code prices, because Microsoft renders several of them dynamically. It names the figures worth confirming (current seat price, the Microsoft 365 Copilot Business SKU, E7, Cowork per-user cost, and Anthropic under your BAA) and tells you where to confirm them. Everything is current as of July 21, 2026.
+> La guía no incluye precios fijos, porque Microsoft muestra varios de ellos de forma dinámica. Indica las cifras que conviene confirmar (el precio actual de la licencia, la SKU de Microsoft 365 Copilot Business, E7, el coste por usuario de Cowork y Anthropic bajo tu BAA) y dónde confirmarlas. Todo está actualizado a 21 de julio de 2026.
 
 ---
 
-[Back to the Education Playground](../README.md#education-playground)
+[Volver a Education Playground](../README.md#education-playground)

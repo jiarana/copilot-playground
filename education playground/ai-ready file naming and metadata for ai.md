@@ -1,104 +1,104 @@
-[![Why AI Can't Find Your Files](assets/ai-ready%20files/ai-ready-file-example-page-1.png)](https://youtu.be/oNF78vg3mlU?si=FEkCYzMQ7rVSIir6)
+[![Por qué la IA no encuentra tus archivos](assets/ai-ready%20files/ai-ready-file-example-page-1.png)](https://youtu.be/oNF78vg3mlU?si=FEkCYzMQ7rVSIir6)
 
-# Why AI Can't Find Your Files (And the Simple Fix)
+# Por qué la IA no encuentra tus archivos (y la solución sencilla)
 
-I was watching someone the other day and learned something about AI that I haven't been able to stop thinking about. It wasn't a flashy new model or some prompt trick. It was something way more practical: how the way we name and build our files is either going to help AI or quietly work against it.
+Observando a alguien trabajar, el autor aprendió algo sobre la IA que no ha podido quitarse de la cabeza. No era un modelo nuevo y llamativo ni un truco de prompts. Era algo mucho más práctico: cómo la forma en que nombramos y construimos nuestros archivos va a ayudar a la IA o a jugar en su contra sin que nos demos cuenta.
 
-And the more I sat with it, the more I realized this is going to matter a lot as we build for an AI-first world.
+Y cuanto más lo pensaba, más claro tenía que esto va a importar mucho a medida que construimos para un mundo en el que la IA va primero.
 
-**Watch the full video on YouTube:**
+**Mira el vídeo completo en YouTube (en inglés):**
 https://youtu.be/oNF78vg3mlU?si=FEkCYzMQ7rVSIir6
 
 ---
 
-## We organize files for humans, not for AI
+## Organizamos los archivos para las personas, no para la IA
 
-Think about how most of us organize things today. We nest everything. A folder for 2026, then the customer, then the opportunity, and inside it a file called "Notes." Or maybe a policy and SOP folder tree that goes five levels deep with broad, generic titles.
+Piensa en cómo organiza las cosas hoy la mayoría de la gente. Lo anidamos todo. Una carpeta para 2026, dentro el cliente, dentro la oportunidad y, dentro de esta, un archivo llamado "Notas". O un árbol de carpetas de políticas y procedimientos con cinco niveles de profundidad y títulos amplios y genéricos.
 
-That structure makes sense to us. We navigate by memory and location. We know the file is in the customer folder, under this opportunity. That's how humans think.
+Esa estructura tiene sentido para nosotros. Nos movemos por memoria y por ubicación. Sabemos que el archivo está en la carpeta del cliente, dentro de esta oportunidad. Así es como piensan las personas.
 
-But AI doesn't think like that.
+Pero la IA no piensa así.
 
-Now picture that same sales folder with three or four different "Notes" files spread across different subfolders under the same customer. When you ask AI to find something in there, it's going to guess. A lot. Especially when everything is named "Notes." And the messier the structure, the worse the guessing gets.
+Ahora imagina esa misma carpeta de ventas con tres o cuatro archivos "Notas" distintos repartidos en subcarpetas diferentes del mismo cliente. Cuando le pides a la IA que encuentre algo ahí, va a adivinar. Mucho. Sobre todo si todo se llama "Notas". Y cuanto más desordenada es la estructura, peor adivina.
 
-## It comes down to metadata
+## Todo se reduce a los metadatos
 
-So here's what I learned that actually helps. It comes down to metadata.
+Esto es lo que de verdad ayuda: los metadatos.
 
-When AI looks for a file, it isn't always reading every word of every file. It works in two levels, and once that clicked for me, the whole thing made sense.
+Cuando la IA busca un archivo, no siempre lee cada palabra de cada archivo. Trabaja en dos niveles, y una vez que se entiende eso, todo cobra sentido.
 
-### Level one: the title
+### Nivel uno: el título
 
-The first thing AI looks at is the title. And this is where most of us are leaving value on the table.
+Lo primero que mira la IA es el título. Y aquí es donde la mayoría estamos desaprovechando valor.
 
-A file called "Customer, Opportunity, Subject" gives AI so much more to work with than a file called "Notes." Same thing on the policy side. A file named "Benefits, Parental Leave, 2026" tells AI exactly what it's looking at before it even opens it.
+Un archivo llamado "Cliente, Oportunidad, Asunto" le da a la IA mucho más con lo que trabajar que un archivo llamado "Notas". Lo mismo ocurre con las políticas. Un archivo llamado "Beneficios, Permiso parental, 2026" le dice a la IA exactamente qué es antes incluso de abrirlo.
 
-Compare these two:
+Compara estos dos:
 
-- `notes.docx`
-- `acme-corp-renewal-q3-discovery-notes-2026.md`
+- `notas.docx`
+- `acme-corp-renovacion-t3-notas-descubrimiento-2026.md`
 
-One of those is invisible to AI. The other one is basically answering the question before it's asked.
+Uno de ellos es invisible para la IA. El otro prácticamente responde a la pregunta antes de que se haga.
 
-### Level two: the top of the file
+### Nivel dos: el principio del archivo
 
-Here's the part I didn't know. Once AI decides a file might be relevant, it starts reading it. And some of the most valuable real estate in the entire file is the very top.
+Esta es la parte menos conocida. Cuando la IA decide que un archivo puede ser relevante, empieza a leerlo. Y uno de los espacios más valiosos de todo el archivo es el principio.
 
-If you put a short structured block at the beginning that spells out what the file is about and the topics inside it, AI immediately understands what it's looking at. Something like this:
+Si pones al inicio un bloque breve y estructurado que explique de qué trata el archivo y qué temas contiene, la IA entiende de inmediato qué está leyendo. Algo así:
 
 ```
 ---
-title: Parental Leave Policy (US)
-doc_type: hr-policy
-owner: People & Culture
-topics: parental leave, benefits, time off
+title: Política de permiso parental (EE. UU.)
+doc_type: politica-rrhh
+owner: Personas y Cultura
+topics: permiso parental, beneficios, tiempo libre
 effective_date: 2026-01-01
 last_reviewed: 2026-05-14
 version: 3.0
-status: active
+status: vigente
 ---
 ```
 
-That little block does a lot of work. It tells AI what this is, who it's for, and just as important, whether it's current.
+Ese pequeño bloque hace mucho trabajo. Le dice a la IA qué es, a quién va dirigido y, igual de importante, si está vigente.
 
-So when I say metadata, that's really all I mean. It's the title of the file, plus a little bit of context right at the top, so that when AI scans it, it knows fast whether this is the file it actually needs.
+Así que cuando hablamos de metadatos, nos referimos a eso: el título del archivo más un poco de contexto justo al principio, para que cuando la IA lo examine sepa rápidamente si es el archivo que de verdad necesita.
 
-## You don't need this on every file
+## No hace falta en todos los archivos
 
-Now, I'm not saying do this for every file. That's overkill, and honestly it would be exhausting.
+Esto no significa que haya que hacerlo en todos los archivos. Sería excesivo y, sinceramente, agotador.
 
-But think about the static stuff. The files that don't change much. HR policies. Benefits. SOPs. The things people search for in a ServiceNow or SharePoint knowledge base using AI.
+Pero piensa en el contenido estático. Los archivos que apenas cambian. Políticas de RR. HH. Beneficios. Procedimientos. Lo que la gente busca con IA en una base de conocimiento de ServiceNow o SharePoint.
 
-For those files, a little structure does two things.
+En esos archivos, un poco de estructura consigue dos cosas.
 
-First, it helps AI find the right answer for the person asking. When someone types "how much parental leave do I get," the right file basically raises its hand.
+Primero, ayuda a la IA a encontrar la respuesta correcta para quien pregunta. Cuando alguien escribe "¿cuántos días de permiso parental tengo?", el archivo correcto prácticamente levanta la mano.
 
-Second, it cuts down the latency. If AI is sitting there scanning through a pile of vaguely named files, the user is just waiting around for it to think, and that gets annoying fast. When AI has the right context up front, it gets to the answer quicker.
+Segundo, reduce el tiempo de espera. Si la IA tiene que revisar un montón de archivos con nombres vagos, el usuario se queda esperando a que piense, y eso cansa rápido. Cuando la IA tiene el contexto adecuado desde el principio, llega antes a la respuesta.
 
-## Where this is headed
+## Hacia dónde va esto
 
-I keep coming back to this because it's such a small change with a real payoff.
+Es un cambio muy pequeño con un beneficio real.
 
-We've spent years building file structures that make sense to people. Folders inside folders, organized by how we remember things. That's not wrong. But as more of how we find information runs through AI, the files that win are the ones that are easy for a machine to read, not just easy for a human to browse.
+Llevamos años construyendo estructuras de archivos que tienen sentido para las personas. Carpetas dentro de carpetas, organizadas según cómo recordamos las cosas. No está mal. Pero a medida que buscamos cada vez más información a través de la IA, los archivos que ganan son los que una máquina puede leer con facilidad, no solo los que una persona puede explorar con facilidad.
 
-I don't think every file needs this. But as we get more serious about how we build file structures for an AI-first world, I think this is one of the concepts that's going to really matter.
-
----
-
-## The one-page reference
-
-Here is a quick visual breakdown of what an AI-ready file looks like and the principles behind it. Feel free to download it and share it with your team.
-
-![What an AI-friendly file actually looks like (page 1)](assets/ai-ready%20files/ai-ready-file-example-page-1.png)
-
-![Tidy for humans is not the same as ready for AI (page 2)](assets/ai-ready%20files/ai-ready-file-example-page-2.png)
-
-**[Download the PDF: AI-Ready Files Metadata Example](https://github.com/heyitsgoad/copilot-playground/blob/main/education%20playground/assets/ai-ready%20files/AI-Ready-Files-Metadata-Example.pdf)**
+No todos los archivos lo necesitan. Pero a medida que nos tomemos más en serio cómo construimos estructuras de archivos para un mundo en el que la IA va primero, este es uno de los conceptos que más van a importar.
 
 ---
 
-Curious if anyone else is already thinking about this in how they build their knowledge bases. If you are, I'd love to hear how you're approaching it.
+## La referencia de una página
+
+Aquí tienes un desglose visual rápido de cómo es un archivo preparado para la IA y los principios que hay detrás. Puedes descargarlo y compartirlo con tu equipo. Las imágenes y el PDF están en inglés.
+
+![Cómo es realmente un archivo preparado para la IA (página 1)](assets/ai-ready%20files/ai-ready-file-example-page-1.png)
+
+![Ordenado para personas no es lo mismo que preparado para la IA (página 2)](assets/ai-ready%20files/ai-ready-file-example-page-2.png)
+
+**[Descarga el PDF: AI-Ready Files Metadata Example (en inglés)](https://github.com/heyitsgoad/copilot-playground/blob/main/education%20playground/assets/ai-ready%20files/AI-Ready-Files-Metadata-Example.pdf)**
 
 ---
 
-[Back to the Education Playground](../README.md#education-playground)
+Al autor le interesa saber si alguien más está pensando ya en esto al construir sus bases de conocimiento, y cómo lo está enfocando.
+
+---
+
+[Volver a Education Playground](../README.md#education-playground)
