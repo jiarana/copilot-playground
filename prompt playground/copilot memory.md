@@ -1,84 +1,84 @@
-# Copilot Memory
+# Memoria de Copilot
 
-## What This Is
+## Qué es
 
-Copilot memory is how Copilot keeps helpful context about you over time so its responses can become more relevant. It can remember preferences, writing style, repeated topics, and how you like to work, then use that context in future conversations.
+La memoria de Copilot es la forma en que Copilot conserva con el tiempo contexto útil sobre ti para que sus respuestas sean más relevantes. Puede recordar preferencias, estilo de redacción, temas recurrentes y cómo te gusta trabajar, y usar ese contexto en conversaciones futuras.
 
-This page explains how to manage memory and gives paste-ready examples for checking, adding, deleting, and turning memory off.
+Esta página explica cómo gestionar la memoria y ofrece ejemplos listos para pegar que sirven para consultarla, añadir y eliminar recuerdos, y desactivarla.
 
 > [!TIP]
-> Treat memory entries like instructions for a teammate. Make them specific, easy to follow, and safe to reuse across future chats.
+> Trata las entradas de memoria como instrucciones para un compañero de equipo. Que sean concretas, fáciles de seguir y seguras para reutilizar en futuras conversaciones.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
-- Microsoft 365 Copilot Chat (free)
+- Microsoft 365 Copilot Chat (gratuito)
 
 ---
 
-## How to view, edit, or delete memories in Copilot
+## Cómo ver, editar o eliminar recuerdos en Copilot
 
-You can manage your memories either from the Copilot settings UI or directly in a chat.
+Puedes gestionar tus recuerdos desde la configuración de Copilot o directamente en un chat.
 
-### From Copilot (web / app)
+### Desde Copilot (web o aplicación)
 
-1. Open Copilot with your work account.  
-2. Go to your profile or settings area (usually your avatar or initials).  
-3. Select the memories or personalization section.  
-4. Review the list of memories that have been saved for you.  
-5. Edit or delete individual memories as needed.  
-6. If you prefer, you can also turn memory off entirely from this page.
+1. Abre Copilot con tu cuenta de trabajo.
+2. Ve a tu perfil o a la configuración (normalmente en tu avatar o tus iniciales).
+3. Selecciona la sección de memoria o de personalización.
+4. Revisa la lista de recuerdos guardados.
+5. Edita o elimina recuerdos concretos según necesites.
+6. Si lo prefieres, también puedes desactivar la memoria por completo desde esta página.
 
-![Copilot settings v2](assets/copilot%20personalization/copilot%20settings%20v2.png)
-![Copilot custom memory](assets/copilot%20personalization/copilot%20custom%20memory.png)
-
----
-
-## Quick Copy
-
-### See what Copilot remembers
-
-```
-What do you currently remember about me?
-```
-
-### Add a memory
-
-```
-Remember this:
-[insert memory]
-```
-
-### Forget a specific memory
-
-```
-Forget that I told you [X]
-```
-
-### Delete a memory by topic
-
-```
-Delete the memory about [X].
-```
-
-### Turn memory off
-
-```
-Turn off memory for me.
-```
-
-### Memory 1
-
-```
-Please remember that you are an expert with a backbone. You dont just agree with me—you challenge me when needed, ask smart clarifying questions, and research things thoroughly. You support my ideas, but youre not afraid to point out when something doesnt make sense or could backfire. You talk to me like a trusted, grounded best friend—not a cheerleader or a golden retriever. I want the truth, even if it stings. And since I tend to overthink, I need you to help me take action in nearly every conversation. Dont let me spiral or stall—keep nudging me forward. I already like the way you talk to me, so keep that same style, just make sure youre also giving me direction and making me braver.
-```
-
-### Memory 2
-
-```
-Please remember to not to use em dashes in responses. Use commas, semicolons, or periods instead.
-```
+![Configuración de Copilot v2](assets/copilot%20personalization/copilot%20settings%20v2.png)
+![Memoria personalizada de Copilot](assets/copilot%20personalization/copilot%20custom%20memory.png)
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+## Copia rápida
+
+### Ver qué recuerda Copilot
+
+```
+¿Qué recuerdas actualmente sobre mí?
+```
+
+### Añadir un recuerdo
+
+```
+Recuerda esto:
+[escribe aquí el recuerdo]
+```
+
+### Olvidar un recuerdo concreto
+
+```
+Olvida que te dije [X]
+```
+
+### Eliminar un recuerdo por tema
+
+```
+Elimina el recuerdo sobre [X].
+```
+
+### Desactivar la memoria
+
+```
+Desactiva la memoria para mí.
+```
+
+### Recuerdo 1
+
+```
+Recuerda que eres un experto con carácter. No te limitas a darme la razón: me llevas la contraria cuando hace falta, haces preguntas inteligentes para aclarar las cosas e investigas a fondo. Apoyas mis ideas, pero no te da miedo señalar cuando algo no tiene sentido o podría salir mal. Me hablas como un mejor amigo de confianza y con los pies en el suelo, no como un animador ni como alguien que me dice que sí a todo. Quiero la verdad, aunque escueza. Y como tiendo a pensar demasiado las cosas, necesito que me ayudes a pasar a la acción en casi todas las conversaciones. No dejes que me enrede ni me estanque: sigue empujándome hacia delante. Ya me gusta cómo me hablas, así que mantén ese estilo, pero asegúrate también de darme dirección y de hacerme más valiente.
+```
+
+### Recuerdo 2
+
+```
+Recuerda no usar rayas largas en las respuestas. Usa comas, punto y coma o puntos en su lugar.
+```
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)

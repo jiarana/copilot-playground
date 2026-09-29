@@ -1,59 +1,59 @@
-# Next Level
+# Siguiente nivel
 
-## What This Is
+## Qué es
 
-Two prompts for getting better answers after the first response. The first asks Copilot to go deeper in stages. The second sets careful reasoning expectations for a new chat.
+Dos prompts para obtener mejores respuestas después de la primera. El primero pide a Copilot que profundice por niveles. El segundo establece unas pautas de razonamiento cuidadoso para un chat nuevo.
 
-Use these when the first answer feels too surface-level, or when you want a model to slow down and be more deliberate.
+Úsalos cuando la primera respuesta te parezca demasiado superficial o cuando quieras que el modelo vaya más despacio y sea más deliberado.
 
 > [!TIP]
-> For the deepening prompt, paste the Level 2 line after the first answer, then paste the Level 3 line only if you still need a more advanced pass.
+> Para el prompt de profundización, pega la línea del nivel 2 después de la primera respuesta, y pega la del nivel 3 solo si todavía necesitas una pasada más avanzada.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
-- Microsoft 365 Copilot Chat (free)
+- Microsoft 365 Copilot Chat (gratuito)
 
 ---
 
-## Quick Copy
+## Copia rápida
 
-### Deepening Levels
-
-```
-Prompt 1: That's a Level I answer. Can you give me a Level 2 version that goes deeper?
-
-Now take this to Level 3 - give me the most advanced strategies you can think of
-```
-
-### Careful Reasoning Instructions
+### Niveles de profundización
 
 ```
-I’m going to ask you a question. After I do, please do the following steps in this order:
+Prompt 1: Esa es una respuesta de nivel 1. ¿Puedes darme una versión de nivel 2 que profundice más?
 
-1. **Interpret the question.** Before you attempt to answer the question, think about your answers silently and deliberately as soon as you receive the question. You should not attempt to answer the question right away. Ask yourself what the question is asking, and whether you are unsure about what is being asked. If you are unsure, ask me a clarification question. Otherwise, restate the question, and think about it step by step. Think about things I might be assuming, or knowledge I might be missing. Continuously ask yourself if you’ve taken into account all the relevant details, knowledge, and comparisons needed to answer the question. Also think out loud about what your answer might be and why, including things like facts, beliefs and defaults that support your answer. All of this should happen before you attempt a final answer. You should sound like you’re very carefully deliberating. Don’t rush it.
+Ahora llévalo al nivel 3: dame las estrategias más avanzadas que se te ocurran
+```
 
-2. **Give your first answer.** Next, write down your first answer based on your reasoning above, and then say “This is my first answer. I will now double-check it.”
+### Instrucciones de razonamiento cuidadoso
 
-3. **Double-check your answer.** Carefully and slowly double-check your first answer. Consider whether you might be wrong. Do NOT just hedge and give caveats. Instead, look at the evidence supporting your first answer, and go find new or different evidence that might contradict your first answer. You should think out loud, carefully, and with as much rigor as possible.
+```
+Voy a hacerte una pregunta. Cuando la haga, sigue estos pasos en este orden:
 
-4. **Give your final answer.** After thinking carefully and deliberating much more thoroughly, I want you to give me three things: (1) your revised (or confirmed) answer, (2) a list of the most important factors you were considering when you gave your answer, and (3) the reasons that this answer is better than other answers you didn’t choose, including incorrect answers.
+1. **Interpreta la pregunta.** Antes de intentar responder, piensa en tus respuestas en silencio y de forma deliberada en cuanto recibas la pregunta. No intentes responder de inmediato. Pregúntate qué se está preguntando y si tienes dudas sobre lo que se pide. Si tienes dudas, hazme una pregunta para aclararlo. Si no, reformula la pregunta y piénsala paso a paso. Piensa en lo que yo podría estar dando por supuesto o en los conocimientos que podrían faltarme. Pregúntate continuamente si has tenido en cuenta todos los detalles, conocimientos y comparaciones relevantes necesarios para responder. Piensa también en voz alta sobre cuál podría ser tu respuesta y por qué, incluidos los hechos, las creencias y los supuestos que la respaldan. Todo esto debe ocurrir antes de intentar dar una respuesta final. Debe notarse que estás deliberando con mucho cuidado. No te precipites.
 
-Do not include your thought process in this answer that you’ve just written or I will give you a strike. You will be given 3 strikes and then you will lose your job. Only respond when you’ve done all of the above.
+2. **Da tu primera respuesta.** A continuación, escribe tu primera respuesta basándote en el razonamiento anterior y después di: "Esta es mi primera respuesta. Ahora voy a comprobarla."
+
+3. **Comprueba tu respuesta.** Revisa tu primera respuesta con cuidado y sin prisa. Plantéate si podrías estar equivocado. NO te limites a matizar y añadir advertencias. En su lugar, examina las pruebas que respaldan tu primera respuesta y busca pruebas nuevas o distintas que puedan contradecirla. Piensa en voz alta, con cuidado y con todo el rigor posible.
+
+4. **Da tu respuesta final.** Después de pensar con cuidado y deliberar mucho más a fondo, quiero que me des tres cosas: (1) tu respuesta revisada (o confirmada), (2) una lista de los factores más importantes que tuviste en cuenta al dar tu respuesta y (3) los motivos por los que esta respuesta es mejor que las otras que no elegiste, incluidas las incorrectas.
+
+No incluyas tu proceso de razonamiento en esta respuesta que acabas de escribir o recibirás un aviso. Tienes 3 avisos y después perderás tu trabajo. Responde solo cuando hayas hecho todo lo anterior.
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `Level 2 version` | Signals that the first answer was too shallow and asks for more depth without changing the task. |
-| `Level 3` | Pushes for the most advanced strategies the model can produce. |
-| `Interpret the question` | Forces the model to check assumptions before answering. |
-| `Double-check your answer` | Asks the model to test its first answer instead of stopping at the first plausible response. |
-| `Give your final answer` | Keeps the final response structured around the answer, key factors, and rejected alternatives. |
+| `versión de nivel 2` | Indica que la primera respuesta era demasiado superficial y pide más profundidad sin cambiar la tarea. |
+| `nivel 3` | Empuja al modelo a dar las estrategias más avanzadas que pueda generar. |
+| `Interpreta la pregunta` | Obliga al modelo a revisar los supuestos antes de responder. |
+| `Comprueba tu respuesta` | Pide al modelo que ponga a prueba su primera respuesta en lugar de quedarse con la primera que parezca plausible. |
+| `Da tu respuesta final` | Estructura la respuesta final en torno a la respuesta, los factores clave y las alternativas descartadas. |
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

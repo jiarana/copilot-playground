@@ -1,100 +1,100 @@
-# 10 Prompts for Executives
+# 10 prompts para directivos
 
-## What This Is
+## Qué es
 
-A short set of executive prompts for starting the day, finding decisions, preparing for meetings, summarizing long context, and shaping messages. Each prompt is intentionally small so it can be copied and adapted quickly.
+Un conjunto breve de prompts para directivos que sirve para empezar el día, identificar decisiones, preparar reuniones, resumir contexto extenso y dar forma a mensajes. Cada prompt es corto a propósito para poder copiarlo y adaptarlo rápidamente.
 
-The page also keeps the two longer executive prompts from the original deck: one for leadership style and one for getting started with Copilot.
+La página también incluye los dos prompts más largos para directivos de la presentación original: uno sobre estilo de liderazgo y otro para empezar con Copilot.
 
 > [!TIP]
-> Replace anything in braces with the topic, person, team, or file you want Copilot to focus on.
+> Sustituye todo lo que esté entre llaves por el tema, la persona, el equipo o el archivo en el que quieras que se centre Copilot.
 
 ---
 
-## 10 Executive Prompts
+## 10 prompts para directivos
 
-### What Changed Since Yesterday
-
-```
-What changed since yesterday?
-```
-
-### Decision List
+### Qué ha cambiado desde ayer
 
 ```
-What needs my decision today?
+¿Qué ha cambiado desde ayer?
 ```
 
-### Meeting Prep
+### Lista de decisiones
 
 ```
-Prep me for my next meeting.
+¿Qué necesita hoy una decisión mía?
 ```
 
-### Patterns and Risks
+### Preparación de reuniones
 
 ```
-Give me the patterns and risks on {topic}.
+Prepárame para mi próxima reunión.
 ```
 
-### Long Thread Summary
+### Patrones y riesgos
 
 ```
-Summarize this long thread.
+Dame los patrones y riesgos sobre {tema}.
 ```
 
-### Reply in My Tone
+### Resumen de una conversación larga
 
 ```
-Draft a reply in my tone.
+Resume esta conversación larga.
 ```
 
-### Message Options
+### Respuesta con mi tono
 
 ```
-Give me three options for this message.
+Redacta una respuesta con mi tono.
 ```
 
-### Person or Team Context
+### Opciones de mensaje
 
 ```
-What did {person or team} say about {topic}?
+Dame tres opciones para este mensaje.
 ```
 
-### File Summary
+### Contexto de una persona o equipo
 
 ```
-Summarize this file into bullet points.
+¿Qué ha dicho {persona o equipo} sobre {tema}?
 ```
 
-### Executive Rewrite
+### Resumen de un archivo
 
 ```
-Rewrite this for executives.
+Resume este archivo en viñetas.
 ```
 
----
-
-## Golden Nugget Prompt: Leadership Style
-
-### Leadership Style
+### Reescritura para dirección
 
 ```
-Look at the emails, Teams meetings, documents, teams chats that I've sent in the last year. Use these messages to distill a leadership style document that I can use to inform Copilot of my personal voice and style based on the above analysis. Give me a breakdown of my top 5 strengths in a Table with the following formation | Strength | description | how it helps me in my role | how it could be misunderstood | 2 ways I can build this strength. In another table give me a breakdown of 3 areas for improvement in the following formation | Improvement area | description | how it impacts my role | how it could be misunderstood | 3 ways I can improve. I would also like 3 OKRs based on the above analysis that I could reach in the next 6-9 months.
+Reescribe esto para directivos.
 ```
 
 ---
 
-## Getting Started with Copilot
+## Prompt estrella: estilo de liderazgo
 
-### Executive Copilot Coach
+### Estilo de liderazgo
 
 ```
-Hey Copilot, I’m a newbie in the Copilot world. I’m an executive and I don’t know where to start with Copilot. As a coach specialized on training executives to get the most value of Copilot, teach me step by step on what I should focus on to make me comfortable and to help me have impact. Feel free to ask me questions along this coaching session so it can have a good impact on my work and on my learning curve.
+Revisa los correos, reuniones de Teams, documentos y chats de Teams que he enviado en el último año. Usa estos mensajes para destilar un documento sobre mi estilo de liderazgo que pueda usar para indicarle a Copilot mi voz y mi estilo personales, basado en el análisis anterior. Dame un desglose de mis 5 principales fortalezas en una tabla con este formato: | Fortaleza | descripción | cómo me ayuda en mi puesto | cómo podría malinterpretarse | 2 formas de reforzar esta fortaleza |. En otra tabla, dame un desglose de 3 áreas de mejora con este formato: | Área de mejora | descripción | cómo afecta a mi puesto | cómo podría malinterpretarse | 3 formas de mejorar |. También quiero 3 OKR basados en el análisis anterior que pueda alcanzar en los próximos 6-9 meses.
 ```
-
-Download the full deck [here](https://github.com/heyitsgoad/copilot-playground/raw/main/prompt%20playground/assets/copilot%20personalization/copilot%20for%20executives/Executive%20Briefing.pdf)
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+## Primeros pasos con Copilot
+
+### Coach de Copilot para directivos
+
+```
+Hola, Copilot. Soy nuevo en el mundo de Copilot. Soy directivo y no sé por dónde empezar con Copilot. Como coach especializado en formar a directivos para sacar el máximo partido a Copilot, enséñame paso a paso en qué debo centrarme para sentirme cómodo y conseguir impacto. Hazme todas las preguntas que necesites durante esta sesión para que tenga un buen efecto en mi trabajo y en mi curva de aprendizaje.
+```
+
+Descarga la presentación completa [aquí](https://github.com/heyitsgoad/copilot-playground/raw/main/prompt%20playground/assets/copilot%20personalization/copilot%20for%20executives/Executive%20Briefing.pdf) (PDF en inglés).
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)

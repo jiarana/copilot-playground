@@ -1,172 +1,172 @@
-# Copilot in Outlook Prompt Pack
+# Pack de prompts de Copilot en Outlook
 
-## What This Is
+## Qué es
 
-A grouped pack of prompts for Copilot in Outlook. They cover inbox triage, long-thread summaries, drafting, rewriting, Coaching, cross-signal prep, and meeting-related email tasks.
+Un pack de prompts agrupados para Copilot en Outlook. Cubren la clasificación de la bandeja de entrada, los resúmenes de conversaciones largas, la redacción y reescritura, el Coaching, la preparación a partir de varias fuentes y las tareas de correo relacionadas con reuniones.
 
-Use them when your inbox is full, a thread has gotten too long, or you need a cleaner draft before sending.
+Úsalos cuando tu bandeja de entrada esté llena, una conversación se haya alargado demasiado o necesites un borrador más limpio antes de enviarlo.
 
 > [!TIP]
-> Swap anything in `[brackets]` for your own details, like `[person]` or `[customer]`, before running. The more specific you are, the sharper the result.
+> Sustituye todo lo que esté `[entre corchetes]` por tus datos, como `[persona]` o `[cliente]`, antes de ejecutarlo. Cuanto más concreto seas, mejor será el resultado.
 
 ---
 
-## Inbox Triage
+## Clasificación de la bandeja de entrada
 
-Use these when you need to find what matters in a messy inbox.
+Úsalos cuando necesites encontrar lo importante en una bandeja de entrada desordenada.
 
-### Unread Email Triage
-
-```
-Summarize all unread emails from the last 24 hours and group them by what needs a reply, what's FYI, and what I can ignore.
-```
-
-### Waiting on Me
+### Clasificar los correos no leídos
 
 ```
-What are the most important emails I haven't responded to this week, and who's waiting on me?
+Resume todos los correos no leídos de las últimas 24 horas y agrúpalos en: los que necesitan respuesta, los que son solo informativos y los que puedo ignorar.
 ```
 
-### Unanswered Questions
+### Lo que depende de mí
 
 ```
-Find every email where someone asked me a question I never answered.
+¿Cuáles son los correos más importantes a los que no he respondido esta semana y quién está esperando mi respuesta?
 ```
 
-### Catch Up After Time Away
+### Preguntas sin responder
 
 ```
-Catch me up on everything I missed while I was out Monday through Wednesday. Highlight anything urgent.
+Encuentra todos los correos en los que alguien me hizo una pregunta que nunca respondí.
 ```
 
-### Manager and Direct Reports
+### Ponerse al día después de una ausencia
 
 ```
-Show me emails from my manager and direct reports from the past week and tell me what each one needs.
+Ponme al día de todo lo que me perdí mientras estuve fuera de lunes a miércoles. Destaca todo lo urgente.
 ```
 
----
-
-## Long-Thread Summarization
-
-Use these when a thread has gotten too long to read from the top.
-
-### Decisions and Next Steps
+### Responsable y colaboradores directos
 
 ```
-Summarize this thread and tell me what was decided, what's still open, and who owns each next step.
-```
-
-### Current State of the Debate
-
-```
-This 40-message thread has been going for two weeks. Give me the TL;DR and the current state of the debate.
-```
-
-### What Changed Since I Was Added
-
-```
-What changed in this thread since I was last added?
+Muéstrame los correos de mi responsable y de mis colaboradores directos de la última semana y dime qué necesita cada uno.
 ```
 
 ---
 
-## Drafting & Rewriting
+## Resumen de conversaciones largas
 
-Use these to control voice, tone, and clarity before you send.
+Úsalos cuando una conversación se haya alargado demasiado como para leerla desde el principio.
 
-### Decline and Offer Times
-
-```
-Draft a reply declining this meeting politely, but offer two alternative times next week.
-```
-
-### Concise and Direct
+### Decisiones y siguientes pasos
 
 ```
-Rewrite my draft to be more concise and direct, and remove anything that sounds defensive.
+Resume esta conversación y dime qué se ha decidido, qué sigue abierto y quién es responsable de cada siguiente paso.
 ```
 
-### Customer Delay Reply
+### Estado actual del debate
 
 ```
-Reply to this customer acknowledging the delay, taking ownership, and giving a concrete next step. Professional but warm.
+Esta conversación de 40 mensajes lleva dos semanas abierta. Dame el resumen en pocas líneas y el estado actual del debate.
 ```
 
-### Polished Executive Email
+### Qué ha cambiado desde que me añadieron
 
 ```
-Turn these bullet points into a polished email to an executive audience.
-```
-
-Then paste your bullets after the prompt.
-
-### Confident Rewrite
-
-```
-Make this email sound more confident and less apologetic.
+¿Qué ha cambiado en esta conversación desde la última vez que me añadieron?
 ```
 
 ---
 
-## Coaching by Copilot
+## Redacción y reescritura
 
-Use this with the built-in Coaching feature to check tone, clarity, and reader sentiment.
+Úsalos para controlar la voz, el tono y la claridad antes de enviar.
 
-### Coach My Draft
-
-```
-Coach my draft on tone, clarity, and reader sentiment before I send it.
-```
-
----
-
-## Cross-Signal & Prep
-
-Use these when Copilot needs to pull across messages and threads to get you ready.
-
-### Follow Up with a Person
+### Rechazar y proponer horarios
 
 ```
-Find the latest email from `[person]` and draft a follow-up asking for a status update on the project they mentioned.
+Redacta una respuesta que rechace esta reunión con educación, pero que ofrezca dos horarios alternativos la próxima semana.
 ```
 
-### Weekly Action Checklist
+### Conciso y directo
 
 ```
-Pull the action items assigned to me across all emails this week into a single checklist.
+Reescribe mi borrador para que sea más conciso y directo, y elimina todo lo que suene a estar a la defensiva.
 ```
 
-### Customer Call Prep
+### Respuesta a un cliente por un retraso
 
 ```
-Summarize my email exchanges with `[customer]` over the last month so I can prep for our call.
+Responde a este cliente reconociendo el retraso, asumiendo la responsabilidad y dando un siguiente paso concreto. Profesional pero cercano.
 ```
 
-### Open Commitments
+### Correo pulido para dirección
 
 ```
-What commitments did I make over email this week that I haven't followed through on yet?
+Convierte estas viñetas en un correo pulido dirigido a directivos.
+```
+
+Después pega tus viñetas tras el prompt.
+
+### Reescritura con más seguridad
+
+```
+Haz que este correo suene más seguro y menos a disculpa.
 ```
 
 ---
 
-## Meeting & Calendar Adjacent
+## Coaching de Copilot
 
-Use these when inbox context and calendar context need to work together.
+Úsalo con la función de Coaching integrada para revisar el tono, la claridad y la percepción del lector.
 
-### Agenda Email
-
-```
-Draft an email to the attendees of my 2pm summarizing the agenda and what I need from each of them.
-```
-
-### Dial-In Details
+### Revisa mi borrador
 
 ```
-Find the email with the dial-in details for tomorrow's review and pull them out for me.
+Revisa mi borrador en cuanto a tono, claridad y percepción del lector antes de que lo envíe.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+## Preparación a partir de varias fuentes
+
+Úsalos cuando Copilot tenga que reunir información de varios mensajes y conversaciones para prepararte.
+
+### Seguimiento con una persona
+
+```
+Busca el último correo de `[persona]` y redacta un seguimiento pidiendo una actualización del estado del proyecto que mencionó.
+```
+
+### Lista semanal de tareas
+
+```
+Reúne en una sola lista de comprobación las tareas que se me han asignado en todos los correos de esta semana.
+```
+
+### Preparación de una llamada con un cliente
+
+```
+Resume mis intercambios de correo con `[cliente]` del último mes para que pueda preparar nuestra llamada.
+```
+
+### Compromisos pendientes
+
+```
+¿Qué compromisos he adquirido por correo esta semana que todavía no he cumplido?
+```
+
+---
+
+## Relacionados con reuniones y calendario
+
+Úsalos cuando el contexto de la bandeja de entrada y el del calendario tengan que trabajar juntos.
+
+### Correo con el orden del día
+
+```
+Redacta un correo para los asistentes de mi reunión de las 14:00 que resuma el orden del día y lo que necesito de cada uno de ellos.
+```
+
+### Datos de conexión
+
+```
+Busca el correo con los datos de conexión de la revisión de mañana y extráelos.
+```
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)

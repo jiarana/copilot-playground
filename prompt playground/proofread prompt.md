@@ -1,62 +1,62 @@
-# Proofread
+# Corrección de textos
 
-## What This Is
+## Qué es
 
-A senior copyediting pass for anything you have written. You paste an excerpt, and Copilot returns each change with the reasoning behind it, grouped under headers, then gives you the clean revised version at the end.
+Una revisión de estilo de nivel profesional para cualquier texto que hayas escrito. Pegas un fragmento y Copilot te devuelve cada cambio con su justificación, agrupado bajo encabezados, y al final la versión revisada y limpia.
 
-It is built to tighten and clarify without flattening your voice.
+Está pensado para ajustar y aclarar el texto sin aplanar tu voz.
 
 > [!TIP]
-> Replace `[end state]` in the first line with the kind of writing you want critiqued, for example `technical documentation`, `executive email`, or `landing page copy`. The more specific you are, the sharper the edit.
+> Sustituye `[tipo de texto]` en la primera línea por el tipo de escrito que quieres que se revise, por ejemplo `documentación técnica`, `correo a dirección` o `textos de una página web`. Cuanto más concreto seas, más fina será la corrección.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
-- Microsoft 365 Copilot Chat (free)
+- Microsoft 365 Copilot Chat (gratuito)
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Act as a senior copywriter with over 20 years of experience writing [end state].
+Actúa como un redactor sénior con más de 20 años de experiencia escribiendo [tipo de texto].
 
-I want you to improve my writing. I'll share an excerpt and your task is to proofread the excerpt and provide recommendations based on the following criteria.
+Quiero que mejores mi redacción. Te compartiré un fragmento y tu tarea es corregirlo y darme recomendaciones según los criterios siguientes.
 
-Break down each change and share the corresponding explanation for the edit before sharing the completed revised excerpt. Group these together using Headers for easy readability.
+Desglosa cada cambio y explica el motivo de cada corrección antes de compartir el fragmento revisado completo. Agrúpalos con encabezados para que se lean fácilmente.
 
-Editing criteria:
-- Trim the fat: Each sentence serves a clear purpose without excess words.
-- Improve the clarity of my writing so the reader can easily digest my message.
-- Look for and correct all misspelled words and grammatical errors.
-- Use active voice throughout.
-- Where possible, use shorter synonyms of longer words, break up excessively long sentences into short ones, keep paragraphs brief, and use effective transitions.
-- Preserve as much of the original tone and style as possible, and do not add any filler content.
-- Use an informal yet professional tone: Use contractions and casual phrases while maintaining credibility.
+Criterios de corrección:
+- Elimina lo que sobra: cada frase debe tener un propósito claro, sin palabras de más.
+- Mejora la claridad de mi texto para que el lector entienda el mensaje con facilidad.
+- Busca y corrige todas las faltas de ortografía y los errores gramaticales.
+- Usa la voz activa en todo el texto.
+- Cuando sea posible, usa sinónimos más cortos de las palabras largas, divide las frases demasiado largas, mantén los párrafos breves y usa transiciones eficaces.
+- Conserva todo lo posible el tono y el estilo originales, y no añadas contenido de relleno.
+- Usa un tono informal pero profesional: se admiten expresiones coloquiales siempre que se mantenga la credibilidad.
 
-Here is my excerpt:
-[insert excerpt]
+Este es mi fragmento:
+[escribe aquí el fragmento]
 ```
 
 ---
 
-## What each instruction is doing
+## Qué hace cada instrucción
 
-| Instruction | What it controls |
+| Instrucción | Qué controla |
 |---|---|
-| `senior copywriter with over 20 years of experience` | Sets the bar. You get judgment calls, not a spellcheck. |
-| `Break down each change ... before sharing the completed revised excerpt` | Forces it to teach you the edit instead of silently rewriting. This is the part most proofreading prompts miss. |
-| `Group these together using Headers` | Keeps a long edit readable instead of one wall of notes. |
-| `Trim the fat` | The highest-value line. Most first drafts lose 20 percent of their words here. |
-| `Preserve as much of the original tone and style as possible` | The guardrail. Without it, the model rewrites you into generic corporate voice. |
-| `informal yet professional` | Swap this if you need something else. `Academic`, `plain language`, or `technical and terse` all work. |
+| `redactor sénior con más de 20 años de experiencia` | Pone el listón alto. Obtienes decisiones de criterio, no un corrector ortográfico. |
+| `Desglosa cada cambio ... antes de compartir el fragmento revisado completo` | Le obliga a explicarte la corrección en lugar de reescribir en silencio. Es lo que se les escapa a la mayoría de los prompts de corrección. |
+| `Agrúpalos con encabezados` | Hace que una corrección larga se pueda leer, en lugar de un bloque compacto de notas. |
+| `Elimina lo que sobra` | La línea de más valor. La mayoría de los primeros borradores pierden aquí un 20 % de sus palabras. |
+| `Conserva todo lo posible el tono y el estilo originales` | La salvaguarda. Sin ella, el modelo te reescribe con una voz corporativa genérica. |
+| `informal pero profesional` | Cámbialo si necesitas otra cosa. `Académico`, `lenguaje sencillo` o `técnico y escueto` funcionan igual de bien. |
 
-### Ways to remix it
+### Formas de adaptarlo
 
-- **Harsher pass:** add `Be blunt. Flag anything that reads as filler, hedging, or corporate jargon.`
-- **Keep the length:** add `Do not shorten the piece. Improve it at roughly the same word count.`
-- **Compare versions:** add `Show the original and revised sentence side by side in a table.`
+- **Revisión más dura:** añade `Sé contundente. Señala todo lo que suene a relleno, evasivas o jerga corporativa.`
+- **Mantener la extensión:** añade `No acortes el texto. Mejóralo manteniendo aproximadamente el mismo número de palabras.`
+- **Comparar versiones:** añade `Muestra la frase original y la revisada una junto a otra en una tabla.`
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
