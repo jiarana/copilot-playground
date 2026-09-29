@@ -1,207 +1,212 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.png">
-  <img alt="Copilot Playground. Agents, prompts, and field guides for Microsoft 365 Copilot, Copilot Studio, and Agent 365, by Michael Goad, Copilot Solution Engineer. Six agents, 33 prompts, ten field guides." src="assets/hero-light.png" width="100%">
+  <img alt="Copilot Playground. Agentes, prompts y guías prácticas para Microsoft 365 Copilot, Copilot Studio y Agent 365, por Michael Goad, Copilot Solution Engineer. Seis agentes, 33 prompts y diez guías prácticas." src="assets/hero-light.png" width="100%">
 </picture>
 
-# Agents, prompts, and field guides for Microsoft 365 Copilot
+> [!IMPORTANT]
+> **Traducción al español** del repositorio [heyitsgoad/copilot-playground](https://github.com/heyitsgoad/copilot-playground), creado por **Michael Goad** y publicado con licencia MIT. Todo el mérito del contenido es de su autor. Si encuentras un error de traducción, abre una incidencia en este repositorio; si el error está en el contenido original, comunícaselo al autor en su repositorio.
 
-I am a Copilot Solution Engineer at Microsoft, and since joining I have been sharing what I learn, build, and break in the open.
+# Agentes, prompts y guías prácticas para Microsoft 365 Copilot
 
-This is the whole library: **6 agents**, **33 prompts**, and **10 field guides** covering how to design, deploy, govern, and teach AI across Microsoft 365 Copilot, Copilot Studio, and Agent 365. Everything here is free to copy, adapt, and use.
+Soy Copilot Solution Engineer en Microsoft y, desde que me incorporé, comparto abiertamente lo que aprendo, construyo y rompo.
+
+Esta es la biblioteca completa: **6 agentes**, **33 prompts** y **10 guías prácticas** sobre cómo diseñar, desplegar, gobernar y enseñar IA con Microsoft 365 Copilot, Copilot Studio y Agent 365. Todo lo que hay aquí se puede copiar, adaptar y usar libremente.
 
 > [!NOTE]
-> This is a personal community resource. The analysis and opinions are my own and are not an official Microsoft position.
+> Este es un recurso personal para la comunidad. Los análisis y opiniones son míos y no representan una posición oficial de Microsoft.
 
-## Start here
+## Empieza aquí
 
-New to this? Pick the row that sounds like you.
+¿Eres nuevo en esto? Elige la fila que mejor te describa.
 
-| If you are | Start with |
+| Si eres | Empieza por |
 | --- | --- |
-| Brand new to Copilot | [Getting Started with Copilot](./prompt%20playground/getting%20started%20with%20copilot.md), then [10 Starter Chat Prompts](./prompt%20playground/10%20starter%20copilot%20chat%20prompts.md) |
-| An executive or leader | [The Executive Playbook](./education%20playground/getting%20started%20with%20copilot%20premium%2C%20an%20executive%20playbook.md) |
-| Running IT, security, or compliance | [Copilot Governance](./education%20playground/copilot%20governance%20getting%20started.md), then [The Copilot Reporting Map](./education%20playground/the%20copilot%20reporting%20map.md) |
-| Deciding who gets licensed | [Licensing and Deployment](./education%20playground/copilot%20licensing%20and%20deployment%2C%20who%20gets%20what.md) |
-| Ready to build an agent | [Chief of Staff](./agent%20playground/chief%20of%20staff.md) |
+| Completamente nuevo en Copilot | [Primeros pasos con Copilot](./prompt%20playground/getting%20started%20with%20copilot.md) y después [10 prompts de chat para empezar](./prompt%20playground/10%20starter%20copilot%20chat%20prompts.md) |
+| Directivo o responsable de equipo | [El manual para directivos](./education%20playground/getting%20started%20with%20copilot%20premium%2C%20an%20executive%20playbook.md) |
+| Responsable de TI, seguridad o cumplimiento normativo | [Gobernanza de Copilot](./education%20playground/copilot%20governance%20getting%20started.md) y después [El mapa de informes de Copilot](./education%20playground/the%20copilot%20reporting%20map.md) |
+| Quien decide a quién se asignan licencias | [Licencias y despliegue](./education%20playground/copilot%20licensing%20and%20deployment%2C%20who%20gets%20what.md) |
+| Listo para crear un agente | [Jefe de gabinete](./agent%20playground/chief%20of%20staff.md) |
 
-## What is in here
+## Qué contiene
 
-| Playground | Count | What it is |
+| Sección | Cantidad | Qué es |
 | --- | --- | --- |
-| [Agent Playground](#agent-playground) | 6 | Agents I have built, with setup steps and starter prompts |
-| [Prompt Playground](#prompt-playground) | 33 | Prompts and personalizations, ready to copy |
-| [Education Playground](#education-playground) | 10 | Field guides for admins, executives, and practitioners |
+| [Agent Playground](#agent-playground) | 6 | Agentes que he creado, con pasos de configuración y prompts iniciales |
+| [Prompt Playground](#prompt-playground) | 33 | Prompts y personalizaciones listos para copiar |
+| [Education Playground](#education-playground) | 10 | Guías prácticas para administradores, directivos y profesionales |
 
 ---
 
 ## Agent Playground
 
-Agents built while learning Copilot Studio and Microsoft 365 Copilot. Each page includes an overview and licensing notes, setup with connectors and permissions, and starter prompts.
+Agentes creados mientras aprendía Copilot Studio y Microsoft 365 Copilot. Cada página incluye una descripción general y notas sobre licencias, la configuración con conectores y permisos, y prompts iniciales.
 
-### Productivity and work management
+### Productividad y gestión del trabajo
 
-| Agent | What it does |
+| Agente | Qué hace |
 | --- | --- |
-| [BossBuddy](./agent%20playground/bossbuddy.md) | A virtual manager for strategy, career growth, and opportunity coaching |
-| [Taskmaster](./agent%20playground/taskmaster.md) | Chief of staff that tracks work, surfaces priorities, and pulls action items |
-| [Chief of Staff](./agent%20playground/chief%20of%20staff.md) | Build your own in about 15 minutes. Includes two Word templates |
+| [BossBuddy](./agent%20playground/bossbuddy.md) | Un jefe virtual para estrategia, desarrollo profesional y orientación sobre oportunidades |
+| [Taskmaster](./agent%20playground/taskmaster.md) | Un jefe de gabinete que hace seguimiento del trabajo, destaca prioridades y extrae tareas pendientes |
+| [Jefe de gabinete (Chief of Staff)](./agent%20playground/chief%20of%20staff.md) | Crea el tuyo en unos 15 minutos. Incluye dos plantillas de Word |
 
-### Impact and self-awareness
+### Impacto y autoconocimiento
 
-| Agent | What it does |
+| Agente | Qué hace |
 | --- | --- |
-| [Impact Check](./agent%20playground/impact%20check.md) | Shows your real influence across projects and teammates, from data you already have |
+| [Impact Check](./agent%20playground/impact%20check.md) | Muestra tu influencia real en proyectos y compañeros a partir de datos que ya tienes |
 
-### Communication and presentation
+### Comunicación y presentaciones
 
-| Agent | What it does |
+| Agente | Qué hace |
 | --- | --- |
-| [Professor X](./agent%20playground/professor%20x.md) | Presentation coach. Submit a transcript, get actionable feedback |
+| [Professor X](./agent%20playground/professor%20x.md) | Entrenador de presentaciones. Envía una transcripción y recibe comentarios prácticos |
 
-### Contracts and compliance
+### Contratos y cumplimiento normativo
 
-| Agent | What it does |
+| Agente | Qué hace |
 | --- | --- |
-| [Redline Rover](./agent%20playground/readline%20rover.md) | Bidirectional gap analysis between quality templates and customer agreements. Built by [Sue Vencill](https://www.linkedin.com/in/suevencill/) |
+| [Redline Rover](./agent%20playground/readline%20rover.md) | Análisis de diferencias en ambos sentidos entre plantillas de calidad y acuerdos con clientes. Creado por [Sue Vencill](https://www.linkedin.com/in/suevencill/) |
 
 ---
 
 ## Prompt Playground
 
-Favorite prompts and personalizations. Most pages have a Quick Copy block so you can grab the prompt in one click.
+Prompts y personalizaciones favoritos. La mayoría de las páginas tienen un bloque de copia rápida para que puedas llevarte el prompt con un clic.
 
-### Getting started
+### Primeros pasos
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Getting Started with Copilot](./prompt%20playground/getting%20started%20with%20copilot.md) | Learn the ropes and get comfortable with your first prompts |
-| [10 Starter Chat Prompts](./prompt%20playground/10%20starter%20copilot%20chat%20prompts.md) | Ten practical prompts for summaries, rewrites, agendas, and FAQs |
+| [Primeros pasos con Copilot](./prompt%20playground/getting%20started%20with%20copilot.md) | Aprende lo básico y familiarízate con tus primeros prompts |
+| [10 prompts de chat para empezar](./prompt%20playground/10%20starter%20copilot%20chat%20prompts.md) | Diez prompts prácticos para resúmenes, reescrituras, órdenes del día y preguntas frecuentes |
 
-### Personalization and memory
+### Personalización y memoria
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Copilot Memory](./prompt%20playground/copilot%20memory.md) | Examples for adding information to Copilot's memory |
-| [Copilot Personalization](./prompt%20playground/copilot%20personalization.md) | Templates for customizing how Copilot responds to you |
+| [Memoria de Copilot](./prompt%20playground/copilot%20memory.md) | Ejemplos para añadir información a la memoria de Copilot |
+| [Personalización de Copilot](./prompt%20playground/copilot%20personalization.md) | Plantillas para personalizar cómo te responde Copilot |
 
-### Daily workflow
+### Trabajo diario
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Start My Day](./prompt%20playground/start%20my%20day.md) | A morning overview to run daily |
-| [Kick-off, Reset, and Wrap-up](./prompt%20playground/morning-kickoff-afternoon-reset-and-wrap-up.md) | Three-part set covering your full workday |
-| [Check My Calendar](./prompt%20playground/check%20my%20calendar.md) | A quick read on what is ahead |
-| [Meeting Notes to Action Table](./prompt%20playground/meeting%20notes%20to%20action%20items.md) | Raw notes into a prioritized action table and executive summary |
-| [Copilot in Outlook Prompt Pack](./prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md) | Inbox triage, thread summaries, drafting, tone control, meeting prep |
-| [Executive Assistant Prompt Pack](./prompt%20playground/executive%20assistant%20prompt%20pack.md) | Inbox triage, time zone scheduling, minutes, contracts, and event logistics for admin professionals |
-| [Copilot for Executive Admins](./prompt%20playground/copilot%20for%20executive%20admins.md) | The four-ingredient prompt method and 25 prompts for agendas, drafts, trip briefs, catch-ups, and delegate mailboxes |
+| [Empieza mi día](./prompt%20playground/start%20my%20day.md) | Un resumen matutino para ejecutar cada día |
+| [Arranque, reajuste y cierre](./prompt%20playground/morning-kickoff-afternoon-reset-and-wrap-up.md) | Un conjunto de tres partes que cubre toda tu jornada |
+| [Revisa mi calendario](./prompt%20playground/check%20my%20calendar.md) | Un vistazo rápido a lo que tienes por delante |
+| [De notas de reunión a tabla de acciones](./prompt%20playground/meeting%20notes%20to%20action%20items.md) | Convierte notas sin procesar en una tabla de acciones priorizada y un resumen ejecutivo |
+| [Pack de prompts de Copilot en Outlook](./prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md) | Clasificación de la bandeja de entrada, resúmenes de conversaciones, redacción, control del tono y preparación de reuniones |
+| [Pack de prompts para asistentes de dirección](./prompt%20playground/executive%20assistant%20prompt%20pack.md) | Clasificación de la bandeja de entrada, planificación entre zonas horarias, actas, contratos y logística de eventos para profesionales administrativos |
+| [Copilot para asistentes de dirección](./prompt%20playground/copilot%20for%20executive%20admins.md) | El método de prompts de cuatro ingredientes y 25 prompts para órdenes del día, borradores, informes de viaje, puestas al día y buzones delegados |
 
-### Writing and output quality
+### Redacción y calidad de los resultados
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Proofread](./prompt%20playground/proofread%20prompt.md) | Run your writing through a Copilot proofreading pass |
-| [Next Level](./prompt%20playground/level%20up%20prompt.md) | Take any output further and sharpen the final product |
-| [Copywriting Precision and Tone](./prompt%20playground/copywriting%20precision%20and%20tone%20enhancer.md) | Senior-level copy editing that preserves your voice |
-| [Copilot in PowerPoint Skills Pack](./prompt%20playground/copilot%20in%20powerpoint%20skills%20pack.md) | Twelve custom skills, each with a copy-paste SKILL.md |
+| [Corrección de textos](./prompt%20playground/proofread%20prompt.md) | Pasa tus textos por una revisión de Copilot |
+| [Siguiente nivel](./prompt%20playground/level%20up%20prompt.md) | Lleva cualquier resultado más lejos y pule el producto final |
+| [Precisión y tono en la redacción](./prompt%20playground/copywriting%20precision%20and%20tone%20enhancer.md) | Corrección de estilo de nivel profesional que conserva tu voz |
+| [Pack de skills de Copilot en PowerPoint](./prompt%20playground/copilot%20in%20powerpoint%20skills%20pack.md) | Doce skills personalizadas, cada una con un SKILL.md listo para copiar y pegar |
 
-### Growth and mindset
+### Crecimiento y mentalidad
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Worst Traits](./prompt%20playground/worst%20traits.md) | Surface blind spots and build on them |
-| [Positivity Prompts](./prompt%20playground/positivity%20prompts.md) | Reframe your thinking and stay grounded |
-| [Career Growth](./prompt%20playground/career%20growth.md) | A 90-day plan for your role, relationships, and team impact |
-| [Weekly Case Study Review](./prompt%20playground/weekly%20case%20study%20review.md) | Reframe your week as a structured business case study |
-| [Capability and Growth Planner](./prompt%20playground/career%20capability%20and%20growth%20planner.md) | Evidence-based strengths, gaps, and recommended next steps |
-| [My Work Life on One Whiteboard](./prompt%20playground/my%20work%20life%20on%20one%20whiteboard.md) | Your role, people, and values as one whiteboard sketch |
-| [Teach-Back Tutor](./prompt%20playground/teach-back%20tutor.md) | Turns a doc, deck, or meeting into a five-question quiz that waits for your answers |
+| [Mis peores rasgos](./prompt%20playground/worst%20traits.md) | Descubre tus puntos ciegos y trabaja sobre ellos |
+| [Prompts de positividad](./prompt%20playground/positivity%20prompts.md) | Replantea tu forma de pensar y mantén los pies en el suelo |
+| [Desarrollo profesional](./prompt%20playground/career%20growth.md) | Un plan de 90 días para tu puesto, tus relaciones y tu impacto en el equipo |
+| [Revisión semanal como caso de estudio](./prompt%20playground/weekly%20case%20study%20review.md) | Replantea tu semana como un caso de estudio empresarial estructurado |
+| [Planificador de capacidades y crecimiento](./prompt%20playground/career%20capability%20and%20growth%20planner.md) | Fortalezas y carencias basadas en evidencias, y siguientes pasos recomendados |
+| [Mi vida laboral en una pizarra](./prompt%20playground/my%20work%20life%20on%20one%20whiteboard.md) | Tu puesto, tus personas clave y tus valores en un solo esquema de pizarra |
+| [Tutor de repaso (Teach-Back)](./prompt%20playground/teach-back%20tutor.md) | Convierte un documento, una presentación o una reunión en un cuestionario de cinco preguntas que espera tus respuestas |
 
-### Executive and leadership
+### Dirección y liderazgo
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [10 Prompts for Executives](./prompt%20playground/10%20executive%20prompts.md) | A curated set built for leadership workflows |
-| [Contextual Filter](./prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md) | Read any document through a specific role's lens |
-| [Devil's Advocate](./prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md) | Surface the three likeliest failure points before the room does |
-| [Leadership Style and Voice Distiller](./prompt%20playground/leadership%20style%20and%20voice%20distiller.md) | Mine a year of your comms into a personal voice reference |
-| [Stakeholder Dress Rehearsal](./prompt%20playground/stakeholder%20dress%20rehearsal.md) | Test a message against three audiences, then rewrite it under 300 words |
+| [10 prompts para directivos](./prompt%20playground/10%20executive%20prompts.md) | Una selección pensada para el trabajo de dirección |
+| [Filtro contextual](./prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md) | Lee cualquier documento desde la perspectiva de un puesto concreto |
+| [Abogado del diablo](./prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md) | Detecta los tres puntos de fallo más probables antes de que lo haga tu audiencia |
+| [Destilador de estilo de liderazgo y voz](./prompt%20playground/leadership%20style%20and%20voice%20distiller.md) | Extrae de un año de comunicaciones tuyas una referencia de tu voz personal |
+| [Ensayo general ante las partes interesadas](./prompt%20playground/stakeholder%20dress%20rehearsal.md) | Pon a prueba un mensaje ante tres audiencias y reescríbelo en menos de 300 palabras |
 
 ### Copilot Cowork
 
-Deeper analysis and scheduled output across your Microsoft 365 activity.
+Análisis más profundos y resultados programados a partir de tu actividad en Microsoft 365.
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Manager 1:1 Weekly Update](./prompt%20playground/1%20on%201%20weekly%20manager%20update%20for%20copilot%20cowork.md) | A leadership-ready field impact readout from your week |
-| [Monthly Account Review](./prompt%20playground/monthly%20account%20review.md) | Portfolio review with executive summary, PowerPoint, and HTML |
-| [Daily Executive Field Readout](./prompt%20playground/daily%20account%20and%20executive%20readout.md) | Weekday briefing on commitments, risks, and field priorities |
-| [The Copilot Chronicle](./prompt%20playground/daily%20ai%20news.md) | A newspaper-styled daily AI news brief in your inbox |
+| [Actualización semanal para la reunión 1:1 con tu responsable](./prompt%20playground/1%20on%201%20weekly%20manager%20update%20for%20copilot%20cowork.md) | Un informe de impacto de tu semana listo para presentar a la dirección |
+| [Revisión mensual de cuentas](./prompt%20playground/monthly%20account%20review.md) | Revisión de la cartera con resumen ejecutivo, PowerPoint y HTML |
+| [Informe diario para dirección](./prompt%20playground/daily%20account%20and%20executive%20readout.md) | Resumen de lunes a viernes sobre compromisos, riesgos y prioridades sobre el terreno |
+| [The Copilot Chronicle](./prompt%20playground/daily%20ai%20news.md) | Un resumen diario de noticias de IA con formato de periódico, en tu bandeja de entrada |
 
 ### Skills
 
-| Skill pack | What it does |
+| Pack de skills | Qué hace |
 | --- | --- |
-| [Guardian Council](./prompt%20playground/guardian%20council%20skills.md) | Five installable skills: four decision lenses plus a synthesizer |
+| [Guardian Council](./prompt%20playground/guardian%20council%20skills.md) | Cinco skills instalables: cuatro perspectivas para tomar decisiones y una que las sintetiza |
 
-### IT and technical
+### TI y técnico
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [IT Power Moves Prompt Pack](./prompt%20playground/it%20power%20moves%20prompt%20pack.md) | Error decoding, script drafting, regex, stack traces, config diffs |
+| [Pack de prompts IT Power Moves](./prompt%20playground/it%20power%20moves%20prompt%20pack.md) | Interpretación de errores, redacción de scripts, expresiones regulares, trazas de pila y comparación de configuraciones |
 
-### Coding
+### Programación
 
-| Prompt | What it does |
+| Prompt | Qué hace |
 | --- | --- |
-| [Grill My Coding Plan](./prompt%20playground/grill%20my%20coding%20plan.md) | A relentless reviewer that stress-tests a plan one decision at a time |
-| [Karpathy Coding Guidelines](./prompt%20playground/karpathy%20coding%20guidelines.md) | Habits that cut scope creep, needless abstractions, and happy-path fixes |
+| [Pon a prueba mi plan de programación](./prompt%20playground/grill%20my%20coding%20plan.md) | Un revisor implacable que somete un plan a prueba decisión a decisión |
+| [Pautas de programación de Karpathy](./prompt%20playground/karpathy%20coding%20guidelines.md) | Hábitos que evitan que el alcance crezca sin control, las abstracciones innecesarias y las correcciones que solo cubren el caso ideal |
 
 ---
 
 ## Education Playground
 
-Field guides for IT admins, executives, and anyone who has to manage, govern, or explain AI at scale. Every claim is checked against Microsoft documentation.
+Guías prácticas para administradores de TI, directivos y cualquier persona que tenga que gestionar, gobernar o explicar la IA a gran escala. Cada afirmación está contrastada con la documentación de Microsoft.
 
-### For executives and leaders
+Los enlaces marcados como **Interactiva** llevan a las versiones interactivas publicadas por el autor original, que están en inglés.
 
-| Guide | What it covers | Extras |
+### Para directivos y responsables
+
+| Guía | Qué trata | Extras |
 | --- | --- | --- |
-| [The Executive Playbook](./education%20playground/getting%20started%20with%20copilot%20premium%2C%20an%20executive%20playbook.md) | Nine sessions, from a first 5-minute win to a 30-day habit plan | [Interactive](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/executive%20copilot%20playbook/), PDF, 2 decks |
+| [El manual para directivos](./education%20playground/getting%20started%20with%20copilot%20premium%2C%20an%20executive%20playbook.md) | Nueve sesiones, desde un primer logro en 5 minutos hasta un plan de hábitos de 30 días | [Interactiva](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/executive%20copilot%20playbook/), PDF, 2 presentaciones |
 
-### Governance and administration
+### Gobernanza y administración
 
-| Guide | What it covers | Extras |
+| Guía | Qué trata | Extras |
 | --- | --- | --- |
-| [Copilot Governance](./education%20playground/copilot%20governance%20getting%20started.md) | Admin Center, Studio, Power Platform, Purview, and SAM controls | 4 sessions |
-| [The Copilot Reporting Map](./education%20playground/the%20copilot%20reporting%20map.md) | Every report that measures Copilot, across admin center, Copilot Analytics, agents, SharePoint, and Purview | [Interactive](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/the%20copilot%20reporting%20map/), 36 reports |
-| [Microsoft Agent 365](./education%20playground/microsoft%20agent%20365%20licensing%20architecture%20and%20how%20it%20fits%20into%20your%20ai%20strategy.md) | Licensing, the three-plane model, identity, and observability | Names the doc gaps |
-| [Copilot Chat, HIPAA, and Web Search](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch) | What actually crosses the tenant boundary under your BAA | PDF |
-| [Right-Sizing Cowork](./education%20playground/right-sizing%20cowork%20who%20actually%20needs%20it.md) | Scope the spend by persona instead of by headcount | PDF, PPTX |
-| [Licensing and Deployment](./education%20playground/copilot%20licensing%20and%20deployment%2C%20who%20gets%20what.md) | Which Copilot each role needs, and a rollout that scales | [Interactive](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/), deck, cheat sheet |
-| [Copilot Agent Billing](./education%20playground/copilot%20agent%20billing%2C%20credits%20and%20cost%20attribution.md) | Credits, cost attribution, spend controls, and who actually pays | [Interactive](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20agent%20billing/), 46-page PDF |
+| [Gobernanza de Copilot](./education%20playground/copilot%20governance%20getting%20started.md) | Controles del centro de administración, Copilot Studio, Power Platform, Purview y SAM | 4 sesiones |
+| [El mapa de informes de Copilot](./education%20playground/the%20copilot%20reporting%20map.md) | Todos los informes que miden Copilot: centro de administración, Copilot Analytics, agentes, SharePoint y Purview | [Interactiva](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/the%20copilot%20reporting%20map/), 36 informes |
+| [Microsoft Agent 365](./education%20playground/microsoft%20agent%20365%20licensing%20architecture%20and%20how%20it%20fits%20into%20your%20ai%20strategy.md) | Licencias, el modelo de tres planos, identidad y observabilidad | Señala las lagunas de la documentación |
+| [Copilot Chat, HIPAA y búsqueda web](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch) | Qué sale realmente de los límites del inquilino (tenant) bajo tu BAA | PDF (en inglés, repositorio aparte) |
+| [Dimensionar Cowork correctamente](./education%20playground/right-sizing%20cowork%20who%20actually%20needs%20it.md) | Ajusta el gasto por perfil de usuario en lugar de por número de empleados | PDF, PPTX |
+| [Licencias y despliegue](./education%20playground/copilot%20licensing%20and%20deployment%2C%20who%20gets%20what.md) | Qué Copilot necesita cada puesto y un despliegue que escale | [Interactiva](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20licensing%20and%20deployment/), presentación, hoja de referencia |
+| [Facturación de agentes de Copilot](./education%20playground/copilot%20agent%20billing%2C%20credits%20and%20cost%20attribution.md) | Créditos, imputación de costes, control del gasto y quién paga realmente | [Interactiva](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/copilot%20agent%20billing/), PDF de 46 páginas |
 
-### Hands-on use and demos
+### Uso práctico y demostraciones
 
-| Guide | What it covers | Extras |
+| Guía | Qué trata | Extras |
 | --- | --- | --- |
-| [Claude in Copilot, Agent Mode for Excel](./education%20playground/claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md) | Claude-level Excel reasoning inside Microsoft 365 Copilot | Demo data, video |
+| [Claude en Copilot, modo agente para Excel](./education%20playground/claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md) | Razonamiento en Excel a nivel de Claude dentro de Microsoft 365 Copilot | Datos de demostración, vídeo |
 
-### Best practices and strategy
+### Buenas prácticas y estrategia
 
-| Guide | What it covers | Extras |
+| Guía | Qué trata | Extras |
 | --- | --- | --- |
-| [Why AI Cannot Find Your Files](./education%20playground/ai-ready%20file%20naming%20and%20metadata%20for%20ai.md) | Naming and metadata that help AI return better answers | PDF, video |
+| [Por qué la IA no encuentra tus archivos](./education%20playground/ai-ready%20file%20naming%20and%20metadata%20for%20ai.md) | Nombres de archivo y metadatos que ayudan a la IA a dar mejores respuestas | PDF, vídeo |
 
 ---
 
-## Tech covered
+## Tecnologías tratadas
 
-Microsoft 365 Copilot, Copilot Studio, Agent 365, Copilot Cowork, Purview, Intune, Power Platform, Azure OpenAI, and local or open models.
+Microsoft 365 Copilot, Copilot Studio, Agent 365, Copilot Cowork, Purview, Intune, Power Platform, Azure OpenAI y modelos locales o abiertos.
 
-## Using this content
+## Uso de este contenido
 
-Everything here is [MIT licensed](./LICENSE). Copy it, fork it, adapt it, ship it. Attribution is appreciated but not required.
+Todo el contenido tiene [licencia MIT](./LICENSE). Cópialo, haz un fork, adáptalo y publícalo. Se agradece la atribución, pero no es obligatoria.
 
-Found something wrong or out of date? Open an issue.
+¿Has encontrado algo incorrecto o desactualizado? Abre una incidencia (issue).
