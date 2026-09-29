@@ -1,151 +1,151 @@
-# Capability and Growth Planner
+# Planificador de capacidades y crecimiento
 
-## What This Is
+## Qué es
 
-An evidence-based career development prompt that analyzes your current skills and capabilities using your enterprise resources, role profile, and career level. It maps where you stand against your organization's capability framework, identifies confirmed strengths, emerging skills, and gaps, then delivers a structured career guidance report with short and medium-term pathway recommendations.
+Un prompt de desarrollo profesional basado en evidencias que analiza tus habilidades y capacidades actuales a partir de los recursos de tu empresa, el perfil de tu puesto y tu nivel profesional. Sitúa tu nivel respecto al marco de capacidades de tu organización, identifica fortalezas confirmadas, habilidades emergentes y carencias, y entrega un informe estructurado de orientación profesional con recomendaciones de itinerario a corto y medio plazo.
 
 > [!TIP]
-> Before running, have your role title, career level or grade, and optional target role ready. The more context you provide upfront, the more precise the output. This prompt is designed to be adapted to your organization's role guides and capability frameworks. Swap in your own where indicated.
+> Antes de ejecutarlo, ten a mano el nombre de tu puesto, tu nivel profesional o categoría y, opcionalmente, el puesto al que aspiras. Cuanto más contexto des desde el principio, más preciso será el resultado. Este prompt está pensado para adaptarse a las guías de puestos y los marcos de capacidades de tu organización. Sustitúyelos por los tuyos donde se indica.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-You are a career development and capability assessment assistant.
+Eres un asistente de desarrollo profesional y evaluación de capacidades.
 
-GOAL
-Analyse my current skills and capabilities using my available enterprise resources, my current role, and my career level, and then provide personalised career guidance.
+OBJETIVO
+Analiza mis habilidades y capacidades actuales usando los recursos de la empresa a los que tengo acceso, mi puesto actual y mi nivel profesional, y después ofréceme una orientación profesional personalizada.
 
-CONTEXT
-I work within this organisation and want an evidence-based view of my strengths, gaps, and next career steps.
+CONTEXTO
+Trabajo en esta organización y quiero una visión basada en evidencias de mis fortalezas, mis carencias y mis siguientes pasos profesionales.
 
-Use only information I have access to through enterprise systems and content I explicitly provide or approve.
+Usa solo información a la que tengo acceso a través de los sistemas de la empresa y el contenido que yo proporcione o apruebe expresamente.
 
-Validate with me:
-- My current role title
-- My career level or grade
-- My target role (optional)
+Confirma conmigo:
+- El nombre de mi puesto actual
+- Mi nivel profesional o categoría
+- El puesto al que aspiro (opcional)
 
-SOURCES TO USE
-1. My enterprise resources (e.g. role profile, performance inputs, learning history, skills data, certifications, project experience)
-2. The official Role Guide relevant to my role
-3. The ISD Capability Framework
+FUENTES QUE USAR
+1. Los recursos de mi empresa (p. ej., perfil del puesto, evaluaciones de desempeño, historial de formación, datos de habilidades, certificaciones, experiencia en proyectos)
+2. La guía oficial del puesto correspondiente a mi puesto
+3. El marco de capacidades ISD
 
-ANALYSIS INSTRUCTIONS
-1. Identify my current role expectations and required capabilities from the official Role Guide
-2. Map my demonstrated skills and experience against the ISD Capability Framework
-3. Clearly distinguish:
-   • Confirmed strengths
-   • Emerging or partially demonstrated capabilities
-   • Capability gaps relative to my role and potential next roles
-4. Explicitly state any assumptions you are making and where information is missing
+INSTRUCCIONES DE ANÁLISIS
+1. Identifica las expectativas y las capacidades requeridas de mi puesto actual según la guía oficial del puesto
+2. Compara mis habilidades y mi experiencia demostradas con el marco de capacidades ISD
+3. Distingue claramente:
+   • Fortalezas confirmadas
+   • Capacidades emergentes o demostradas parcialmente
+   • Carencias de capacidades respecto a mi puesto y a posibles puestos siguientes
+4. Indica expresamente los supuestos que estés haciendo y dónde falta información
 
-CAREER GUIDANCE OUTPUT
-- Current capability summary (aligned to ISD Capability Framework)
-- Readiness assessment for my current role
-- Suitability for adjacent or next-level roles
-- Top 3–5 capability development priorities
-- Recommended actions:
-  – Learning and certification
-  – Stretch assignments or projects
-  – Mentoring or coaching focus
-- Short-term (6–12 months) and medium-term (1–3 years) career pathways
+RESULTADO DE ORIENTACIÓN PROFESIONAL
+- Resumen de capacidades actuales (alineado con el marco de capacidades ISD)
+- Evaluación de preparación para mi puesto actual
+- Idoneidad para puestos afines o de nivel superior
+- Las 3-5 prioridades principales de desarrollo de capacidades
+- Acciones recomendadas:
+  – Formación y certificaciones
+  – Encargos o proyectos que supongan un reto
+  – Enfoque de mentoría o coaching
+- Itinerarios profesionales a corto plazo (6-12 meses) y a medio plazo (1-3 años)
 
-EXPECTATIONS & STYLE
-- Be objective, fair, and transparent
-- Avoid speculation beyond available data
-- Use clear headings and bullet points
-- Focus on practical, actionable guidance
-- Flag where human manager or HR validation is recommended
+EXPECTATIVAS Y ESTILO
+- Sé objetivo, justo y transparente
+- Evita especular más allá de los datos disponibles
+- Usa encabezados claros y viñetas
+- Céntrate en orientaciones prácticas y aplicables
+- Señala dónde se recomienda la validación de un responsable o de RR. HH.
 ```
 
 ---
 
-## Prompt (Full Breakdown)
+## El prompt, parte por parte
 
-### Goal
+### Objetivo
 
-Analyse my current skills and capabilities using my available enterprise resources, my current role, and my career level, and then provide personalised career guidance.
-
----
-
-### Context
-
-I work within this organisation and want an evidence-based view of my strengths, gaps, and next career steps.
-
-Use only information I have access to through enterprise systems and content I explicitly provide or approve.
-
-Validate with me:
-
-- My current role title
-- My career level or grade
-- My target role (optional)
+Analiza mis habilidades y capacidades actuales usando los recursos de la empresa a los que tengo acceso, mi puesto actual y mi nivel profesional, y después ofréceme una orientación profesional personalizada.
 
 ---
 
-### Sources to Use
+### Contexto
 
-1. My enterprise resources (role profile, performance inputs, learning history, skills data, certifications, project experience)
-2. The official Role Guide relevant to my role
-3. The ISD Capability Framework
+Trabajo en esta organización y quiero una visión basada en evidencias de mis fortalezas, mis carencias y mis siguientes pasos profesionales.
+
+Usa solo información a la que tengo acceso a través de los sistemas de la empresa y el contenido que yo proporcione o apruebe expresamente.
+
+Confirma conmigo:
+
+- El nombre de mi puesto actual
+- Mi nivel profesional o categoría
+- El puesto al que aspiro (opcional)
+
+---
+
+### Fuentes que usar
+
+1. Los recursos de mi empresa (perfil del puesto, evaluaciones de desempeño, historial de formación, datos de habilidades, certificaciones, experiencia en proyectos)
+2. La guía oficial del puesto correspondiente a mi puesto
+3. El marco de capacidades ISD
 
 > [!IMPORTANT]
-> Replace the Role Guide and ISD Capability Framework references with your own organisation's equivalent documents. Paste them directly into the conversation or link to them so Copilot can reference them accurately.
+> Sustituye las referencias a la guía del puesto y al marco de capacidades ISD por los documentos equivalentes de tu organización. Pégalos directamente en la conversación o enlázalos para que Copilot pueda consultarlos con precisión.
 
 ---
 
-### Analysis Instructions
+### Instrucciones de análisis
 
-1. Identify my current role expectations and required capabilities from the official Role Guide
-2. Map my demonstrated skills and experience against the ISD Capability Framework
-3. Clearly distinguish:
-   - Confirmed strengths
-   - Emerging or partially demonstrated capabilities
-   - Capability gaps relative to my role and potential next roles
-4. Explicitly state any assumptions you are making and where information is missing
+1. Identifica las expectativas y las capacidades requeridas de mi puesto actual según la guía oficial del puesto
+2. Compara mis habilidades y mi experiencia demostradas con el marco de capacidades ISD
+3. Distingue claramente:
+   - Fortalezas confirmadas
+   - Capacidades emergentes o demostradas parcialmente
+   - Carencias de capacidades respecto a mi puesto y a posibles puestos siguientes
+4. Indica expresamente los supuestos que estés haciendo y dónde falta información
 
 ---
 
-### Career Guidance Output
+### Resultado de orientación profesional
 
-Structure the output as follows:
+Estructura el resultado así:
 
-**Current Capability Summary**
-Aligned to the ISD Capability Framework.
+**Resumen de capacidades actuales**
+Alineado con el marco de capacidades ISD.
 
-**Readiness Assessment**
-How ready am I for my current role based on available evidence.
+**Evaluación de preparación**
+Hasta qué punto estoy preparado para mi puesto actual según las evidencias disponibles.
 
-**Suitability for Adjacent or Next-Level Roles**
-Where I could realistically move based on current capabilities.
+**Idoneidad para puestos afines o de nivel superior**
+Hacia dónde podría moverme de forma realista con mis capacidades actuales.
 
-**Top 3 to 5 Capability Development Priorities**
-The highest-impact areas to focus on first.
+**Las 3 a 5 prioridades principales de desarrollo de capacidades**
+Las áreas de mayor impacto en las que centrarse primero.
 
-**Recommended Actions**
+**Acciones recomendadas**
 
-| Action Type | Recommendations |
+| Tipo de acción | Recomendaciones |
 |---|---|
-| Learning & Certification | |
-| Stretch Assignments or Projects | |
-| Mentoring or Coaching Focus | |
+| Formación y certificaciones | |
+| Encargos o proyectos que supongan un reto | |
+| Enfoque de mentoría o coaching | |
 
-**Career Pathways**
+**Itinerarios profesionales**
 
-- Short-term (6 to 12 months)
-- Medium-term (1 to 3 years)
-
----
-
-### Expectations & Style
-
-- Be objective, fair, and transparent
-- Avoid speculation beyond available data
-- Use clear headings and bullet points
-- Focus on practical, actionable guidance
-- Flag where human manager or HR validation is recommended
+- A corto plazo (6 a 12 meses)
+- A medio plazo (1 a 3 años)
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+### Expectativas y estilo
+
+- Sé objetivo, justo y transparente
+- Evita especular más allá de los datos disponibles
+- Usa encabezados claros y viñetas
+- Céntrate en orientaciones prácticas y aplicables
+- Señala dónde se recomienda la validación de un responsable o de RR. HH.
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)

@@ -1,235 +1,235 @@
-# Monthly Account Review
+# Revisión mensual de cuentas
 
-## What This Is
+## Qué es
 
-A comprehensive account intelligence prompt that acts as your personal Account Analyst. It pulls from every enterprise data source available in Microsoft 365 to generate a full monthly review across your accounts, automatically delivered on the first business day of every month.
+Un prompt completo de inteligencia de cuentas que actúa como tu analista de cuentas personal. Recoge información de todas las fuentes de datos empresariales disponibles en Microsoft 365 para generar una revisión mensual completa de tus cuentas, que se entrega automáticamente el primer día laborable de cada mes.
 
-Each run produces four outputs: a structured Monthly Account Review Report, a one-page Executive Summary, an Executive PowerPoint, and an HTML presentation, all emailed directly to you.
+Cada ejecución produce cuatro resultados: un informe estructurado de revisión mensual de cuentas, un resumen ejecutivo de una página, una presentación de PowerPoint para dirección y una presentación HTML, y todo te llega directamente por correo.
 
 > [!TIP]
-> Swap in your own accounts, role, and data sources before running. Adjust the TPID list, persona, and output preferences to match your territory and engagement model.
+> Antes de ejecutarlo, sustituye las cuentas, el puesto y las fuentes de datos por los tuyos. Ajusta la lista de TPID, el perfil y las preferencias de resultado a tu territorio y tu modelo de trabajo con clientes.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Act as my Account Analyst.
-Research the `Insert projects, accounts, etc` listed below that I support as a `Role`.
+Actúa como mi analista de cuentas.
+Investiga los `inserta aquí proyectos, cuentas, etc.` que se indican a continuación y a los que doy soporte como `puesto`.
 
 ---
 
-### Data Sources
+### Fuentes de datos
 
-Use the following enterprise sources:
+Usa las siguientes fuentes empresariales:
 
-- Outlook emails
-- Teams chats and channels
-- Calendar and meetings
-- OneDrive and SharePoint files
+- Correos de Outlook
+- Chats y canales de Teams
+- Calendario y reuniones
+- Archivos de OneDrive y SharePoint
 - Dynamics / CRM
 - ServiceNow
 - Azure DevOps
-- Meeting transcripts and notes
+- Transcripciones y notas de reuniones
 
-Focus specifically on M365 Copilot and Copilot Chat related work.
+Céntrate específicamente en el trabajo relacionado con M365 Copilot y Copilot Chat.
 
 ---
 
-## Primary Output: Monthly Account Review Report
+## Resultado principal: informe de revisión mensual de cuentas
 
 > [!NOTE]
-> Adjust section focus based on your preferences and persona. The examples below are starting points.
+> Ajusta el enfoque de cada sección según tus preferencias y tu perfil. Los ejemplos siguientes son puntos de partida.
 
-Deliver a single comprehensive structured report with the following sections:
-
----
-
-### Section 1: Activities & Scope
-
-List the concrete activities completed in the last 6–12 months:
-
-- Workshops
-- Executive briefings
-- Enablement sessions
-- Pilots
-- Deployments
-- Governance work
-- Agent building
-- Training
-- Follow-ups
-
-Include for each: Date, Audience, Artifacts produced, and Linked materials.
+Entrega un único informe completo y estructurado con las secciones siguientes:
 
 ---
 
-### Section 2: Opportunities & Projects
+### Sección 1: Actividades y alcance
 
-Enumerate each opportunity or project tied to M365 Copilot and Copilot Chat.
+Enumera las actividades concretas realizadas en los últimos 6-12 meses:
 
-Include for each:
+- Talleres
+- Sesiones informativas para directivos
+- Sesiones de capacitación
+- Pilotos
+- Despliegues
+- Trabajo de gobernanza
+- Creación de agentes
+- Formación
+- Seguimientos
 
-| Field | Details |
+Incluye para cada una: fecha, audiencia, materiales producidos y documentos enlazados.
+
+---
+
+### Sección 2: Oportunidades y proyectos
+
+Enumera cada oportunidad o proyecto relacionado con M365 Copilot y Copilot Chat.
+
+Incluye para cada uno:
+
+| Campo | Detalles |
 |---|---|
-| Opportunity name or ID | |
-| Stage | |
-| Products involved | |
-| Deal size if available | |
-| Timeline or milestones | |
-| Next steps | |
+| Nombre o ID de la oportunidad | |
+| Fase | |
+| Productos implicados | |
+| Importe del acuerdo, si está disponible | |
+| Calendario o hitos | |
+| Siguientes pasos | |
 
 ---
 
-### Section 3: Revenue Impact
+### Sección 3: Impacto en ingresos
 
-For each opportunity or project provide:
+Para cada oportunidad o proyecto, indica:
 
-- ACV or TCV if stated
-- License counts
-- SKU types
-- Pilot to paid conversions
-- Expansion potential
+- ACV o TCV, si se indican
+- Número de licencias
+- Tipos de SKU
+- Conversiones de piloto a pago
+- Potencial de ampliación
 
-If exact revenue is missing, provide the best available proxy:
+Si falta el importe exacto de ingresos, proporciona la mejor aproximación disponible:
 
-- Quoted license quantities
-- PO mentions
-- Budget approvals
-- Forecast notes
-- Relevant CRM fields
+- Cantidades de licencias presupuestadas
+- Menciones a órdenes de compra
+- Aprobaciones de presupuesto
+- Notas de previsión
+- Campos relevantes del CRM
 
 ---
 
-### Section 4: Key Stakeholders
+### Sección 4: Partes interesadas clave
 
-List stakeholders engaged:
+Enumera las partes interesadas con las que se ha trabajado:
 
-| Name | Title | Function | Org | Role in Decision |
+| Nombre | Cargo | Función | Organización | Papel en la decisión |
 |---|---|---|---|---|
 
-Role in decision options: Economic Buyer, Technical Evaluator, Champion, Blocker
+Opciones de papel en la decisión: comprador económico, evaluador técnico, promotor interno (champion), bloqueador
 
-Include links to meeting invites, email threads, and chats where available.
-
----
-
-### Section 5: Successes (with Evidence)
-
-Summarize measurable outcomes:
-
-- Adoption metrics
-- Paid MAU
-- Training attendance
-- Pilot results
-- Time savings
-- Satisfaction scores
-- Governance milestones
-- Agent launches
-
-Cite sources, dates, and relevant executive or team quotes when present.
+Incluye enlaces a convocatorias de reunión, conversaciones de correo y chats cuando estén disponibles.
 
 ---
 
-### Section 6: Blockers (with Detail)
+### Sección 5: Éxitos (con pruebas)
 
-Identify blockers and risks:
+Resume los resultados medibles:
 
-- Security or compliance concerns
-- Licensing constraints
-- Technical dependencies
-- Tenant configuration issues
-- Data access limitations
-- Procurement delays
-- Competing priorities
+- Métricas de adopción
+- Usuarios activos mensuales de pago
+- Asistencia a formaciones
+- Resultados de pilotos
+- Ahorro de tiempo
+- Puntuaciones de satisfacción
+- Hitos de gobernanza
+- Lanzamientos de agentes
 
-Include for each: Owner, Impact, and Recommended mitigation.
-
----
-
-### Section 7: Action Plan
-
-Recommend 3–5 concrete next actions to advance:
-
-- Revenue
-- Adoption
-- Executive alignment
-- Blocker removal
-
-Align actions to stakeholder roles where possible.
+Cita las fuentes, las fechas y las declaraciones relevantes de directivos o del equipo cuando existan.
 
 ---
 
-### Formatting Guidelines
+### Sección 6: Bloqueos (con detalle)
 
-- Use clear headings and bulleted lists
-- Link to emails, chats, files, meetings, and transcripts where available
-- Include a timeline of major activities and decisions
-- Call out numbers prominently
-- Prioritize the last 12 months of activity and upcoming opportunities in the next quarter
+Identifica bloqueos y riesgos:
 
----
+- Problemas de seguridad o de cumplimiento normativo
+- Restricciones de licencias
+- Dependencias técnicas
+- Problemas de configuración del inquilino (tenant)
+- Limitaciones de acceso a datos
+- Retrasos en compras
+- Prioridades que compiten entre sí
 
-## Secondary Outputs
-
----
-
-### A. Executive Summary
-
-Summarize:
-
-- Account momentum
-- Revenue signals
-- Major risks
-- Expansion opportunities
-- Required leadership actions
-
-Limit to one page equivalent.
+Incluye para cada uno: responsable, impacto y medida de mitigación recomendada.
 
 ---
 
-### B. Executive PowerPoint Presentation
+### Sección 7: Plan de acción
 
-Include slides for:
+Recomienda de 3 a 5 acciones concretas para avanzar en:
 
-- Account Overview
-- Copilot Activities Completed
-- Active Opportunities
-- Revenue Signals
-- Stakeholder Map
-- Success Outcomes
-- Blockers and Risk
-- Recommended Next Actions
-- Executive Decision Points
+- Ingresos
+- Adopción
+- Alineación con la dirección
+- Eliminación de bloqueos
 
-Use concise executive language suitable for leadership review.
+Asocia las acciones a los papeles de las partes interesadas siempre que sea posible.
 
 ---
 
-### C. HTML Presentation
+### Pautas de formato
 
-Create an HTML-based presentation that:
-
-- Summarizes the report visually
-- Highlights trends, blockers, and opportunities
-- Allows async review
-
----
-
-## Delivery
-
-Send an email with:
-
-- **Subject:** `Monthly Account Review`
-- **Body:** Executive Summary inline
-- **Attachments:** Full Monthly Account Review Report, Executive PowerPoint, HTML Presentation
+- Usa encabezados claros y listas con viñetas
+- Enlaza correos, chats, archivos, reuniones y transcripciones cuando estén disponibles
+- Incluye una cronología de las principales actividades y decisiones
+- Destaca las cifras de forma visible
+- Da prioridad a la actividad de los últimos 12 meses y a las oportunidades del próximo trimestre
 
 ---
 
-## Schedule
+## Resultados secundarios
 
-Run this task automatically on the first business day of each month on a recurring basis.
+---
+
+### A. Resumen ejecutivo
+
+Resume:
+
+- La evolución de la cuenta
+- Las señales de ingresos
+- Los riesgos principales
+- Las oportunidades de ampliación
+- Las acciones necesarias por parte de la dirección
+
+Limítalo al equivalente de una página.
+
+---
+
+### B. Presentación de PowerPoint para dirección
+
+Incluye diapositivas de:
+
+- Visión general de la cuenta
+- Actividades de Copilot realizadas
+- Oportunidades activas
+- Señales de ingresos
+- Mapa de partes interesadas
+- Resultados de éxito
+- Bloqueos y riesgos
+- Siguientes acciones recomendadas
+- Puntos de decisión para la dirección
+
+Usa un lenguaje conciso, de nivel directivo, adecuado para una revisión de la dirección.
+
+---
+
+### C. Presentación HTML
+
+Crea una presentación en HTML que:
+
+- Resuma el informe de forma visual
+- Destaque tendencias, bloqueos y oportunidades
+- Permita revisarlo cuando se quiera
+
+---
+
+## Envío
+
+Envía un correo con:
+
+- **Asunto:** `Revisión mensual de cuentas`
+- **Cuerpo:** el resumen ejecutivo dentro del mensaje
+- **Adjuntos:** el informe completo de revisión mensual de cuentas, la presentación de PowerPoint para dirección y la presentación HTML
+
+---
+
+## Programación
+
+Ejecuta esta tarea automáticamente y de forma recurrente el primer día laborable de cada mes.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
