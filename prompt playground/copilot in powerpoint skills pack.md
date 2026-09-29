@@ -1,97 +1,100 @@
-# Copilot in PowerPoint Skills Pack
+# Pack de skills de Copilot en PowerPoint
 
-## What This Is
+## Qué es
 
-Copilot in PowerPoint lets you save custom skills: reusable instructions you call by name instead of retyping the same request every time. This pack gives you 12 skills for the slide work I do most, from branding and cleanup to summaries, speaker notes, turning a doc into a deck, plain-language rewrites, font standardization, accessibility, and prepping a deck to go out the door. Drop them in, tweak a couple of placeholders, and start calling them.
+Copilot en PowerPoint te permite guardar skills personalizadas: instrucciones reutilizables que invocas por su nombre en lugar de volver a escribir la misma petición cada vez. Este pack te ofrece 12 skills para el trabajo con diapositivas que el autor hace con más frecuencia: desde aplicar la marca y ordenar diapositivas hasta resúmenes, notas del orador, convertir un documento en una presentación, reescrituras en lenguaje sencillo, unificar tipografías, accesibilidad y preparar una presentación para compartirla fuera. Añádelas, ajusta un par de marcadores y empieza a usarlas.
 
-Each skill is a small folder with a single `SKILL.md` file inside. That is the format Copilot reads: a bit of frontmatter up top (the name and when to use it) and a set of plain instructions below.
+Cada skill es una pequeña carpeta con un único archivo `SKILL.md` dentro. Ese es el formato que lee Copilot: una cabecera breve arriba (el nombre y cuándo usarla) y un conjunto de instrucciones sencillas debajo.
 
 > [!TIP]
-> Only two skills need an edit before you use them. In `apply-brand-template`, swap the example fonts and colors for your own. In `customer-ready-pass`, set your approved disclaimer wording. Everything else runs as-is.
+> Solo dos skills necesitan una modificación antes de usarlas. En `apply-brand-template`, cambia las tipografías y los colores de ejemplo por los tuyos. En `customer-ready-pass`, escribe el texto de aviso legal aprobado. Todas las demás funcionan tal cual.
+
+> [!NOTE]
+> Los nombres de las skills (`name`) se mantienen en inglés para que coincidan con los nombres de las carpetas y con las menciones del tipo `@executive-summary-slide`. Las descripciones y las instrucciones están traducidas.
 
 ---
 
-## How to Turn This On in PowerPoint
+## Cómo activarlo en PowerPoint
 
-I recorded the whole setup, from switching custom skills on to writing your own:
+El autor grabó todo el proceso de configuración, desde activar las skills personalizadas hasta escribir las tuyas propias:
 
-**Watch: [How to Set Up Copilot Skills in PowerPoint (and Build Your Own)](https://www.youtube.com/watch?v=0CA-k3FtPX0)**
-
-> [!IMPORTANT]
-> You need Copilot in PowerPoint for this. If you don't see Copilot in the app, it isn't part of your Microsoft 365 subscription or your organization hasn't turned it on yet.
-
-There are three ways to get a skill in. Pick the one that matches how you got the skill.
-
-### Option 1: Paste it into the Add skill form
-
-Easiest when you are copying a skill straight off this page. Nothing to download.
-
-1. Open a presentation and open the Copilot pane.
-2. Select the **+** in the prompt field, then **Choose skills**.
-3. Scroll to the end of the list and select **Manage skills**.
-4. Select **Add skill**.
-5. Fill in **Title**, **Name**, **Description**, and **Instructions**, then select **Add**.
-
-Every skill on this page is written as a `SKILL.md` block, which maps straight onto that form. The `name` in the frontmatter goes in Name, the `description` goes in Description, and everything below the closing `---` is the Instructions. Title is just the friendly display name.
-
-PowerPoint saves the skill to your OneDrive skills folder for you, so you get the folder either way.
+**Vídeo (en inglés): [How to Set Up Copilot Skills in PowerPoint (and Build Your Own)](https://www.youtube.com/watch?v=0CA-k3FtPX0)**
 
 > [!IMPORTANT]
-> The **Instructions** box caps at 1024 characters. Every skill in this pack is written to fit. Copy from the `#` heading at the top of the block all the way down to the last line, and paste that whole span into Instructions.
+> Para esto necesitas Copilot en PowerPoint. Si no ves Copilot en la aplicación, no forma parte de tu suscripción de Microsoft 365 o tu organización todavía no lo ha activado.
 
-### Option 2: Upload the skill file
+Hay tres formas de añadir una skill. Elige la que corresponda a cómo te ha llegado.
 
-Easiest when someone hands you a `SKILL.md` or a zipped skill folder.
+### Opción 1: pégala en el formulario Agregar skill
 
-1. Go to **Manage skills**, then **Add skill**.
-2. Drag and drop the file, or browse for it. You can add several at once.
-3. It saves to OneDrive and shows up in the skill list. Select **Refresh** if it doesn't appear.
+Es lo más fácil cuando copias una skill directamente de esta página. No hay que descargar nada.
 
-> [!NOTE]
-> Zipped skills support text files like `md`, `txt`, `csv`, `json`, `xml`, `html`, `svg`, `py`, and `js`. Images, PDFs, and nested zips aren't supported.
+1. Abre una presentación y abre el panel de Copilot.
+2. Selecciona el **+** del campo de prompt y después **Elegir skills**.
+3. Desplázate hasta el final de la lista y selecciona **Administrar skills**.
+4. Selecciona **Agregar skill**.
+5. Rellena **Título**, **Nombre**, **Descripción** e **Instrucciones** y selecciona **Agregar**.
 
-### Option 3: Drop the folders into OneDrive yourself
+Cada skill de esta página está escrita como un bloque `SKILL.md`, que encaja directamente con ese formulario. El `name` de la cabecera va en Nombre, la `description` va en Descripción, y todo lo que hay debajo del `---` de cierre son las Instrucciones. El Título es solo el nombre visible.
 
-Best when you are adding a batch at once, like this whole pack.
+PowerPoint guarda la skill en la carpeta de skills de tu OneDrive, así que la carpeta se crea de todas formas.
 
-1. In the Copilot pane, select the Settings menu, the **...** in the upper-right corner.
-2. Select **Manage skills**.
-3. Select **Custom skills**.
-4. Select **Create OneDrive folder**. Copilot creates the skills folder in your OneDrive.
-5. Select **Open skills folder** to open it.
-6. Copy your skill folders in. One folder per skill, each with its `SKILL.md` inside, and the folder name has to match the `name` in the file.
-7. Back in the **Custom skills** dialog, select **Refresh** so Copilot picks them up.
+> [!IMPORTANT]
+> El cuadro **Instrucciones** admite un máximo de 1024 caracteres. Todas las skills de este pack están escritas para caber. Copia desde el encabezado `#` de la parte superior del bloque hasta la última línea y pega todo ese fragmento en Instrucciones.
 
-### Use a skill
+### Opción 2: sube el archivo de la skill
 
-- Select the **+** menu in the Copilot prompt field, choose **Choose skills**, and pick the one you want.
-- Or call it straight from your prompt with an @mention, like `@executive-summary-slide`.
-- Toggle any skill on or off from **Manage skills**.
+Es lo más fácil cuando alguien te pasa un `SKILL.md` o una carpeta de skill comprimida.
+
+1. Ve a **Administrar skills** y después a **Agregar skill**.
+2. Arrastra y suelta el archivo o búscalo. Puedes añadir varios a la vez.
+3. Se guarda en OneDrive y aparece en la lista de skills. Selecciona **Actualizar** si no aparece.
 
 > [!NOTE]
-> Added or renamed a skill in OneDrive? Hit **Refresh** in the Custom skills dialog so Copilot sees it. To edit or delete one, use **Edit** or **Delete** under the skill in **Manage skills**. To hide a skill without deleting it, rename its folder so it no longer matches the `name` in its `SKILL.md`. Copilot skips folders that don't match.
+> Las skills comprimidas admiten archivos de texto como `md`, `txt`, `csv`, `json`, `xml`, `html`, `svg`, `py` y `js`. No se admiten imágenes, PDF ni archivos comprimidos anidados.
+
+### Opción 3: copia tú mismo las carpetas en OneDrive
+
+Es la mejor opción cuando añades varias a la vez, como este pack completo.
+
+1. En el panel de Copilot, abre el menú de configuración, los **...** de la esquina superior derecha.
+2. Selecciona **Administrar skills**.
+3. Selecciona **Skills personalizadas**.
+4. Selecciona **Crear carpeta de OneDrive**. Copilot crea la carpeta de skills en tu OneDrive.
+5. Selecciona **Abrir carpeta de skills** para abrirla.
+6. Copia dentro tus carpetas de skills. Una carpeta por skill, cada una con su `SKILL.md`, y el nombre de la carpeta tiene que coincidir con el `name` del archivo.
+7. De vuelta en el cuadro de diálogo **Skills personalizadas**, selecciona **Actualizar** para que Copilot las detecte.
+
+### Usar una skill
+
+- Selecciona el menú **+** del campo de prompt de Copilot, elige **Elegir skills** y selecciona la que quieras.
+- O llámala directamente desde tu prompt con una mención @, como `@executive-summary-slide`.
+- Activa o desactiva cualquier skill desde **Administrar skills**.
+
+> [!NOTE]
+> ¿Has añadido o cambiado el nombre de una skill en OneDrive? Pulsa **Actualizar** en el cuadro de diálogo Skills personalizadas para que Copilot la vea. Para editar o eliminar una, usa **Editar** o **Eliminar** bajo la skill en **Administrar skills**. Para ocultar una skill sin eliminarla, cambia el nombre de su carpeta para que deje de coincidir con el `name` de su `SKILL.md`. Copilot omite las carpetas que no coinciden.
 
 > [!TIP]
-> Want the official walkthrough with screenshots of each step? See [Copilot in PowerPoint skills](https://support.microsoft.com/en-us/powerpoint/copilot/copilot-in-powerpoint-skills) on Microsoft Support. Format spec: [Agent Skills specification](https://agentskills.io/specification).
+> Los nombres exactos de los menús pueden variar ligeramente según el idioma de tu Office. ¿Quieres la guía oficial con capturas de cada paso? Consulta [Skills de Copilot en PowerPoint](https://support.microsoft.com/es-es/powerpoint/copilot/copilot-in-powerpoint-skills) en el Soporte técnico de Microsoft. Especificación del formato (en inglés): [Agent Skills specification](https://agentskills.io/specification).
 
 ---
 
-## What's In The Pack
+## Qué incluye el pack
 
-| Skill | What it does |
+| Skill | Qué hace |
 |---|---|
-| **apply-brand-template** | Reformat slides to your fonts, colors, and logo |
-| **fix-this-slide** | Clean up one slide's layout, spacing, and bullets |
-| **executive-summary-slide** | Generate a one-slide TL;DR of the whole deck |
-| **speaker-notes** | Write presenter notes into the notes pane |
-| **doc-to-deck** | Turn a document or notes into a structured deck |
-| **de-jargon** | Rewrite slides in plain language |
-| **tighten-copy** | Shorten bullets and cut filler |
-| **consistency-check** | Audit fonts, colors, caps, and spacing |
-| **fix-fonts** | Swap every font to Segoe UI, then refit the text |
-| **accessibility-pass** | Alt text, contrast, font size, reading order |
-| **customer-ready-pass** | Strip internal content and prep a deck to share |
-| **qbr-builder** | Structure content into a QBR flow |
+| **apply-brand-template** | Aplica a las diapositivas tus tipografías, colores y logotipo |
+| **fix-this-slide** | Ordena el diseño, el espaciado y las viñetas de una diapositiva |
+| **executive-summary-slide** | Genera una diapositiva resumen de toda la presentación |
+| **speaker-notes** | Escribe las notas del orador en el panel de notas |
+| **doc-to-deck** | Convierte un documento o unas notas en una presentación estructurada |
+| **de-jargon** | Reescribe las diapositivas en lenguaje sencillo |
+| **tighten-copy** | Acorta las viñetas y elimina el relleno |
+| **consistency-check** | Revisa tipografías, colores, mayúsculas y espaciado |
+| **fix-fonts** | Cambia todas las tipografías a Segoe UI y reajusta el texto |
+| **accessibility-pass** | Texto alternativo, contraste, tamaño de letra y orden de lectura |
+| **customer-ready-pass** | Elimina el contenido interno y prepara una presentación para compartir |
+| **qbr-builder** | Estructura el contenido como una revisión trimestral de negocio (QBR) |
 
 ---
 
@@ -99,387 +102,387 @@ Best when you are adding a batch at once, like this whole pack.
 
 ### apply-brand-template
 
-Reformats selected slides to your visual identity. Edit the brand tokens at the top first so it uses your fonts, colors, and logo spot.
+Aplica tu identidad visual a las diapositivas seleccionadas. Edita primero los valores de marca de la parte superior para que use tus tipografías, colores y la posición de tu logotipo.
 
 ```markdown
 ---
 name: "apply-brand-template"
-description: "Use when the user asks to apply the brand, make slides on-brand, reformat to the template, or standardize formatting across selected slides or the whole deck. Reformats slides to a defined visual identity (fonts, colors, layout, logo)."
+description: "Úsala cuando el usuario pida aplicar la marca, adaptar las diapositivas a la marca, reformatearlas según la plantilla o unificar el formato de las diapositivas seleccionadas o de toda la presentación. Aplica una identidad visual definida (tipografías, colores, diseño, logotipo)."
 ---
 
-# Apply Brand Template
+# Aplicar plantilla de marca
 
-Reformats selected slides, or the whole deck if none are selected, to a consistent brand look.
+Aplica un aspecto de marca coherente a las diapositivas seleccionadas o, si no hay ninguna, a toda la presentación.
 
-## Brand tokens, EDIT THESE
-- Title: Segoe UI, 32pt, Bold
-- Body: Segoe UI, 18pt, Regular
-- Primary color for titles and accents: #2563EB
-- Secondary color: #505050
-- Background: #FFFFFF
-- Logo: bottom-right, small, every slide except the title
+## Valores de marca, EDÍTALOS
+- Título: Segoe UI, 32 pt, negrita
+- Cuerpo: Segoe UI, 18 pt, normal
+- Color principal de títulos y detalles: #2563EB
+- Color secundario: #505050
+- Fondo: #FFFFFF
+- Logotipo: abajo a la derecha, pequeño, en todas salvo la portada
 
-## What to do
-1. Set every title to the title font, size, and primary color above.
-2. Set body text to the body font and size. Use the secondary color for sub-text.
-3. Standardize bullets. Cap at 6 per slide, one line each.
-4. Align objects to a grid and even out spacing between them.
-5. Keep consistent margins so content never touches a slide edge.
-6. Change formatting only. Keep all content and meaning intact.
-7. Leave intentional full-bleed images and custom layouts alone. Fix only their fonts and colors.
-8. End with a one-line summary of what changed.
+## Qué hacer
+1. Títulos: tipografía, tamaño y color principal indicados.
+2. Cuerpo: tipografía y tamaño indicados. Color secundario para el texto secundario.
+3. Unifica las viñetas. Máximo 6 por diapositiva, de una línea.
+4. Alinea los objetos a una cuadrícula e iguala el espacio entre ellos.
+5. Mantén márgenes uniformes; el contenido nunca toca el borde.
+6. Cambia solo el formato. Conserva todo el contenido y su sentido.
+7. No toques las imágenes a sangre ni los diseños personalizados intencionados. Corrige solo sus tipografías y colores.
+8. Termina con un resumen de una línea de lo que ha cambiado.
 ```
 
 ---
 
 ### fix-this-slide
 
-The "make this one slide look intentional" skill. Point it at a messy slide and let it align, space, and tighten.
+La skill para que "esta diapositiva parezca hecha a propósito". Aplícala a una diapositiva desordenada y deja que alinee, espacie y ajuste.
 
 ```markdown
 ---
 name: "fix-this-slide"
-description: "Use when the user says 'fix this slide', 'clean up this slide', or wants a single slide's layout, spacing, alignment, and bullets tightened without changing the message."
+description: "Úsala cuando el usuario diga 'arregla esta diapositiva', 'ordena esta diapositiva' o quiera ajustar el diseño, el espaciado, la alineación y las viñetas de una sola diapositiva sin cambiar el mensaje."
 ---
 
-# Fix This Slide
+# Arreglar esta diapositiva
 
-Cleans up the current or selected slide so it looks intentional and uncluttered.
+Ordena la diapositiva actual o seleccionada para que parezca intencionada y despejada.
 
-## What to do
-1. Align all objects (left, top, or center as appropriate), snap to a consistent grid.
-2. Even out horizontal and vertical spacing between elements.
-3. Cap bullets at 6, rewrite each to a single line (under about 10 words) while keeping meaning.
-4. Establish clear hierarchy: one dominant title, then supporting points.
-5. Remove redundant or duplicate text, merge overlapping ideas.
-6. Ensure text has breathing room and nothing runs off the slide.
+## Qué hacer
+1. Alinea todos los objetos (izquierda, arriba o centro, según convenga) a una cuadrícula uniforme.
+2. Iguala el espacio horizontal y vertical entre elementos.
+3. Máximo 6 viñetas; reescribe cada una en una línea (unas 10 palabras) sin perder el sentido.
+4. Crea una jerarquía clara: un título dominante y después los puntos de apoyo.
+5. Elimina texto redundante o duplicado y fusiona ideas que se solapen.
+6. Deja aire al texto y que nada se salga de la diapositiva.
 
-## Output
-The cleaned-up slide, plus a one-line note of the top 2 or 3 fixes made.
+## Resultado
+La diapositiva ordenada y una nota de una línea con las 2 o 3 correcciones principales.
 
-## Guardrails
-- Preserve the slide's core message and all key facts and numbers.
-- Don't change colors or fonts unless they're clearly broken or inconsistent.
-- Don't add new content the user didn't provide.
+## Salvaguardas
+- Conserva el mensaje principal y todos los datos y cifras clave.
+- No cambies colores ni tipografías salvo que estén claramente mal o sean incoherentes.
+- No añadas contenido que el usuario no haya aportado.
 ```
 
 ---
 
 ### executive-summary-slide
 
-Reads the whole deck and builds a single summary slide an executive can read in 20 seconds.
+Lee toda la presentación y crea una única diapositiva resumen que un directivo pueda leer en 20 segundos.
 
 ```markdown
 ---
 name: "executive-summary-slide"
-description: "Use when the user asks for an executive summary slide, a one-slide TL;DR, a key-takeaways slide, or a 'so what' slide summarizing the whole deck."
+description: "Úsala cuando el usuario pida una diapositiva de resumen ejecutivo, un resumen en una diapositiva, una diapositiva de conclusiones clave o una diapositiva de 'y esto qué significa' que resuma toda la presentación."
 ---
 
-# Executive Summary Slide
+# Diapositiva de resumen ejecutivo
 
-Reads the entire deck and produces a single, executive-ready summary slide.
+Lee toda la presentación y genera una única diapositiva resumen lista para directivos.
 
-## What to do
-1. Scan all slides to extract the core narrative.
-2. Create one new slide titled "Executive Summary" (insert it as slide 2, after the title).
-3. Populate it with:
-   - 3 key takeaways, each one line, outcome-focused, no jargon.
-   - One recommended next step or the ask, clear and specific.
-4. Lead with the "so what," not the process. Write for a busy executive who reads only this slide.
+## Qué hacer
+1. Revisa todas las diapositivas para extraer el relato principal.
+2. Crea una diapositiva titulada "Resumen ejecutivo" (insértala como diapositiva 2, tras la portada).
+3. Incluye:
+   - 3 conclusiones clave, de una línea, centradas en resultados y sin jerga.
+   - Un siguiente paso recomendado o la petición, claro y concreto.
+4. Empieza por el "y esto qué significa", no por el proceso. Escribe para un directivo ocupado que solo leerá esta diapositiva.
 
-## Output
-One new summary slide. Below it (in the chat), list the source slides each takeaway was drawn from.
+## Resultado
+Una diapositiva resumen nueva. En el chat, indica de qué diapositivas sale cada conclusión.
 
-## Guardrails
-- Ground every takeaway in content that's actually in the deck, do not invent claims or numbers.
-- Keep it to a single slide. If content overflows, prioritize the 3 highest-impact points.
+## Salvaguardas
+- Basa cada conclusión en contenido que esté en la presentación; no inventes afirmaciones ni cifras.
+- Una sola diapositiva. Si no cabe, prioriza los 3 puntos de mayor impacto.
 ```
 
 ---
 
 ### speaker-notes
 
-Writes a real talk track into the notes pane so you're not reading bullets off the screen.
+Escribe un guion real en el panel de notas para que no tengas que leer las viñetas de la pantalla.
 
 ```markdown
 ---
 name: "speaker-notes"
-description: "Use when the user asks to write, add, or improve speaker notes / presenter notes for slides, or wants a talk track for the deck."
+description: "Úsala cuando el usuario pida escribir, añadir o mejorar las notas del orador de las diapositivas, o quiera un guion para la presentación."
 ---
 
-# Speaker Notes
+# Notas del orador
 
-Writes concise presenter notes into the notes pane of each slide.
+Escribe notas del orador concisas en el panel de notas de cada diapositiva.
 
-## What to do
-1. For each slide, write speaker notes that:
-   - Open with the one key point of the slide.
-   - Add 2 or 3 supporting talking points the presenter can expand on.
-   - Include a natural transition sentence into the next slide.
-2. Target roughly 30 to 45 seconds of speaking per slide (about 60 to 90 words).
-3. Use a conversational, spoken tone: short sentences, first person, no bullet-fragment shorthand.
-4. Write them into the slide's notes pane, not onto the slide.
+## Qué hacer
+1. Para cada diapositiva, escribe notas que:
+   - Empiecen por la idea clave de la diapositiva.
+   - Añadan 2 o 3 puntos de apoyo que el orador pueda desarrollar.
+   - Incluyan una frase de transición natural hacia la siguiente.
+2. Apunta a unos 30-45 segundos de intervención por diapositiva (unas 60-90 palabras).
+3. Usa un tono oral y conversacional: frases cortas, primera persona, sin abreviaturas tipo viñeta.
+4. Escríbelas en el panel de notas, no en la diapositiva.
 
-## Output
-Notes added to each slide's notes pane. End with the estimated total talk time for the deck.
+## Resultado
+Notas añadidas al panel de notas de cada diapositiva. Termina con el tiempo total estimado de la presentación.
 
-## Guardrails
-- Notes should complement the slide, not just read the bullets aloud.
-- Don't put speaker notes on the visible slide.
-- Keep claims consistent with what's on the slide.
+## Salvaguardas
+- Las notas deben complementar la diapositiva, no leer las viñetas en voz alta.
+- No pongas las notas en la diapositiva visible.
+- Mantén las afirmaciones coherentes con la diapositiva.
 ```
 
 ---
 
 ### doc-to-deck
 
-Turns a document, notes, or pasted content into a clean slide outline you can build on.
+Convierte un documento, unas notas o un contenido pegado en un esquema de diapositivas limpio sobre el que construir.
 
 ```markdown
 ---
 name: "doc-to-deck"
-description: "Use when the user wants to turn a document, notes, an outline, or pasted content into slides — 'make this into a deck', 'draft slides from this', 'turn this doc into a presentation'."
+description: "Úsala cuando el usuario quiera convertir un documento, unas notas, un esquema o un contenido pegado en diapositivas: 'haz una presentación con esto', 'prepara diapositivas a partir de esto', 'convierte este documento en una presentación'."
 ---
 
-# Doc to Deck
+# De documento a presentación
 
-Converts source content into a clean, logically structured slide outline.
+Convierte el contenido de origen en un esquema de diapositivas limpio y con una estructura lógica.
 
-## What to do
-1. Read the provided content and identify the main themes.
-2. Build a deck with this structure:
-   - Title slide (topic and subtitle).
-   - Agenda slide (3 to 6 sections).
-   - One slide per key idea, a clear title plus 3 to 5 supporting bullets, one line each.
-   - Closing or next-steps slide.
-3. Keep 5 to 7 content slides unless the user specifies a length.
-4. Use parallel, action-oriented bullet phrasing.
-5. Note where a chart, diagram, or image would strengthen a slide (as a placeholder line).
+## Qué hacer
+1. Lee el contenido e identifica los temas principales.
+2. Crea una presentación con esta estructura:
+   - Portada (tema y subtítulo).
+   - Índice (de 3 a 6 secciones).
+   - Una diapositiva por idea clave: título claro y 3-5 viñetas de una línea.
+   - Diapositiva de cierre o siguientes pasos.
+3. Entre 5 y 7 diapositivas de contenido salvo que el usuario indique otra extensión.
+4. Redacta las viñetas de forma paralela y orientada a la acción.
+5. Indica dónde reforzaría una diapositiva un gráfico, un diagrama o una imagen (con una línea de marcador).
 
-## Output
-A drafted deck. In the chat, give a quick outline (slide titles) so the user can approve or reorder.
+## Resultado
+Un borrador de presentación. En el chat, da un esquema rápido (títulos) para que el usuario lo apruebe o reordene.
 
-## Guardrails
-- Use only the facts in the source content, flag anything you inferred.
-- Don't overload slides, move detail into speaker notes if needed.
+## Salvaguardas
+- Usa solo los datos de la fuente y señala lo que hayas deducido.
+- No sobrecargues las diapositivas; pasa el detalle a las notas si hace falta.
 ```
 
 ---
 
 ### de-jargon
 
-Rewrites slide text in plain language for a non-technical or executive audience, without changing the facts.
+Reescribe el texto de las diapositivas en lenguaje sencillo para una audiencia no técnica o directiva, sin cambiar los hechos.
 
 ```markdown
 ---
 name: "de-jargon"
-description: "Use when the user asks to simplify slide language, remove jargon, plain-language the deck, or make text friendly for a non-technical or executive audience."
+description: "Úsala cuando el usuario pida simplificar el lenguaje de las diapositivas, eliminar la jerga, pasar la presentación a lenguaje sencillo o hacer el texto comprensible para una audiencia no técnica o directiva."
 ---
 
-# De-Jargon
+# Sin jerga
 
-Rewrites slide text in plain, direct language a non-specialist can follow.
+Reescribe el texto de las diapositivas en un lenguaje sencillo y directo que pueda seguir alguien no especialista.
 
-## What to do
-1. Replace jargon, acronyms, and internal shorthand with plain terms (spell out an acronym the first time if it must stay).
-2. Convert abstract or buzzword phrasing into concrete, everyday language.
-3. Prefer active voice and short sentences.
-4. Keep technical accuracy, simplify the wording, not the facts.
-5. Apply to titles and bullets across the selected slides (or whole deck).
+## Qué hacer
+1. Sustituye la jerga, las siglas y las abreviaturas internas por términos sencillos (desarrolla la sigla la primera vez si tiene que quedarse).
+2. Convierte las expresiones abstractas o de moda en lenguaje concreto y cotidiano.
+3. Prefiere la voz activa y las frases cortas.
+4. Mantén la exactitud técnica: simplifica las palabras, no los hechos.
+5. Aplícalo a títulos y viñetas de las diapositivas seleccionadas (o de toda la presentación).
 
-## Output
-The rewritten slides, plus a short list of the jargon terms you swapped and what you changed them to.
+## Resultado
+Las diapositivas reescritas y una lista breve de los términos de jerga cambiados y por qué se cambiaron.
 
-## Guardrails
-- Never change the meaning or the underlying claim.
-- Keep product names, required legal terms, and metrics exact.
-- If a term is essential and can't be simplified, keep it and add a 3 to 5 word plain-language gloss.
+## Salvaguardas
+- Nunca cambies el sentido ni la afirmación de fondo.
+- Mantén exactos los nombres de productos, los términos legales obligatorios y las métricas.
+- Si un término es imprescindible y no se puede simplificar, consérvalo y añade una aclaración sencilla de 3 a 5 palabras.
 ```
 
 ---
 
 ### tighten-copy
 
-Cuts filler and long bullets so the slide is scannable. Great before any exec review.
+Elimina el relleno y las viñetas largas para que la diapositiva se lea de un vistazo. Ideal antes de cualquier revisión con directivos.
 
 ```markdown
 ---
 name: "tighten-copy"
-description: "Use when the user asks to tighten slide copy, shorten bullets, cut filler, or make the text punchier and more scannable."
+description: "Úsala cuando el usuario pida ajustar el texto de las diapositivas, acortar las viñetas, eliminar el relleno o hacer el texto más contundente y fácil de leer de un vistazo."
 ---
 
-# Tighten Copy
+# Ajustar el texto
 
-Makes slide text lean and scannable without losing meaning.
+Hace que el texto de las diapositivas sea escueto y fácil de leer de un vistazo sin perder el sentido.
 
-## What to do
-1. Cut every bullet to under about 10 words.
-2. Remove filler ("in order to", "it is important to note", "basically", "very", "really").
-3. Lead each bullet with a strong verb or the key noun.
-4. Delete redundant bullets, merge overlapping points.
-5. Cap bullets at 6 per slide. If more, split or move detail to speaker notes.
-6. Make phrasing parallel across bullets on the same slide.
+## Qué hacer
+1. Reduce cada viñeta a menos de unas 10 palabras.
+2. Elimina el relleno ("con el fin de", "cabe destacar que", "básicamente", "muy", "realmente").
+3. Empieza cada viñeta con un verbo fuerte o el sustantivo clave.
+4. Elimina las viñetas redundantes y fusiona los puntos que se solapen.
+5. Máximo 6 viñetas por diapositiva. Si hay más, divide o pasa el detalle a las notas del orador.
+6. Redacta de forma paralela las viñetas de una misma diapositiva.
 
-## Output
-The tightened slides, plus a one-line note on how much was trimmed.
+## Resultado
+Las diapositivas ajustadas y una nota de una línea sobre cuánto se ha recortado.
 
-## Guardrails
-- Preserve all facts, numbers, and the core message.
-- Don't drop a point entirely unless it's a true duplicate, condense instead.
+## Salvaguardas
+- Conserva todos los datos, las cifras y el mensaje principal.
+- No elimines un punto por completo salvo que sea un duplicado real; condénsalo.
 ```
 
 ---
 
 ### consistency-check
 
-Audits the whole deck for the little inconsistencies that make it look rushed: mixed fonts, off-palette colors, caps, spacing.
+Revisa toda la presentación en busca de esas pequeñas incoherencias que la hacen parecer hecha con prisa: tipografías mezcladas, colores fuera de la paleta, mayúsculas, espaciado.
 
 ```markdown
 ---
 name: "consistency-check"
-description: "Use when the user asks to check the deck for inconsistencies — mismatched fonts, colors, capitalization, spacing, or off-brand slides — and wants a report or fixes."
+description: "Úsala cuando el usuario pida revisar la presentación en busca de incoherencias (tipografías, colores, mayúsculas o espaciado que no coinciden, o diapositivas que no siguen la marca) y quiera un informe o las correcciones."
 ---
 
-# Consistency Check
+# Revisión de coherencia
 
-Audits the whole deck for visual and textual inconsistencies.
+Revisa toda la presentación en busca de incoherencias visuales y de texto.
 
-## Scan every slide and flag
-1. Fonts: different typefaces or sizes for the same element.
-2. Colors: off-palette titles or accents, inconsistent text color.
-3. Capitalization: title case mixed with sentence case.
-4. Bullets: inconsistent styles, indent levels, or punctuation.
-5. Alignment: objects off the grid, uneven margins or spacing.
-6. Terminology: the same thing named differently across slides.
+## Revisa cada diapositiva y señala
+1. Tipografías: distintos tipos de letra o tamaños para el mismo elemento.
+2. Colores: títulos o detalles fuera de la paleta, color de texto incoherente.
+3. Mayúsculas: títulos con mayúscula en cada palabra mezclados con mayúscula solo inicial.
+4. Viñetas: estilos, sangrías o puntuación incoherentes.
+5. Alineación: objetos fuera de la cuadrícula, márgenes o espacios desiguales.
+6. Terminología: la misma cosa con nombres distintos en diapositivas distintas.
 
-## Then
-- Return a slide-by-slide list: slide number, issue, suggested fix.
-- Ask "Want me to apply all the fixes?" and only act on confirmation. If the user already said fix them, apply directly.
-- Don't change intentional design choices like a different section-divider style. Note those separately.
+## Después
+- Devuelve una lista por diapositiva: número, problema y corrección sugerida.
+- Pregunta "¿Quieres que aplique todas las correcciones?" y actúa solo si lo confirma. Si el usuario ya pidió corregirlas, aplícalas directamente.
+- No cambies decisiones de diseño intencionadas, como otro estilo para los separadores de sección. Indícalas aparte.
 ```
 
 ---
 
 ### fix-fonts
 
-Font Swap + Fit Check. Takes a deck that picked up four different fonts on its way through six people and puts the whole thing on Segoe UI, then goes back through and makes sure nothing overflowed, shrank, or went loose in its box.
+Cambio de tipografía y comprobación de ajuste. Toma una presentación que ha acumulado cuatro tipografías distintas al pasar por seis personas, la pone entera en Segoe UI y después la revisa para asegurarse de que nada se ha desbordado, encogido o quedado suelto en su cuadro.
 
 ```markdown
 ---
 name: "fix-fonts"
-description: "Use when I ask Copilot to standardize, replace, fix, or clean up fonts across the current PowerPoint presentation. Change editable slide text to Segoe UI and adjust font sizes so text keeps its prior visual scale and fits its existing container."
+description: "Úsala cuando pida a Copilot unificar, sustituir, arreglar u ordenar las tipografías de la presentación de PowerPoint actual. Cambia el texto editable de las diapositivas a Segoe UI y ajusta los tamaños para que el texto mantenga su escala visual anterior y quepa en su contenedor."
 ---
 
-# Fix Fonts
+# Arreglar tipografías
 
-1. Set the theme font scheme to Segoe UI so new slides inherit it.
-2. Replace overrides on slides, layouts, masters, and notes: Calibri, Georgia, Arial, Aptos to Segoe UI. Calibri Light to Segoe UI Light. Keep symbol fonts like Wingdings.
-3. Leave East Asian and complex-script slots empty for language fallback.
-4. Keep bold, italic, color, alignment, bullets, spacing, caps, and hierarchy.
-5. Check every text element. Tell overflow apart from text that looks undersized or loose in its box.
-6. Grow body text under 10pt where space allows. Leave footers, citations, legal, and page numbers small.
-7. Recheck wrapping, clipping, overflow, and collisions. Keep text in its container and move objects only to restore fit.
-8. Ignore decorative overlaps like circles or accent bars behind text.
-9. Change fonts and sizes only. Never rewrite or cut content.
-10. Report what changed and anything you could not update, like text inside images.
+1. Pon Segoe UI como fuente del tema para que las diapositivas nuevas la hereden.
+2. Sustituye en diapositivas, diseños, patrones y notas: Calibri, Georgia, Arial y Aptos por Segoe UI; Calibri Light por Segoe UI Light. Conserva las fuentes de símbolos como Wingdings.
+3. Deja vacías las fuentes de Asia oriental y escritura compleja (respaldo por idioma).
+4. Conserva negrita, cursiva, color, alineación, viñetas, espaciado, mayúsculas y jerarquía.
+5. Revisa cada texto: distingue desbordamiento de texto pequeño o suelto en su cuadro.
+6. Aumenta el cuerpo menor de 10 pt si cabe. Deja pequeños pies, citas, textos legales y números de página.
+7. Revisa saltos, recortes, desbordamientos y choques. Mantén el texto en su contenedor; mueve objetos solo si no cabe.
+8. Ignora solapamientos decorativos (círculos, barras tras el texto).
+9. Cambia solo tipografías y tamaños. Nunca reescribas ni recortes contenido.
+10. Informa de lo cambiado y de lo que no pudiste cambiar (p. ej., texto en imágenes).
 ```
 
 > [!TIP]
-> Swapping to a different font? Change the two font names in step 2 and the rest still works.
+> ¿Quieres cambiar a otra tipografía? Modifica los dos nombres de fuente del paso 2 y el resto sigue funcionando.
 
 ---
 
 ### accessibility-pass
 
-Adds alt text, checks contrast and font size, and confirms a logical reading order so the deck works for everyone.
+Añade texto alternativo, comprueba el contraste y el tamaño de letra, y confirma un orden de lectura lógico para que la presentación funcione para todo el mundo.
 
 ```markdown
 ---
 name: "accessibility-pass"
-description: "Use when the user asks for an accessibility check or pass — alt text for images, color contrast, reading order, and legible font sizes across the deck."
+description: "Úsala cuando el usuario pida una revisión de accesibilidad: texto alternativo para las imágenes, contraste de color, orden de lectura y tamaños de letra legibles en toda la presentación."
 ---
 
-# Accessibility Pass
+# Revisión de accesibilidad
 
-Makes the deck more accessible and inclusive.
+Hace que la presentación sea más accesible e inclusiva.
 
-## What to do
-1. Alt text: add concise, descriptive alt text to every image, chart, and non-decorative graphic. Mark purely decorative items as decorative.
-2. Contrast: flag any text and background combination below WCAG AA contrast and suggest a compliant color.
-3. Font size: flag body text under 18pt and titles under 28pt as hard to read from the back of a room.
-4. Reading order: check that the tab and reading order of objects on each slide is logical.
-5. Links and color: ensure meaning isn't conveyed by color alone, add labels where it is.
+## Qué hacer
+1. Texto alternativo: conciso y descriptivo en cada imagen, gráfico y elemento no decorativo. Marca los decorativos como tales.
+2. Contraste: señala las combinaciones de texto y fondo por debajo del contraste WCAG AA y sugiere un color que cumpla.
+3. Tamaño de letra: señala cuerpo menor de 18 pt y títulos menores de 28 pt (difíciles de leer desde el fondo).
+4. Orden de lectura: comprueba que el orden de tabulación y de lectura de cada diapositiva es lógico.
+5. Enlaces y color: que el significado no dependa solo del color; añade etiquetas donde ocurra.
 
-## Output
-A checklist of what was fixed and what still needs the user's decision (like contrast color choices), slide by slide.
+## Resultado
+Una lista por diapositiva de lo corregido y de lo que necesita una decisión del usuario (como elegir colores de contraste).
 
-## Guardrails
-- Alt text should describe the content or purpose, not just say "image."
-- Don't restyle the whole deck, make targeted accessibility fixes only.
+## Salvaguardas
+- El texto alternativo debe describir el contenido o su propósito, no decir solo "imagen".
+- No cambies el estilo de toda la presentación; haz solo correcciones de accesibilidad concretas.
 ```
 
 ---
 
 ### customer-ready-pass
 
-Takes an internal deck and preps it to share: strips internal notes and hidden slides, flags anything sensitive, and adds a disclaimer. Set your approved disclaimer wording first.
+Toma una presentación interna y la prepara para compartirla: elimina las notas internas y las diapositivas ocultas, señala todo lo sensible y añade un aviso legal. Escribe primero el texto de aviso legal aprobado.
 
 ```markdown
 ---
 name: "customer-ready-pass"
-description: "Use when the user wants to make a deck customer-ready or externally shareable — strip internal notes, remove confidential markings, add a disclaimer, and confirm nothing internal-only remains."
+description: "Úsala cuando el usuario quiera preparar una presentación para clientes o para compartirla fuera: eliminar notas internas, quitar marcas de confidencialidad, añadir un aviso legal y confirmar que no queda nada de uso exclusivamente interno."
 ---
 
-# Customer-Ready Pass
+# Lista para el cliente
 
-Prepares an internal deck for safe external sharing.
+Prepara una presentación interna para compartirla fuera con seguridad.
 
-## What to do
-1. Remove internal-only speaker notes, hidden slides, DRAFT or INTERNAL watermarks, and back-channel comments.
-2. Flag anything confidential, such as internal pricing, NDA roadmap dates, other parties' names, or internal metrics, and ask before removing.
-3. Add a disclaimer footer or closing slide. EDIT to your approved wording: "For discussion purposes only. Subject to change."
-4. Check the closing slide has the right presenter contact info.
-5. Confirm no TODO, placeholder text, or lorem ipsum remains.
-6. When unsure whether something is confidential, ask. Never assume it is safe to keep.
-7. Remove internal or sensitive items only, never substantive content.
-8. Respect sensitivity labels and say so if the file looks classified.
-9. Return the cleaned deck plus a list of everything removed or flagged.
+## Qué hacer
+1. Elimina las notas del orador internas, las diapositivas ocultas, las marcas BORRADOR o INTERNO y los comentarios internos.
+2. Señala lo confidencial (precios internos, fechas de hoja de ruta bajo NDA, nombres de terceros o métricas internas) y pregunta antes de eliminarlo.
+3. Añade un pie o una diapositiva final con un aviso legal. EDITA el texto aprobado: "Solo para debate. Sujeto a cambios."
+4. Comprueba que la diapositiva final tiene los datos de contacto correctos del ponente.
+5. Confirma que no queda ningún PENDIENTE, texto de marcador ni lorem ipsum.
+6. Si dudas de si algo es confidencial, pregunta. Nunca des por hecho que es seguro dejarlo.
+7. Elimina solo lo interno o sensible, nunca contenido sustancial.
+8. Respeta las etiquetas de confidencialidad y avisa si el archivo parece clasificado.
+9. Devuelve la presentación limpia y una lista de todo lo eliminado o señalado.
 ```
 
 ---
 
 ### qbr-builder
 
-Structures content into a clean Quarterly Business Review flow: wins, status, pipeline, risks, and asks.
+Estructura el contenido como una revisión trimestral de negocio (QBR) ordenada: logros, estado, pipeline, riesgos y peticiones.
 
 ```markdown
 ---
 name: "qbr-builder"
-description: "Use when the user asks to build or structure a QBR (Quarterly Business Review) deck, or reformat content into a QBR flow: wins, pipeline/status, risks, and asks."
+description: "Úsala cuando el usuario pida crear o estructurar una presentación de QBR (revisión trimestral de negocio), o reorganizar contenido con el esquema de una QBR: logros, pipeline/estado, riesgos y peticiones."
 ---
 
-# QBR Builder
+# Generador de QBR
 
-Structures content into a clean Quarterly Business Review deck.
+Estructura el contenido como una presentación ordenada de revisión trimestral de negocio.
 
-## Build this flow
-1. Title: account, quarter, presenter.
-2. Executive summary: 3 headline outcomes for the quarter.
-3. Wins and progress: what was delivered, with metrics where available.
-4. Adoption or status: current state against targets such as usage, seats, milestones.
-5. Pipeline or roadmap: next quarter's key initiatives.
-6. Risks and blockers: honest list with owner and mitigation.
-7. Asks and next steps: specific asks plus agreed actions with dates.
+## Crea este esquema
+1. Portada: cuenta, trimestre, ponente.
+2. Resumen ejecutivo: 3 resultados destacados del trimestre.
+3. Logros y avances: lo entregado, con métricas si existen.
+4. Adopción o estado: situación actual frente a objetivos (uso, licencias, hitos).
+5. Pipeline u hoja de ruta: iniciativas clave del próximo trimestre.
+6. Riesgos y bloqueos: lista honesta con responsable y mitigación.
+7. Peticiones y siguientes pasos: peticiones concretas y acciones acordadas con fechas.
 
-## Rules
-- Pull existing or pasted content into the right sections. Mark gaps "[NEEDS DATA]".
-- One message per slide. Push detail into speaker notes.
-- Lead with outcomes and value, not activity.
-- Never fabricate metrics, dates, or commitments. Use placeholders.
-- Always pair a risk with a mitigation.
-- End with the list of "[NEEDS DATA]" placeholders to fill in.
+## Reglas
+- Coloca el contenido existente o pegado en su sección. Marca los huecos con "[FALTAN DATOS]".
+- Un mensaje por diapositiva. Pasa el detalle a las notas del orador.
+- Empieza por los resultados y el valor, no por la actividad.
+- Nunca inventes métricas, fechas ni compromisos. Usa marcadores.
+- Acompaña siempre cada riesgo de una mitigación.
+- Termina con la lista de marcadores "[FALTAN DATOS]" por completar.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
