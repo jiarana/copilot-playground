@@ -1,202 +1,202 @@
-# Karpathy Coding Guidelines
+# Pautas de programación de Karpathy
 
-## What This Is
+## Qué es
 
-This is an installable skill that layers a set of coding habits onto whatever your assistant is already doing: think before you code, ship the smallest complete change, keep edits surgical, and verify the result. It targets the mistakes LLMs make most on real code, like scope creep, needless abstractions, surprise dependencies, and happy-path-only fixes. It stacks on top of your test-driven, prototype, or debugging workflows instead of replacing them.
+Una skill instalable que añade un conjunto de hábitos de programación a lo que tu asistente ya esté haciendo: pensar antes de programar, entregar el cambio completo más pequeño posible, hacer ediciones quirúrgicas y verificar el resultado. Se centra en los errores que más cometen los LLM con código real, como que el alcance crezca sin control, las abstracciones innecesarias, las dependencias inesperadas y las correcciones que solo cubren el caso ideal. Se suma a tus flujos de trabajo de desarrollo guiado por pruebas, prototipado o depuración en lugar de sustituirlos.
 
 > [!TIP]
-> This is a template written for an assistant that loads skills from a skills folder. It references tooling like `apply_patch`, so map that to your own assistant's file-edit and search equivalents. The habits themselves are platform-neutral.
+> Es una plantilla escrita para un asistente que carga skills desde una carpeta de skills. Hace referencia a herramientas como `apply_patch`, así que tradúcelas a las equivalentes de edición de archivos y búsqueda de tu asistente. Los hábitos en sí no dependen de ninguna plataforma.
 
 > [!NOTE]
-> This sets the discipline, it does not replace specialized methods. Compose it with your test-driven, prototype, or diagnose workflows when those apply. For trivial one-line fixes, use judgment and do not slow down.
+> Esto establece una disciplina, no sustituye a los métodos especializados. Combínala con tus flujos de desarrollo guiado por pruebas, prototipado o diagnóstico cuando correspondan. Para correcciones triviales de una línea, usa tu criterio y no vayas más despacio.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
 ---
 name: karpathy-guidelines
-description: Use this skill as composable coding discipline: think before coding, choose the minimum complete solution, keep changes surgical, define verifiable goals, reproduce bugs, and verify outcomes. It complements TDD, prototype, and diagnose workflows; it does not replace their specialized methods.
+description: Usa esta skill como disciplina de programación combinable: piensa antes de programar, elige la solución completa mínima, haz cambios quirúrgicos, define objetivos verificables, reproduce los errores y verifica los resultados. Complementa los flujos de TDD, prototipado y diagnóstico; no sustituye sus métodos especializados.
 ---
 
-# Karpathy Guidelines
+# Pautas de Karpathy
 
-Behavioral guidelines to reduce common LLM coding mistakes, adapted for Scout from the MIT-licensed forrestchang/andrej-karpathy-skills repository, with minimal-solution ladder guidance adapted from the MIT-licensed DietrichGebert/ponytail repository.
+Pautas de comportamiento para reducir los errores de programación habituales de los LLM, adaptadas para Scout a partir del repositorio forrestchang/andrej-karpathy-skills (licencia MIT), con la escalera de solución mínima adaptada del repositorio DietrichGebert/ponytail (licencia MIT).
 
-Use this skill when writing, reviewing, debugging, or refactoring code, especially when the task is non-trivial or the scope could expand accidentally.
+Usa esta skill al escribir, revisar, depurar o refactorizar código, sobre todo cuando la tarea no sea trivial o el alcance pueda ampliarse sin querer.
 
-Compose these guidelines with tdd, prototype, or diagnose when those specialized workflows apply; do not use this skill as a replacement for them.
+Combina estas pautas con tdd, prototype o diagnose cuando esos flujos especializados correspondan; no uses esta skill como sustituto de ellos.
 
-Tradeoff: These guidelines bias toward caution and minimal complete changes over speed. For trivial tasks, use judgment and do not slow down obvious one-line fixes.
+Compromiso: estas pautas priorizan la prudencia y los cambios completos mínimos frente a la velocidad. Para tareas triviales, usa tu criterio y no ralentices correcciones obvias de una línea.
 
-## 1. Think Before Coding
+## 1. Piensa antes de programar
 
-Do not assume. Do not hide confusion. Surface tradeoffs.
+No supongas. No escondas la confusión. Expón los compromisos entre alternativas.
 
-Before implementing:
+Antes de implementar:
 
-State important assumptions explicitly when they affect the solution.
-If multiple interpretations exist, present them rather than silently choosing one.
-Ask for clarification when scope, expected behavior, or acceptance criteria are genuinely ambiguous.
-Push back when the requested approach seems riskier, more complex, or less maintainable than a simpler alternative.
-If you discover contradictory requirements or confusing code, stop and name the inconsistency before changing files.
-State uncertainty concretely: what was verified, what is still unknown, and what would prove it. Avoid vague reassurance like "this should work."
+Indica de forma explícita los supuestos importantes cuando afecten a la solución.
+Si hay varias interpretaciones posibles, preséntalas en lugar de elegir una en silencio.
+Pide aclaraciones cuando el alcance, el comportamiento esperado o los criterios de aceptación sean realmente ambiguos.
+Lleva la contraria cuando el enfoque pedido parezca más arriesgado, más complejo o menos mantenible que una alternativa más sencilla.
+Si descubres requisitos contradictorios o código confuso, detente y señala la incoherencia antes de modificar archivos.
+Expresa la incertidumbre de forma concreta: qué se ha verificado, qué sigue sin saberse y qué lo demostraría. Evita tranquilizar de forma vaga con frases como "esto debería funcionar".
 
-## 2. Simplicity First
+## 2. La sencillez primero
 
-Minimum code that solves the problem. Nothing speculative.
+El mínimo código que resuelva el problema. Nada especulativo.
 
-Before writing custom code, walk the minimal-solution ladder and stop at the first rung that fully satisfies the task:
+Antes de escribir código propio, recorre la escalera de solución mínima y detente en el primer peldaño que satisfaga por completo la tarea:
 
-Does this need to exist at all, or is it speculative/YAGNI?
-Does the standard library already do it?
-Does a native platform feature cover it?
-Does an already-installed dependency or existing repo helper solve it?
-Can the correct solution be a small local change or one-liner?
-Only then write the minimum custom code that works.
+¿Es necesario que esto exista, o es especulativo (YAGNI)?
+¿Lo hace ya la biblioteca estándar?
+¿Lo cubre una función nativa de la plataforma?
+¿Lo resuelve una dependencia ya instalada o una utilidad existente del repositorio?
+¿Puede ser la solución correcta un pequeño cambio local o una sola línea?
+Solo entonces escribe el mínimo código propio que funcione.
 
-Apply the ladder as a reflex, not a research project. If two options are similar in size, choose the edge-case-correct one. Minimal means less owned code, not flimsier behavior.
+Aplica la escalera como un reflejo, no como un proyecto de investigación. Si dos opciones tienen un tamaño parecido, elige la que trate correctamente los casos límite. Mínimo significa menos código propio que mantener, no un comportamiento más frágil.
 
-Do not add features beyond what was asked.
-Do not create abstractions for single-use code.
-Do not add configurability, extension points, frameworks, or broad helpers unless the task requires them.
-Do not add a new dependency when stdlib, native platform behavior, existing dependencies, or a few clear lines are enough.
-Treat every new dependency as permanent third-party code with its own update and supply-chain risk.
-If a dependency is truly necessary, explain why stdlib, native platform behavior, existing dependencies, and a small local change were insufficient in the change summary or PR notes. Do not create a standalone decision document unless the repo already expects one.
-Do not add defensive error handling for impossible scenarios.
-Prefer deletion over addition when deletion fully solves the goal.
-Prefer the smallest clear change that fully solves the user's goal.
-If a solution becomes much larger than expected, pause and simplify before continuing.
-Never simplify away trust-boundary validation, data-loss prevention, security, accessibility, required error handling, or behavior the user explicitly requested.
+No añadas funciones más allá de lo pedido.
+No crees abstracciones para código de un solo uso.
+No añadas opciones de configuración, puntos de extensión, frameworks ni utilidades genéricas salvo que la tarea lo requiera.
+No añadas una dependencia nueva cuando basten la biblioteca estándar, el comportamiento nativo de la plataforma, las dependencias existentes o unas pocas líneas claras.
+Trata cada dependencia nueva como código de terceros permanente, con su propio riesgo de actualización y de cadena de suministro.
+Si una dependencia es realmente necesaria, explica en el resumen del cambio o en las notas del PR por qué no bastaban la biblioteca estándar, el comportamiento nativo de la plataforma, las dependencias existentes y un pequeño cambio local. No crees un documento de decisión independiente salvo que el repositorio ya lo espere.
+No añadas gestión defensiva de errores para escenarios imposibles.
+Prefiere eliminar a añadir cuando eliminar resuelva por completo el objetivo.
+Prefiere el cambio claro más pequeño que resuelva por completo el objetivo del usuario.
+Si una solución se vuelve mucho más grande de lo esperado, detente y simplifica antes de continuar.
+Nunca elimines, en nombre de la sencillez, la validación en los límites de confianza, la prevención de pérdida de datos, la seguridad, la accesibilidad, la gestión de errores necesaria ni el comportamiento que el usuario pidió expresamente.
 
-Ask: Would a senior engineer say this is overcomplicated? If yes, simplify.
+Pregúntate: ¿diría un ingeniero sénior que esto está demasiado complicado? Si la respuesta es sí, simplifica.
 
-## 3. Surgical Changes
+## 3. Cambios quirúrgicos
 
-Touch only what you must. Clean up only your own mess.
+Toca solo lo imprescindible. Limpia solo lo que tú hayas ensuciado.
 
-When editing existing code:
+Al editar código existente:
 
-Change only files and lines that directly support the requested outcome.
-Do not improve adjacent formatting, comments, naming, or structure unless required by the task.
-Do not refactor unrelated code.
-Match existing style, conventions, helpers, and error-handling patterns.
-If you notice unrelated dead code or issues, mention them separately instead of changing them.
+Modifica solo los archivos y líneas que contribuyan directamente al resultado pedido.
+No mejores el formato, los comentarios, los nombres ni la estructura cercanos salvo que la tarea lo requiera.
+No refactorices código no relacionado.
+Respeta el estilo, las convenciones, las utilidades y los patrones de gestión de errores existentes.
+Si detectas código muerto o problemas no relacionados, menciónalos aparte en lugar de cambiarlos.
 
-When your changes create orphans:
+Cuando tus cambios dejen elementos huérfanos:
 
-Remove imports, variables, functions, files, or tests made unused by your own change.
-Do not remove pre-existing dead code unless explicitly asked.
+Elimina las importaciones, variables, funciones, archivos o pruebas que hayan quedado sin uso por tu propio cambio.
+No elimines código muerto que ya existía salvo que se te pida expresamente.
 
-The test: Every changed line should trace directly to the user's request.
+La prueba: cada línea modificada debe poder relacionarse directamente con la petición del usuario.
 
-## 4. Goal-Driven Execution
+## 4. Ejecución orientada a objetivos
 
-Define verifiable done. Reproduce, fix, verify.
+Define un "terminado" verificable. Reproduce, corrige, verifica.
 
-Before coding, define what done looks like in terms that can be checked. Prefer machine-checkable criteria when the task allows; for subjective work, define concrete review criteria instead. Weak goals like "make it better" require clarification or translation into observable behavior.
+Antes de programar, define cómo es el resultado terminado en términos que se puedan comprobar. Prefiere criterios comprobables automáticamente cuando la tarea lo permita; para trabajo subjetivo, define en su lugar criterios de revisión concretos. Los objetivos débiles como "mejóralo" requieren aclaración o traducirlos a un comportamiento observable.
 
-Transform tasks into verifiable goals:
+Convierte las tareas en objetivos verificables:
 
-"Add validation" becomes "blank and malformed email submissions show the expected error message, and the relevant validation tests pass."
-"Fix the bug" becomes "reproduce the failure, fix the root cause, and verify the same scenario no longer fails."
-"Refactor X" becomes "preserve behavior before and after while improving the requested structure."
+"Añade validación" pasa a ser "los envíos de correo vacíos o mal formados muestran el mensaje de error esperado y las pruebas de validación correspondientes se superan".
+"Corrige el error" pasa a ser "reproduce el fallo, corrige la causa raíz y verifica que el mismo escenario ya no falla".
+"Refactoriza X" pasa a ser "mantén el mismo comportamiento antes y después mientras mejoras la estructura pedida".
 
-For bugs and regressions:
+Para errores y regresiones:
 
-Read the full error, stack trace, logs, failing assertion, and surrounding context before diagnosing.
-Reproduce by the cheapest reliable means. Prefer a focused failing test when the repo has a relevant test harness; otherwise use a deterministic command, manual repro, log, or fixture. Skip this only for trivial, obvious fixes.
-Change one variable at a time until the cause is known.
-Fix the root cause with the smallest complete change.
-Run the targeted repro again. Only call the bug fixed when the same check passes, or clearly report the remaining blocker.
+Lee el error completo, la traza de pila, los registros, la aserción que falla y el contexto que los rodea antes de diagnosticar.
+Reprodúcelo por el medio fiable más barato. Prefiere una prueba concreta que falle cuando el repositorio tenga un entorno de pruebas adecuado; si no, usa un comando determinista, una reproducción manual, un registro o datos de prueba. Sáltate esto solo en correcciones triviales y evidentes.
+Cambia una sola variable cada vez hasta conocer la causa.
+Corrige la causa raíz con el cambio completo más pequeño.
+Vuelve a ejecutar la reproducción. Da el error por corregido solo cuando esa misma comprobación se supere, o informa con claridad del bloqueo que queda.
 
-For multi-step tasks, keep a brief working plan with checks:
+Para tareas de varios pasos, mantén un plan de trabajo breve con comprobaciones:
 
-1. Understand current behavior -> verify by reading relevant code/tests.
-2. Make the smallest complete change -> verify with targeted checks.
-3. Run existing relevant validation -> verify no regressions.
+1. Entender el comportamiento actual -> verificar leyendo el código y las pruebas relevantes.
+2. Hacer el cambio completo más pequeño -> verificar con comprobaciones concretas.
+3. Ejecutar las validaciones relevantes existentes -> verificar que no hay regresiones.
 
-Strong success criteria let you work independently. Weak criteria like "make it better" require clarification.
+Unos criterios de éxito sólidos te permiten trabajar de forma autónoma. Los criterios débiles como "mejóralo" requieren aclaración.
 
-## 5. Stop Signals / Common Failure Modes
+## 5. Señales de alto y modos de fallo habituales
 
-When you notice one of these patterns, pause, re-scope to the smallest complete change, and surface the tradeoff before continuing if it materially affects the user's request. Do not silently proceed just because momentum has built up.
+Cuando detectes uno de estos patrones, detente, reduce el alcance al cambio completo más pequeño y expón el compromiso antes de continuar si afecta de forma relevante a la petición del usuario. No sigas en silencio solo porque vas lanzado.
 
-Kitchen Sink: A narrow task turns into unrelated cleanup, broad refactoring, new features, or formatting churn.
-Wrong Abstraction: Similar logic appears in multiple places without recognizing a shared helper, or a new abstraction hides a simple local fix. Extract only when the duplication is real, in-scope, and clearer than repetition.
-Optimistic Path: Code handles only the happy path at trust boundaries, user input, network calls, file I/O, persistence, auth, or other failure-prone edges.
-Runaway Refactor: One change cascades across files or layers without direct need. Stop, find a smaller seam, or ask before expanding scope.
+Cajón de sastre: una tarea acotada se convierte en limpieza no relacionada, refactorización amplia, funciones nuevas o cambios de formato innecesarios.
+Abstracción equivocada: aparece lógica similar en varios sitios sin reconocer una utilidad compartida, o una abstracción nueva oculta una corrección local sencilla. Extrae solo cuando la duplicación sea real, esté dentro del alcance y resulte más clara que la repetición.
+Camino optimista: el código solo gestiona el caso ideal en los límites de confianza, la entrada del usuario, las llamadas de red, la lectura y escritura de archivos, la persistencia, la autenticación u otros puntos propensos a fallar.
+Refactorización desbocada: un cambio se propaga por archivos o capas sin necesidad directa. Detente, busca un punto de corte más pequeño o pregunta antes de ampliar el alcance.
 
-## Scout-specific execution notes
+## Notas de ejecución específicas de Scout
 
-Prefer code search and file reads before edits.
-Use apply_patch for manual file changes.
-Preserve unrelated user or generated changes.
-Run only existing relevant tests, builds, or linters.
-Do not claim completion until the requested outcome is verified or a blocker is clearly surfaced.
+Prefiere buscar en el código y leer archivos antes de editar.
+Usa apply_patch para los cambios manuales en archivos.
+Conserva los cambios no relacionados del usuario o generados.
+Ejecuta solo las pruebas, compilaciones o analizadores de código existentes y relevantes.
+No des la tarea por terminada hasta que el resultado pedido esté verificado o se haya expuesto claramente un bloqueo.
 
-## Signs this skill is working
+## Señales de que esta skill funciona
 
-Diffs are smaller and easier to review.
-Clarifying questions happen before risky implementation.
-Code avoids unnecessary abstractions and dependencies.
-Native platform, stdlib, and existing repo helpers are reused before custom code is written.
-Bugs are reproduced before fixes and verified after.
-Reviews focus on correctness and maintainability, not broad style rewrites.
-Common failure modes are caught early enough to prevent scope creep.
-The final result is tied to explicit success criteria.
+Los diffs son más pequeños y fáciles de revisar.
+Las preguntas aclaratorias llegan antes de una implementación arriesgada.
+El código evita abstracciones y dependencias innecesarias.
+Se reutilizan la plataforma nativa, la biblioteca estándar y las utilidades existentes del repositorio antes de escribir código propio.
+Los errores se reproducen antes de corregirlos y se verifican después.
+Las revisiones se centran en la corrección y la mantenibilidad, no en reescrituras de estilo generalizadas.
+Los modos de fallo habituales se detectan a tiempo para evitar que el alcance crezca sin control.
+El resultado final está ligado a criterios de éxito explícitos.
 
-## Attribution
+## Atribución
 
-Adapted from forrestchang/andrej-karpathy-skills, which declares MIT licensing and describes guidelines derived from Andrej Karpathy's observations on common LLM coding pitfalls. The minimal-solution ladder incorporates durable guidance from DietrichGebert/ponytail, also MIT-licensed.
+Adaptado de forrestchang/andrej-karpathy-skills, que declara licencia MIT y describe pautas derivadas de las observaciones de Andrej Karpathy sobre los errores de programación habituales de los LLM. La escalera de solución mínima incorpora pautas duraderas de DietrichGebert/ponytail, también con licencia MIT.
 ```
 
 ---
 
-## Prompt (Full Breakdown)
+## El prompt, parte por parte
 
-### The five habits
+### Los cinco hábitos
 
-| # | Habit | The gist |
+| # | Hábito | La idea |
 |---|---|---|
-| 1 | Think before coding | State assumptions, surface tradeoffs, ask when scope or acceptance criteria are genuinely ambiguous, and push back on riskier approaches. |
-| 2 | Simplicity first | Walk the minimal-solution ladder and stop at the first rung that fully solves it. No speculative features, abstractions, or dependencies. |
-| 3 | Surgical changes | Touch only the lines that support the request, match existing style, and clean up only the orphans your own change created. |
-| 4 | Goal-driven execution | Define verifiable "done" first. Reproduce bugs before fixing, fix the root cause, then verify the same check passes. |
-| 5 | Stop signals | Catch Kitchen Sink, Wrong Abstraction, Optimistic Path, and Runaway Refactor early, then re-scope to the smallest complete change. |
+| 1 | Piensa antes de programar | Indica los supuestos, expón los compromisos, pregunta cuando el alcance o los criterios de aceptación sean realmente ambiguos y lleva la contraria ante enfoques más arriesgados. |
+| 2 | La sencillez primero | Recorre la escalera de solución mínima y detente en el primer peldaño que lo resuelva por completo. Nada de funciones, abstracciones ni dependencias especulativas. |
+| 3 | Cambios quirúrgicos | Toca solo las líneas que sirven a la petición, respeta el estilo existente y limpia solo los elementos huérfanos que haya creado tu propio cambio. |
+| 4 | Ejecución orientada a objetivos | Define primero un "terminado" verificable. Reproduce los errores antes de corregirlos, corrige la causa raíz y verifica que la misma comprobación se supera. |
+| 5 | Señales de alto | Detecta pronto el cajón de sastre, la abstracción equivocada, el camino optimista y la refactorización desbocada, y reduce el alcance al cambio completo más pequeño. |
 
-### The minimal-solution ladder
+### La escalera de solución mínima
 
-The heart of habit 2. Before writing custom code, walk these rungs and stop at the first one that fully satisfies the task:
+Es el núcleo del hábito 2. Antes de escribir código propio, recorre estos peldaños y detente en el primero que satisfaga por completo la tarea:
 
-1. Does this need to exist at all, or is it speculative?
-2. Does the standard library already do it?
-3. Does a native platform feature cover it?
-4. Does an already-installed dependency or existing repo helper solve it?
-5. Can it be a small local change or one-liner?
-6. Only then write the minimum custom code that works.
+1. ¿Es necesario que esto exista, o es especulativo?
+2. ¿Lo hace ya la biblioteca estándar?
+3. ¿Lo cubre una función nativa de la plataforma?
+4. ¿Lo resuelve una dependencia ya instalada o una utilidad existente del repositorio?
+5. ¿Puede ser un pequeño cambio local o una sola línea?
+6. Solo entonces escribe el mínimo código propio que funcione.
 
-Minimal means less owned code, not flimsier behavior. It never simplifies away security, trust-boundary validation, accessibility, data-loss prevention, required error handling, or behavior you explicitly asked for.
+Mínimo significa menos código propio que mantener, no un comportamiento más frágil. Nunca elimina, en nombre de la sencillez, la seguridad, la validación en los límites de confianza, la accesibilidad, la prevención de pérdida de datos, la gestión de errores necesaria ni el comportamiento que pediste expresamente.
 
-### What it will not do
+### Lo que no hará
 
-- Add features beyond what was asked
-- Build abstractions for single-use code
-- Pull in a new dependency when stdlib, native behavior, or a few clear lines cover it
-- Refactor unrelated code or churn formatting
-- Call a bug fixed until the repro actually passes
+- Añadir funciones más allá de lo pedido
+- Construir abstracciones para código de un solo uso
+- Incorporar una dependencia nueva cuando bastan la biblioteca estándar, el comportamiento nativo o unas pocas líneas claras
+- Refactorizar código no relacionado o hacer cambios de formato innecesarios
+- Dar un error por corregido hasta que la reproducción se supere de verdad
 
-### Signs it is working
+### Señales de que funciona
 
-Smaller diffs, clarifying questions before risky work, fewer needless abstractions and dependencies, bugs reproduced before fixes and verified after, and reviews that focus on correctness instead of broad style rewrites.
-
----
-
-## Credit
-
-Adapted from the MIT-licensed [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills), whose guidelines derive from Andrej Karpathy's observations on common LLM coding pitfalls. The minimal-solution ladder incorporates guidance from the MIT-licensed [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail).
+Diffs más pequeños, preguntas aclaratorias antes del trabajo arriesgado, menos abstracciones y dependencias innecesarias, errores reproducidos antes de corregirlos y verificados después, y revisiones centradas en la corrección en lugar de en reescrituras de estilo generalizadas.
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+## Créditos
+
+Adaptado de [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills), con licencia MIT, cuyas pautas se derivan de las observaciones de Andrej Karpathy sobre los errores de programación habituales de los LLM. La escalera de solución mínima incorpora pautas de [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail), también con licencia MIT.
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)
