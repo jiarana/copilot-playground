@@ -1,159 +1,159 @@
-# Executive Assistant Prompt Pack
+# Pack de prompts para asistentes de dirección
 
-## What This Is
+## Qué es
 
-This is the set of prompts I hand to executive assistants and admin professionals who want Copilot handling the parts of the job that quietly eat the whole day. Inbox triage, calendar math across time zones, meeting minutes, deck outlines, vendor contracts, and event logistics.
+Este es el conjunto de prompts que el autor entrega a asistentes de dirección y profesionales administrativos que quieren que Copilot se encargue de las partes del trabajo que, sin hacer ruido, se comen el día entero. Clasificación de la bandeja de entrada, cálculos de calendario entre zonas horarias, actas de reuniones, esquemas de presentaciones, contratos con proveedores y logística de eventos.
 
-None of these are clever. That is the point. They are the same asks you would give a sharp new hire, written specifically enough that Copilot can actually act on them.
+Ninguno es especialmente ingenioso. Esa es la idea. Son las mismas peticiones que le harías a una nueva incorporación espabilada, redactadas con el detalle suficiente para que Copilot pueda actuar sobre ellas.
 
 > [!TIP]
-> Swap anything in `[brackets]` for your own details before you run it. Names, dates, cities, vendors, headcount. The more specific you are, the less you have to fix afterward.
+> Sustituye todo lo que esté `[entre corchetes]` por tus datos antes de ejecutarlo. Nombres, fechas, ciudades, proveedores, número de personas. Cuanto más concreto seas, menos tendrás que corregir después.
 
 > [!NOTE]
-> Copilot can only work with what it can see. If a prompt refers to a meeting, thread, or document, open it or attach it first so Copilot has the source instead of guessing.
+> Copilot solo puede trabajar con lo que ve. Si un prompt hace referencia a una reunión, una conversación o un documento, ábrelo o adjúntalo primero para que Copilot tenga la fuente en lugar de adivinar.
 
 ---
 
-## Inbox and Email
+## Bandeja de entrada y correo
 
-The inbox is where most assistants lose the morning. These get you to the short list.
+La bandeja de entrada es donde la mayoría de los asistentes pierden la mañana. Estos prompts te llevan directamente a la lista corta.
 
-### Catch up after time away
-
-```
-Summarize my unread email from the last [3] days into a prioritized list. Put anything with a deadline or that needs a decision at the top, anything needing a reply from me next, and group the FYI updates at the bottom. Tell me who is waiting on us and how long they have been waiting.
-```
-
-### Draft a reply in your executive's voice
+### Ponerse al día después de una ausencia
 
 ```
-Draft a reply to this email as [Executive Name]. Match how they normally write: [brief, warm, no small talk]. Cover [point one], [point two], and [point three]. Leave a blank line at the bottom for anything they want to add themselves.
+Resume mi correo no leído de los últimos [3] días en una lista priorizada. Pon arriba todo lo que tenga un plazo o necesite una decisión, a continuación lo que necesite una respuesta mía, y agrupa abajo las novedades informativas. Dime quién está esperando una respuesta nuestra y cuánto tiempo lleva esperando.
 ```
 
-### Project delay update
+### Redactar una respuesta con la voz de tu directivo
 
 ```
-Draft an update to the [Project Name] team from [Executive Name]. We are [two] days behind schedule. Keep it direct but not heavy-handed, focused on the fix rather than the miss, and ask each team lead to send back a three-point recovery plan by end of day [Friday]. Under 200 words.
+Redacta una respuesta a este correo como si fueras [nombre del directivo]. Imita su forma habitual de escribir: [breve, cercana, sin rodeos]. Trata [punto uno], [punto dos] y [punto tres]. Deja una línea en blanco al final para lo que quiera añadir personalmente.
 ```
 
-### Find what you owe people
+### Aviso de retraso en un proyecto
 
 ```
-Pull every commitment I made over email this week that has not been closed out yet. Show who I promised it to, what I promised, and when it was due.
+Redacta una actualización para el equipo de [nombre del proyecto] de parte de [nombre del directivo]. Vamos [dos] días por detrás del calendario. Que sea directa pero sin dureza, centrada en la solución más que en el fallo, y pide a cada responsable de equipo que envíe un plan de recuperación en tres puntos antes del final del [viernes]. Menos de 200 palabras.
 ```
 
----
-
-## Calendar and Scheduling
-
-Calendar work is arithmetic plus politics. Copilot can do the arithmetic.
-
-### Three time zones, no bad meetings
+### Encontrar lo que debes a otras personas
 
 ```
-Find the three best times to hold a [60]-minute meeting for attendees in [Tokyo], [London], and [New York]. Nothing before 9 AM or after 6 PM in anyone's local time. Show each option in all three time zones and tell me which one is the least painful overall and why.
-```
-
-### Clean up next week
-
-```
-Look at [Executive Name]'s calendar for [next week] and find every conflict, every back-to-back stretch with no gap, and anything double-booked. For each one, tell me what to move and give me two alternate times that already work for the other attendees.
-```
-
-### Protect a travel week
-
-```
-[Executive Name] is traveling to [city] on [dates]. Review their calendar for those days and tell me what has to move, what can stay virtual, and what I should block for travel and recovery. Give me the list of people I need to email about a change.
+Reúne todos los compromisos que he adquirido por correo esta semana y que todavía no se han cerrado. Muestra a quién se lo prometí, qué prometí y para cuándo era.
 ```
 
 ---
 
-## Meetings and Minutes
+## Calendario y planificación
 
-Three different asks, so use the one that matches who is reading it.
+El trabajo con el calendario es aritmética más política. Copilot puede encargarse de la aritmética.
 
-### One-paragraph readout for the person who missed it
-
-```
-Write a one-paragraph summary of this meeting for [Executive Name], who was not there. Lead with what was decided and what happens next. Skip the discussion detail unless it changes a decision.
-```
-
-### Formal minutes from a recording or transcript
+### Tres zonas horarias sin reuniones a deshoras
 
 ```
-Turn this transcript into formal minutes with these sections: Attendees, Agenda, Discussion Summary, Decisions, Action Items, and Next Steps. Put the action items in a table with owner and due date. Keep the language concise and professional. If an owner or deadline was never actually stated, mark it TBC instead of guessing.
+Encuentra los tres mejores horarios para una reunión de [60] minutos con asistentes en [Tokio], [Londres] y [Nueva York]. Nada antes de las 9:00 ni después de las 18:00 en la hora local de nadie. Muestra cada opción en las tres zonas horarias y dime cuál es la menos incómoda en conjunto y por qué.
 ```
 
-### Action items, sorted by person
+### Ordenar la próxima semana
 
 ```
-Read this meeting transcript and pull out every statement that implies a task, a deadline, or a follow-up. Organize it by person in a table with the action, the owner, and the due date. This is going into the recap email, so keep each line short enough to scan.
+Revisa el calendario de [nombre del directivo] de [la próxima semana] y encuentra todos los conflictos, todas las series de reuniones seguidas sin hueco y todo lo que esté reservado dos veces. Para cada caso, dime qué mover y dame dos horarios alternativos que ya les vengan bien a los demás asistentes.
+```
+
+### Proteger una semana de viaje
+
+```
+[Nombre del directivo] viaja a [ciudad] el [fechas]. Revisa su calendario de esos días y dime qué hay que mover, qué puede quedarse en formato virtual y qué debería bloquear para el viaje y para descansar. Dame la lista de personas a las que tengo que escribir para avisar del cambio.
+```
+
+---
+
+## Reuniones y actas
+
+Tres peticiones distintas, así que usa la que corresponda a quien lo vaya a leer.
+
+### Resumen de un párrafo para quien no asistió
+
+```
+Escribe un resumen de un párrafo de esta reunión para [nombre del directivo], que no asistió. Empieza por lo que se decidió y lo que ocurre a continuación. Omite los detalles del debate salvo que cambien una decisión.
+```
+
+### Acta formal a partir de una grabación o transcripción
+
+```
+Convierte esta transcripción en un acta formal con estas secciones: Asistentes, Orden del día, Resumen del debate, Decisiones, Tareas pendientes y Siguientes pasos. Pon las tareas pendientes en una tabla con responsable y fecha de vencimiento. Usa un lenguaje conciso y profesional. Si nunca se llegó a indicar un responsable o un plazo, márcalo como POR CONFIRMAR en lugar de suponerlo.
+```
+
+### Tareas pendientes ordenadas por persona
+
+```
+Lee esta transcripción de la reunión y extrae todas las frases que impliquen una tarea, un plazo o un seguimiento. Organízalas por persona en una tabla con la acción, el responsable y la fecha de vencimiento. Esto va en el correo de resumen, así que cada línea debe ser lo bastante corta como para leerse de un vistazo.
 ```
 
 > [!TIP]
-> The TBC instruction in the minutes prompt matters more than it looks. Without it, Copilot will invent a plausible owner or a due date that nobody agreed to, and you will not catch it until someone misses it.
+> La instrucción POR CONFIRMAR del prompt del acta es más importante de lo que parece. Sin ella, Copilot se inventará un responsable plausible o una fecha que nadie acordó, y no te darás cuenta hasta que alguien no la cumpla.
 
 ---
 
-## Documents and Decks
+## Documentos y presentaciones
 
-### Report into a five-slide outline
-
-```
-Turn this report into a five-slide outline for [Executive Name] to present to [audience]. One key message per slide, three supporting points maximum, and tell me what visual would work on each. Flag any number in the report that I should verify before it goes on a slide.
-```
-
-### Vendor contract review
+### De informe a esquema de cinco diapositivas
 
 ```
-Review this contract from [Vendor Name]. Pull out anything about automatic renewal, notice periods, early termination fees, and price increases after year one. Then give me five questions to send to legal before we sign. I am not a lawyer, so explain any term that has a specific legal meaning in plain language.
+Convierte este informe en un esquema de cinco diapositivas para que [nombre del directivo] lo presente ante [audiencia]. Un mensaje clave por diapositiva, un máximo de tres puntos de apoyo, y dime qué elemento visual funcionaría en cada una. Señala cualquier cifra del informe que debería verificar antes de que aparezca en una diapositiva.
 ```
 
-### Pre-meeting brief
+### Revisión de un contrato con un proveedor
 
 ```
-Build a one-page brief for [Executive Name] ahead of the [meeting name] on [date]. Cover who is attending and their role, what was decided last time, what is still open, and the three questions they are most likely to be asked.
+Revisa este contrato de [nombre del proveedor]. Extrae todo lo relativo a renovación automática, plazos de preaviso, penalizaciones por rescisión anticipada y subidas de precio después del primer año. Después dame cinco preguntas para enviar al departamento jurídico antes de firmar. No soy abogado, así que explica en lenguaje sencillo cualquier término con un significado jurídico concreto.
+```
+
+### Resumen previo a una reunión
+
+```
+Prepara un resumen de una página para [nombre del directivo] antes de la reunión [nombre de la reunión] del [fecha]. Incluye quién asiste y qué papel tiene cada uno, qué se decidió la última vez, qué sigue abierto y las tres preguntas que es más probable que le hagan.
 ```
 
 ---
 
-## Research and Prep
+## Investigación y preparación
 
-### Competitive snapshot before a pitch
+### Panorama de la competencia antes de una presentación comercial
 
 ```
-Put together a short comparison of [Competitor A] and [Competitor B]. Cover how they have performed over the last 12 months, how they describe their own mission and strategy, and three places they look weak. Keep it to one page and cite where each point came from so I can verify it before it reaches [Executive Name].
+Prepara una comparación breve entre [competidor A] y [competidor B]. Incluye cómo les ha ido en los últimos 12 meses, cómo describen su propia misión y estrategia, y tres aspectos en los que parecen débiles. Que ocupe una página y cita de dónde sale cada punto para que pueda verificarlo antes de que llegue a [nombre del directivo].
 ```
 
 > [!IMPORTANT]
-> Always ask for sources on external research. If Copilot cannot show you where a claim came from, do not put it in front of an executive.
+> Pide siempre las fuentes en la investigación externa. Si Copilot no puede mostrarte de dónde sale una afirmación, no la pongas delante de un directivo.
 
 ---
 
-## Events and Logistics
+## Eventos y logística
 
-### Catering that actually covers everyone
-
-```
-Give me three catering options for a [25]-person team lunch in three different cuisines. For each one, list the main dish plus a vegetarian, vegan, and gluten-free equivalent that is a real meal and not just a side salad. Include an estimated cost per person and note anything that travels badly or has to be served hot.
-```
-
-### Run of show for an offsite
+### Un catering que de verdad sirva a todos
 
 ```
-Build a run of show for a [half-day] offsite for [25] people on [date]. Include timing for arrival, sessions, breaks, and lunch, plus who owns each block. Add a column for what I need to have ready in advance for each item.
+Dame tres opciones de catering para una comida de equipo de [25] personas, con tres tipos de cocina distintos. Para cada una, indica el plato principal y un equivalente vegetariano, vegano y sin gluten que sea una comida de verdad y no solo una ensalada de acompañamiento. Incluye un coste estimado por persona e indica lo que se transporte mal o haya que servir caliente.
+```
+
+### Guion de una jornada fuera de la oficina
+
+```
+Prepara el guion de una jornada fuera de la oficina de [media jornada] para [25] personas el [fecha]. Incluye los horarios de llegada, sesiones, descansos y comida, y quién es responsable de cada bloque. Añade una columna con lo que necesito tener preparado con antelación para cada punto.
 ```
 
 ---
 
-## Three Habits That Make These Work Better
+## Tres hábitos que hacen que funcionen mejor
 
-- **Give it the source.** Copilot is only as good as what you point it at. Attach the file, open the thread, reference the meeting by name. A vague prompt against no source is where bad output comes from.
-- **Say who is reading it.** "For my executive" and "for the board" produce very different drafts. Naming the audience is the cheapest quality upgrade in this whole pack.
-- **Never send the first draft.** You know the voice, the history, and the politics in the room. Copilot does not. It gets you to 80 percent in seconds, and the last 20 percent is still the job.
+- **Dale la fuente.** Copilot es tan bueno como aquello a lo que le apuntas. Adjunta el archivo, abre la conversación, nombra la reunión. Un prompt vago sin fuente es de donde salen los malos resultados.
+- **Di quién lo va a leer.** "Para mi directivo" y "para el consejo" dan borradores muy distintos. Indicar la audiencia es la mejora de calidad más barata de todo este pack.
+- **No envíes nunca el primer borrador.** Tú conoces la voz, la historia y la política de la sala. Copilot no. Te lleva al 80 % en segundos, y el 20 % restante sigue siendo tu trabajo.
 
 ---
 
-*Adapted and expanded from a LinkedIn article on everyday Copilot prompts for administrative professionals. The prompts here have been rewritten and added to.*
+*Adaptado y ampliado a partir de un artículo de LinkedIn sobre prompts cotidianos de Copilot para profesionales administrativos. Los prompts se han reescrito y ampliado.*
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

@@ -1,252 +1,252 @@
-# IT Power Moves Prompt Pack
+# Pack de prompts IT Power Moves
 
-## What This Is
+## Qué es
 
-This is the set of prompts I hand to IT teams when I want Copilot to actually earn its seat in a technical room. They are small, copy-paste lines that take you from a cryptic error log or a blank PowerShell window to a clear next step.
+Este es el conjunto de prompts que el autor entrega a los equipos de TI cuando quiere que Copilot se gane de verdad su sitio en un entorno técnico. Son frases cortas para copiar y pegar que te llevan de un registro de errores críptico o una ventana de PowerShell en blanco a un siguiente paso claro.
 
-They cover the technical work you do in Copilot Chat plus the everyday wins in Excel, Word, and Outlook. Two habits run through all of them: explain before you run, and first draft then you verify. The human stays the approver, which matters a lot when you work in change control.
+Cubren el trabajo técnico que haces en Copilot Chat y también las mejoras del día a día en Excel, Word y Outlook. Dos hábitos los recorren todos: explicar antes de ejecutar, y primero un borrador que después verificas tú. La persona sigue siendo quien aprueba, algo muy importante cuando trabajas con control de cambios.
 
 > [!TIP]
-> Swap anything in `[brackets]` for your own details, like `[paste]` for your log or script, or your own asset tag format. The more specific you are, the sharper the result.
+> Sustituye todo lo que esté `[entre corchetes]` por tus datos, como `[pega aquí]` por tu registro o tu script, o por el formato de tus etiquetas de activos. Cuanto más concreto seas, mejor será el resultado.
 
 > [!IMPORTANT]
-> These are first drafts and explanations, not blind automation. Always read and verify any script, command, or config change before you run it in production.
+> Son borradores y explicaciones, no automatización a ciegas. Lee y verifica siempre cualquier script, comando o cambio de configuración antes de ejecutarlo en producción.
 
 ---
 
-## Copilot Chat: The Technical Room
+## Copilot Chat: el entorno técnico
 
-The golden nuggets for the console. Paste a log, a script, or a config and let Copilot decode, explain, or draft.
+Los imprescindibles para la consola. Pega un registro, un script o una configuración y deja que Copilot lo interprete, lo explique o redacte algo.
 
-### Error log triage
-
-```
-Paste this error/log. What is it, the likely cause, and my next steps? [paste]
-```
-
-### PowerShell safety check
+### Clasificación de un registro de errores
 
 ```
-Explain what this PowerShell does and what it changes before I run it. [paste]
+Pego este error o registro. ¿Qué es, cuál es la causa probable y cuáles son mis siguientes pasos? [pega aquí]
 ```
 
-### Inactive AD users
+### Comprobación de seguridad de PowerShell
 
 ```
-Write a PowerShell one-liner to find AD users who haven't logged in for 90 days.
+Explica qué hace este PowerShell y qué cambia antes de que lo ejecute. [pega aquí]
 ```
 
-### Asset tag regex
+### Usuarios inactivos de AD
 
 ```
-Give me a regex for our asset tag format `[AB-1234-CD]` and explain each part.
+Escribe un comando de PowerShell de una línea para encontrar los usuarios de AD que no han iniciado sesión en 90 días.
 ```
 
-### Stack trace analysis
+### Expresión regular para etiquetas de activos
 
 ```
-Read this stack trace, tell me the failing component, the likely root cause, and the three most probable fixes ranked by effort. [paste]
+Dame una expresión regular para nuestro formato de etiqueta de activos `[AB-1234-CD]` y explica cada parte.
 ```
 
-### Runtime config diff
+### Análisis de una traza de pila
 
 ```
-Diff these two config files and explain only the differences that would change runtime behavior. [paste A] [paste B]
+Lee esta traza de pila, dime qué componente falla, la causa raíz probable y las tres soluciones más probables ordenadas por esfuerzo. [pega aquí]
 ```
 
-### Bash to PowerShell
+### Diferencias de configuración en tiempo de ejecución
 
 ```
-Convert this Bash script to PowerShell, keep the logic identical, and flag anything that won't map cleanly. [paste]
+Compara estos dos archivos de configuración y explica solo las diferencias que cambiarían el comportamiento en tiempo de ejecución. [pega A] [pega B]
 ```
 
-### Impossible travel query
+### De Bash a PowerShell
 
 ```
-Write a query to find sign-ins from impossible-travel locations in the last 24 hours, and explain each clause.
+Convierte este script de Bash a PowerShell, mantén la lógica idéntica y señala todo lo que no tenga una equivalencia directa. [pega aquí]
 ```
 
-### Registry change review
+### Consulta de viajes imposibles
 
 ```
-Explain what this registry change does, the risk, and how to roll it back. [paste]
+Escribe una consulta para encontrar inicios de sesión desde ubicaciones de viaje imposible en las últimas 24 horas y explica cada cláusula.
 ```
 
-### Production command review
+### Revisión de un cambio en el registro
 
 ```
-Here's the command I'm about to run in production. What could go wrong, and how do I make it safer? [paste]
+Explica qué hace este cambio en el registro, qué riesgo tiene y cómo revertirlo. [pega aquí]
+```
+
+### Revisión de un comando para producción
+
+```
+Este es el comando que estoy a punto de ejecutar en producción. ¿Qué podría salir mal y cómo lo hago más seguro? [pega aquí]
 ```
 
 ---
 
-## Document As You Go
+## Documenta sobre la marcha
 
-The work nobody wants to do by hand. Turn rough notes and incidents into clean, audit-ready docs.
+El trabajo que nadie quiere hacer a mano. Convierte notas sueltas e incidencias en documentos limpios y listos para una auditoría.
 
-### Troubleshooting runbook
-
-```
-Turn these rough troubleshooting notes into a clean runbook with prerequisites, steps, and a rollback plan. [paste]
-```
-
-### Change-control summary
+### Procedimiento de resolución de problemas
 
 ```
-Draft a change-control summary for this fix: what's changing, blast radius, backout plan, and validation steps. [paste]
+Convierte estas notas sueltas de resolución de problemas en un procedimiento limpio con requisitos previos, pasos y un plan de reversión. [pega aquí]
 ```
 
-### Root-cause analysis
+### Resumen para control de cambios
 
 ```
-From this incident timeline, draft a root-cause analysis with contributing factors and follow-up actions. [paste]
+Redacta un resumen para control de cambios de esta corrección: qué cambia, alcance del impacto, plan de marcha atrás y pasos de validación. [pega aquí]
+```
+
+### Análisis de causa raíz
+
+```
+A partir de esta cronología de la incidencia, redacta un análisis de causa raíz con los factores que contribuyeron y las acciones de seguimiento. [pega aquí]
 ```
 
 ---
 
 ## Excel
 
-For inventory, license tracking, and log work. Best shown in-app so people see Copilot act on their real file.
+Para inventarios, seguimiento de licencias y trabajo con registros. Es mejor mostrarlo dentro de la aplicación, para que se vea a Copilot actuar sobre el archivo real.
 
-### Formula explanation
-
-```
-Explain what this formula does step by step and tell me where it could break. [paste]
-```
-
-### Dormant device formula
+### Explicación de una fórmula
 
 ```
-I have asset tags in column A and last-logon dates in column B. Write a formula to flag any device not seen in 90+ days.
+Explica paso a paso qué hace esta fórmula y dime dónde podría fallar. [pega aquí]
 ```
 
-### License PivotTable
+### Fórmula para dispositivos inactivos
 
 ```
-Suggest a PivotTable to summarize this license inventory by department and license type, and tell me exactly which fields go where.
+Tengo etiquetas de activos en la columna A y fechas del último inicio de sesión en la columna B. Escribe una fórmula que marque cualquier dispositivo que no se haya visto en 90 días o más.
 ```
 
-### Clean export data
+### Tabla dinámica de licencias
 
 ```
-This export has inconsistent date formats and trailing spaces. Give me steps to standardize it without breaking the asset IDs.
+Sugiere una tabla dinámica que resuma este inventario de licencias por departamento y tipo de licencia, y dime exactamente qué campo va en cada sitio.
 ```
 
-### Resource anomaly analysis
+### Limpiar datos exportados
 
 ```
-Analyze this CPU and memory usage table and highlight the top anomalies worth investigating.
+Esta exportación tiene formatos de fecha incoherentes y espacios al final. Dame los pasos para normalizarla sin estropear los ID de activos.
 ```
 
-### Expired row formatting
+### Análisis de anomalías de recursos
 
 ```
-Tell me how to color any row red where Status is Expired and the renewal date is within 30 days.
+Analiza esta tabla de uso de CPU y memoria y destaca las principales anomalías que merece la pena investigar.
 ```
 
-### Hostname extraction
+### Formato de filas caducadas
 
 ```
-Extract the hostname out of these full FQDN entries in column A into column B.
+Dime cómo colorear en rojo cualquier fila en la que el estado sea Caducado y la fecha de renovación esté dentro de los próximos 30 días.
+```
+
+### Extracción del nombre de host
+
+```
+Extrae el nombre de host de estas entradas FQDN completas de la columna A y ponlo en la columna B.
 ```
 
 ---
 
 ## Word
 
-For policies, SOPs, and audit-ready docs.
+Para políticas, procedimientos normalizados y documentos listos para una auditoría.
 
-### SOP from bullets
-
-```
-Turn these bullet points into a formatted standard operating procedure with numbered steps and a prerequisites section. [paste]
-```
-
-### Security policy quick reference
+### Procedimiento a partir de viñetas
 
 ```
-Summarize this security policy into a one-page quick reference for the help desk. [paste]
+Convierte estas viñetas en un procedimiento normalizado de trabajo con formato, con pasos numerados y una sección de requisitos previos. [pega aquí]
 ```
 
-### Plain-language change notice
+### Referencia rápida de una política de seguridad
 
 ```
-Rewrite this technical change notice so a non-technical department can understand the impact and timing. [paste]
+Resume esta política de seguridad en una referencia rápida de una página para el servicio de asistencia. [pega aquí]
 ```
 
-### Incident response review
+### Aviso de cambio en lenguaje sencillo
 
 ```
-Review this incident response plan and list what's missing compared to a standard IR framework. [paste]
+Reescribe este aviso de cambio técnico para que un departamento no técnico entienda el impacto y el calendario. [pega aquí]
 ```
 
-### Change-request template
+### Revisión del plan de respuesta a incidentes
 
 ```
-Create a reusable change-request template with sections for scope, risk, backout, approvals, and validation.
+Revisa este plan de respuesta a incidentes y enumera lo que falta en comparación con un marco estándar de respuesta a incidentes. [pega aquí]
 ```
 
-### Runbook trim
+### Plantilla de solicitud de cambio
 
 ```
-Cut this runbook down by 30% without losing any required step. [paste]
+Crea una plantilla reutilizable de solicitud de cambio con secciones de alcance, riesgo, marcha atrás, aprobaciones y validación.
+```
+
+### Recortar un procedimiento
+
+```
+Reduce este procedimiento un 30 % sin perder ningún paso obligatorio. [pega aquí]
 ```
 
 ---
 
 ## Outlook
 
-For the on-call inbox and stakeholder comms.
+Para la bandeja de entrada de guardia y las comunicaciones con partes interesadas.
 
-### Thread summary
-
-```
-Summarize this email thread, list every decision made, and who owns each open action item. [paste/thread]
-```
-
-### Outage notification
+### Resumen de una conversación
 
 ```
-Draft a clear, calm outage notification for end users: what's affected, what we're doing, and the next update time.
+Resume esta conversación de correo, enumera todas las decisiones tomadas y quién es responsable de cada tarea abierta. [pega aquí o indica la conversación]
 ```
 
-### Weekly sender summary
+### Aviso de interrupción del servicio
 
 ```
-Summarize everything from `[vendor or person]` this week and flag anything that needs a reply today.
+Redacta un aviso de interrupción del servicio claro y tranquilo para los usuarios finales: qué está afectado, qué estamos haciendo y cuándo será la próxima actualización.
 ```
 
-### Maintenance window reply
+### Resumen semanal de un remitente
 
 ```
-Draft a reply to this vendor proposing three maintenance windows next week, all after 8pm. [paste]
+Resume todo lo recibido de `[proveedor o persona]` esta semana y señala lo que necesite respuesta hoy.
 ```
 
-### Unread mail actions
+### Respuesta sobre ventanas de mantenimiento
 
 ```
-Pull every action item assigned to me out of my unread mail from the last two days.
+Redacta una respuesta a este proveedor proponiendo tres ventanas de mantenimiento la próxima semana, todas después de las 20:00. [pega aquí]
 ```
 
-### SLA escalation rewrite
+### Tareas del correo no leído
 
 ```
-Rewrite this escalation so it's direct about the SLA breach but still professional. [paste]
+Extrae todas las tareas que se me han asignado en el correo no leído de los dos últimos días.
 ```
 
-### Next meeting brief
+### Reescritura de un escalado por SLA
 
 ```
-Find the recent emails and files related to my next meeting and give me a one-paragraph brief.
+Reescribe este escalado para que sea directo sobre el incumplimiento del SLA pero siga siendo profesional. [pega aquí]
+```
+
+### Resumen para la próxima reunión
+
+```
+Busca los correos y archivos recientes relacionados con mi próxima reunión y dame un resumen de un párrafo.
 ```
 
 ---
 
-## Two Habits to Teach Alongside These
+## Dos hábitos que enseñar junto con estos prompts
 
-- **Explain before you run.** Have Copilot tell you what a script or command touches before it executes. This keeps you in control and turns every prompt into a learning moment.
-- **First draft, then you verify.** Copilot writes the regex, the one-liner, or the runbook. You confirm it does what you expect. That split is the whole point, especially in regulated or change-controlled environments.
+- **Explica antes de ejecutar.** Pide a Copilot que te diga qué toca un script o un comando antes de ejecutarlo. Así mantienes el control y cada prompt se convierte en una oportunidad de aprendizaje.
+- **Primero un borrador, después verificas tú.** Copilot escribe la expresión regular, el comando de una línea o el procedimiento. Tú confirmas que hace lo que esperas. Ese reparto es la clave, sobre todo en entornos regulados o con control de cambios.
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
