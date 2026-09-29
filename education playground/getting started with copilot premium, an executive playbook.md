@@ -1,627 +1,628 @@
-# Getting Started with Copilot Premium: An Executive Playbook
+# Primeros pasos con Copilot Premium: manual para directivos
 
-![Getting started with Microsoft 365 Copilot Premium: Copilot does the catch-up, you make the calls](assets/executive%20copilot%20playbook/playbook-cover.png)
+![Primeros pasos con Microsoft 365 Copilot Premium: Copilot te pone al día, tú tomas las decisiones](assets/executive%20copilot%20playbook/playbook-cover.png)
 
-A practical, tiered training program for a C-suite or executive leader who is brand new to Copilot. It walks your leaders from their first prompt to their own chief-of-staff agent, in three tiers of short sessions, so Copilot does the catch-up and your leaders get back to the calls only they can make. Plain language, no jargon, and every session is sized at 30 or 60 minutes. There is a polished PDF you can hand to any leader, a ready-to-present PowerPoint for a live working session, a short sponsorship deck a leader can take to their own executive team to green-light the program, and the full program is written out below so you can read it, link it, and steal the prompts without opening a file.
+Un programa de formación práctico y por niveles para un miembro del comité de dirección o un directivo que empieza desde cero con Copilot. Lleva a tus directivos desde su primer prompt hasta su propio agente jefe de gabinete, en tres niveles de sesiones cortas, para que Copilot se encargue de ponerles al día y ellos recuperen el tiempo para las decisiones que solo ellos pueden tomar. Lenguaje sencillo, sin jerga, y cada sesión dura 30 o 60 minutos. Hay un PDF cuidado que puedes entregar a cualquier directivo, un PowerPoint listo para presentar en una sesión práctica en directo, una presentación breve de patrocinio que un directivo puede llevar a su propio equipo de dirección para que apruebe el programa, y el programa completo está escrito a continuación para que puedas leerlo, enlazarlo y copiar los prompts sin abrir ningún archivo.
 
 > [!TIP]
-> Hand the PDF to a leader who just got licensed, then have them do the [first 5-minute win](#12--prompt-like-you-mean-it-your-first-win-and-a-second-set-of-eyes--60-min) on their own real work. One win beats a feature tour every time.
+> Entrega el PDF a un directivo que acabe de recibir su licencia y pídele que consiga el [primer logro en 5 minutos](#12--escribe-prompts-con-intención-tu-primer-logro-y-una-segunda-mirada--60-min) con su propio trabajo real. Un logro siempre es mejor que un recorrido por las funciones.
+
+> [!NOTE]
+> La guía interactiva, el PDF y las presentaciones están de momento en inglés; los enlaces llevan a las versiones publicadas por el autor original.
 
 ---
 
-## Download the Playbook
+## Descarga el manual
 
-| File | What it is | Download |
+| Archivo | Qué es | Descarga |
 |---|---|---|
-| **Interactive Guide (view in browser)** | A browser-viewable version of the whole playbook with a click-through session explorer. Pick a tier, expand any session, and see exactly what it covers, from the Copilot app tour to setting up custom instructions. No download needed, and it works on a phone. | [Open the guide](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/executive%20copilot%20playbook/) |
-| **An Executive Guide to Copilot Premium (PDF)** | The full playbook as a clean, shareable PDF. Send it to a leader or an assistant before a working session. | [Download (PDF)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Playbook.pdf) |
-| **Executive Working Session (PowerPoint)** | A ready-to-present deck built around this playbook. Three tiers, from foundations to premium reasoning agents to the chief-of-staff setup. Present it yourself or hand it to whoever is running the room. | [Download (PPTX)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Training.pptx) |
-| **Executive Sponsorship Deck (PowerPoint)** | A short, board-ready deck a business or IT leader takes to their own executive team to win sponsorship for the program. Same visual identity as the working-session deck, with a full talk track in the speaker notes so anyone can present it. | [Download (PPTX)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Sponsorship.pptx)  ·  [PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Sponsorship.pdf) |
+| **Guía interactiva (ver en el navegador)** | Una versión del manual completo que se puede ver en el navegador, con un explorador de sesiones en el que puedes hacer clic. Elige un nivel, despliega cualquier sesión y ve exactamente qué trata, desde el recorrido por la aplicación de Copilot hasta la configuración de las instrucciones personalizadas. No hace falta descargar nada y funciona en el móvil. | [Abrir la guía](https://heyitsgoad.github.io/copilot-playground/education%20playground/assets/executive%20copilot%20playbook/) |
+| **An Executive Guide to Copilot Premium (PDF)** | El manual completo en un PDF limpio y fácil de compartir. Envíaselo a un directivo o a su asistente antes de una sesión práctica. | [Descargar (PDF)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Playbook.pdf) |
+| **Sesión práctica para directivos (PowerPoint)** | Una presentación lista para usar, construida en torno a este manual. Tres niveles, desde los fundamentos hasta los agentes de razonamiento premium y la configuración del jefe de gabinete. Preséntala tú o entrégasela a quien vaya a dirigir la sesión. | [Descargar (PPTX)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Training.pptx) |
+| **Presentación de patrocinio para directivos (PowerPoint)** | Una presentación breve, lista para el consejo, que un responsable de negocio o de TI lleva a su propio equipo de dirección para conseguir el patrocinio del programa. Tiene la misma identidad visual que la presentación de la sesión práctica, con un guion completo en las notas del orador para que cualquiera pueda presentarla. | [Descargar (PPTX)](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Sponsorship.pptx)  ·  [PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Sponsorship.pdf) |
 
 ---
 
-## What You Will Learn
+## Qué aprenderás
 
-- Whether your data is safe, answered first, because that is the real first question in the room
-- Where to find Copilot, since not finding it is the number one reason new users stall
-- One simple first win you can get in five minutes instead of a forty-feature tour
-- The four-part prompt formula that turns weak asks into useful answers
-- How to run Copilot as a chief of staff with personalization, memory, agents, and scheduled prompts
-- What each app does for you: Outlook, Word, Excel, PowerPoint, and Teams
-- The premium reasoning agents that research and analyze like a team you used to wait a week for
-- A 30-day habit plan, honest limits, and how it works if you lead through an assistant
+- Si tus datos están seguros, respondido en primer lugar, porque es la verdadera primera pregunta en la sala
+- Dónde encontrar Copilot, ya que no encontrarlo es el motivo número uno por el que los usuarios nuevos se estancan
+- Un primer logro sencillo que puedes conseguir en cinco minutos en lugar de un recorrido por cuarenta funciones
+- La fórmula de cuatro partes que convierte peticiones flojas en respuestas útiles
+- Cómo usar Copilot como jefe de gabinete con personalización, memoria, agentes y prompts programados
+- Qué hace por ti cada aplicación: Outlook, Word, Excel, PowerPoint y Teams
+- Los agentes de razonamiento premium que investigan y analizan como un equipo al que antes esperabas una semana
+- Un plan de hábitos de 30 días, los límites reales y cómo funciona si diriges a través de un asistente
 
 ---
 
-## How This Playbook Works
+## Cómo funciona este manual
 
-Three tiers, each one builds on the last. Start at the bottom. Every tier is useful on its own, and each adds more leverage than the last.
+Tres niveles, cada uno construido sobre el anterior. Empieza por el primero. Cada nivel es útil por sí solo, y cada uno aporta más ventaja que el anterior.
 
-| Tier | What it does | Sessions |
+| Nivel | Qué aporta | Sesiones |
 |---|---|---|
-| **Tier 1 · Foundations** | Find it, trust it, make it yours, and put it to work. The core every leader should do. | 4 sessions, ~3.5 hours |
-| **Tier 2 · Deeper Value** | The premium reasoning agents that do the heavy thinking. | 1 session, plus 1 optional |
-| **Tier 3 · Build Your Own** | Give Copilot a standing job as an agent that comes to you. | 2 sessions, plus 1 optional |
+| **Nivel 1 · Fundamentos** | Encontrarlo, confiar en él, hacerlo tuyo y ponerlo a trabajar. Lo básico que todo directivo debería hacer. | 4 sesiones, unas 3,5 horas |
+| **Nivel 2 · Más valor** | Los agentes de razonamiento premium que hacen el trabajo intelectual pesado. | 1 sesión, más 1 opcional |
+| **Nivel 3 · Crea el tuyo** | Dale a Copilot un trabajo permanente como agente que viene a ti. | 2 sesiones, más 1 opcional |
 
-Every session is 30 or 60 minutes and stands on its own. Run one a week, block a half-day per tier, or do Tier 1 in a morning. Whatever fits the calendar.
+Cada sesión dura 30 o 60 minutos y es independiente. Haz una por semana, reserva media jornada por nivel o haz el nivel 1 en una mañana. Lo que mejor encaje en la agenda.
 
-**The sessions at a glance:**
+**Las sesiones de un vistazo:**
 
-| # | Session | Time |
+| # | Sesión | Duración |
 |---|---|---|
-| 1.1 | Meet Copilot, Find It, and Make It Yours | 60 min |
-| 1.2 | Prompt Like You Mean It: Your First Win and a Second Set of Eyes | 60 min |
-| 1.3 | By App: Where the Time Comes Back | 60 min |
-| 1.4 | Put It on a Schedule: Your Morning Brief | 30 min |
-| 2.1 | Premium Reasoning Agents: Researcher + Analyst | 60 min |
-| 2.2 | Copilot Notebooks: One Place for a Big Topic *(optional)* | 30 min |
-| 3.1 | Build Your Chief of Staff Agent | 60 min |
-| 3.2 | More Agents Worth Building | 30 min |
-| 3.3 | For Your Executive Assistant: Own the Daily Prep *(optional)* | 30 min |
+| 1.1 | Conoce Copilot, encuéntralo y hazlo tuyo | 60 min |
+| 1.2 | Escribe prompts con intención: tu primer logro y una segunda mirada | 60 min |
+| 1.3 | Por aplicación: dónde recuperas el tiempo | 60 min |
+| 1.4 | Prográmalo: tu resumen matutino | 30 min |
+| 2.1 | Agentes de razonamiento premium: Researcher + Analyst | 60 min |
+| 2.2 | Copilot Notebooks: un solo lugar para un tema grande *(opcional)* | 30 min |
+| 3.1 | Crea tu agente jefe de gabinete | 60 min |
+| 3.2 | Más agentes que merece la pena crear | 30 min |
+| 3.3 | Para tu asistente de dirección: encárgate de la preparación diaria *(opcional)* | 30 min |
 
 <details>
-<summary><strong>📋 See exactly what each session covers (click to expand the full syllabus)</strong></summary>
+<summary><strong>📋 Consulta exactamente qué trata cada sesión (haz clic para desplegar el programa completo)</strong></summary>
 
 <br>
 
-Each session in the table above expands below into what actually gets covered inside it, so a leader or champion can see the contents before booking the room or opening a file.
+Cada sesión de la tabla anterior se detalla a continuación con lo que se trata en ella, para que un directivo o un promotor interno pueda ver el contenido antes de reservar la sala o abrir un archivo.
 
-**Tier 1 · Foundations**
+**Nivel 1 · Fundamentos**
 
-**1.1 · Meet Copilot, Find It, and Make It Yours** · 60 min
-- **Is my data safe:** the tenant boundary, why your prompts are not used to train models, permission-trimmed answers, and the Purview audit trail
-- **Where to find Copilot:** the app tour across the Copilot front door, the Office ribbon, Teams meetings, mobile, and using it by voice
-- **Make it sound like you:** setting up personalization and custom instructions, plus turning on Memory so you stop repeating yourself
+**1.1 · Conoce Copilot, encuéntralo y hazlo tuyo** · 60 min
+- **¿Están seguros mis datos?:** el límite del inquilino, por qué tus prompts no se usan para entrenar modelos, respuestas limitadas por permisos y el registro de auditoría de Purview
+- **Dónde encontrar Copilot:** recorrido por la aplicación, desde la puerta de entrada de Copilot, la cinta de Office, las reuniones de Teams y el móvil, hasta el uso por voz
+- **Que suene como tú:** configurar la personalización y las instrucciones personalizadas, y activar la memoria para no tener que repetirte
 
-**1.2 · Prompt Like You Mean It: Your First Win and a Second Set of Eyes** · 60 min
-- **The four-part prompt formula:** goal, context, source, and format, and the difference between a weak ask and a useful answer
-- **Your first 5-minute win:** ready prompts to catch up on a thread, clear the inbox, and walk into a meeting prepared
-- **A second set of eyes:** power-user lenses like Contextual Filter, Devil's Advocate, and Voice Distiller
+**1.2 · Escribe prompts con intención: tu primer logro y una segunda mirada** · 60 min
+- **La fórmula de prompt de cuatro partes:** objetivo, contexto, fuente y formato, y la diferencia entre una petición floja y una respuesta útil
+- **Tu primer logro en 5 minutos:** prompts listos para ponerte al día de una conversación, vaciar la bandeja de entrada y llegar preparado a una reunión
+- **Una segunda mirada:** perspectivas de usuario avanzado como el Filtro contextual, el Abogado del diablo y el Destilador de voz
 
-**1.3 · By App: Where the Time Comes Back** · 60 min
-- **Outlook:** inbox triage, long-thread summaries, drafting in your tone, and meeting prep
-- **Word:** drafting from your own files, rewriting for an audience, and the one-page board summary
-- **Excel:** plain-English analysis, trend spotting, and Agent Mode
-- **PowerPoint:** turning a document into a first-draft deck and cleaning up cluttered slides
-- **Teams and Copilot Chat:** meeting recaps, decisions and owners, audio overviews, and reasoning across all your work
+**1.3 · Por aplicación: dónde recuperas el tiempo** · 60 min
+- **Outlook:** clasificación de la bandeja de entrada, resúmenes de conversaciones largas, redacción con tu tono y preparación de reuniones
+- **Word:** redactar a partir de tus propios archivos, reescribir para una audiencia y el resumen de una página para el consejo
+- **Excel:** análisis en lenguaje corriente, detección de tendencias y modo agente
+- **PowerPoint:** convertir un documento en un primer borrador de presentación y ordenar diapositivas recargadas
+- **Teams y Copilot Chat:** resúmenes de reuniones, decisiones y responsables, resúmenes en audio y razonamiento sobre todo tu trabajo
 
-**1.4 · Put It on a Schedule: Your Morning Brief** · 30 min
-- **Scheduled prompts:** the first chief-of-staff move, setting up a weekday brief that lands before you open your laptop
+**1.4 · Prográmalo: tu resumen matutino** · 30 min
+- **Prompts programados:** el primer paso del jefe de gabinete, configurar un resumen de lunes a viernes que llegue antes de que abras el portátil
 
-**Tier 2 · Deeper Value**
+**Nivel 2 · Más valor**
 
-**2.1 · Premium Reasoning Agents: Researcher + Analyst** · 60 min
-- **Researcher:** deep, multi-step, cited research across your work and the open web
-- **Analyst:** reasoning over raw spreadsheets, writing and running its own analysis code
-- **Put them together:** one cited briefing and a recommendation on a real decision
+**2.1 · Agentes de razonamiento premium: Researcher + Analyst** · 60 min
+- **Researcher:** investigación profunda, en varios pasos y con fuentes citadas, sobre tu trabajo y la web abierta
+- **Analyst:** razonamiento sobre hojas de cálculo sin procesar, escribiendo y ejecutando su propio código de análisis
+- **Úsalos juntos:** un informe con fuentes citadas y una recomendación sobre una decisión real
 
-**2.2 · Copilot Notebooks: One Place for a Big Topic** · 30 min *(optional)*
-- **A grounded workspace:** gather the documents for one topic, ask across all of them at once, and generate an audio overview to catch up hands-free
+**2.2 · Copilot Notebooks: un solo lugar para un tema grande** · 30 min *(opcional)*
+- **Un espacio de trabajo basado en tus fuentes:** reúne los documentos de un tema, pregunta sobre todos a la vez y genera un resumen en audio para ponerte al día sin usar las manos
 
-**Tier 3 · Build Your Own**
+**Nivel 3 · Crea el tuyo**
 
-**3.1 · Build Your Chief of Staff Agent** · 60 min
-- **Your first agent:** give Copilot a standing job that thinks at your altitude and sounds like you, built in about 15 minutes from two Word templates, then shared with your team
+**3.1 · Crea tu agente jefe de gabinete** · 60 min
+- **Tu primer agente:** dale a Copilot un trabajo permanente que piense a tu nivel y se exprese como tú, creado en unos 15 minutos a partir de dos plantillas de Word y compartido después con tu equipo
 
-**3.2 · More Agents Worth Building** · 30 min
-- **Three to build and share:** BossBuddy for strategy, Taskmaster for tracking what needs attention, and Impact Check for seeing your influence, plus saving reusable prompts in the Prompt Gallery
+**3.2 · Más agentes que merece la pena crear** · 30 min
+- **Tres para crear y compartir:** BossBuddy para la estrategia, Taskmaster para hacer seguimiento de lo que necesita atención e Impact Check para ver tu influencia, además de guardar prompts reutilizables en la Galería de prompts
 
-**3.3 · For Your Executive Assistant: Own the Daily Prep** · 30 min *(optional)*
-- **Executive and assistant together:** share your personalization profile so their output sounds like you, then hand off the daily inbox triage, briefings, and follow-ups
+**3.3 · Para tu asistente de dirección: encárgate de la preparación diaria** · 30 min *(opcional)*
+- **Directivo y asistente juntos:** comparte tu perfil de personalización para que lo que produzca suene como tú y delega la clasificación diaria de la bandeja de entrada, los resúmenes y los seguimientos
 
 </details>
 
 > [!NOTE]
-> Running this for your own leaders? This is the shape of a first-class executive enablement program. Your leadership goes first, sets the example, and the rest of the organization follows. Built with Microsoft, run by you.
+> ¿Vas a organizar esto para tus propios directivos? Esta es la estructura de un programa de capacitación para directivos de primer nivel. Tu equipo de dirección va primero, da ejemplo y el resto de la organización le sigue. Creado con Microsoft, dirigido por ti.
 
 ---
 
-## Three Ways to Run It
+## Tres formas de organizarlo
 
-You do not have to choose between "Microsoft runs everything" and "you are on your own." The program is modular, and every asset is yours to download. Pick the model that fits how much time your leaders can commit and how much you want to own.
+No tienes que elegir entre "Microsoft lo hace todo" y "te las arreglas solo". El programa es modular y todos los materiales se pueden descargar. Elige el modelo que encaje con el tiempo que pueden dedicar tus directivos y con cuánto quieres asumir tú.
 
-| Model | How it works | Best when |
+| Modelo | Cómo funciona | Ideal cuando |
 |---|---|---|
-| **1. Microsoft-led** | Microsoft facilitates the full tiered program with your leaders, session by session. You bring the room, we run it. | You want expert-led delivery and the fastest path, with little lift on your side. |
-| **2. We start, you scale** | Microsoft runs the foundation session live and delivers tailored one-on-one training with each executive. Then you download the deck and the rest of the framework and build out your own program. We train your trainers so your team owns delivery from there. | You cannot get a full hourly commitment from every leader, or you want to build the capability in-house. |
-| **3. Partner-led** | A Microsoft partner delivers and customizes the full program alongside you and Microsoft. A dedicated team owns rollout, tailoring, and adoption end to end. | You want a committed team to carry the program and drive adoption long term. |
+| **1. Dirigido por Microsoft** | Microsoft imparte el programa completo por niveles a tus directivos, sesión a sesión. Tú pones la sala y Microsoft la dirige. | Quieres una formación impartida por expertos y el camino más rápido, con poco esfuerzo por tu parte. |
+| **2. Microsoft empieza y tú lo amplías** | Microsoft imparte en directo la sesión de fundamentos y ofrece formación individual adaptada a cada directivo. Después descargas la presentación y el resto del marco y construyes tu propio programa. Microsoft forma a tus formadores para que tu equipo se encargue de impartirlo a partir de ahí. | No puedes conseguir que todos los directivos dediquen una hora completa, o quieres desarrollar la capacidad internamente. |
+| **3. Dirigido por un partner** | Un partner de Microsoft imparte y adapta el programa completo junto contigo y con Microsoft. Un equipo dedicado se encarga del despliegue, la adaptación y la adopción de principio a fin. | Quieres un equipo comprometido que lleve el programa e impulse la adopción a largo plazo. |
 
 > [!NOTE]
-> Whichever model you pick, you own the framework. Microsoft gets you started, hands you the deck and every asset, and trains your team to run it. This becomes your program, and your leaders see you deliver it.
+> Elijas el modelo que elijas, el marco es tuyo. Microsoft te ayuda a empezar, te entrega la presentación y todos los materiales, y forma a tu equipo para que lo dirija. Se convierte en tu programa, y tus directivos ven que eres tú quien lo imparte.
 
-**The soundbite:** Same framework, three speeds. You decide who carries it.
+**La frase para recordar:** el mismo marco a tres velocidades. Tú decides quién lo lleva.
 
 ---
 
-# Tier 1 · Foundations
+# Nivel 1 · Fundamentos
 
-*Use Copilot, and prompt like you mean it. Find it, trust it, give it a clear job. This tier alone gets your time back.*
+*Usa Copilot y escribe prompts con intención. Encuéntralo, confía en él y dale un trabajo claro. Solo con este nivel ya recuperas tiempo.*
 
-Most of your day goes to keeping up. This is about getting that time back. Your inbox, your meetings, and your documents already hold more than you can read. Copilot Premium does the reading, drafting, and prep so your time goes to judgment, direction, and the people who need you. It works inside the apps you already use, more like a chief of staff than a chatbot. Premium matters because it works from your actual work, not the public web.
+La mayor parte de tu día se va en mantenerte al día. Esto va de recuperar ese tiempo. Tu bandeja de entrada, tus reuniones y tus documentos ya contienen más de lo que puedes leer. Copilot Premium se encarga de leer, redactar y preparar para que tu tiempo se dedique al criterio, la dirección y las personas que te necesitan. Funciona dentro de las aplicaciones que ya usas, más como un jefe de gabinete que como un chatbot. Premium importa porque trabaja con tu trabajo real, no con la web pública.
 
-| What you get | Why it matters |
+| Qué obtienes | Por qué importa |
 |---|---|
-| **It knows your work** | Ask about a thread, a customer, a project, or a document by name and Copilot reads across your Microsoft 365 content to answer. |
-| **It works where you work** | Built into Outlook, Word, Excel, PowerPoint, Teams, and a single Copilot Chat front door. No new tool to learn. |
-| **It sounds like you** | Set it up once and it drafts in your voice and remembers your priorities, so less of what it produces needs a rewrite. |
-| **It stays private** | Your prompts and data stay inside your tenant under enterprise protection. More on that in the first session. |
+| **Conoce tu trabajo** | Pregunta por una conversación, un cliente, un proyecto o un documento por su nombre y Copilot lee tu contenido de Microsoft 365 para responder. |
+| **Funciona donde trabajas** | Integrado en Outlook, Word, Excel, PowerPoint, Teams y una única puerta de entrada, Copilot Chat. Ninguna herramienta nueva que aprender. |
+| **Suena como tú** | Configúralo una vez y redactará con tu voz y recordará tus prioridades, así que habrá que reescribir menos de lo que produce. |
+| **Es privado** | Tus prompts y tus datos se quedan dentro de tu inquilino con protección empresarial. Más detalles en la primera sesión. |
 
 ---
 
-## 1.1 · Meet Copilot, Find It, and Make It Yours · 60 min
+## 1.1 · Conoce Copilot, encuéntralo y hazlo tuyo · 60 min
 
-**"One hour: find it, trust it, and make it sound like you."**
+**"Una hora: encuéntralo, confía en él y haz que suene como tú."**
 
-The orientation session. By the end, every leader knows what Copilot is, that their data is safe, where to find it, and it already sounds like them. Walk in skeptical, walk out set up.
+La sesión de orientación. Al terminar, todos los directivos saben qué es Copilot, que sus datos están seguros, dónde encontrarlo, y ya suena como ellos. Entran escépticos y salen con todo configurado.
 
-### Is my data safe?
+### ¿Están seguros mis datos?
 
-This is the first question every leader should ask, so here is the honest answer before you type a single prompt.
+Es la primera pregunta que debería hacer cualquier directivo, así que aquí tienes la respuesta sincera antes de escribir un solo prompt.
 
 > [!IMPORTANT]
-> The short version: Copilot works on your real work, not the open internet, and your work never leaves your tenant.
+> En resumen: Copilot trabaja con tu trabajo real, no con internet, y tu trabajo nunca sale de tu inquilino.
 
-- **Your data stays in your tenant.** Copilot Premium runs inside your Microsoft 365 boundary, protected by the same enterprise encryption and access controls as the rest of your data.
-- **It is not used to train models.** Your prompts, your documents, and Copilot's responses are not used to train the foundation models.
-- **It only sees what you can see.** Copilot respects your existing permissions. It cannot surface a file you do not already have access to.
-- **You have controls and an audit trail.** Purview gives your IT and compliance teams visibility, data-loss-prevention policies, and audit logs across Copilot activity.
+- **Tus datos se quedan en tu inquilino.** Copilot Premium funciona dentro de los límites de tu Microsoft 365, protegido por el mismo cifrado empresarial y los mismos controles de acceso que el resto de tus datos.
+- **No se usa para entrenar modelos.** Tus prompts, tus documentos y las respuestas de Copilot no se usan para entrenar los modelos fundacionales.
+- **Solo ve lo que tú puedes ver.** Copilot respeta tus permisos existentes. No puede mostrarte un archivo al que no tengas ya acceso.
+- **Tienes controles y un registro de auditoría.** Purview da a tus equipos de TI y de cumplimiento normativo visibilidad, directivas de prevención de pérdida de datos y registros de auditoría de toda la actividad de Copilot.
 
-For the regulated-industry deep dive on what happens when web search is involved, and what your BAA does and does not cover, see [Copilot Chat, HIPAA & Web Search](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch).
+Para profundizar, en sectores regulados, en qué ocurre cuando interviene la búsqueda web y qué cubre y qué no tu BAA, consulta [Copilot Chat, HIPAA & Web Search](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch) (en inglés).
 
-### Where to find Copilot
+### Dónde encontrar Copilot
 
-The single most common reason new users stall is that they cannot find it. Here is every door in.
+El motivo más habitual por el que los usuarios nuevos se estancan es que no lo encuentran. Estas son todas las puertas de entrada.
 
-| Where | What it does |
+| Dónde | Qué hace |
 |---|---|
-| **The Copilot app (your front door)** | Open the Copilot icon in Teams or on your taskbar, or go to [m365.cloud.microsoft](https://m365.cloud.microsoft). This is the everything box. Ask it anything about your work. |
-| **Inside each Office app** | Look for the Copilot button in the ribbon of Outlook, Word, Excel, and PowerPoint. It works on the document or email in front of you. |
-| **In your meetings** | In Teams meetings, Copilot can recap what was said, list decisions, and pull action items, even if you joined late. |
-| **On your phone** | The Microsoft 365 Copilot mobile app puts the same assistant in your pocket for between-meeting moments. |
+| **La aplicación de Copilot (tu puerta de entrada)** | Abre el icono de Copilot en Teams o en la barra de tareas, o ve a [m365.cloud.microsoft](https://m365.cloud.microsoft). Es la caja para todo. Pregúntale cualquier cosa sobre tu trabajo. |
+| **Dentro de cada aplicación de Office** | Busca el botón de Copilot en la cinta de Outlook, Word, Excel y PowerPoint. Trabaja con el documento o el correo que tienes delante. |
+| **En tus reuniones** | En las reuniones de Teams, Copilot puede resumir lo que se ha dicho, enumerar las decisiones y extraer las tareas pendientes, aunque te hayas unido tarde. |
+| **En tu móvil** | La aplicación móvil de Microsoft 365 Copilot te pone el mismo asistente en el bolsillo para los ratos entre reuniones. |
 
 > [!TIP]
-> Bookmark two things: the [Copilot app](https://m365.cloud.microsoft) and the [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) for ready-made prompts by role.
+> Guarda dos marcadores: la [aplicación de Copilot](https://m365.cloud.microsoft) y la [Galería de prompts de Copilot](https://copilot.cloud.microsoft/prompts), con prompts listos para usar por puesto.
 
-**Talk to Copilot, especially on your phone.** The fastest-growing way executives use Copilot Premium is not typing. It is talking. Open the Copilot app on your phone, tap the voice button, and just ask. Between meetings, in the car, or walking to the next thing, you can catch up on your Teams chats, get a quick briefing, or think a decision out loud and have Copilot answer back.
+**Háblale a Copilot, sobre todo en el móvil.** La forma de usar Copilot Premium que más crece entre los directivos no es escribir. Es hablar. Abre la aplicación de Copilot en el móvil, pulsa el botón de voz y pregunta sin más. Entre reuniones, en el coche o de camino a lo siguiente, puedes ponerte al día de tus chats de Teams, obtener un resumen rápido o pensar una decisión en voz alta y que Copilot te responda.
 
 ```
-Out loud: What are my three most important emails today, and what does each one need from me?
+En voz alta: ¿Cuáles son mis tres correos más importantes de hoy y qué necesita cada uno de mí?
 ```
 
-### Make it sound like you
+### Que suene como tú
 
-The gap between a helpful tool and a trusted operator is personalization. Spend a few minutes here and everything after gets better.
+La diferencia entre una herramienta útil y un colaborador de confianza es la personalización. Dedica aquí unos minutos y todo lo demás mejorará.
 
-1. **Tell it who you are.** Give Copilot a short profile: your role, your priorities, how you like things written, what you care about. Start from the [Copilot Personalization guide](../prompt%20playground/copilot%20personalization.md).
-2. **Let it remember.** [Copilot Memory](../prompt%20playground/copilot%20memory.md) keeps your context so you don't repeat yourself. See what is worth saving.
+1. **Dile quién eres.** Dale a Copilot un perfil breve: tu puesto, tus prioridades, cómo te gusta que se escriban las cosas y qué te importa. Empieza por la [guía de personalización de Copilot](../prompt%20playground/copilot%20personalization.md).
+2. **Deja que recuerde.** La [memoria de Copilot](../prompt%20playground/copilot%20memory.md) conserva tu contexto para que no tengas que repetirte. Mira qué merece la pena guardar.
 
 > [!TIP]
-> Do this once in the room. The rest of the program produces better answers the moment Copilot knows who you are and how you like things written.
+> Hazlo una vez en la sala. El resto del programa da mejores respuestas en cuanto Copilot sabe quién eres y cómo te gusta que se escriban las cosas.
 
 ---
 
-## 1.2 · Prompt Like You Mean It: Your First Win and a Second Set of Eyes · 60 min
+## 1.2 · Escribe prompts con intención: tu primer logro y una segunda mirada · 60 min
 
-**"Better prompts beat better tools. Give it one job, then have it tell you what you're missing."**
+**"Mejores prompts valen más que mejores herramientas. Dale un trabajo y después pídele que te diga qué se te escapa."**
 
-The skill everything else rides on. Teach the four-part formula, get a real win on real work, then level up to the power-user lenses that make prompting earn its keep for a leader.
+La habilidad sobre la que se apoya todo lo demás. Enseña la fórmula de cuatro partes, consigue un logro real con trabajo real y después sube de nivel con las perspectivas de usuario avanzado que hacen que los prompts compensen de verdad a un directivo.
 
-### The prompt formula
+### La fórmula del prompt
 
-A good prompt has four parts. You already do this when you delegate to a person.
+Un buen prompt tiene cuatro partes. Ya lo haces cuando delegas en una persona.
 
-- **Goal:** what you want. "Draft a reply," "summarize this," "find the risks."
-- **Context:** who it is for and why. "For my board," "for a non-technical audience."
-- **Source:** what to use. "From this thread," "using the attached document," "based on last week's meeting."
-- **Format:** how you want it back. "One page," "five bullets," "a short email in my tone."
+- **Objetivo:** lo que quieres. "Redacta una respuesta", "resume esto", "encuentra los riesgos".
+- **Contexto:** para quién es y por qué. "Para mi consejo", "para una audiencia no técnica".
+- **Fuente:** qué usar. "A partir de esta conversación", "usando el documento adjunto", "según la reunión de la semana pasada".
+- **Formato:** cómo lo quieres. "Una página", "cinco viñetas", "un correo breve con mi tono".
 
-Weak prompt, weak answer:
-
-```
-Write something about the vendor meeting.
-```
-
-Same request, with the four parts:
+Prompt flojo, respuesta floja:
 
 ```
-Draft a short update for my leadership team (goal + context) from the notes of yesterday's vendor meeting (source). Plain language, five bullets, decisions and next steps only (format).
+Escribe algo sobre la reunión con el proveedor.
+```
+
+La misma petición, con las cuatro partes:
+
+```
+Redacta una actualización breve para mi equipo de dirección (objetivo + contexto) a partir de las notas de la reunión de ayer con el proveedor (fuente). Lenguaje sencillo, cinco viñetas, solo decisiones y siguientes pasos (formato).
 ```
 
 > [!TIP]
-> Don't learn the tool. Give it a job, the way you would brief a sharp assistant.
+> No aprendas la herramienta. Dale un trabajo, como si informaras a un asistente espabilado.
 
-### Your first 5-minute win
+### Tu primer logro en 5 minutos
 
-Don't try to learn Copilot. Give it one job today. Open the Copilot app, paste one of these, and use real names from your world. You will have a useful answer in under a minute.
+No intentes aprender Copilot. Dale un trabajo hoy. Abre la aplicación de Copilot, pega uno de estos prompts y usa nombres reales de tu entorno. Tendrás una respuesta útil en menos de un minuto.
 
-**Catch up fast**
-
-```
-Catch me up on my email thread with [name] about [topic]. Summarize what was decided and tell me what I still owe them.
-```
-
-**Clear the inbox**
+**Ponte al día rápido**
 
 ```
-What are the most important emails I received in the last 24 hours that need my response? Group them by urgency and keep it short.
+Ponme al día de mi conversación de correo con [nombre] sobre [tema]. Resume lo que se decidió y dime qué le debo todavía.
 ```
 
-**Walk in ready**
+**Vacía la bandeja de entrada**
 
 ```
-Prepare me for my next meeting. Summarize recent emails and documents with the attendees and what we agreed last time.
+¿Cuáles son los correos más importantes que he recibido en las últimas 24 horas y que necesitan mi respuesta? Agrúpalos por urgencia y sé breve.
+```
+
+**Llega preparado**
+
+```
+Prepárame para mi próxima reunión. Resume los correos y documentos recientes con los asistentes y lo que acordamos la última vez.
 ```
 
 > [!NOTE]
-> Start with one win, not forty features.
+> Empieza con un logro, no con cuarenta funciones.
 
-### A second set of eyes
+### Una segunda mirada
 
-Still just a prompt, no setup required, but this is where prompting earns its keep for a leader: a view that never gets tired, and never tells you only what you want to hear.
+Sigue siendo solo un prompt, sin configuración, pero aquí es donde los prompts compensan de verdad a un directivo: una perspectiva que nunca se cansa y que nunca te dice solo lo que quieres oír.
 
-| Lens | What it does |
+| Perspectiva | Qué hace |
 |---|---|
-| [**Contextual Filter**](../prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md) | Read any document through the lens of a specific role and surface only what matters to you. |
-| [**Devil's Advocate**](../prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md) | Surface the three most likely reasons a proposal fails before you walk into the room. |
-| [**Voice Distiller**](../prompt%20playground/leadership%20style%20and%20voice%20distiller.md) | Mine a year of your communications into a leadership style Copilot can write in. |
+| [**Filtro contextual**](../prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md) | Lee cualquier documento desde la perspectiva de un puesto concreto y muestra solo lo que te importa. |
+| [**Abogado del diablo**](../prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md) | Descubre los tres motivos más probables por los que fracasaría una propuesta antes de entrar en la sala. |
+| [**Destilador de voz**](../prompt%20playground/leadership%20style%20and%20voice%20distiller.md) | Extrae de un año de tus comunicaciones un estilo de liderazgo con el que Copilot pueda escribir. |
 
-**Read as a role**
-
-```
-Read this document as my CFO. Surface only the financial risks and the questions I should be ready to answer.
-```
-
-**Before you commit**
+**Leer desde un puesto**
 
 ```
-Pressure-test this plan. Give me the strongest case against it and the one thing most likely to go wrong.
+Lee este documento como si fueras mi director financiero. Muestra solo los riesgos financieros y las preguntas a las que debería estar preparado para responder.
 ```
 
-For the higher-stakes, strategic set, see [10 Prompts for Executives](../prompt%20playground/10%20executive%20prompts.md).
+**Antes de comprometerte**
+
+```
+Pon a prueba este plan. Dame el argumento más sólido en su contra y lo que es más probable que salga mal.
+```
+
+Para el conjunto más estratégico y de mayor responsabilidad, consulta [10 prompts para directivos](../prompt%20playground/10%20executive%20prompts.md).
 
 ---
 
-## 1.3 · By App: Where the Time Comes Back · 60 min
+## 1.3 · Por aplicación: dónde recuperas el tiempo · 60 min
 
-**"Same assistant, tuned to whatever's in front of you."**
+**"El mismo asistente, adaptado a lo que tengas delante."**
 
-The same assistant, tuned to the document in front of you. Real executive use cases, with prompts to steal.
+El mismo asistente, adaptado al documento que tienes delante. Casos de uso reales para directivos, con prompts para copiar.
 
-### Outlook, your inbox on your terms
+### Outlook, tu bandeja de entrada con tus condiciones
 
-Triage the morning, summarize a long thread in seconds, draft replies in your tone, and prep for meetings without digging. Coaching even reviews a draft's tone before you hit send.
-
-```
-Summarize this thread and draft a reply that agrees to the timeline but asks for the budget in writing. Keep my tone direct and warm.
-```
-
-More in the [Copilot in Outlook Prompt Pack](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md): inbox triage, long-thread summaries, drafting, tone control, and meeting prep.
-
-### Word, from blank page to board-ready
-
-Draft a document from your own files, rewrite anything for a specific audience, and compress a 20-page report into a one-page summary that a busy board will actually read.
+Clasifica la mañana, resume una conversación larga en segundos, redacta respuestas con tu tono y prepara reuniones sin tener que buscar. El Coaching incluso revisa el tono de un borrador antes de que lo envíes.
 
 ```
-Draft a one-page board update from these three documents. Plain language for a non-technical audience, decisions and risks up front.
+Resume esta conversación y redacta una respuesta que acepte el calendario pero pida el presupuesto por escrito. Mantén mi tono directo y cercano.
 ```
 
-### Excel, answers without the formulas
+Más en el [pack de prompts de Copilot en Outlook](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md): clasificación de la bandeja de entrada, resúmenes de conversaciones largas, redacción, control del tono y preparación de reuniones.
 
-Point Copilot at a spreadsheet and ask what is happening in plain English. It surfaces trends, flags what looks off, and writes the formula so you don't have to. Agent Mode goes further for real analysis.
+### Word, de la página en blanco al documento listo para el consejo
 
-```
-Analyze this spreadsheet. What are the three trends I should care about, and what looks off or inconsistent?
-```
-
-See [Claude in Copilot with Agent Mode for Excel](./claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md): a hands-on walkthrough with demo data and prompts.
-
-### PowerPoint, a deck from what you already wrote
-
-Turn a document into a first-draft deck, summarize a long presentation to five slides, or rewrite a cluttered slide so it lands with executives.
+Redacta un documento a partir de tus propios archivos, reescribe cualquier cosa para una audiencia concreta y condensa un informe de 20 páginas en un resumen de una página que un consejo ocupado leerá de verdad.
 
 ```
-Create a five-slide executive summary from this document. One idea per slide, plain headlines, no jargon.
+Redacta una actualización de una página para el consejo a partir de estos tres documentos. Lenguaje sencillo para una audiencia no técnica, con las decisiones y los riesgos al principio.
 ```
 
-### Teams, never walk in behind
+### Excel, respuestas sin fórmulas
 
-Copilot recaps a meeting you missed, catches you up on a busy chat, and turns a discussion into decisions and owners, so you lead the follow-up instead of chasing it. Short on time between meetings, or on the road? Turn a recap into an audio overview and listen to what you missed like a short podcast.
+Dirige Copilot a una hoja de cálculo y pregunta en lenguaje corriente qué está pasando. Muestra las tendencias, señala lo que no cuadra y escribe la fórmula para que no tengas que hacerlo tú. El modo agente va más allá para los análisis de verdad.
 
 ```
-Recap this meeting. Give me the decisions, the open questions, and who owns each next step.
+Analiza esta hoja de cálculo. ¿Cuáles son las tres tendencias que deberían importarme y qué parece extraño o incoherente?
+```
+
+Consulta [Claude en Copilot con el modo agente para Excel](./claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md): una guía práctica con datos de demostración y prompts.
+
+### PowerPoint, una presentación a partir de lo que ya has escrito
+
+Convierte un documento en un primer borrador de presentación, resume una presentación larga en cinco diapositivas o reescribe una diapositiva recargada para que llegue a los directivos.
+
+```
+Crea un resumen ejecutivo de cinco diapositivas a partir de este documento. Una idea por diapositiva, titulares sencillos, sin jerga.
+```
+
+### Teams, no vuelvas a llegar con desventaja
+
+Copilot resume una reunión que te perdiste, te pone al día de un chat con mucha actividad y convierte un debate en decisiones y responsables, para que seas tú quien dirija el seguimiento en lugar de ir detrás de él. ¿Tienes poco tiempo entre reuniones o estás de viaje? Convierte un resumen en un resumen en audio y escucha lo que te perdiste como si fuera un pódcast corto.
+
+```
+Resume esta reunión. Dame las decisiones, las preguntas abiertas y quién es responsable de cada siguiente paso.
 ```
 
 > [!NOTE]
-> Gather a meeting recap and the related documents in a Copilot Notebook, then generate an audio overview to catch up hands-free on the drive home. Turn any recap into decisions and owners with the [Meeting Notes to Action Table](../prompt%20playground/meeting%20notes%20to%20action%20items.md).
+> Reúne el resumen de una reunión y los documentos relacionados en un Copilot Notebook y genera un resumen en audio para ponerte al día sin usar las manos de camino a casa. Convierte cualquier resumen en decisiones y responsables con [De notas de reunión a tabla de acciones](../prompt%20playground/meeting%20notes%20to%20action%20items.md).
 
-### Copilot Chat, the one place that sees across it all
+### Copilot Chat, el único lugar que lo ve todo
 
-Reason across email, files, chats, and meetings in one place.
+Razona sobre el correo, los archivos, los chats y las reuniones en un solo lugar.
 
 ```
-Based on recent emails and files, prep me for my 1:1 with [name].
+Según los correos y archivos recientes, prepárame para mi reunión 1:1 con [nombre].
 ```
 
 ---
 
-## 1.4 · Put It on a Schedule: Your Morning Brief · 30 min
+## 1.4 · Prográmalo: tu resumen matutino · 30 min
 
-**"Stop asking for the update. Have it come to you."**
+**"Deja de pedir la actualización. Haz que venga a ti."**
 
-The first taste of the chief-of-staff move. Scheduled prompts run on their own. Set one up so every weekday morning Copilot sends you a brief of what needs your attention, before you open your laptop.
+La primera muestra del papel de jefe de gabinete. Los prompts programados se ejecutan solos. Configura uno para que cada mañana de lunes a viernes Copilot te envíe un resumen de lo que necesita tu atención, antes de que abras el portátil.
 
-Set a scheduled prompt from the [Start My Day](../prompt%20playground/start%20my%20day.md) routine so the brief lands in your inbox each morning. You get the summary, not the search.
+Configura un prompt programado a partir de la rutina [Empieza mi día](../prompt%20playground/start%20my%20day.md) para que el resumen llegue a tu bandeja de entrada cada mañana. Recibes el resumen, no la búsqueda.
 
 ```
-Every weekday at 7 a.m., send me a brief: my most important emails from the last 24 hours, my meetings today with what each one needs from me, and anything I owe someone a reply on.
+Cada día laborable a las 7:00, envíame un resumen: mis correos más importantes de las últimas 24 horas, mis reuniones de hoy con lo que cada una necesita de mí y cualquier respuesta que le deba a alguien.
 ```
 
 > [!TIP]
-> This is the difference a leader feels first. The update arrives before you ask for it.
+> Es la diferencia que un directivo nota primero. La actualización llega antes de que la pidas.
 
 ---
 
-# Tier 2 · Deeper Value
+# Nivel 2 · Más valor
 
-*Agents that do the heavy thinking. Beyond a plain prompt: purpose-built reasoning agents that research and analyze, the work that used to take an analyst a week.*
+*Agentes que hacen el trabajo intelectual pesado. Más allá de un simple prompt: agentes de razonamiento creados a propósito que investigan y analizan, el trabajo que antes le llevaba una semana a un analista.*
 
 ---
 
-## 2.1 · Premium Reasoning Agents: Researcher + Analyst · 60 min
+## 2.1 · Agentes de razonamiento premium: Researcher + Analyst · 60 min
 
-**"Point Researcher at a decision and Analyst at your numbers, and walk in with the thinking already done."**
+**"Pon a Researcher a trabajar en una decisión y a Analyst en tus cifras, y entra en la sala con el análisis ya hecho."**
 
-Most prompts hand you an answer. These two do the work behind it, the kind you used to hand an analyst and wait a week for. Show each one, then put them together on a real decision.
+La mayoría de los prompts te dan una respuesta. Estos dos hacen el trabajo que hay detrás, el que antes le encargabas a un analista y esperabas una semana. Muestra cada uno y después úsalos juntos en una decisión real.
 
-### Researcher, your strategy analyst
+### Researcher, tu analista de estrategia
 
-Runs deep, multi-step research across your work and the web, then hands back a structured, cited briefing.
+Realiza investigaciones profundas y en varios pasos sobre tu trabajo y la web, y te devuelve un informe estructurado con las fuentes citadas.
 
-- Combines your documents with the web
-- Reasons in steps and shows its sources
-- Built for strategy, not quick lookups
-
-```
-Act as my strategy analyst. Research how leading health systems are using AI to improve patient access and operational efficiency. Ground it in our own board and strategy materials where you can, then add the open web. Give me the three highest-value opportunities, what peer systems did, the risks to watch, and a one-page recommendation I can take to the board.
-```
-
-### Analyst, your data scientist on demand
-
-Reasons over raw spreadsheets step by step, writes and runs its own analysis code, and returns the insight.
-
-- Works on your raw Excel or CSV data
-- Writes and runs live analysis code
-- Returns trends, tables, and visuals
+- Combina tus documentos con la web
+- Razona por pasos y muestra sus fuentes
+- Pensado para la estrategia, no para consultas rápidas
 
 ```
-Analyze this workbook of service-line volumes and time-to-appointment across our sites. Show me where demand and access differ most, flag anything that looks off, and tell me where to focus first.
+Actúa como mi analista de estrategia. Investiga cómo están usando la IA los principales sistemas sanitarios para mejorar el acceso de los pacientes y la eficiencia operativa. Básalo en nuestros propios materiales del consejo y de estrategia siempre que puedas, y después añade la web abierta. Dame las tres oportunidades de mayor valor, lo que hicieron sistemas similares, los riesgos que vigilar y una recomendación de una página que pueda llevar al consejo.
 ```
 
-### Put them together
+### Analyst, tu científico de datos a demanda
 
-Hand a strategic question to Researcher, then point Analyst at your own numbers, and walk into the room with a cited briefing and a recommendation you could act on, not just a summary.
+Razona paso a paso sobre hojas de cálculo sin procesar, escribe y ejecuta su propio código de análisis y te devuelve la conclusión.
+
+- Trabaja con tus datos sin procesar de Excel o CSV
+- Escribe y ejecuta código de análisis en directo
+- Devuelve tendencias, tablas y gráficos
+
+```
+Analiza este libro con los volúmenes por línea de servicio y el tiempo hasta la cita en nuestros centros. Muéstrame dónde difieren más la demanda y el acceso, señala lo que parezca extraño y dime dónde centrarme primero.
+```
+
+### Úsalos juntos
+
+Plantea una pregunta estratégica a Researcher, dirige después a Analyst a tus propias cifras y entra en la sala con un informe con fuentes citadas y una recomendación sobre la que podrías actuar, no solo con un resumen.
 
 > [!TIP]
-> The executive move: point Researcher at a decision, point Analyst at your data, and walk in with the thinking already done.
+> La jugada del directivo: pon a Researcher a trabajar en una decisión, a Analyst en tus datos, y entra con el análisis ya hecho.
 
 ---
 
-## 2.2 · Copilot Notebooks: One Place for a Big Topic · 30 min *(optional)*
+## 2.2 · Copilot Notebooks: un solo lugar para un tema grande · 30 min *(opcional)*
 
-**"Gather it once, ask across all of it, then listen to it like a podcast."**
+**"Reúnelo una vez, pregunta sobre todo a la vez y después escúchalo como un pódcast."**
 
-When one initiative is spread across a dozen documents, meetings, and threads, a Copilot Notebook pulls them into one grounded workspace. Add your sources once, then ask questions across all of them at the same time.
+Cuando una iniciativa está repartida en una docena de documentos, reuniones y conversaciones, un Copilot Notebook los reúne en un único espacio de trabajo basado en tus fuentes. Añade tus fuentes una vez y después haz preguntas sobre todas ellas a la vez.
 
-- Gather the documents, notes, and recaps for one project or decision in a single Notebook
-- Ask across everything at once, grounded only in what you added
-- Generate an audio overview and catch up hands-free on the drive home
+- Reúne en un solo Notebook los documentos, las notas y los resúmenes de un proyecto o una decisión
+- Pregunta sobre todo a la vez, basándote solo en lo que has añadido
+- Genera un resumen en audio y ponte al día sin usar las manos de camino a casa
 
 ```
-Based on everything in this notebook, give me the current state of the project, the open decisions, and what needs me this week.
+Según todo lo que hay en este notebook, dame el estado actual del proyecto, las decisiones pendientes y lo que me necesita esta semana.
 ```
 
 ---
 
-# Tier 3 · Build Your Own
+# Nivel 3 · Crea el tuyo
 
-*Build a Copilot that comes to you. A little setup turns a helpful tool into a trusted operator. This is the chief-of-staff move.*
+*Crea un Copilot que venga a ti. Un poco de configuración convierte una herramienta útil en un colaborador de confianza. Este es el papel de jefe de gabinete.*
 
 ---
 
-## 3.1 · Build Your Chief of Staff Agent · 60 min
+## 3.1 · Crea tu agente jefe de gabinete · 60 min
 
-**"If you're typing the same prompt twice a week, that's an agent waiting to happen."**
+**"Si escribes el mismo prompt dos veces por semana, es un agente esperando a nacer."**
 
-A focused assistant you set up once for a specific job. Give Copilot a standing job that protects your time and thinks at your altitude. The [Chief of Staff agent](../agent%20playground/chief%20of%20staff.md) walks you through it in about 15 minutes, with two Word templates and a copy-paste setup.
+Un asistente centrado en una tarea concreta que configuras una sola vez. Dale a Copilot un trabajo permanente que proteja tu tiempo y piense a tu nivel. El [agente jefe de gabinete](../agent%20playground/chief%20of%20staff.md) te guía en unos 15 minutos, con dos plantillas de Word y una configuración para copiar y pegar.
 
-- Build it once, and it thinks at your altitude and sounds like you
-- Share it with your team so everyone gets the same quality
-- Comes with templates so you are not starting from a blank page
+- Créalo una vez y pensará a tu nivel y se expresará como tú
+- Compártelo con tu equipo para que todos obtengan la misma calidad
+- Incluye plantillas para que no empieces desde una página en blanco
 
 > [!TIP]
-> Rule of thumb: if you are typing a similar prompt more than twice a week, that is an agent waiting to happen.
+> Regla práctica: si escribes un prompt parecido más de dos veces por semana, es un agente esperando a nacer.
 
 ---
 
-## 3.2 · More Agents Worth Building · 30 min
+## 3.2 · Más agentes que merece la pena crear · 30 min
 
-**"Build it once, and your whole team inherits it."**
+**"Créalo una vez y todo tu equipo lo hereda."**
 
-Once you have built one, here are three more worth having. Set each up once, then share it.
+Cuando hayas creado uno, aquí tienes tres más que merece la pena tener. Configura cada uno una vez y después compártelo.
 
-| Agent | What it does for you |
+| Agente | Qué hace por ti |
 |---|---|
-| [**BossBuddy**](../agent%20playground/bossbuddy.md) | A virtual AI manager for strategy and career-level thinking. Helps you clarify your impact and see the bigger picture. |
-| [**Taskmaster**](../agent%20playground/taskmaster.md) | Tracks what needs attention, pulls action items, and gives strategic guidance to move work forward. |
-| [**Impact Check**](../agent%20playground/impact%20check.md) | Summarizes and links across your Microsoft 365 activity so you can see your real influence on projects and people. |
+| [**BossBuddy**](../agent%20playground/bossbuddy.md) | Un jefe virtual con IA para pensar en estrategia y en tu carrera. Te ayuda a aclarar tu impacto y a ver el panorama general. |
+| [**Taskmaster**](../agent%20playground/taskmaster.md) | Hace seguimiento de lo que necesita atención, extrae las tareas pendientes y da orientación estratégica para que el trabajo avance. |
+| [**Impact Check**](../agent%20playground/impact%20check.md) | Resume y relaciona tu actividad en Microsoft 365 para que veas tu influencia real en proyectos y personas. |
 
 > [!TIP]
-> Once you find prompts you use often, save them in the [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) so they are one click away. Your team can publish a shared set everyone reuses.
+> Cuando encuentres prompts que uses a menudo, guárdalos en la [Galería de prompts de Copilot](https://copilot.cloud.microsoft/prompts) para tenerlos a un clic. Tu equipo puede publicar un conjunto compartido que todos reutilicen.
 
 ---
 
-## 3.3 · For Your Executive Assistant: Own the Daily Prep · 30 min *(optional)*
+## 3.3 · Para tu asistente de dirección: encárgate de la preparación diaria · 30 min *(opcional)*
 
-**"Copilot multiplies a great assistant, it doesn't replace one. You get the summary, not the search."**
+**"Copilot multiplica a un gran asistente, no lo sustituye. Recibes el resumen, no la búsqueda."**
 
-Most executives don't work alone. This session is for the executive and their assistant together, and then the assistant owns it. Your assistant can run Copilot on the shared work you already trust them with: triaging your inbox, prepping your briefings, turning meetings into follow-ups, and drafting in a voice you have agreed on.
+La mayoría de los directivos no trabajan solos. Esta sesión es para el directivo y su asistente juntos, y después el asistente se encarga de ella. Tu asistente puede usar Copilot en el trabajo compartido que ya le confías: clasificar tu bandeja de entrada, preparar tus resúmenes, convertir reuniones en seguimientos y redactar con una voz que hayáis acordado.
 
-Bring them in from day one. Share your personalization profile so what they produce sounds like you, and let them own the daily prep so you get the summary, not the search.
+Inclúyelo desde el primer día. Comparte tu perfil de personalización para que lo que produzca suene como tú y deja que se encargue de la preparación diaria, para que tú recibas el resumen y no la búsqueda.
 
-A good first move: have your assistant set up the [Start My Day](../prompt%20playground/start%20my%20day.md) and [Meeting Notes to Action Table](../prompt%20playground/meeting%20notes%20to%20action%20items.md) prompts, then hand you the output each morning.
+Un buen primer paso: que tu asistente configure los prompts [Empieza mi día](../prompt%20playground/start%20my%20day.md) y [De notas de reunión a tabla de acciones](../prompt%20playground/meeting%20notes%20to%20action%20items.md) y te entregue el resultado cada mañana.
 
 ---
 
-# Copilot, Not Autopilot
+# Copilot, no piloto automático
 
-*The one principle that runs under all three tiers.*
+*El principio que recorre los tres niveles.*
 
-Trust it faster by knowing exactly where the line is. Honest expectations prevent week-two disappointment.
+Confiarás en él antes si sabes exactamente dónde está el límite. Unas expectativas sinceras evitan la decepción de la segunda semana.
 
-- **It drafts, you decide.** Copilot won't send an email, book a meeting, or make a call you didn't ask for. Your name still goes on the output.
-- **Check the facts that matter.** It can be confidently wrong. For numbers, names, and commitments, verify before you forward.
-- **The output is only as good as the input.** A vague prompt or messy files give vague answers. The four-part formula fixes most of this.
-- **It is getting better fast.** Capabilities change month to month. If something felt limited in the spring, it is worth another look.
+- **Él redacta, tú decides.** Copilot no enviará un correo, reservará una reunión ni tomará una decisión que no le hayas pedido. Tu nombre sigue yendo en el resultado.
+- **Comprueba los datos que importan.** Puede equivocarse con total seguridad. Verifica las cifras, los nombres y los compromisos antes de reenviar nada.
+- **El resultado es tan bueno como lo que le das.** Un prompt vago o unos archivos desordenados dan respuestas vagas. La fórmula de cuatro partes resuelve casi todo esto.
+- **Mejora rápido.** Sus capacidades cambian de un mes a otro. Si algo te pareció limitado en primavera, merece la pena volver a probarlo.
 
 > [!IMPORTANT]
-> Copilot writes the first draft. You still sign your name to it.
+> Copilot escribe el primer borrador. Tú sigues firmándolo.
 
 ---
 
-# Your Call to Action
+# Tu llamada a la acción
 
-*The training is the start line, not the finish. Here is how the value survives after the room clears.*
+*La formación es la línea de salida, no la meta. Así es como el valor sobrevive cuando la sala se vacía.*
 
-**Pick your habit, book the session, and keep the playground open.**
+**Elige tu hábito, reserva la sesión y mantén abierto el playground.**
 
-### Build the habit
+### Crea el hábito
 
-Adoption dies without a habit. Four weeks, one focus each. Fifteen minutes a day beats a training marathon.
+La adopción muere sin un hábito. Cuatro semanas, un foco en cada una. Quince minutos al día valen más que un maratón de formación.
 
-| Week | Focus | What to do |
+| Semana | Foco | Qué hacer |
 |---|---|---|
-| **Week 1: Find it** | One win a day | Open Copilot each morning. Catch up on a thread, summarize your inbox, prep one meeting. Start from [Start My Day](../prompt%20playground/start%20my%20day.md). |
-| **Week 2: Inbox and meetings** | Run your day through it | Use the [Outlook pack](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md) and turn every meeting into [decisions and owners](../prompt%20playground/meeting%20notes%20to%20action%20items.md). |
-| **Week 3: Your documents** | Word, Excel, PowerPoint | Put Copilot on real work: a report to summarize, a spreadsheet to read, a deck to draft. |
-| **Week 4: Make it yours** | Personalize and delegate | Set your [personalization](../prompt%20playground/copilot%20personalization.md), build a [Chief of Staff agent](../agent%20playground/chief%20of%20staff.md), and start using it for perspective. |
+| **Semana 1: encuéntralo** | Un logro al día | Abre Copilot cada mañana. Ponte al día de una conversación, resume tu bandeja de entrada, prepara una reunión. Empieza por [Empieza mi día](../prompt%20playground/start%20my%20day.md). |
+| **Semana 2: bandeja de entrada y reuniones** | Organiza tu día con él | Usa el [pack de Outlook](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md) y convierte cada reunión en [decisiones y responsables](../prompt%20playground/meeting%20notes%20to%20action%20items.md). |
+| **Semana 3: tus documentos** | Word, Excel, PowerPoint | Pon a Copilot a trabajar con material real: un informe que resumir, una hoja de cálculo que leer, una presentación que redactar. |
+| **Semana 4: hazlo tuyo** | Personaliza y delega | Configura tu [personalización](../prompt%20playground/copilot%20personalization.md), crea un [agente jefe de gabinete](../agent%20playground/chief%20of%20staff.md) y empieza a usarlo para ganar perspectiva. |
 
-### Keep somewhere to go
+### Ten siempre un sitio al que acudir
 
-The reason trainings fall flat is that people leave the room and forget where to start. These are the places to send them so they don't stall.
+Las formaciones fracasan porque la gente sale de la sala y olvida por dónde empezar. Estos son los sitios a los que enviarla para que no se estanque.
 
-- **The [Executive Playbook PDF](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Playbook.pdf)**, in every leader's hands and their assistant's.
-- **The [Copilot Playground](https://github.com/heyitsgoad/copilot-playground)** for agents, prompts, and video guides.
-- **The [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)**, Microsoft's official prompts by role.
-- **A shared team prompt library** so the best prompts spread instead of getting retyped.
-- **The agents to build first:** [Chief of Staff](../agent%20playground/chief%20of%20staff.md), [BossBuddy](../agent%20playground/bossbuddy.md), [Taskmaster](../agent%20playground/taskmaster.md), [Impact Check](../agent%20playground/impact%20check.md).
+- **El [PDF del manual para directivos](https://github.com/heyitsgoad/copilot-playground/raw/main/education%20playground/assets/executive%20copilot%20playbook/Copilot-Premium-Executive-Playbook.pdf)** (en inglés), en manos de cada directivo y de su asistente.
+- **Este [Copilot Playground](../README.md)** con agentes, prompts y guías en vídeo.
+- **La [Galería de prompts de Copilot](https://copilot.cloud.microsoft/prompts)**, los prompts oficiales de Microsoft por puesto.
+- **Una biblioteca de prompts compartida por el equipo** para que los mejores prompts se difundan en lugar de volver a escribirse.
+- **Los agentes que conviene crear primero:** [Jefe de gabinete](../agent%20playground/chief%20of%20staff.md), [BossBuddy](../agent%20playground/bossbuddy.md), [Taskmaster](../agent%20playground/taskmaster.md), [Impact Check](../agent%20playground/impact%20check.md).
 
-### Book the working session
+### Reserva la sesión práctica
 
-The fastest path from licensed to fluent is a person. Bring me your team and I will run a live 45-minute working session: we will set up personalization, build a Chief of Staff agent, and get each leader their first real win on their own work.
-
----
-
-# The Golden Nuggets
-
-*You trained your leaders. Here is what turns a good training into an adoption engine that outlasts the room. This is what separates a company that bought Copilot from one that runs on it.*
-
-**A great training is a spark. This is how you keep the fire lit.**
-
-### 1. Champions: your adoption can't ride on one trainer
-
-A champion is an internal volunteer, a trusted coworker in each department who helps their peers and keeps momentum alive. Not IT, not Microsoft. Recruit a few enthusiastic early adopters across teams, give them a channel to share wins and prompts, and meet on a regular cadence.
-
-> **"One trainer doesn't scale. A champion in every department does."**
-
-See the [Champion role](https://adoption.microsoft.com/en-us/roles/champion/) on the Microsoft Adoption hub.
-
-### 2. Governance: get the guardrails right before you go wide
-
-Copilot only surfaces what a person already has permission to see, so your rollout is only as safe as your permissions. Microsoft's Secure and Governed Data Foundation is the fix: remediate oversharing, set guardrails with Purview, and meet your regulations. In healthcare this is not optional, it is the difference between a safe rollout and an exposed one.
-
-> **"Copilot shows people what they can already see. In healthcare, clean permissions are a patient-safety issue, not an IT chore."**
-
-Start with the [Secure and Governed Data Foundation](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance) and [Copilot Governance, Getting Started](./copilot%20governance%20getting%20started.md).
-
-### 3. Measure it: know if the investment is landing
-
-The [Copilot Dashboard](https://learn.microsoft.com/en-us/viva/insights/org-team-insights/copilot-dashboard) in Viva Insights shows who is using it, who is coming back, and how many hours you are getting back. Put four numbers in a monthly leadership review: active users, returning users, assisted hours, and satisfaction. Don't grade ROI in the first 30 days.
-
-> **"Watch the returning users, not the sign-ups. The habit is the ROI."**
-
-Microsoft's research points to an 11-by-11 tipping point: about 11 minutes saved a day over 11 weeks of steady use before the real productivity signal shows up. Give it the runway.
-
-### 4. A scenario library: aim before you spray
-
-"Use it for everything" is how adoption dies. The [Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/) is a catalog of proven use cases by department, so each team starts with the highest-value, lowest-risk work. Pick two or three scenarios per team, use the Day-in-the-Life guides, and define what a win looks like for each.
-
-> **"'Use it for everything' is how adoption dies. Pick two wins per team and prove them."**
-
-### 5. A community of practice: reinforce or it fades
-
-Most of what people learn in a session is gone in a day without reinforcement. Stand up a Copilot community in Teams or Viva Engage, run a prompt of the week, and host a monthly lunch-and-learn where a champion shows a new use case.
-
-> **"The session teaches it. The community is what makes it stick."**
-
-### And the team that owns it all: a Center of Excellence
-
-A small cross-functional team, IT, security, a business leader, and communications, that owns the five moves above: the guardrails, the scenarios, the champions, and the numbers. If everyone owns adoption, no one does.
-
-> **"Give adoption a team and a name, or watch it quietly stall in week six."**
-
-Everything above starts at the [Microsoft 365 Copilot Adoption hub](https://adoption.microsoft.com/en-us/copilot/).
+El camino más rápido de tener la licencia a dominarla es una persona. Un buen siguiente paso es organizar con tu equipo una sesión práctica en directo de 45 minutos: configurar la personalización, crear un agente jefe de gabinete y conseguir que cada directivo tenga su primer logro real con su propio trabajo.
 
 ---
 
-## The Resource Library
+# Las claves de oro
 
-Everything linked in this guide, in one place. All from this playground.
+*Has formado a tus directivos. Esto es lo que convierte una buena formación en un motor de adopción que dura más allá de la sala. Es lo que diferencia a una empresa que ha comprado Copilot de una que funciona con él.*
 
-### Start here
-- [Getting Started with Copilot](../prompt%20playground/getting%20started%20with%20copilot.md). Learn the ropes and your first prompts.
-- [10 Starter Copilot Chat Prompts](../prompt%20playground/10%20starter%20copilot%20chat%20prompts.md). Ten practical prompts ready to run.
-- [The Copilot app](https://m365.cloud.microsoft). m365.cloud.microsoft, your front door.
-- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts). Browse Microsoft's prompts by role and task.
+**Una gran formación es una chispa. Así es como mantienes vivo el fuego.**
 
-### Make it yours
-- [Copilot Personalization](../prompt%20playground/copilot%20personalization.md). Customize how Copilot responds to you.
-- [Copilot Memory](../prompt%20playground/copilot%20memory.md). What is worth having it remember.
-- [Leadership Style & Voice Distiller](../prompt%20playground/leadership%20style%20and%20voice%20distiller.md). Build your personal voice reference.
-- [Copywriting Precision & Tone](../prompt%20playground/copywriting%20precision%20and%20tone%20enhancer.md). Refine any writing in your own voice.
+### 1. Promotores internos (champions): tu adopción no puede depender de un solo formador
 
-### Chief of staff agents
-- [Chief of Staff](../agent%20playground/chief%20of%20staff.md). Build your own in about 15 minutes.
-- [BossBuddy](../agent%20playground/bossbuddy.md). A virtual AI manager for strategy.
-- [Taskmaster](../agent%20playground/taskmaster.md). Tracks what needs your attention.
-- [Impact Check](../agent%20playground/impact%20check.md). See your influence across Microsoft 365.
+Un promotor interno es un voluntario de la organización, un compañero de confianza en cada departamento que ayuda a sus colegas y mantiene vivo el impulso. No es TI ni Microsoft. Recluta a unos cuantos pioneros entusiastas de distintos equipos, dales un canal para compartir logros y prompts, y reuníos con una periodicidad fija.
 
-### Executive and perspective
-- [10 Prompts for Executives](../prompt%20playground/10%20executive%20prompts.md). Curated for leadership workflows.
-- [Contextual Filter](../prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md). Read a document through any role.
-- [Devil's Advocate](../prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md). Pressure-test before the room.
-- [Meeting Notes to Action Table](../prompt%20playground/meeting%20notes%20to%20action%20items.md). Decisions and owners in one shot.
+> **"Un formador no escala. Un promotor interno en cada departamento, sí."**
 
-### By app and daily workflow
-- [Copilot in Outlook Prompt Pack](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md). Triage, summaries, drafting, tone.
-- [Agent Mode for Excel](./claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md). Hands-on walkthrough with demo data.
-- [Start My Day](../prompt%20playground/start%20my%20day.md). A morning overview to run daily.
+Consulta el [rol de promotor interno (Champion)](https://adoption.microsoft.com/es-es/roles/champion/) en el portal de adopción de Microsoft.
 
-### For your IT, security, and adoption team
-- [Copilot Chat, HIPAA & Web Search](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch). What crosses the tenant boundary.
-- [Copilot Governance, Getting Started](./copilot%20governance%20getting%20started.md). Access, DLP, labeling, cost controls.
-- [Secure and Governed Data Foundation](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance). Fix oversharing before you go wide.
-- [Copilot Dashboard (Viva Insights)](https://learn.microsoft.com/en-us/viva/insights/org-team-insights/copilot-dashboard). Measure adoption and impact.
-- [Microsoft 365 Copilot Adoption hub](https://adoption.microsoft.com/en-us/copilot/). Success kit, scenario library, and champions.
-- [The full Copilot Playground](https://github.com/heyitsgoad/copilot-playground). Agents, prompts, and video guides.
+### 2. Gobernanza: pon bien las salvaguardas antes de ampliar
+
+Copilot solo muestra lo que una persona ya tiene permiso para ver, así que tu despliegue es tan seguro como tus permisos. La base de datos segura y gobernada (Secure and Governed Data Foundation) de Microsoft es la solución: corrige el uso compartido excesivo, establece salvaguardas con Purview y cumple tu normativa. En el sector sanitario no es opcional: es la diferencia entre un despliegue seguro y uno expuesto.
+
+> **"Copilot muestra a las personas lo que ya pueden ver. En el sector sanitario, unos permisos limpios son una cuestión de seguridad del paciente, no una tarea más de TI."**
+
+Empieza por la [Secure and Governed Data Foundation](https://learn.microsoft.com/es-es/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance) y por [Primeros pasos con la gobernanza de Copilot](./copilot%20governance%20getting%20started.md).
+
+### 3. Mídelo: saber si la inversión está dando fruto
+
+El [panel de Copilot](https://learn.microsoft.com/es-es/viva/insights/org-team-insights/copilot-dashboard) de Viva Insights muestra quién lo usa, quién vuelve a usarlo y cuántas horas estás recuperando. Incluye cuatro cifras en una revisión mensual de la dirección: usuarios activos, usuarios recurrentes, horas asistidas y satisfacción. No evalúes el retorno de la inversión en los primeros 30 días.
+
+> **"Fíjate en los usuarios que vuelven, no en las altas. El hábito es el retorno de la inversión."**
+
+La investigación de Microsoft apunta a un punto de inflexión de 11 por 11: unos 11 minutos ahorrados al día durante 11 semanas de uso constante antes de que aparezca la señal real de productividad. Dale margen.
+
+### 4. Una biblioteca de escenarios: apunta antes de disparar
+
+"Úsalo para todo" es como muere la adopción. La [Biblioteca de escenarios](https://adoption.microsoft.com/es-es/scenario-library/) es un catálogo de casos de uso probados por departamento, para que cada equipo empiece por el trabajo de mayor valor y menor riesgo. Elige dos o tres escenarios por equipo, usa las guías de "un día en la vida de" y define cómo es un logro en cada uno.
+
+> **"'Úsalo para todo' es como muere la adopción. Elige dos logros por equipo y demuéstralos."**
+
+### 5. Una comunidad de práctica: refuérzalo o se desvanece
+
+Sin refuerzo, la mayor parte de lo que la gente aprende en una sesión se olvida en un día. Crea una comunidad de Copilot en Teams o Viva Engage, publica un prompt de la semana y organiza una sesión mensual de aprendizaje a la hora de comer en la que un promotor interno muestre un caso de uso nuevo.
+
+> **"La sesión lo enseña. La comunidad es lo que hace que se quede."**
+
+### Y el equipo que se encarga de todo: un centro de excelencia
+
+Un equipo pequeño y multidisciplinar, con TI, seguridad, un responsable de negocio y comunicación, que se encarga de los cinco puntos anteriores: las salvaguardas, los escenarios, los promotores internos y las cifras. Si todo el mundo es responsable de la adopción, nadie lo es.
+
+> **"Dale a la adopción un equipo y un nombre, o verás cómo se estanca en silencio en la sexta semana."**
+
+Todo lo anterior empieza en el [portal de adopción de Microsoft 365 Copilot](https://adoption.microsoft.com/es-es/copilot/).
 
 ---
 
-## You Are Not Doing This Alone
+## La biblioteca de recursos
 
-The fastest path from licensed to fluent is a person. Bring me your team and I will run a live 45-minute working session: we will set up personalization, build a Chief of Staff agent, and get each leader their first real win on their own work.
+Todo lo enlazado en esta guía, en un solo lugar. Todo de este playground.
 
-**Michael Goad**, Copilot Solution Engineer at Microsoft. Reach me at michaelgoad@microsoft.com.
+### Empieza aquí
+- [Primeros pasos con Copilot](../prompt%20playground/getting%20started%20with%20copilot.md). Aprende lo básico y tus primeros prompts.
+- [10 prompts de chat para empezar](../prompt%20playground/10%20starter%20copilot%20chat%20prompts.md). Diez prompts prácticos listos para usar.
+- [La aplicación de Copilot](https://m365.cloud.microsoft). m365.cloud.microsoft, tu puerta de entrada.
+- [Galería de prompts de Copilot](https://copilot.cloud.microsoft/prompts). Explora los prompts de Microsoft por puesto y tarea.
+
+### Hazlo tuyo
+- [Personalización de Copilot](../prompt%20playground/copilot%20personalization.md). Personaliza cómo te responde Copilot.
+- [Memoria de Copilot](../prompt%20playground/copilot%20memory.md). Qué merece la pena que recuerde.
+- [Destilador de estilo de liderazgo y voz](../prompt%20playground/leadership%20style%20and%20voice%20distiller.md). Crea tu referencia de voz personal.
+- [Precisión y tono en la redacción](../prompt%20playground/copywriting%20precision%20and%20tone%20enhancer.md). Pule cualquier texto con tu propia voz.
+
+### Agentes jefe de gabinete
+- [Jefe de gabinete](../agent%20playground/chief%20of%20staff.md). Crea el tuyo en unos 15 minutos.
+- [BossBuddy](../agent%20playground/bossbuddy.md). Un jefe virtual con IA para la estrategia.
+- [Taskmaster](../agent%20playground/taskmaster.md). Hace seguimiento de lo que necesita tu atención.
+- [Impact Check](../agent%20playground/impact%20check.md). Ve tu influencia en Microsoft 365.
+
+### Dirección y perspectiva
+- [10 prompts para directivos](../prompt%20playground/10%20executive%20prompts.md). Seleccionados para el trabajo de dirección.
+- [Filtro contextual](../prompt%20playground/contextual%20filter%2C%20gain%20a%20new%20perspective%20prompt.md). Lee un documento desde cualquier puesto.
+- [Abogado del diablo](../prompt%20playground/devils%20advocate%20skeptical%20stakeholder.md). Ponlo a prueba antes de entrar en la sala.
+- [De notas de reunión a tabla de acciones](../prompt%20playground/meeting%20notes%20to%20action%20items.md). Decisiones y responsables de una vez.
+
+### Por aplicación y trabajo diario
+- [Pack de prompts de Copilot en Outlook](../prompt%20playground/copilot%20in%20outlook%20prompt%20pack.md). Clasificación, resúmenes, redacción, tono.
+- [Modo agente para Excel](./claude%20in%20copilot%20with%20agent%20mode%20for%20excel.md). Guía práctica con datos de demostración.
+- [Empieza mi día](../prompt%20playground/start%20my%20day.md). Un resumen matutino para ejecutar cada día.
+
+### Para tu equipo de TI, seguridad y adopción
+- [Copilot Chat, HIPAA & Web Search](https://github.com/heyitsgoad/copilot-chat-hipaa-websearch) (en inglés). Qué sale de los límites del inquilino.
+- [Primeros pasos con la gobernanza de Copilot](./copilot%20governance%20getting%20started.md). Acceso, DLP, etiquetado y control de costes.
+- [Secure and Governed Data Foundation](https://learn.microsoft.com/es-es/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance). Corrige el uso compartido excesivo antes de ampliar.
+- [Panel de Copilot (Viva Insights)](https://learn.microsoft.com/es-es/viva/insights/org-team-insights/copilot-dashboard). Mide la adopción y el impacto.
+- [Portal de adopción de Microsoft 365 Copilot](https://adoption.microsoft.com/es-es/copilot/). Kit de éxito, biblioteca de escenarios y promotores internos.
+- [El Copilot Playground completo](../README.md). Agentes, prompts y guías en vídeo.
 
 ---
 
-[Back to the Education Playground](../README.md#education-playground)
+## No lo haces solo
+
+El camino más rápido de tener la licencia a dominarla es una persona. El autor, **Michael Goad**, Copilot Solution Engineer en Microsoft, ofrece a los equipos con los que trabaja una sesión práctica en directo de 45 minutos: configurar la personalización, crear un agente jefe de gabinete y conseguir que cada directivo tenga su primer logro real con su propio trabajo. Sus datos de contacto están en el [repositorio original](https://github.com/heyitsgoad/copilot-playground/blob/main/education%20playground/getting%20started%20with%20copilot%20premium%2C%20an%20executive%20playbook.md).
+
+---
+
+[Volver a Education Playground](../README.md#education-playground)
