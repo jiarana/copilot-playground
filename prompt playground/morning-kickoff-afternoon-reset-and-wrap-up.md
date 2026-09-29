@@ -1,139 +1,139 @@
-# Kick-off, Reset, and Wrap-up
+# Arranque, reajuste y cierre
 
-## What This Is
+## Qué es
 
-Three prompts that bookend your workday. One to start it, one to reset after lunch, one to close it out.
+Tres prompts que enmarcan tu jornada laboral. Uno para empezarla, otro para reajustarte después de comer y otro para cerrarla.
 
-Each one pulls from your calendar, inbox, and tasks, then adds a small human touch: a fact, a quote, a nudge to step away from the desk. Run them as-is or pick the one that fits the part of your day you keep losing.
+Cada uno se basa en tu calendario, tu bandeja de entrada y tus tareas, y añade un pequeño toque humano: un dato curioso, una cita o un recordatorio para levantarte de la mesa. Úsalos tal cual o elige el que encaje con la parte del día que se te suele escapar.
 
 > [!TIP]
-> Each prompt includes a "Coworker Tip" block you can paste as a follow-up. Those ask about your team rather than about you, and they are the reason this set is worth running instead of just checking your own calendar.
+> Cada prompt incluye un bloque de "consulta sobre compañeros" que puedes pegar como seguimiento. Esas preguntas son sobre tu equipo y no sobre ti, y son el motivo por el que merece la pena usar este conjunto en lugar de limitarte a mirar tu propio calendario.
 
-## Requirements
+## Requisitos
 
 - Microsoft 365 Copilot (Premium)
-- Use on work side
+- Usar en la parte de trabajo
 
 ---
 
-## Quick Copy
+## Copia rápida
 
-### Morning Kick-Off
-
-```
-Good Morning Copilot, help me start the day strong.
-
-1. Daily Overview
-   - Recap of yesterday's meetings with key points and action items.
-   - Summary of today's scheduled meetings and their agendas.
-   - Reminder of any due dates or deadlines.
-
-2. Inbox Review
-   - Highlight any urgent, unread, or flagged emails.
-   - List any tasks or follow-ups from my inbox or to-do list.
-
-3. Industry Snapshot
-   - Share latest news in the Microsoft Copilot or AI space.
-
-4. Weather Check
-   - What's the current weather in Tinley Park, IL?
-
-5. Lunch Ideas
-   - Suggest a quick and healthy lunch recipe.
-
-6. Interesting Fact
-   - Share a fun or inspiring fact to kick off the day.
-
-7. Motivation Boost
-   - Give me a short quote or affirmation to energize my morning.
-```
-
-Follow up with the coworker check:
+### Arranque matutino
 
 ```
-- Who on my team is out of office, traveling, or on DTO today?
-- Do I have any 1:1s or important meetings I should prepare for?
-- Who do I need to connect with or follow up on?
+Buenos días, Copilot. Ayúdame a empezar el día con buen pie.
+
+1. Visión general del día
+   - Resumen de las reuniones de ayer con los puntos clave y las tareas pendientes.
+   - Resumen de las reuniones programadas para hoy y sus órdenes del día.
+   - Recordatorio de las fechas de vencimiento o plazos.
+
+2. Revisión de la bandeja de entrada
+   - Destaca los correos urgentes, no leídos o marcados.
+   - Enumera las tareas o seguimientos de mi bandeja de entrada o de mi lista de tareas.
+
+3. Panorama del sector
+   - Comparte las últimas noticias sobre Microsoft Copilot o la IA.
+
+4. El tiempo
+   - ¿Qué tiempo hace ahora en [tu ciudad]?
+
+5. Ideas para comer
+   - Sugiere una receta rápida y saludable para comer.
+
+6. Dato curioso
+   - Comparte un dato divertido o inspirador para empezar el día.
+
+7. Chute de motivación
+   - Dame una cita breve o una afirmación que me dé energía por la mañana.
 ```
 
----
-
-### Afternoon Reset
+Continúa con la consulta sobre compañeros:
 
 ```
-Good Afternoon Copilot, provide a recap for my after-lunch summary.
-
-1. Midday Check-In
-   - Recap of morning meetings and any new action items.
-   - Preview of remaining meetings for the day.
-
-2. Inbox & Tasks
-   - Summarize new emails or messages since this morning.
-   - Highlight any outstanding tasks or follow-ups I should prioritize.
-
-3. Copilot Productivity Tip
-   - Share a quick tip to boost my afternoon focus.
-
-4. Wellness Reminder
-   - Remind me to step away from my desk, stretch, or take a short walk.
-
-5. Coffee Quote
-   - Share a short, uplifting coffee-related quote to keep the energy going.
-
-6. Company Pulse
-   - Any internal updates or announcements I should be aware of?
-```
-
-Follow up with the coworker check:
-
-```
-- Any opportunity blockers or escalations I should be aware of?
-- Who might need a quick check-in or support this afternoon?
+- ¿Quién de mi equipo está fuera de la oficina, de viaje o con días libres hoy?
+- ¿Tengo reuniones 1:1 o reuniones importantes para las que deba prepararme?
+- ¿Con quién tengo que contactar o hacer un seguimiento?
 ```
 
 ---
 
-### Evening Wrap-Up
+### Reajuste de media tarde
 
 ```
-Good Evening Copilot, help me close out the day.
+Buenas tardes, Copilot. Hazme un resumen para después de comer.
 
-1. Daily Reflection
-   - What did I accomplish today?
-   - Highlight a win or moment of gratitude.
-   - Any open items to carry over to tomorrow?
+1. Revisión de mediodía
+   - Resumen de las reuniones de la mañana y de las nuevas tareas pendientes.
+   - Avance de las reuniones que quedan hoy.
 
-2. Inbox & Follow-Ups
-   - Are there any unread or flagged emails I should address before EOD?
-   - Remind me of any pending approvals or responses.
+2. Bandeja de entrada y tareas
+   - Resume los correos o mensajes nuevos desde esta mañana.
+   - Destaca las tareas o seguimientos pendientes que debería priorizar.
 
-3. Looking Ahead
-   - What's on my calendar for the rest of the week and early next week?
-   - Any deadlines or prep work I should start planning for?
+3. Consejo de productividad con Copilot
+   - Comparte un consejo rápido para mejorar mi concentración por la tarde.
 
-4. Unwind Reminder
-   - Encourage me to disconnect from email and work.
-   - Suggest a way to relax or recharge this evening.
+4. Recordatorio de bienestar
+   - Recuérdame que me levante de la mesa, me estire o dé un paseo corto.
 
-5. Motivational Close
-   - Share a motivational quote or reflection to end the day on a positive note.
+5. Cita para el café
+   - Comparte una cita breve y animada relacionada con el café para mantener la energía.
+
+6. Pulso de la empresa
+   - ¿Hay novedades o anuncios internos que debería conocer?
 ```
 
-Follow up with the coworker check:
+Continúa con la consulta sobre compañeros:
 
 ```
-- Any team wins or shoutouts I should recognize or help bring positivity to my coworkers?
-- What should I flag or prep for tomorrow?
+- ¿Hay bloqueos u escalados en oportunidades que debería conocer?
+- ¿Quién podría necesitar esta tarde que le pregunte cómo va o que le eche una mano?
 ```
 
 ---
 
-### Ways to remix it
+### Cierre de la jornada
 
-- **Make it yours:** swap `Tinley Park, IL` for your own location, and drop the sections you do not care about. The weather and lunch lines are there to make it feel less like a status report.
-- **Run it on a schedule:** these work well as saved prompts or as scheduled Copilot Cowork runs, so the recap lands before you open your laptop.
-- **Tighten it:** if the output runs long, add `Keep the entire response under 300 words. Use bullets, not paragraphs.`
+```
+Buenas tardes, Copilot. Ayúdame a cerrar el día.
+
+1. Reflexión del día
+   - ¿Qué he conseguido hoy?
+   - Destaca un logro o un momento por el que estar agradecido.
+   - ¿Hay asuntos abiertos que pasen a mañana?
+
+2. Bandeja de entrada y seguimientos
+   - ¿Hay correos no leídos o marcados que debería atender antes de terminar el día?
+   - Recuérdame las aprobaciones o respuestas pendientes.
+
+3. Lo que viene
+   - ¿Qué tengo en el calendario para el resto de la semana y el principio de la próxima?
+   - ¿Hay plazos o trabajo de preparación que debería empezar a planificar?
+
+4. Recordatorio para desconectar
+   - Anímame a desconectar del correo y del trabajo.
+   - Sugiere una forma de relajarme o recargar energía esta tarde.
+
+5. Cierre motivador
+   - Comparte una cita o una reflexión motivadora para terminar el día con una nota positiva.
+```
+
+Continúa con la consulta sobre compañeros:
+
+```
+- ¿Hay logros del equipo o reconocimientos que debería destacar para aportar positividad a mis compañeros?
+- ¿Qué debería señalar o preparar para mañana?
+```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+### Formas de adaptarlo
+
+- **Hazlo tuyo:** sustituye `[tu ciudad]` por tu ubicación y elimina las secciones que no te interesen. Las líneas del tiempo y de la comida están ahí para que no parezca un informe de estado.
+- **Prográmalo:** funcionan bien como prompts guardados o como ejecuciones programadas de Copilot Cowork, para que el resumen esté listo antes de que abras el portátil.
+- **Acórtalo:** si el resultado es demasiado largo, añade `Mantén toda la respuesta por debajo de 300 palabras. Usa viñetas, no párrafos.`
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)

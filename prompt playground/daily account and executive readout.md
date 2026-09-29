@@ -1,151 +1,151 @@
-# Daily Executive Field Readout
+# Informe diario para dirección
 
-## What This Is
+## Qué es
 
-A fully automated daily briefing prompt that runs every weekday at 8:00 AM and reviews the past 24 hours across your calendar, email, Teams, and tasks. It surfaces customer commitments, internal follow-ups, pending responses, risks, meeting recaps, inbox highlights, team availability, and field coordination guidance, all in one structured readout.
+Un prompt de resumen diario totalmente automatizado que se ejecuta cada día laborable a las 8:00 y revisa las últimas 24 horas de tu calendario, correo, Teams y tareas. Muestra en un único informe estructurado los compromisos con clientes, los seguimientos internos, las respuestas pendientes, los riesgos, los resúmenes de reuniones, lo más destacado de la bandeja de entrada, la disponibilidad del equipo y orientación para coordinar el trabajo con clientes.
 
-Each run generates three outputs: an Executive Summary, a PowerPoint briefing saved to your OneDrive, and an HTML presentation for async browser review, all delivered to your inbox automatically.
+Cada ejecución genera tres resultados: un resumen ejecutivo, una presentación de PowerPoint guardada en tu OneDrive y una presentación HTML para revisarla en el navegador cuando quieras, y todo llega a tu bandeja de entrada automáticamente.
 
 > [!TIP]
-> Swap in your own account list, customer numbers, projects, and OneDrive folder path before running.
+> Antes de ejecutarlo, sustituye la lista de cuentas, los números de cliente, los proyectos y la ruta de la carpeta de OneDrive por los tuyos.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Run every Monday through Friday at 8:00 AM
+Ejecutar de lunes a viernes a las 8:00
 
-Review the past 24 hours across:
+Revisa las últimas 24 horas de:
 
-- My Outlook calendar
-- Emails
-- Microsoft Teams chats
-- To Do / Planner tasks
-- Account-related communications
+- Mi calendario de Outlook
+- Correos
+- Chats de Microsoft Teams
+- Tareas de To Do / Planner
+- Comunicaciones relacionadas con cuentas
 
-Focus on customer-facing activity tied to healthcare and life sciences accounts, especially: `replace the below with customer, project, etc`
+Céntrate en la actividad de cara al cliente relacionada con cuentas de sanidad y ciencias de la vida, especialmente: `sustituye lo siguiente por cliente, proyecto, etc.`
 
-| Customer Name | 
+| Nombre del cliente |
 
-Also surface any new customer accounts that appear in communications.
-
----
-
-### Section 1: Customer Commitments
-
-List anything I committed to delivering externally, including:
-
-- Sending follow-up material
-- Scheduling demos or meetings
-- Technical validation or architecture support
-- Copilot or agent workshops
-- Executive briefings
-
-Include: Customer name, contact, commitment made, and what is at stake if missed.
+Muestra también las cuentas de cliente nuevas que aparezcan en las comunicaciones.
 
 ---
 
-### Section 2: Internal Follow-ups
+### Sección 1: Compromisos con clientes
 
-Actions I owe internally to:
+Enumera todo lo que me he comprometido a entregar externamente, incluido:
 
-- Account Executives
-- Cusotmer Success Managers
-- Project Managers
-- Technical Architects
-- Account Team members
+- Enviar material de seguimiento
+- Programar demostraciones o reuniones
+- Validación técnica o apoyo de arquitectura
+- Talleres de Copilot o de agentes
+- Sesiones informativas para directivos
 
-Include: What needs to be done, who it impacts, associated account, and upcoming timelines.
-
----
-
-### Section 3: Pending Responses
-
-Highlight:
-
-- Customer emails awaiting response
-- Internal questions tied to customer work
-- Teams messages that require follow-up
-
-Call out anything that may affect deal progression, customer trust, workshop readiness, or executive alignment.
+Incluye: nombre del cliente, contacto, compromiso adquirido y qué está en juego si no se cumple.
 
 ---
 
-### Section 4: Risks or Blockers
+### Sección 2: Seguimientos internos
 
-Identify anything that could:
+Acciones que debo internamente a:
 
-- Delay delivery
-- Stall adoption
-- Create licensing confusion
-- Impact Copilot rollout
-- Damage customer relationship momentum
+- Ejecutivos de cuentas
+- Customer Success Managers
+- Jefes de proyecto
+- Arquitectos técnicos
+- Miembros del equipo de cuenta
 
-Note where information is missing or could not be retrieved.
-
----
-
-### Section 5: Meeting Recap and Today's Priorities
-
-Provide:
-
-- Summary of yesterday's customer-related meetings
-- Key decisions or action items
-- Overview of today's scheduled meetings
-- Any deadlines or due dates requiring attention
-
-Flag any 1:1s, executive briefings, workshops, or MTC sessions that may require preparation.
+Incluye: qué hay que hacer, a quién afecta, la cuenta asociada y los plazos próximos.
 
 ---
 
-### Section 6: Inbox Review
+### Sección 3: Respuestas pendientes
 
-Highlight urgent, unread, and flagged emails tied to customer work. List any tasks or follow-ups derived from inbox activity.
+Destaca:
 
----
+- Correos de clientes pendientes de respuesta
+- Preguntas internas relacionadas con el trabajo con clientes
+- Mensajes de Teams que requieren seguimiento
 
-### Section 7: Team Availability Snapshot
-
-Review my immediate account team and collaborators. Identify anyone who is out of office, on PTO or DTO, traveling, in training, or otherwise unavailable today. Call out anyone I may need to cover for or follow up with.
-
----
-
-### Section 8: Field Coordination Guidance
-
-Based on current activity:
-
-- Who should I connect with today
-- What follow-ups should I prioritize
-- Any coordination needed across the account team
+Señala todo lo que pueda afectar al avance de una venta, la confianza del cliente, la preparación de talleres o la alineación con la dirección.
 
 ---
 
-### Section 9: Inspiration Tip of the Day
+### Sección 4: Riesgos o bloqueos
 
-Provide one short, practical tip related to Copilot usage, AI transformation leadership, agent-based workflow design, executive adoption of AI, or driving change with Microsoft AI solutions. Keep it actionable and relevant to field execution.
+Identifica todo lo que pueda:
+
+- Retrasar la entrega
+- Frenar la adopción
+- Generar confusión sobre licencias
+- Afectar al despliegue de Copilot
+- Dañar el impulso de la relación con el cliente
+
+Indica dónde falta información o dónde no se ha podido obtener.
 
 ---
 
-## Deliverables Generated
+### Sección 5: Resumen de reuniones y prioridades de hoy
 
-**A. Executive Summary**
-A concise executive-level summary highlighting top customer commitments, major internal follow-ups, primary deal risks, team availability impacts, and top priorities for the day.
+Proporciona:
 
-**B. PowerPoint Briefing**
-A PowerPoint presentation titled *Daily Executive Field Briefing* saved to OneDrive under:
-`Documents → Cowork → Daily Briefings`
+- Resumen de las reuniones de ayer relacionadas con clientes
+- Decisiones clave o tareas pendientes
+- Visión general de las reuniones programadas para hoy
+- Plazos o fechas de vencimiento que requieran atención
 
-Slides include: Executive Summary, Customer Commitments, Internal Follow-ups, Pending Responses, Risks or Blockers, Today's Meetings and Priorities, Team Availability Snapshot, Field Coordination Guidance, and Inspiration Tip of the Day.
+Señala las reuniones 1:1, sesiones informativas para directivos, talleres o sesiones en el MTC que puedan requerir preparación.
 
-**C. HTML Executive Presentation**
-An HTML-based executive presentation with the same sections for quick browser-based review, saved to the same Daily Briefings folder.
+---
 
-**D. Email Delivery**
-Subject: `Daily Executive Field Readout`
-Body includes the Executive Summary and a note that the full PowerPoint and HTML briefing have been saved to OneDrive under `Documents → Cowork → Daily Briefings`.
+### Sección 6: Revisión de la bandeja de entrada
+
+Destaca los correos urgentes, no leídos y marcados relacionados con el trabajo con clientes. Enumera las tareas o seguimientos que se deriven de la actividad de la bandeja de entrada.
+
+---
+
+### Sección 7: Instantánea de la disponibilidad del equipo
+
+Revisa mi equipo de cuenta más cercano y mis colaboradores. Identifica a quien esté fuera de la oficina, de vacaciones o con días libres, de viaje, en formación o no disponible por otro motivo hoy. Señala a quién podría tener que cubrir o con quién debería hacer un seguimiento.
+
+---
+
+### Sección 8: Orientación para coordinar el trabajo con clientes
+
+Según la actividad actual:
+
+- Con quién debería contactar hoy
+- Qué seguimientos debería priorizar
+- Qué coordinación hace falta dentro del equipo de cuenta
+
+---
+
+### Sección 9: Consejo inspirador del día
+
+Proporciona un consejo breve y práctico relacionado con el uso de Copilot, el liderazgo de la transformación con IA, el diseño de flujos de trabajo basados en agentes, la adopción de la IA por parte de la dirección o el impulso del cambio con las soluciones de IA de Microsoft. Que sea aplicable y relevante para el trabajo con clientes.
+
+---
+
+## Resultados generados
+
+**A. Resumen ejecutivo**
+Un resumen conciso, de nivel directivo, que destaque los principales compromisos con clientes, los seguimientos internos más importantes, los principales riesgos para las ventas, el impacto de la disponibilidad del equipo y las prioridades principales del día.
+
+**B. Presentación de PowerPoint**
+Una presentación de PowerPoint titulada *Informe diario para dirección* guardada en OneDrive en:
+`Documentos → Cowork → Informes diarios`
+
+Las diapositivas incluyen: Resumen ejecutivo, Compromisos con clientes, Seguimientos internos, Respuestas pendientes, Riesgos o bloqueos, Reuniones y prioridades de hoy, Instantánea de la disponibilidad del equipo, Orientación para coordinar el trabajo con clientes y Consejo inspirador del día.
+
+**C. Presentación HTML para dirección**
+Una presentación en HTML con las mismas secciones para revisarla rápidamente en el navegador, guardada en la misma carpeta Informes diarios.
+
+**D. Envío por correo**
+Asunto: `Informe diario para dirección`
+El cuerpo incluye el resumen ejecutivo y una nota indicando que la presentación completa de PowerPoint y la versión HTML se han guardado en OneDrive en `Documentos → Cowork → Informes diarios`.
 ```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)

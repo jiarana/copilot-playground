@@ -1,54 +1,54 @@
-# My Work Life on One Whiteboard
+# Mi vida laboral en una pizarra
 
-## What This Is
+## Qué es
 
-A single-image prompt that turns your whole work life into one clean whiteboard sketch: your role, what you actually do, who you work with, your values, and what matters to you. You attach a headshot, Copilot grounds the rest in what it knows about your work and your public LinkedIn profile, and it draws you at the center with everyone and everything mapped around you.
+Un prompt de una sola imagen que convierte toda tu vida laboral en un esquema de pizarra limpio: tu puesto, lo que haces realmente, con quién trabajas, tus valores y lo que te importa. Adjuntas una foto de tu cara, Copilot basa el resto en lo que sabe de tu trabajo y en tu perfil público de LinkedIn, y te dibuja en el centro con todas las personas y todo lo demás distribuido a tu alrededor.
 
-Good for an intro slide, a team "get to know me," a profile banner, or just a fun snapshot of where your head is at right now.
+Sirve para una diapositiva de presentación, un "conóceme" para el equipo, un banner de perfil o simplemente una instantánea divertida de lo que tienes en la cabeza ahora mismo.
 
 > [!TIP]
-> Attach a clear headshot before you run it. "Work IQ" here just means your connected work data (your emails, meetings, chats, and documents), so swap that for whatever your assistant uses to see your work, and point it at your own LinkedIn URL.
+> Adjunta una foto de tu cara nítida antes de ejecutarlo. "Work IQ" se refiere simplemente a tus datos de trabajo conectados (correos, reuniones, chats y documentos), así que sustitúyelo por lo que use tu asistente para ver tu trabajo e indica la URL de tu propio perfil de LinkedIn.
 
 ---
 
-## Quick Copy
+## Copia rápida
 
 ```
-Create a photorealistic image in a clean cartoon whiteboard sketch style that visualises my work life. Include what I do, who I work with, my role, my values and what's important to me. I've attached a headshot so you can guide the sketch of me at the center. Ground your research in Work IQ and the public profile for me on LinkedIn. The graphic should be rich in information. For the avatars of the people I work with, avoid guessing and put a generic icon in place or find their actual profile pictures.
+Crea una imagen fotorrealista con un estilo de dibujo de pizarra limpio, tipo caricatura, que represente mi vida laboral. Incluye lo que hago, con quién trabajo, mi puesto, mis valores y lo que es importante para mí. He adjuntado una foto de mi cara para que te guíes al dibujarme en el centro. Basa tu investigación en Work IQ y en mi perfil público de LinkedIn. El gráfico debe tener mucha información. Para los avatares de las personas con las que trabajo, no inventes: pon un icono genérico o busca sus fotos de perfil reales.
 ```
 
 ---
 
-## Example Output
+## Ejemplo de resultado
 
-Here is what it produced for me. One whiteboard: my role and what I do on the left, the people I work with on the right, my headshot in the middle, and sticky notes tying it all together.
+Este es el resultado que obtuvo el autor. Una sola pizarra: su puesto y lo que hace a la izquierda, las personas con las que trabaja a la derecha, su foto en el centro y notas adhesivas que lo relacionan todo.
 
-![My work life on one whiteboard](assets/my%20work%20life%20on%20one%20whiteboard/my-work-life-on-one-whiteboard.png)
+![La vida laboral del autor en una pizarra](assets/my%20work%20life%20on%20one%20whiteboard/my-work-life-on-one-whiteboard.png)
 
 ---
 
-## Prompt (Full Breakdown)
+## El prompt, instrucción por instrucción
 
-Every line in this prompt is doing a job. Here is what each part controls and what to change for your own version.
+Cada línea de este prompt cumple una función. Esto es lo que controla cada parte y qué cambiar para tu propia versión.
 
-| Instruction | What it does |
+| Instrucción | Qué hace |
 |---|---|
-| `photorealistic image in a clean cartoon whiteboard sketch style` | Sets the look. You get a crisp, hand-drawn whiteboard feel with sticky notes and connector lines, not a flat corporate graphic. |
-| `visualises my work life ... what I do, who I work with, my role, my values and what's important to me` | Tells it exactly which buckets to fill. These become the labeled sections on the board. |
-| `I've attached a headshot so you can guide the sketch of me at the center` | Puts you in the middle as the anchor. Attach a clear, front-facing photo so it gets your likeness close. |
-| `Ground your research in Work IQ and the public profile for me on LinkedIn` | Points it at real sources instead of made-up detail. Swap `Work IQ` for your own connected work data and drop in your LinkedIn URL. |
-| `The graphic should be rich in information` | Pushes it to pack in real detail instead of a sparse, generic board. This is what makes it feel like you. |
-| `avoid guessing and put a generic icon in place or find their actual profile pictures` | Keeps it honest. It won't invent faces for your coworkers. You get a clean generic avatar or a real profile photo, never a fake one. |
+| `imagen fotorrealista con un estilo de dibujo de pizarra limpio, tipo caricatura` | Define el aspecto. Obtienes un estilo de pizarra dibujada a mano, nítido, con notas adhesivas y líneas de conexión, no un gráfico corporativo plano. |
+| `represente mi vida laboral ... lo que hago, con quién trabajo, mi puesto, mis valores y lo que es importante para mí` | Le dice exactamente qué apartados rellenar. Se convierten en las secciones con título de la pizarra. |
+| `He adjuntado una foto de mi cara para que te guíes al dibujarme en el centro` | Te sitúa en el centro como punto de referencia. Adjunta una foto nítida y de frente para que el parecido sea mayor. |
+| `Basa tu investigación en Work IQ y en mi perfil público de LinkedIn` | Le indica fuentes reales en lugar de detalles inventados. Sustituye `Work IQ` por tus propios datos de trabajo conectados y añade la URL de tu LinkedIn. |
+| `El gráfico debe tener mucha información` | Le empuja a incluir detalles reales en lugar de una pizarra escasa y genérica. Es lo que hace que se parezca a ti. |
+| `no inventes: pon un icono genérico o busca sus fotos de perfil reales` | Lo mantiene honesto. No se inventará caras para tus compañeros. Obtendrás un avatar genérico limpio o una foto de perfil real, nunca una falsa. |
 
-### Ways to remix it
+### Formas de adaptarlo
 
-- **Different vibe:** swap `clean cartoon whiteboard sketch style` for `notebook doodle`, `blueprint`, or `minimal line-art` to change the whole feel.
-- **Tighter focus:** narrow the buckets to just `my role, my top 3 priorities, and my team` for a simpler board.
-- **Team version:** change `me` to a project or a team and let it map the people and workstreams around it instead.
+- **Otro estilo:** sustituye `estilo de dibujo de pizarra limpio, tipo caricatura` por `garabatos de cuaderno`, `plano técnico` o `dibujo lineal minimalista` para cambiar todo el aspecto.
+- **Enfoque más concreto:** reduce los apartados a `mi puesto, mis 3 principales prioridades y mi equipo` para una pizarra más sencilla.
+- **Versión de equipo:** cambia `mi` por un proyecto o un equipo y deja que represente a su alrededor las personas y las líneas de trabajo.
 
 > [!NOTE]
-> Results vary by run. If the first pass misses something or gets a title wrong, tell it what to fix ("move my manager to the top, add my two biggest customers") and have it redraw.
+> Los resultados varían en cada ejecución. Si la primera versión omite algo o se equivoca con un cargo, dile qué corregir ("pon a mi responsable arriba, añade mis dos clientes más importantes") y pídele que la vuelva a dibujar.
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+[Volver a Prompt Playground](../README.md#prompt-playground)
