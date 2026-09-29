@@ -1,241 +1,241 @@
-# Copilot for Executive Admins
+# Copilot para asistentes de dirección
 
-## What This Is
+## Qué es
 
-This is the pack I hand to executive assistants and admin professionals after a live working session. It is grouped by the moment you would actually reach for it. The messy thread your executive forwarded with "set this up." The draft that has been sitting in your drafts since yesterday. The trip that lives in six tabs and three confirmation emails. The meeting you missed. The file you cannot find.
+Este es el pack que el autor entrega a asistentes de dirección y profesionales administrativos después de una sesión práctica en directo. Está agrupado según el momento en que de verdad lo necesitarías. La conversación caótica que tu directivo te reenvía con un "organiza esto". El borrador que lleva en tu carpeta de borradores desde ayer. El viaje repartido en seis pestañas y tres correos de confirmación. La reunión que te perdiste. El archivo que no encuentras.
 
-The method is three steps. Point it, name the shape, keep the judgment. Everything below is just that method applied to a different Tuesday.
+El método tiene tres pasos. Apunta, di qué forma quieres y quédate con el criterio. Todo lo que sigue es ese mismo método aplicado a un martes cualquiera.
 
 > [!TIP]
-> Replace anything in `[brackets]` with your own details before you run it. Names, dates, mailboxes, thread titles. The more specific you are, the less you have to fix afterward.
+> Sustituye todo lo que esté `[entre corchetes]` por tus datos antes de ejecutarlo. Nombres, fechas, buzones, títulos de conversaciones. Cuanto más concreto seas, menos tendrás que corregir después.
 
 > [!NOTE]
-> Copilot can only work with what it can see. When a prompt refers to a thread, a file, or a meeting, type `/` and point at it. Otherwise Copilot guesses, and you will spend more time correcting it than you saved.
+> Copilot solo puede trabajar con lo que ve. Cuando un prompt haga referencia a una conversación, un archivo o una reunión, escribe `/` y selecciónalo. Si no, Copilot adivina, y pasarás más tiempo corrigiéndolo del que te has ahorrado.
 
 ---
 
-## The Method, in Three Steps
+## El método en tres pasos
 
-- **Point it.** Type `/` to aim Copilot at a file, a thread, or a meeting.
-- **Name the shape.** Ask for an agenda, a brief, a checklist. Not just a summary.
-- **Keep the judgment.** You edit, you decide, you send.
+- **Apunta.** Escribe `/` para dirigir a Copilot a un archivo, una conversación o una reunión.
+- **Di qué forma quieres.** Pide un orden del día, un resumen previo, una lista de comprobación. No solo un resumen.
+- **Quédate con el criterio.** Tú editas, tú decides, tú envías.
 
 ---
 
-## The Four Ingredients of a Prompt That Works
+## Los cuatro ingredientes de un prompt que funciona
 
-Most prompts that disappoint people are missing two of these.
+A la mayoría de los prompts que decepcionan les faltan dos de estos.
 
-| Ingredient | The question it answers | What good looks like |
+| Ingrediente | La pregunta que responde | Cómo es uno bueno |
 | --- | --- | --- |
-| **Goal** | What do you want back? | Name the artifact. An agenda. A brief. A follow up email. Not "help me with this." |
-| **Context** | Why do you need it? | Who is in the room, what is at stake, what your executive cares about. Everybody skips this one, and it is the one you are best at. |
-| **Source** | Where should it look? | Type `/` and point at the thread, the file, the meeting. Otherwise it guesses. |
-| **Expectations** | How should it come back? | Format, length, tone. Time boxes. Bullets. Under 200 words. |
+| **Objetivo** | ¿Qué quieres recibir? | Nombra el resultado. Un orden del día. Un resumen previo. Un correo de seguimiento. No "ayúdame con esto". |
+| **Contexto** | ¿Para qué lo necesitas? | Quién estará en la sala, qué está en juego, qué le importa a tu directivo. Todo el mundo se lo salta, y es precisamente en lo que tú eres mejor. |
+| **Fuente** | ¿Dónde debe buscar? | Escribe `/` y selecciona la conversación, el archivo o la reunión. Si no, adivina. |
+| **Expectativas** | ¿Cómo debe devolverlo? | Formato, extensión, tono. Tiempos por punto. Viñetas. Menos de 200 palabras. |
 
-### All four in one prompt
-
-```
-Give me a meeting subject and a 45 minute agenda [GOAL] for tomorrow's leadership meeting where staffing is the sticking point [CONTEXT] using /Regional Leadership Sync [SOURCE] with time boxes, and flag the two points where people still disagree [EXPECTATIONS].
-```
-
----
-
-## One Thing to Know Before You Start
-
-Your delegate access is unchanged. You can still read your executive's mail, send on their behalf, and book their calendar exactly as you always have. What changes is where Copilot sits on top of it. The Summarize and Draft buttons appear in your own mailbox, not theirs. Inside their mailbox, use the Copilot Chat pane and name the mailbox in your prompt.
-
-### Working inside your executive's mailbox, name the mailbox
+### Los cuatro en un solo prompt
 
 ```
-Summarize the recent emails in [exec@yourcompany.com] mailbox and tell me what needs a reply today.
+Dame un asunto para la reunión y un orden del día de 45 minutos [OBJETIVO] para la reunión de dirección de mañana, en la que la dotación de personal es el punto conflictivo [CONTEXTO], usando /Reunión de coordinación de la dirección regional [FUENTE], con tiempos por punto, y señala los dos puntos en los que todavía hay desacuerdo [EXPECTATIVAS].
 ```
 
 ---
 
-## 1. The Agenda from the Messy Thread
+## Algo que debes saber antes de empezar
 
-For when your executive forwards a long thread and says "set this up."
+Tu acceso como delegado no cambia. Puedes seguir leyendo el correo de tu directivo, enviar en su nombre y gestionar su calendario exactamente como siempre. Lo que cambia es dónde se sitúa Copilot. Los botones de Resumir y Redactar aparecen en tu propio buzón, no en el suyo. Dentro de su buzón, usa el panel de Copilot Chat e indica el buzón en tu prompt.
 
-### The agenda
-
-```
-Read /[thread name] and give me a meeting subject and a 45 minute agenda with time boxes. Flag the two points where people still disagree.
-```
-
-### The pre-read
+### Para trabajar dentro del buzón de tu directivo, indica el buzón
 
 ```
-From that same thread, tell me what each attendee needs to decide, and list anything that is still unanswered. Keep it to one screen.
+Resume los correos recientes del buzón [directivo@tuempresa.com] y dime cuáles necesitan respuesta hoy.
 ```
 
-### The attendee check
+---
+
+## 1. El orden del día a partir de una conversación caótica
+
+Para cuando tu directivo te reenvía una conversación larga y te dice "organiza esto".
+
+### El orden del día
 
 ```
-Based on this thread, who actually needs to be in the room and who only needs the notes?
+Lee /[nombre de la conversación] y dame un asunto para la reunión y un orden del día de 45 minutos con tiempos por punto. Señala los dos puntos en los que todavía hay desacuerdo.
+```
+
+### La lectura previa
+
+```
+A partir de esa misma conversación, dime qué tiene que decidir cada asistente y enumera todo lo que sigue sin respuesta. Que quepa en una pantalla.
+```
+
+### La comprobación de asistentes
+
+```
+Según esta conversación, ¿quién tiene que estar realmente en la sala y a quién le basta con recibir las notas?
 ```
 
 > [!TIP]
-> When Copilot cannot reach the content, paste the thread text straight into Copilot Chat and ask the same question. The prompt does not change. Only the source does.
+> Cuando Copilot no pueda acceder al contenido, pega el texto de la conversación directamente en Copilot Chat y haz la misma pregunta. El prompt no cambia. Solo cambia la fuente.
 
 ---
 
-## 2. The Draft You Did Not Want to Write
+## 2. El borrador que no querías escribir
 
-For the email that has been sitting in your drafts since yesterday.
+Para el correo que lleva en tu carpeta de borradores desde ayer.
 
-### The brain dump, start here
-
-```
-Here are my rough notes. Turn them into a short, warm, clear email to our [team name]. Keep it under 200 words and put the dates in a list.
-[paste your messy notes, bullets and fragments are fine]
-```
-
-### The retone
+### El volcado de ideas, empieza por aquí
 
 ```
-Rewrite this so it is direct but not cold. It is going to a VP who is short on time and will read it on a phone.
+Estas son mis notas sin pulir. Conviértelas en un correo breve, cercano y claro para nuestro [nombre del equipo]. Menos de 200 palabras y con las fechas en una lista.
+[pega tus notas desordenadas; valen viñetas y frases sueltas]
 ```
 
-### The hard one
+### El cambio de tono
 
 ```
-I need to tell a group that a deadline moved and it was not their fault. Draft it so it is honest, takes responsibility, and does not sound defensive.
+Reescribe esto para que sea directo pero no frío. Va dirigido a un vicepresidente que tiene poco tiempo y lo leerá en el móvil.
 ```
 
-### The check, before you send
+### El difícil
 
 ```
-Read this draft and tell me how it will land with someone who is already frustrated. What would you change?
+Tengo que decirle a un grupo que un plazo ha cambiado y que no ha sido culpa suya. Redáctalo para que sea sincero, asuma la responsabilidad y no suene a estar a la defensiva.
 ```
 
----
-
-## 3. The One Page Trip Brief
-
-For the trip that lives in six tabs and three confirmation emails.
-
-### The one page brief
+### La comprobación antes de enviar
 
 ```
-Build a one page trip brief for [executive] going to [city] on [dates]. Flights, hotel, ground transport, meetings, and time zone notes. Day by day, and it has to fit on one screen.
-```
-
-### The open questions
-
-```
-Looking at this itinerary, what is still unconfirmed or missing? Give me a numbered list of questions I can send in a single message.
-```
-
-### The checklist
-
-```
-Give me a pre-trip checklist for this itinerary, ordered by what has to happen first and what has a deadline.
-```
-
-### Pull the planning chat together
-
-```
-Summarize the planning conversation in /[Teams chat name], list what was agreed, and tell me what is still open.
+Lee este borrador y dime cómo le llegará a alguien que ya está molesto. ¿Qué cambiarías?
 ```
 
 ---
 
-## 4. Catch Up on the Meeting You Missed
+## 3. El resumen del viaje en una página
 
-Works on Teams meeting recaps, Teams chats, and long Outlook threads.
+Para el viaje repartido en seis pestañas y tres correos de confirmación.
 
-### The catch up
-
-```
-Summarize this meeting. What was decided, what is still open, and what involves [executive name]?
-```
-
-### Just my part
+### El resumen de una página
 
 ```
-Did anything in this meeting create a task for [executive name] or for me? Give me only those, with who owns each one.
+Prepara un resumen de viaje de una página para [directivo], que viaja a [ciudad] el [fechas]. Vuelos, hotel, transporte en destino, reuniones y notas sobre la zona horaria. Día a día, y tiene que caber en una pantalla.
 ```
 
-### The follow up
+### Las preguntas abiertas
 
 ```
-Draft a follow up email with the decisions and the action items, with an owner and a due date on each one. Keep it short enough to read on a phone.
+Revisando este itinerario, ¿qué está todavía sin confirmar o falta? Dame una lista numerada de preguntas que pueda enviar en un solo mensaje.
+```
+
+### La lista de comprobación
+
+```
+Dame una lista de comprobación previa al viaje para este itinerario, ordenada según lo que tiene que ocurrir primero y lo que tiene plazo.
+```
+
+### Reunir el chat de planificación
+
+```
+Resume la conversación de planificación de /[nombre del chat de Teams], enumera lo que se acordó y dime qué sigue abierto.
+```
+
+---
+
+## 4. Ponerse al día de la reunión que te perdiste
+
+Funciona con los resúmenes de reuniones de Teams, los chats de Teams y las conversaciones largas de Outlook.
+
+### Ponerse al día
+
+```
+Resume esta reunión. ¿Qué se decidió, qué sigue abierto y qué afecta a [nombre del directivo]?
+```
+
+### Solo lo mío
+
+```
+¿Surgió en esta reunión alguna tarea para [nombre del directivo] o para mí? Dame solo esas, con el responsable de cada una.
+```
+
+### El seguimiento
+
+```
+Redacta un correo de seguimiento con las decisiones y las tareas pendientes, con un responsable y una fecha de vencimiento para cada una. Que sea lo bastante breve como para leerlo en el móvil.
 ```
 
 > [!TIP]
-> Same move in Outlook. Open the long thread, use Summary by Copilot at the top, then ask: what does [executive name] actually need to do here?
+> Lo mismo en Outlook. Abre la conversación larga, usa el resumen de Copilot de la parte superior y después pregunta: ¿qué tiene que hacer realmente [nombre del directivo] aquí?
 
 ---
 
-## 5. Find Anything
+## 5. Encontrar cualquier cosa
 
-Describe the thing instead of naming it. Vague is fine. Vague is better.
+Describe lo que buscas en lugar de nombrarlo. Una descripción vaga vale. Una descripción vaga es incluso mejor.
 
-### Find the file
-
-```
-Find the deck about [topic] that [person] shared, probably in the last few months. I do not remember what it was called.
-```
-
-### Find the decision
+### Encontrar el archivo
 
 ```
-What did we decide about [topic]? Show me where that decision was made and who was part of it.
+Busca la presentación sobre [tema] que compartió [persona], probablemente en los últimos meses. No recuerdo cómo se llamaba.
 ```
 
-### Find the site
+### Encontrar la decisión
 
 ```
-Locate the SharePoint site for [team or project] and tell me what is actually on it.
+¿Qué decidimos sobre [tema]? Muéstrame dónde se tomó esa decisión y quién participó en ella.
 ```
 
-### Find the owner
+### Encontrar el sitio
 
 ```
-Who owns [process or document], and when did they last update it?
+Localiza el sitio de SharePoint de [equipo o proyecto] y dime qué contiene realmente.
 ```
 
----
-
-## Five More That Did Not Fit in the Hour
-
-### The morning sweep
+### Encontrar al responsable
 
 ```
-What came in overnight that needs [executive name] before noon? Group it by what needs a decision, what needs a reply, and what is just information.
-```
-
-### The person prep
-
-```
-I have a meeting with [name] tomorrow. What have we exchanged recently and what is still open between us?
-```
-
-### The hidden ask
-
-```
-Read this thread and tell me if anyone asked us for something that has not been answered yet.
-```
-
-### The document shrink
-
-```
-Summarize /[document name] into the five things [executive name] needs to know before walking into the room.
-```
-
-### The week ahead
-
-```
-Look at my calendar for next week and tell me which meetings still have no agenda and no pre-read.
+¿Quién es responsable de [proceso o documento] y cuándo lo actualizó por última vez?
 ```
 
 ---
 
-## One Honest Ask
+## Cinco más que no cupieron en la hora
 
-Pick one move and run it this week. Not five. One. Then tell whoever is leading the rollout at your company whether it actually worked, and what you had to fix afterward. That feedback is what makes the next round of this better for everyone, and it is the part only you can provide.
+### El repaso matutino
+
+```
+¿Qué ha llegado durante la noche que necesite a [nombre del directivo] antes de mediodía? Agrúpalo en lo que necesita una decisión, lo que necesita una respuesta y lo que es solo información.
+```
+
+### Preparar el encuentro con una persona
+
+```
+Mañana tengo una reunión con [nombre]. ¿Qué nos hemos intercambiado últimamente y qué sigue abierto entre nosotros?
+```
+
+### La petición escondida
+
+```
+Lee esta conversación y dime si alguien nos ha pedido algo que todavía no se ha respondido.
+```
+
+### Reducir un documento
+
+```
+Resume /[nombre del documento] en las cinco cosas que [nombre del directivo] necesita saber antes de entrar en la sala.
+```
+
+### La semana que viene
+
+```
+Revisa mi calendario de la próxima semana y dime qué reuniones siguen sin orden del día y sin lectura previa.
+```
 
 ---
 
-[Back to the Prompt Playground](../README.md#prompt-playground)
+## Una petición sincera
+
+Elige una sola técnica y ponla en práctica esta semana. No cinco. Una. Después cuéntale a quien esté liderando el despliegue en tu empresa si ha funcionado de verdad y qué tuviste que corregir. Esa información es lo que hace que la siguiente ronda sea mejor para todos, y es la parte que solo tú puedes aportar.
+
+---
+
+[Volver a Prompt Playground](../README.md#prompt-playground)
