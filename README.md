@@ -9,12 +9,12 @@
 
 # Agentes, prompts y guías prácticas para Microsoft 365 Copilot
 
-Soy Copilot Solution Engineer en Microsoft y, desde que me incorporé, comparto abiertamente lo que aprendo, construyo y rompo.
+Michael Goad es Copilot Solution Engineer en Microsoft y, desde su incorporación, comparte abiertamente lo que aprende, construye y rompe.
 
 Esta es la biblioteca completa: **6 agentes**, **33 prompts** y **10 guías prácticas** sobre cómo diseñar, desplegar, gobernar y enseñar IA con Microsoft 365 Copilot, Copilot Studio y Agent 365. Todo lo que hay aquí se puede copiar, adaptar y usar libremente.
 
 > [!NOTE]
-> Este es un recurso personal para la comunidad. Los análisis y opiniones son míos y no representan una posición oficial de Microsoft.
+> Este es un recurso personal para la comunidad. Los análisis y opiniones son del autor y no representan una posición oficial de Microsoft.
 
 ## Empieza aquí
 
@@ -32,7 +32,7 @@ Esta es la biblioteca completa: **6 agentes**, **33 prompts** y **10 guías prá
 
 | Sección | Cantidad | Qué es |
 | --- | --- | --- |
-| [Agent Playground](#agent-playground) | 6 | Agentes que he creado, con pasos de configuración y prompts iniciales |
+| [Agent Playground](#agent-playground) | 6 | Agentes creados por el autor, con pasos de configuración y prompts iniciales |
 | [Prompt Playground](#prompt-playground) | 33 | Prompts y personalizaciones listos para copiar |
 | [Education Playground](#education-playground) | 10 | Guías prácticas para administradores, directivos y profesionales |
 
@@ -40,7 +40,7 @@ Esta es la biblioteca completa: **6 agentes**, **33 prompts** y **10 guías prá
 
 ## Agent Playground
 
-Agentes creados mientras aprendía Copilot Studio y Microsoft 365 Copilot. Cada página incluye una descripción general y notas sobre licencias, la configuración con conectores y permisos, y prompts iniciales.
+Agentes que el autor creó mientras aprendía Copilot Studio y Microsoft 365 Copilot. Cada página incluye una descripción general y notas sobre licencias, la configuración con conectores y permisos, y prompts iniciales.
 
 ### Productividad y gestión del trabajo
 
@@ -72,7 +72,7 @@ Agentes creados mientras aprendía Copilot Studio y Microsoft 365 Copilot. Cada 
 
 ## Prompt Playground
 
-Prompts y personalizaciones favoritos. La mayoría de las páginas tienen un bloque de copia rápida para que puedas llevarte el prompt con un clic.
+Una selección de prompts y personalizaciones del autor. La mayoría de las páginas tienen un bloque de copia rápida para que puedas llevarte el prompt con un clic.
 
 ### Primeros pasos
 
