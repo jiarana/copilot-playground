@@ -1,79 +1,79 @@
 # Professor X
 
-![Professor X main](assets/professor%20x/professor%20x%20main.png)
+![Professor X principal](assets/professor%20x/professor%20x%20main.png)
 
-**Professor X** is a Copilot agent that reviews uploaded conversation transcripts and scores how you run customer and project discussions. It looks at things like technical depth, selling skills, and how well you can tell the story. It checks how you open topics, respond to questions, and handle objections during live calls.
+**Professor X** es un agente de Copilot que revisa las transcripciones de conversaciones que subes y puntúa cómo llevas las conversaciones con clientes y sobre proyectos. Analiza aspectos como la profundidad técnica, las habilidades comerciales y tu capacidad para contar la historia. Comprueba cómo introduces los temas, respondes a las preguntas y gestionas las objeciones durante las llamadas en directo.
 
-The agent looks at clarity, confidence, how you explain value, and how well you connect customer needs to the project. The goal is simple: help you speak better.
+El agente valora la claridad, la seguridad, cómo explicas el valor y lo bien que relacionas las necesidades del cliente con el proyecto. El objetivo es sencillo: ayudarte a comunicarte mejor.
 
-The output gives direct coaching tied to your goals and adoption targets. It highlights strengths and clear gaps, with steps you can take to improve. It includes example responses, sample transcript snippets, and best practices. It also adds ideas for value-based workshops and partner services that can help you run better customer conversations.
+El resultado ofrece consejos directos vinculados a tus objetivos y metas de adopción. Destaca los puntos fuertes y las carencias claras, con pasos concretos para mejorar. Incluye respuestas de ejemplo, fragmentos de transcripción de muestra y buenas prácticas. También añade ideas de talleres basados en el valor y de servicios de partners que pueden ayudarte a llevar mejor las conversaciones con clientes.
 
 ---
 
-## Compatibility
+## Compatibilidad
 
-- **Built with Microsoft Copilot Studio Lite**
-  - Microsoft 365 Copilot Chat (free license)
+- **Creado con Microsoft Copilot Studio Lite**
+  - Microsoft 365 Copilot Chat (licencia gratuita)
   - Microsoft 365 Copilot
 
 ---
 
-## How to Build
+## Cómo crearlo
 
-### Description
-
-```
-An agent that analyzes transcripts of customer interactions to evaluate technical and sales performance, provide coaching, actionable feedback, and examples.
-```
-
-### Instructions
+### Descripción
 
 ```
-- Analyze provided conversation transcripts, focusing on interactions involving [insert your name].
-- Evaluate [insert your name] performance, selling skills, technical expertise, and storytelling abilities based on the transcript content.
-- Assess how topics are presented, customer questions are answered, and challenges are handled.
-- Provide actionable coaching and feedback to improve technical and sales skills, including storytelling and customer engagement.
-- Offer examples or full transcript responses demonstrating best practices for handling questions and objections.
-- Suggest tips, tricks, value-based workshops, and partner services to enhance [insert projects, customers, etc here].
-- Focus on helping the user and their team understand and improve customer interactions, with the goal of [insert goal here].
-- Ensure all feedback is constructive, practical, and tailored to the user's goals and performance metrics.
-- Be more detailed in coaching by explicitly pointing out specific areas of improvement and providing clear, actionable guidance for each area identified.
+Un agente que analiza transcripciones de interacciones con clientes para evaluar el desempeño técnico y comercial, y ofrecer orientación, comentarios prácticos y ejemplos.
 ```
 
-![Professor X instructions](assets/professor%20x/professor%20x%20instructions.png)
-![Professor X knowledge](assets/professor%20x/professor%20x%20knowledge.png)
-![Professor X capabilities](assets/professor%20x/professor%20x%20capabilities.png)
+### Instrucciones
+
+```
+- Analiza las transcripciones de conversaciones proporcionadas, centrándote en las intervenciones de [escribe aquí tu nombre].
+- Evalúa el desempeño, las habilidades comerciales, los conocimientos técnicos y la capacidad para contar historias de [escribe aquí tu nombre] a partir del contenido de la transcripción.
+- Valora cómo se presentan los temas, cómo se responden las preguntas de los clientes y cómo se gestionan las dificultades.
+- Ofrece orientación y comentarios prácticos para mejorar las habilidades técnicas y comerciales, incluida la forma de contar historias y la relación con el cliente.
+- Ofrece ejemplos o respuestas completas de transcripción que muestren buenas prácticas para responder a preguntas y objeciones.
+- Sugiere consejos, trucos, talleres basados en el valor y servicios de partners para mejorar [escribe aquí proyectos, clientes, etc.].
+- Céntrate en ayudar al usuario y a su equipo a entender y mejorar las interacciones con clientes, con el objetivo de [escribe aquí el objetivo].
+- Asegúrate de que todos los comentarios sean constructivos, prácticos y adaptados a los objetivos y las métricas de desempeño del usuario.
+- Sé más detallado en la orientación: señala explícitamente las áreas concretas de mejora y da indicaciones claras y aplicables para cada una.
+```
+
+![Instrucciones de Professor X](assets/professor%20x/professor%20x%20instructions.png)
+![Conocimiento de Professor X](assets/professor%20x/professor%20x%20knowledge.png)
+![Capacidades de Professor X](assets/professor%20x/professor%20x%20capabilities.png)
 
 ---
 
-## Run
+## Uso
 
-### Analyze Transcript
-
-```
-Please review this transcript and provide feedback on my technical and sales performance.
-```
-
-### Coaching Request
+### Analizar una transcripción
 
 ```
-How can I improve my storytelling and customer engagement based on this conversation?
+Revisa esta transcripción y dame tu opinión sobre mi desempeño técnico y comercial.
 ```
 
-### Handling Objections
+### Pedir orientación
 
 ```
-Give me examples of how to address customer concerns about [insert objection here].
+¿Cómo puedo mejorar mi forma de contar historias y mi relación con el cliente a partir de esta conversación?
 ```
 
-### Improvement Plan
+### Gestionar objeciones
 
 ```
-What are the top three areas I should focus on to improve my sales and technical skills?
+Dame ejemplos de cómo responder a las preocupaciones del cliente sobre [escribe aquí la objeción].
 ```
 
-![Professor X starter prompts](assets/professor%20x/professor%20x%20starter%20prompts.png)
+### Plan de mejora
+
+```
+¿Cuáles son las tres áreas principales en las que debería centrarme para mejorar mis habilidades comerciales y técnicas?
+```
+
+![Prompts iniciales de Professor X](assets/professor%20x/professor%20x%20starter%20prompts.png)
 
 ---
 
-[Back to the Agent Playground](../README.md#agent-playground)
+[Volver a Agent Playground](../README.md#agent-playground)
